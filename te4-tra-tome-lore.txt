@@ -1,0 +1,619 @@
+------------------------------------------------
+section "mod-tome/data/lore/misc.lua"
+
+t("temple of creation", "temple de la création", "newLore category")
+t("tract of destruction", "traité de destruction", "_t")
+t([[#{bold}#Tract of Destruction#{normal}#
+
+Though armies would fall before the Spellblaze's might, though forests were razed and the skies bled red with fire, they always felt that the earth would endure. It seemed eternal, unmoving. Not even the fury of the Spellblaze could hope to destroy it.
+
+How wrong they were. The Nalorën people, long secluded, were prepared to fend off any attacks on their land, but how could they hope to stop the land itself crumbling? Seeing their home literally tearing itself apart, plains and forests tumbling into the seas... For one brief, terrible moment, they beheld the true extent of the Spellblaze's power. Not only was it destroying the people of the world, but the world itself.
+
+The lands of the Nalorën had sunk beneath the waves.]], [[#{bold}#Traité de Destruction#{normal}#
+
+Bien que des armées entières aient succombé à la puissance de la Conflagration Magique, que des forêts entières aient été consumées et que le ciel se soit teinté d'un rouge profond sous l'effet des flammes, ils ont toujours cru que leur terre survivrait. Elle semblait éternelle, immuable. Même la fureur de la Conflagration Magique ne pouvait la détruire.
+
+Comme ils se trompaient ! Le peuple Nalorën, longtemps isolé, s'était préparé à se défendre contre toute attaque, mais comment empêcher la terre elle-même de s'effondrer ? Voyant leur foyer se briser littéralement, les plaines et les forêts s'enfonçant dans les mers, ils prirent conscience, l'espace d'un instant, de la véritable étendue du pouvoir de la Conflagration Magique. Elle n'exterminait pas seulement les habitants du monde, mais dévastait le monde lui-même.
+
+Les terres de Nalorën sombrèrent sous les flots.]], "_t")
+t("tract of anarchy", "traité d'anarchie", "_t")
+t([[#{bold}#Tract of Anarchy#{normal}#
+
+For the years following the cataclysm, chaos reigned. Their culture, their way of life, it was as broken and fractured as the land itself. Nalorë civilisation was reduced to a few isolated and feeble settlements, scratching out meagre existences as land, mind and body was warped in both shape and spirit.
+
+Faced with the idea of their great race failing – another victim of the Spellblaze, a footnote in the annals of history – impassioned pleas were sent to their elven brothers: The Shalorën, the Thalorën. Aid was even requested from human and halfling, embroiled in their own petty squabbles as they were.
+
+The Nalorën received no answer.]], [[#{bold}#Traité d'Anarchie#{normal}#
+
+Durant les années qui suivirent le cataclysme, le chaos régna en maître. Leur culture, leur mode de vie, étaient aussi fragmentés et fracturés que la terre elle-même. La civilisation de Nalorë se réduisit à quelques fragiles et isolés villages, survivant à peine, tandis que la terre, l'esprit et le corps étaient déformés, tant physiquement que spirituellement.
+
+Face à la possibilité que leur grand peuple succombe – une victime de plus de la Conflagration Magique, une simple note de bas de page dans les annales de l'histoire – des appels passionnés furent adressés à leurs frères elfes : les Shalorën et les Thalorën. Même les humains et les hobbits, englués dans leurs propres querelles mesquines, furent sollicités.
+
+Cependant, les Nalorën ne reçurent aucune réponse.]], "_t")
+
+
+t("letter to Rolf (2)", "lettre à dstination de Rolf (2)", "_t")
+t([[Dear Rolf the Antslayer,
+
+Ha! Such trials you have overcome! Forget dragons and demons, here we have a hero who has survived against ants! I shall deliver this joyous news to Last Hope with all haste - perhaps there shall be a parade in your honour!
+
+I hope you registered the sarcasm in my previous words, but I obviously cannot expect much from one who struggles with insects. Allow me to share with you knowledge of a beast rather more fitting for a true adventurer to behold. My travels had taken me south, and as I walked one night along an abandoned mountain pass, imagining what treasures and trials the next day may bring, a brilliant light filled my vision! I stood in its radiance, the land around me illuminated so that it almost appeared to be in broad daylight, and that was when I saw it.
+
+Such a magnificent sight! With wings of fire, leaving the air itself hissing and smouldering in its wake, I could only watch with rapt amazement as it alighted on a rocky outcrop mere yards away from me, the stone beneath its talons warping from its tremendous heat. It was at that moment, Rolf, that I realised that this was what being an adventurer was about - there is always more in this world of ours to amaze and astonish us.
+
+Learn from my experiences,
+Weisman]], [[Cher Rolf destructeur des fourmis,
+
+Ah ! Quelles épreuves vous avez surmontées ! Oubliez les dragons et les démons ; voici un héros qui a survécu aux fourmis ! Sans aucun doute, je porterai cette joyeuse nouvelle à Last Hope sans délai – peut-être même qu'un défilé sera organisé en votre honneur !
+
+J'espère que vous avez saisi le sarcasme dans mes propos précédents, mais je ne peux pas attendre grand-chose de quelqu'un qui combat des insectes. Permettez-moi de vous faire part de la connaissance d'une créature plus digne d'un véritable aventurier. Mes voyages m'ont mené vers le sud, et alors que je traversais un col de montagne désert par une nuit paisible, imaginant les trésors et les épreuves que le lendemain me réservait, une lumière éclatante a illuminé mon champ de vision ! Je me suis tenu devant son éclat, la terre autour de moi illuminée comme en plein jour, et c'est alors que je l'ai vue.
+
+Quel spectacle magnifique ! Avec ses ailes de feu, laissant derrière lui un sifflement et une fumée épaisse, je contemplais, fasciné et extatique, l'engin se poser sur un affleurement rocheux à quelques mètres de moi. La pierre sous ses griffes se déformait sous l'effet de sa chaleur intense. C'est à cet instant, Rolf, que j'ai compris qu'être aventurier, c'est précisément cela : être toujours surpris et émerveillé par ce monde qui nous réserve encore bien des surprises.
+
+Tire les leçons de mon expérience.
+Weisman]], "_t")
+t("letter to Weisman (2)", "lettre à destination de Weisman (2)", "_t")
+t([[Dearest Weisman,
+
+Sorry to cut your birdwatching session short, but I must bring this badinage to an end. I have tolerated your ridiculous pomposity and false heroics long enough. At first, I took your over-inflated tales of bothering local wildlife with good humour but now I realise, with dread, that you are sincere; you believe your pathetic wanderings to be the stuff of legend.
+
+Well, no more. We shall meet seven days from now in Derth's town square. Come prepared for travel. The number of rumours claiming that a monster has taken up residence within the ruins just north of town have grown to the point where they cannot be considered rumours anymore. You shall come with me, face this creature alongside me, and experience intimately the vast difference between your skills and my own. If we're lucky, you will learn this lesson unscathed, but I fear that such a trial may cost you a limb or two.
+
+Prepare yourself, if you've the courage,
+Rolf]], [[Mon très cher Weisman,
+
+Excusez-moi de vous interrompre dans votre observation des oiseaux, mais il est temps d'en finir avec ces bavardages inutiles. J'ai toléré votre ridicule suffisance et votre faux héroïsme bien trop longtemps. Au début, j'acceptais avec amusement vos récits exagérés des difficultés de la faune locale, mais je réalise maintenant, avec effroi, que vous êtes sincère ; vous croyez vraiment que vos pitoyables aventures sont dignes de légende.
+
+Eh bien, c'est terminé. Nous nous retrouverons dans sept jours sur la place de Derth. Préparez-vous pour le voyage. Les rumeurs concernant un monstre qui a élu domicile dans les ruines au nord de la ville sont devenues si nombreuses qu'on ne peut plus les ignorer. Vous viendrez avec moi, affronterez cette créature à mes côtés et constaterez par vous-même l'immense différence entre vos capacités et les miennes. Si nous avons de la chance, vous en sortirez indemne, mais je crains que cette épreuve ne vous coûte un membre ou deux.
+
+Préparez-vous, si vous l'osez.
+Rolf]], "_t")
+t("letter to Weisman (3)", "lettre à destination de Weisman (3)", "_t")
+t([[Weisman,
+
+The tentacles. I still remember them. They have lashed into my mind as they lashed into my flesh. How can nature abide such a... a... being in her realm? What dark plane of existence could it have been born from? How can creation itself tolerate such an aberration?!
+
+How did we survive? I have no clue. All I can remember is pain, and panic, and fear. All I could think of was getting away, fleeing... to my shame, all other thoughts left me. Thoughts of you, home, the world... all I could do was keep hacking away at the... things between myself and freedom. Perhaps that is why it didn't... no. I shall not think on it. The beast is certain to fill my nightmares tonight, I won't allow it to fill my waking thoughts.
+
+Rest easy, brother. It may have taken your eye, but think of what else it could have taken. Anyway, I shall be leaving for the tavern soon. Maybe I can drown the images of that monster in a sea of ale.
+
+Make sure you write the words on your next letter nice and big,
+Rolf]], [[Weisman,
+
+Les tentacules. Leur souvenir hante encore mon esprit, le pénétrant comme ils ont pénétré ma chair. Comment la nature peut-elle tolérer un tel être en son sein ? De quel plan d'existence obscur a-t-il pu naître ? Comment la création elle-même peut-elle tolérer une telle abomination ?
+
+Comment avons-nous réussi à survivre ? Je n'en ai pas la moindre idée. Je ne me souviens que de la douleur, de la panique et de la peur. La seule chose qui occupait mes pensées était l'envie de m'échapper, de fuir… À ma honte, toutes les autres pensées m'ont abandonné. Pensées à toi, à notre foyer, au monde… Tout ce que je pouvais faire, c'était continuer à trancher les obstacles qui me séparaient de la liberté. C'est peut-être pour cela que je ne… Non, je ne peux pas me laisser emporter par lui. La bête hantera sûrement mes cauchemars cette nuit, mais je ne la laisserai pas consumer mes pensées à mon réveil.
+
+Rassure-toi, mon frère. Elle t'a peut-être pris un œil, mais pense à tout ce qu'elle aurait pu te prendre d'autre. En tout cas, j'irai bientôt à la taverne. Peut-être pourrai-je noyer les souvenirs de ce monstre dans un océan de bière.
+
+N'oublie pas d'écrire les mots de ta prochaine lettre en grands et beaux caractères.Rolf]], "_t")
+
+t("letter to Weisman (1)", "lettre à destination de Weisman (1)", "_t")
+t([[Dear Weisman,
+
+Ah! What feelings your last letters inspired within me... primarily mirth, with a good amount of scorn! Must you continuously assail me with tale after tale of your waving of wooden swords and pestering of toothless mongrels? Allow me to recount your "legends" in a much more succinct manner: One day, I failed to kill a dog. Such bravery! Such pluck and derring-do!
+
+Your petty escapades are made ever more insignificant by the trials I myself have recently overcome. Mere days ago I was trekking through the Old Forest (that's outside Derth, Weisman! Terror must already grip you!) when, by unfortunate happenstance, I came across a most hideous, bloated, oozing and chittering horror! No less than the giant ants' repulsive progenitor! Such hordes of frenzied chitinous young it had at its command, it was as though the ground itself was swarming forward to devour me!
+
+And yet I live. Weisman, I sincerely hope that my letter has revealed to you your folly. Only when you have faced true danger can you call yourself an adventurer. Bore me with your tales no longer.
+
+Rolf]], [[Cher Weisman,
+
+Ah ! Que de sentiments vos dernières lettres ont suscités en moi… surtout de la jubilation, mêlée d'un bon soupçon de mépris ! Avez-vous vraiment besoin de me harceler sans cesse avec vos histoires d'épées de bois et de vos chiens édentés ? Permettez-moi de vous raconter vos « légendes » de façon bien plus concise : un jour, je n'ai pas réussi à tuer un chien. Quel courage ! Quelle audace !
+
+Vos petites escapades paraissent bien insignifiantes face aux épreuves que je viens de surmonter. Il y a quelques jours, alors que je me promenais dans la Vieille Forêt (c'est aux abords de Derth, Weisman ! La terreur doit déjà vous gagner !), j'ai fait la rencontre, par un malheureux hasard, d'une créature hideuse, boursouflée, visqueuse et croassante ! Nul autre que l'ancêtre répugnant des fourmis géantes ! Avec des hordes de descendants chitineux enragés à ses ordres, j'avais l'impression que la terre elle-même se rassemblait pour me dévorer !
+
+Et pourtant, je suis vivant. Weisman, j'espère sincèrement que cette lettre a mis en lumière votre stupidité. Ce n'est qu'en affrontant un véritable danger que l'on peut se prétendre aventurier. Ne me dérangez plus avec vos histoires.
+
+Rolf]], "_t")
+
+
+t("letter to Rolf (3)", "lettre à destination de Rolf (3)", "_t")
+t([[Rolf,
+
+I can't remember anything from the fight save the sheer terror at being near something so horrid and powerful. There is no shame in running from a foe you cannot possibly hope to defeat, is there? Maybe ale from the tavern is a good idea, but maybe it is better to conquer your fear once and for all... I hope you can forgive me, but I must defeat this monster, if it takes me the rest of my life.
+
+Wishing you and your ale a hearty good-bye,
+
+Weisman.]], [[Rolf,
+
+Je ne me souviens de rien du combat, si ce n'est de la terreur absolue d'être si près d'une créature si horrible et si puissante. Il n'y a pas de honte à fuir un ennemi qu'on ne peut vaincre, n'est-ce pas ? Une bière à la taverne est peut-être une bonne idée, mais affronter sa peur une bonne fois pour toutes serait sans doute encore mieux… J'espère que vous pourrez me pardonner, mais je dois vaincre ce monstre, même si cela doit me consumer pour le restant de mes jours.
+
+Je vous souhaite, à vous et à votre bière, une bonne continuation.
+
+Weisman.]], "_t")
+t("letter to Weisman (4)", "lettre à destination de Weisman (4)", "_t")
+t([[Weisman,
+
+By my ancestors' profits I hope you receive this message in good health and spirits. Please, old friend - there is no need to impress upon me your valour, I know full well how courageous you are. Please, do not go after that... that thing! If I must drag you away physically, that is what I shall do, but I beg of you, please, consider another foe to fight!
+
+Your friend,
+
+Rolf.]], [[Weisman,
+
+Pour le bien de mes ancêtres, j'espère que vous recevrez ce message en pleine forme. Mon vieil ami, inutile de m'impressionner par votre courage ; je sais déjà combien vous êtes brave. Ne poursuivez pas cette… chose ! S'il faut que je vous y emmène de force, je le ferai, mais je vous en prie, pensez à combattre un autre ennemi !
+
+Votre ami,
+
+Rolf.]], "_t")
+
+
+
+t("Last Will of Rolf", "Dernières volontés de Rolf", "_t")
+t([[Last Will and Testament of Rolf Two-Axes
+
+I have failed. Oh by the great wyrm's maw, I have failed! The beast Weisman set out to slay was dead already by another's hand, but its corruption remained still. When I arrived in its chamber, Weisman was already half-gone; he was hacking away at foes only he could see. When I tried to stop him, he turned his axe on me... I am beaten and broken, hiding in some crevasse away from... from my own friend, who through the corruption in this place has been perverted into a monstrosity my axes were unable to fell. I hold no doubt that this is the last time I shall put quill to parchment, as even now I can hear my old friend's perverted voice.. calling to me. I bequeathe my belongings to any who slay ...
+#{italic}#(the ink blotch seems to indicate Weisman had caught up to his old friend, one-half of that abomination)#{normal}#]], [[Utilme testament de Rolf les deux-haches
+
+J'ai échoué. Oh, par la gueule du grand serpent, j'ai échoué ! La créature que Weisman s'était donné pour mission d'éliminer était déjà morte, entre les mains d'un autre, mais sa corruption demeurait intacte. Quand je suis arrivé dans la chambre, Weisman était déjà à l'agonie ; il luttait contre des ennemis invisibles à ses yeux. Quand j'ai tenté de l'arrêter, il a retourné sa hache contre moi… Je suis brisé et vaincu, caché dans une crevasse, loin de… de mon ami, qui, sous l'emprise de la corruption de ce lieu, s'est transformé en une monstruosité que mes haches n'ont pu abattre. Je n'ai aucun doute : c'est la dernière fois que j'écris, car même maintenant j'entends la voix déformée de mon vieil ami… qui m'appelle. Je lègue mes biens à celui qui parviendra à me tuer…
+#{italic}# (La tache d'encre semble indiquer que Weisman a rattrapé son vieil ami, la moitié de cette abomination.)#{normal}#]], "_t")
+t("myths of creation", "Les mythes de la création", "newLore category")
+t("memories of Artelia Firstborn", "Mémoires d'Artelia la première-née", "_t")
+t([[#{italic}#This scroll looks ancient, possibly going back millennia, but has been incredibly well-preserved.#{normal}#
+
+I remember when I first woke, and I drew my first breath, and the fresh young air of the world filled me with vitality. I opened my eyes, and above me stood a figure of outstanding radiance. She was tall and slim, crowned in silver hair that fell to the ground in silken tresses. Her skin was pale to the point of luminance, and her eyes were brighter than the stars.
+
+I watched her for what felt like a century, and she watched me, and I saw tears form in her eyes. I did not have a voice yet, but I thought, "Why does she look so sad?" And I felt then her reply in my thoughts, "For you are beautiful, and far more beautiful than all else in the world. But this is a world of pain and sorrow, and I cannot bear to think of my creation come to harm. I will give you strength to endure many years, and a voice to express all desires, but the burden of sadness will follow you forever. At that thought I weep..."
+
+I felt then strength come into my limbs, and a voice rise in my throat. I rose to the ground and I looked around, and in awe of the world around me and the stars above me I sang loudly for joy. And the woman smiled as she heard my voice, and her tears stopped, so I continued to sing for a while to entertain her. But then I said, "Am I alone?" She nodded, and said, "There are no others like you." At this I felt sad, and she could see the loneliness in my heart. She seemed to hesitate a moment, and said, "Though it pains me, I cannot deny your desires. You will sleep now, and when you awaken you will be among people like yourself, and you will walk out into this broken world and try to mend it."
+
+As she finished speaking I instantly fell into a trance, and when I awoke I saw the world had changed, and there was now a blazing light in the sky - it was the new-born Sun. And I saw all around dozens more people like me, and others similar in appearance but varying in traits and abilities. I woke them up, and gathered them together, and we all expressed delight in each other's being, and named ourselves Alor?. But the woman was gone, and no others knew anything about her, and my searches for any trace of her were in vain.
+
+Times passed and changed, and other creatures were found, and oft they were fell and vile and we did war with them. Then we found the Sher'Tul, and they delighted in our beauty, and taught us the ways of the Arts. And then the War came, and some of us helped them in their battles, but soon we saw we had no place beside such masters, and we retreated to the woods as the War raged to its catastrophic conclusion.
+
+In all those centuries I still searched for the woman and found no trace. I know that the gods were all hunted down, and I remember the thorough searches of the Sher'Tul in their holy war. I grow old now, and some of those who first woke with me have passed away, and each passing night seem ever colder and lonelier. But still at times when I lie asleep I see her face or I hear her voice, and I know that one day, somehow, I will see her again.]], [[#{italic}#Ce rouleau semble très ancien, datant peut-être de plusieurs millénaires, mais il a été incroyablement bien conservé.#{normal}#
+
+Je me souviens de mon réveil, de ma première inspiration, de cette sensation d'air frais et vivifiant qui m'emplissait de vitalité. J'ouvris les yeux et, au-dessus de moi, se tenait une silhouette d'une beauté extraordinaire. Grande et élancée, elle était coiffée de cheveux argentés qui tombaient doucement jusqu'au sol. Sa peau était si pâle qu'elle semblait presque lumineuse, et ses yeux brillaient plus fort que les étoiles.
+
+Je la contemplai pendant ce qui me parut une éternité, et elle me regarda en retour, les larmes aux yeux. Bien que je n'aie pas encore de voix, je me demandai : « Pourquoi a-t-elle l'air si triste ? » Alors, j'ai senti sa réponse en moi : « Parce que tu es belle, bien plus belle que tout au monde. Mais ce monde est plein de douleur et de chagrin, et je ne peux supporter l'idée que ma création puisse souffrir. Je te donnerai la force d'endurer de longues années et une voix pour exprimer tous tes désirs, mais le fardeau du chagrin t'accompagnera à jamais. À cette pensée, je pleure… »
+
+J'ai senti la force me parcourir et une voix monter de ma gorge. Je me suis levée, émerveillée par le monde qui m'entourait et les étoiles au-dessus de moi, et j'ai chanté avec une immense joie. La femme a souri à ma voix et ses larmes ont cessé. J'ai continué à chanter un moment, voulant la divertir. Puis j'ai demandé : « Suis-je seule ? » Elle a hoché la tête et a répondu : « Il n'y a personne d'autre comme toi. » Sa réponse a empli mon cœur de tristesse, et elle a perçu la solitude qui me consumait. Elle hésita un instant, puis dit : « Bien que cela me peine, je ne peux pas refuser tes souhaits. Tu vas dormir maintenant, et à ton réveil, tu seras parmi des gens comme toi. Tu parcourras ce monde brisé et tenteras de le réparer. »
+
+Dès qu'elle eut fini de parler, je tombai instantanément en transe. À mon réveil, je constatai que le monde avait changé. Une lumière éclatante emplissait le ciel : c'était le Soleil naissant. Autour de moi, je vis des dizaines d'autres personnes comme moi, mais avec des caractéristiques et des capacités différentes. Je les réveillai et les rassemblai, et nous exprimâmes tous notre joie de nous retrouver. Nous nous appelâmes Alor. Cependant, la femme avait disparu, et personne ne savait où elle se trouvait. Mes recherches pour retrouver sa trace furent vaines.
+
+Le temps passa et le monde changea. De nouvelles créatures apparurent, souvent viles et cruelles, nous entraînant dans la guerre. C'est alors que nous rencontrâmes les Sher'Tul, qui, subjugués par notre beauté, nous enseignèrent les arts. Nous participâmes à quelques batailles à leurs côtés, mais comprîmes vite que nous n'avions pas notre place parmi de tels maîtres. Aussi, nous nous retirâmes dans la forêt tandis que la guerre s'achevait sur une fin catastrophique.
+
+Durant tous ces siècles, j'ai poursuivi ma quête de la femme, mais je n'ai trouvé aucune trace d'elle. Je me souviens des chasses acharnées menées par les Sher'Tul durant leur guerre sainte, et je sais que tous les dieux furent traqués. À présent, je vieillis, et certains de ceux qui se sont éveillés avec moi sont déjà décédés. Chaque nuit qui passe me paraît plus froide et plus solitaire. Pourtant, parfois, en dormant, je vois son visage ou j'entends sa voix, et je sais que, d'une manière ou d'une autre, un jour je la reverrai.]], "_t")
+t("human myth of creation", "mythe de la création humaine", "_t")
+
+t([[At the start of time Sun was born, and Moons, and Eyal raised from the Darkness.
+And Gerlyk walked Eyal with his three brothers.
+But one day Gerlyk walked alone and realised he was alone, and he desired company.
+So Gerlyk took a burning coal, and put stones around it, and wrapped it in earth, and bathed it in water and breathed his breath into it, and it became alive. And Gerlyk named it Human.
+Now Gerlyk brought Human back to his brothers to see.
+But Gerlyk's brothers were jealous and tore Human apart. One brother grabbed the stone, and one brother grabbed the earth, and one brother grabbed the water.
+Gerlyk was sad, but took the burning coal that was left and made a new Human.
+Then the brother with the earth copied him, but made a short creature, and called it Halfling.
+And the brother with the stone made a thick creature, and called it Dwarf.
+And the brother with the water made a thin creature, and called it Elf.
+But Gerlyk's brothers grew jealous of each others creatures, and they fought, and they all were killed. And Elf cried and Dwarf cried and Halfling cried to see their creators fall.
+And Gerlyk was sad, and looked at Human and said, "I am sorry, but this is not a time for creators any more. I must go."
+And Gerlyk walked into the Darkness.
+But Human did not cry, for the coal in his heart burned hot, and he knew he was not truly alone.]], [[Au commencement des temps, le Soleil et les Lunes naquirent, et Eyal surgit des Ténèbres.
+Gerlyk parcourait Eyal en compagnie de ses trois frères.
+Un jour, cependant, Gerlyk se rendit compte qu'il était seul et aspira à la compagnie.
+Alors, il prit un charbon ardent, façonna une structure de pierres autour, l'enveloppa de terre, la baigna d'eau et souffla sur sa création. Et ainsi, elle prit vie. Gerlyk la nomma Humain.
+Gerlyk présenta ensuite l'Humain à ses frères.
+Mais les frères de Gerlyk, rongés par l'envie, détruisirent la création. L'un d'eux s'empara de la pierre, un autre de la terre, et le troisième de l'eau.
+Gerlyk, attristé par la perte du premier Humain, prit le charbon ardent restant et créa un nouvel Humain.
+Ses frères tentèrent alors d'imiter la création de Gerlyk.
+Celui qui avait pris la terre façonna une petite créature qu'il appela Petit. Le frère qui contrôlait la pierre créa une créature corpulente et la nomma Nain.
+Enfin, le frère qui possédait l'eau créa une créature élancée et l'appela Elfe.
+Les frères de Gerlyk, rongés par l'envie, se battirent entre eux et périrent tous. L'Elfe, le Nain et le Petit pleurèrent en assistant à la chute de leurs créateurs.
+Gerlyk, accablé de chagrin, regarda l'Humain et déclara : « Je suis désolé, mais ce n'est plus le temps des créateurs. Je dois partir. »
+Et Gerlyk s'éloigna dans les ténèbres.
+L'Humain, lui, ne pleura pas. La braise brûlant encore dans son cœur, il savait qu'il n'était pas vraiment seul.]], "_t")
+
+
+
+t("tract of acceptance", "Traité de l'acceptation", "_t")
+t([[#{bold}#Tract of Acceptance#{normal}#
+
+Betrayed by the Shalorën, wilful and destructive, and the Thalorën, aloof and suspicious, a long, seething silence fell over the remaining Nalorën people. It was during this period of grim introspection that salvation was suddenly and unexpectedly granted. The ancient Sher'Tul magicks, long pondered over by the land's mystics, would bear fruit at last.
+
+The same force that destroyed the Nalorën would save them. Through the Sher'Tul's magic, the Nalorën became able to breathe water as if it was air. Their bodies became adapted for existence under the waves, their legs becoming long, snake-like tails. Such drastic metamorphosis would naturally cause horror, you may expect. However, the Nalorën saw the possibilities their new forms provided: Their sunken lands were their own once again. Their homes would be rebuilt, their civilisation reborn. Nalorën no more, the denizens of the sunken kingdom would come to be known as 'nagas'...]], [[#{bold}#Traité de l'acceptation#{normal}#
+
+Trahis par les Shalorën, obstinés et destructeurs, et les Thalorën, indifférents et méfiants, un long et pesant silence s'abattit sur le peuple Nalorën survivant. C'est durant cette sombre période d'introspection que le salut survint soudainement et inopinément. Les magies ancestrales des Sher'Tul, longtemps contemplées par les mystiques de ces terres, allaient enfin porter leurs fruits.
+
+La même force qui avait anéanti les Nalorën allait désormais les sauver. Grâce à la magie des Sher'Tul, les Nalorën apprirent à respirer sous l'eau comme s'il s'agissait d'air. Leurs corps s'adaptèrent à la vie sous les flots et leurs jambes se transformèrent en longues queues serpentines. Bien que cette métamorphose radicale ait naturellement suscité la terreur, les Nalorën entrevoyèrent les possibilités offertes par leur nouvelle forme : leurs terres submergées leur appartiendraient à nouveau. Leurs foyers seraient reconstruits et leur civilisation renaîtrait. N'étant plus Nalorën, les habitants du royaume englouti furent désormais connus sous le nom de « nagas »…]], "_t")
+t("personal note (Slasul)", "note personnelle (Slasul)", "_t")
+t([[At long last, the temple finally reveals its secrets to me, and my plans can be set in motion. Lithe in form, faultless in combat, unmatched in speed both above the waves and beneath... nature couldn't have hoped to create such a race as nagas. With the Temple of Creation now open to me however, we may become so much more. With my guidance, my careful shaping of the Sher'Tul's magicks, under my expert hand our great race shall soon reach its zenith. A new tract shall soon be written: The Tract of the Devourer.
+]], "Enfin, le temple me dévoile ses secrets et mes plans peuvent se mettre à exécution. Silhouette élancée, armes de combat irréprochables, vitesse inégalée aussi bien à la surface que sous l'eau… la nature n'aurait pu imaginer une race comme les nagas. À présent, le Temple de la Création m'étant ouvert, nous pouvons atteindre une grandeur encore plus grande. Sous ma direction et grâce à la maîtrise de la magie des Sher'Tul, notre race atteindra bientôt son apogée. Une nouvelle voie s'ouvrira : la Voie du Dévoreur.", "_t")
+t("adventures", "aventures", "newLore category")
+t("letter to Rolf (1)", "lettre à destination de Rolf (1)", "_t")
+t([[Dear Rolf,
+
+I hope this letter finds you well. I must apologise for this recent dry spell in our communication; my adventures across Maj'Eyal have taken many exciting and perilous turns as of late. What turns do I speak of, you ask? I know how you delight in reading the accounts of my exploits, so I shall waste no further time on this pre-amble.
+
+Imagine, if you will, a wolf. Imagine a beastly wolf, a wolf with strength, ferocity and a lust for flesh matching that of an entire pack of its lesser kind. You too may have some small experience with these "wargs" as the locals are wont to call them. Now... imagine one the size of a bear. Truly, as I travelled the lands surrounding Derth did I come across such a monstrous, awe-inspiring, lupine adversary. With fangs of a length to match my own blade, I entered combat against this lupine lord and its skulking brood. To my regret I failed in slaying the beast, but I assure you - simply surviving against such feral rage is an honour worthy of recognition and renown.
+
+And indeed, would there have been much glory in killing such a creature? True, I would have had enough to fur to line each and every boot and hat in Derth, but legends must live on. They are what give this world its very spirit!
+
+With eager anticipation for your reply,
+Weisman]], [[Cher Rolf,
+
+J'espère que cette lettre vous parviendra. Je dois m'excuser pour le manque de nouvelles ces derniers temps ; mes aventures à Maj'Eyal ont pris des tournures palpitantes et périlleuses. Vous vous demandez sans doute de quels rebondissements il s'agit. Puisque vous prenez plaisir à lire le récit de mes exploits, je ne m'attarderai pas davantage sur ce préambule.
+
+Imaginez, si vous le pouvez, un loup. Un loup bestial, doté d'une force, d'une férocité et d'une soif de viande équivalentes à celles d'une meute entière de son espèce inférieure. Vous avez peut-être déjà croisé ces « wargs », comme les appellent souvent les habitants. Maintenant… imaginez-en un de la taille d'un ours. En effet, lors de mon voyage à travers les terres autour de Derth, j'ai rencontré un adversaire lupin si monstrueux et si impressionnant. Avec des crocs aussi longs que ma propre lame, j'ai affronté ce seigneur lupin et sa sournoise progéniture. À mon grand regret, je n'ai pas réussi à terrasser la bête, mais je vous assure que le simple fait d'avoir survécu à cette fureur féroce est un honneur digne de reconnaissance et de renommée. Et en effet, y aurait-il de la gloire à éliminer une telle créature ? Certes, j'aurais assez de peaux pour garnir toutes les bottes et tous les chapeaux de Derth, mais les légendes doivent perdurer. Elles sont ce qui donne à ce monde son âme !
+
+J'attends votre réponse avec impatience.
+Weisman]], "_t")
+
+
+
+t("a logical analysis of creation, by philosopher Smythen", "Une analyse logique de la création, par le philosophe Smythen.", "_t")
+t([[Many are the tales of how our world was made, from the absurd to the romantic to the horrific. But they are all mere myths, with no more than seeds of truth to even the most reliable. The history of our race goes back far, but it is tantalisingly scant in details from before we met the other races. Indeed, it is only through our battles with the others that we halflings have any ancient records at all.
+
+The elves one would suspect of having the greatest knowledge of elder times, but they are aloof and silent. One must judge from this that either they do not know, or that the truth ashames them. The latter would certainly not surprise me.
+
+The humans have more myths than they have brain cells. It seems that each village has several versions of their own local tales, usually passed down orally over the ages. It is clear that not a single element of any of their myths can be construed to contain any essence of the truth.
+
+The dwarves are reticent about the subject of how they were made. They say that such talk is "not profitable". However upon further pressing (and bribing) they will open up a little further. They as a race are of the most fervent belief that they were the last people to be made in Maj'Eyal. They say they are the "final product". Their word for all other races in fact translates directly to "prototype". This mostly singular outlook does of course seem absurd, but one need only look at the rest of dwarven society to see that they are an absurd race with ridiculous ideals. If they are what they consider perfection then I thank whatever god made me that I am flawed!
+
+The subject of gods is of course a difficult one. Clearly there are no divine forces at work in the world today. But the world as we know it did not come from nothing, and even the great Sher'Tul clearly did naught more than manipulate the world - they did not make it.
+
+By logical conjecture one can only presume that some great being made the world. This must have been a benevolent being, for it is clear that "He" created creatures separate from himself to walk the earth. Clearly this is we halflings. We are the only race that truly appreciates the world. We do not warp it with magic experiments like the Shaloren, nor hide from it like the Thaloren. We do not bring destruction like the orcs, or petty greed like the dwarves. And our understanding and knowledge is so far advanced than the humans that it is hard to understand why we share the same world with them at all. We were quite clearly the first of the current races to be created, and our natural feelings of entitlement to all there is in Maj'Eyal must stem from this.
+
+Now that this has been clearly analysed in logical terms, one must consider the source of the other races. It is impossible that they were made by the same god - truly impossible. What strange being could create our race, so gifted and rounded, and yet make such warped and twisted creatures as the dwarves and humans? No, clearly other gods were responsible, lesser gods than our own which copied his grand design. But with fudging fingers and inelegant touches the works of their design were clearly far inferior to the subtleties and perfection which crafted us.
+
+However there remains the matter of the Sher'Tul. Clearly these were of greater power than us, and yet they disappeared. One must presume that our god made this race before us, but was somehow unhappy with them, and so removed them and made us instead. We are not as powerful as the Sher'Tul - not yet at least - but we have our own gifts that evidently give us a greater place in our creator's heart. This would explain why we were the first race to unlock the powers of the Sher'Tul farportals. We had a natural affinity to the works of our elder brethren.
+
+So what happened to these gods after they had made the races which we see today? One must presume strife between them, and that they killed themselves, or took their battle away from the world. Our creator, seeing the other gods killed or left, must have then entrusted the world to us halflings, knowing that we would rule over it in his stead. This is why at every point in history we have played a pivotal role in the shaping of our world. It is our rightful inheritance, and it is our duty to rule it well.]], [[Il existe de nombreuses histoires sur la création de notre monde, des plus absurdes aux plus romantiques, en passant par les plus terrifiantes. Pourtant, toutes ne sont que des mythes, ne recelant qu'une part de vérité, même les plus crédibles. L'histoire de notre espèce remonte à un passé lointain, mais elle est étonnamment avare de détails sur la période antérieure à notre rencontre avec les autres races. En réalité, c'est uniquement grâce à nos batailles contre ces races que nous, les plus petits, avons pu accéder à des archives anciennes.
+
+Les elfes, que l'on soupçonne de détenir le savoir le plus profond des temps anciens, restent indifférents et silencieux. On peut donc en conclure que soit ils ignorent tout, soit la vérité les effraie. Cette dernière hypothèse, sans aucun doute, ne me surprendrait pas.
+
+Les humains semblent avoir plus de mythes que de neurones. Chaque village possède plusieurs versions de ses propres légendes locales, généralement transmises oralement au fil du temps. Il est évident qu'aucun aspect de leurs mythes ne peut être interprété comme contenant la moindre once de vérité.
+
+Les nains, quant à eux, rechignent à parler de leur création. Ils prétendent que ce sujet « n'est pas profitable ». Cependant, si on les pousse à bout (et qu'on les corrompt), ils se confient un peu plus. En tant que peuple, ils croient fermement être les derniers à avoir été créés à Maj'Eyal, se considérant comme le « produit final ». Leur terme pour désigner toutes les autres races se traduit d'ailleurs littéralement par « prototype ». Cette vision singulière est sans aucun doute absurde, et il suffit d'observer le reste de la société naine pour se rendre compte qu'il s'agit d'un peuple ridicule, plein d'idéaux démesurés. Si c'est là la perfection à laquelle ils aspirent, je remercie le dieu qui m'a créé d'être imparfait !
+
+La question des dieux est incontestablement complexe. Il est évident qu'aucune force divine n'est à l'œuvre dans le monde actuel. Cependant, le monde tel que nous le connaissons n'est pas apparu ex nihilo, et même le grand Sher'Tul ne l'a manifestement pas créé, mais seulement façonné.
+
+Par déduction logique, on peut supposer qu'un être supérieur a créé le monde. Cet être devait être bienveillant, car il est évident qu'« Il » a créé des créatures distinctes de Lui-même pour peupler la Terre. Et nous sommes les plus petits. Nous sommes la seule race qui apprécie véritablement le monde. Nous ne déformons pas la réalité par des expériences magiques, comme les Shaloren, et nous ne la fuyons pas, comme les Thaloren. Nous ne semons pas la destruction, comme les orcs, et nous n'agissons pas avec une mesquine cupidité, comme les nains. Notre compréhension et notre savoir sont si supérieurs à ceux des humains qu'il est difficile de comprendre pourquoi nous partageons le même monde qu'eux. Nous avons sans aucun doute été la première des races actuelles à être créée, et notre sentiment naturel de droit à tout ce qui existe à Maj'Eyal trouve probablement son origine en nous.
+
+Maintenant que cette analyse logique a été effectuée, il convient de considérer l'origine des autres races. Il est impossible qu'elles aient toutes été créées par le même dieu – ce serait véritablement inconcevable. Quel être étrange aurait pu créer une race aussi talentueuse et accomplie que la nôtre, et pourtant donner vie à des créatures aussi difformes et difformes que les nains et les humains ? Non, il est évident que d’autres dieux en sont responsables, des dieux moindres que les nôtres, qui ont tenté de copier le grand dessein originel. Cependant, avec leurs doigts maladroits et leurs gestes imparfaits, leurs créations sont manifestement bien inférieures aux subtilités et à la perfection qui nous ont façonnés.
+Cependant, la question des Sher'Tul demeure. Il est évident qu'ils étaient plus puissants que nous, et pourtant ils ont disparu. Il faut supposer que notre dieu a créé cette race avant nous, mais qu'il en a été insatisfait et a décidé de l'éliminer, nous offrant ainsi la possibilité d'exister. Nous ne sommes pas aussi puissants que les Sher'Tul – du moins pas encore – mais nous possédons nos propres dons, qui nous confèrent une place particulière dans le cœur de notre créateur. Cela explique pourquoi nous avons été la première race à accéder aux pouvoirs des portails des Sher'Tul. Nous avions une affinité naturelle avec les œuvres de nos aînés.
+
+Alors, qu'est-il arrivé à ces dieux après qu'ils ont créé les races que nous connaissons aujourd'hui ? Il est raisonnable de supposer que des conflits ont éclaté entre eux, engendrant des batailles qui ont conduit à leur extinction ou à leur départ du monde. Témoin de la mort ou de l'abandon des autres dieux, notre créateur nous a confié le monde, à nous, les plus jeunes, persuadé que nous serions capables de le gouverner à leur place. C’est pourquoi, tout au long de l’histoire, nous avons joué un rôle fondamental dans la construction de notre monde. Il est notre héritage légitime, et il est de notre devoir de le gérer avec justice et sagesse.]], "_t")
+
+t("Tale of the Moonsisters", "Légende des soeurs de lune", "_t")
+t([[Eyal was raised from Darkness,
+And One came who made a blinding light called Sun,
+But Eyal flinched and said, "It is too bright!"
+So Gerlyk spun Eyal around; thus his face was half-time in light and half-time in shadow,
+But in shadow Eyal became lonely and cried.
+
+And so Gerlyk made him two younger sisters who danced around Eyal
+And kept him in good spirits.
+But the moonsisters became jealous of their brother's affection,
+Threatening to fight and scream.
+Thus Gerlyk separated them so that Eyal would only ever dance with one at a time.
+
+In the summer Eyal dances with the moonsister Altia.
+She sings songs of joy and laughter,
+And brings friends and family together,
+And she glows yellow with mirth.
+In the winter Eyal dances with the moonsister Felia.
+She tells tales of times begone,
+And makes men walk alone in thought,
+And she glows blue with solemness.
+
+But in the time between,
+When both sisters are slimly seen on each side of Eyal,
+Glaring at each other from behind their brother's belly,
+Then the world goes still, and the winds hold their breath, and the oceans lie flat.
+For this is the Time of Balance, when the Darkness rises deepest, and all life is in peril.
+Aye, and Gerlyk did say, "Let no man walk abroad this night, lest Darkness catch him and take him forever."
+Aye, and Gerlyk did walk abroad that night, into Darkness beyond, and has ne'er since been seen.]], [[Eyal fut créé dans les ténèbres,
+
+Puis vint Celui qui créa une lumière aveuglante appelée le Soleil,
+
+Mais Eyal recula et dit : « C'est trop lumineux ! »
+
+Alors Gerlyk fit tourner Eyal, son visage mi-lumière, mi-ombre,
+
+Mais dans l'ombre, Eyal se sentit seul et pleura.
+
+Alors Gerlyk lui créa deux sœurs cadettes qui dansèrent autour d'Eyal
+
+Et le réconfortèrent.
+
+Mais les sœurs de la lune devinrent jalouses de l'affection de leur frère,
+
+Elles menacèrent de se battre et de crier.
+
+Alors Gerlyk les sépara afin qu'Eyal ne danse qu'avec l'une à la fois.
+
+En été, Eyal danse avec Altia, sa sœur lunaire.
+
+Elle chante des chansons de joie et de rire,
+
+Et rassemble amis et famille,
+
+Et elle rayonne d'un jaune éclatant de joie.
+
+En hiver, Eyal danse avec Felia, sa sœur lunaire.
+
+Elle raconte des histoires d'antan,
+
+Et plonge les hommes dans leurs pensées,
+
+Et elle brille d'un bleu solennel.
+
+Mais durant cet intervalle,
+
+Quand on aperçoit les deux sœurs de part et d'autre d'Eyal,
+
+Se regardant derrière le ventre de leur frère,
+
+Alors le monde s'apaise, les vents retiennent leur souffle et les océans s'immobilisent.
+
+Car c'est le Temps de l'Équilibre, où les Ténèbres s'élèvent au plus profond et où toute vie est en danger.
+
+Oui, et Gerlyk dit : « Que nul ne s'aventure dehors cette nuit, de peur que les Ténèbres ne le saisissent et ne l'emportent à jamais. »
+
+Oui, et Gerlyk partit cette nuit-là pour les Ténèbres d'au-delà et on ne le revit jamais.]], "_t")
+
+t("last hope graveyard", "cimetière de Dernier Espoir", "newLore category")
+
+t("gravestone", "tombe", "_t")
+
+t([[#{bold}#
+Here lies Jake, son of Borlin and Clarise
+#{normal}#112 - 118#{italic}#
+Rest well, our child
+This world was too dark for thee
+#{normal}#]],
+[[#{bold}#
+Ici repose Jake, fils de Borlin et Clarise
+#{normal}#112 - 118#{italic}#
+Repose en paix, notre enfant
+Ce monde était trop sombre pour toi
+#{normal}#]],
+"_t")
+
+t([[#{bold}#
+Here lies Alenda and Pariel
+#{normal}#92 - 115, 94 - 115#{italic}#
+In sin you lived
+In sin you died
+Rot here together
+#{normal}#]],
+[[#{bold}#
+Ici reposent Alenda et Pariel
+#{normal}#92 - 115, 94 - 115#{italic}#
+Dans le péché vous avez vécu
+Dans le péché vous êtes morts
+Pourrissez ici ensemble
+#{normal}#]],
+"_t")
+
+t([[#{bold}#
+Marcus the Immortal
+#{normal}#23 - 107#{italic}#
+Ambitious in life
+Humbled in death
+#{normal}#]],
+[[#{bold}#
+Marcus l’Immortel
+#{normal}#23 - 107#{italic}#
+Ambitieux dans la vie
+Humilié dans la mort
+#{normal}#]],
+"_t")
+
+t([[#{bold}#
+Lord Gracion Bestelle
+#{normal}#41 - 112#{italic}#
+The memory of the greatest
+Shall never dim
+#{normal}#]],
+[[#{bold}#
+Lord Gracion Bestelle
+#{normal}#41 - 112#{italic}#
+Le souvenir du plus grand
+Ne s’éteindra jamais
+#{normal}#]],
+"_t")
+
+t([[#{bold}#
+Inilasac Salocin
+#{normal}#32 - 120#{italic}#
+All tomes shall remember thee
+And thine dark blessings
+#{normal}#]],
+[[#{bold}#
+Inilasac Salocin
+#{normal}#32 - 120#{italic}#
+Tous les grimoires se souviendront de toi
+Et de tes sombres bénédictions
+#{normal}#]],
+"_t")
+
+t([[#{bold}#
+RIP Cecil Farion
+#{normal}#98 - 122#{italic}#
+Noble in mind
+Pure in spirit
+Rest now from the burdens of the flesh
+
+#{normal}#A fresh rose lies here]],
+[[#{bold}#
+RIP Cecil Farion
+#{normal}#98 - 122#{italic}#
+Noble d’esprit
+Pur de cœur
+Repose maintenant des fardeaux de la chair
+
+#{normal}#Une rose fraîche repose ici]],"_t")
+
+
+------------------------------------------------
+section "mod-tome/data/lore/zigur.lua"
+
+t("Rules of the Ziguranth", "Règles des Ziguriens", "_t")
+t([[1. You will not talk about Zigur to the wider world, lest evil ears be listening.
+2. You will shun the use of all spells and witchcraft.
+3. You will shun the use of magic-cursed items.
+4. You will shun the baneful influence of arcane runes and burn any skin that comes in contact with them.
+5. You will not aid or abet any you suspect of wizardry or conjuration.
+6. You will take note of any you suspect of spellweaving and report their name and address to the elders.
+7. You will actively hunt down and bring suffering upon any you suspect of using magic, communing with spirits, demon worship, or any you suspect of aiding others in these acts.
+8. You will report to the elders all activity you deem suspicious, especially evidence of cults or secret societies.
+
+These are the rules we live by, these are the rules by which we will save our world. All who fail in these rules will be purged with flame.]], [[1. 1. Tu ne parleras pas de Zigur au reste du monde, de peur que des oreilles mal intentionnées ne l'entendent.
+
+2. Tu t'abstiendras de tout sortilège et de toute sorcellerie.
+
+3. Tu t'abstiendras d'utiliser des objets maudits.
+
+4. Tu éviteras l'influence maléfique des runes arcaniques et brûleras toute peau qui entre en contact avec elles.
+
+5. Tu n'aideras ni ne seras complice de quiconque est soupçonné de sorcellerie ou de magie.
+
+6. Tu noteras le nom et l'adresse de toute personne soupçonnée de jeter des sorts et tu les signaleras aux anciens.
+
+7. Tu poursuivras activement et infligeras des souffrances à quiconque est soupçonné d'utiliser la magie, de communiquer avec les esprits, de vénérer des démons ou d'aider autrui à commettre ces actes.
+
+8. Tu signaleras aux anciens toutes les activités que tu jugeras suspectes, en particulier les indices de cultes ou de sociétés secrètes.
+
+Telles sont les règles qui guident notre vie, les règles qui nous permettront de sauver notre monde. Quiconque ne respectera pas ces règles sera consumé par les flammes.]], "_t")
+t("The Great Evil", "Le grand mal", "_t")
+t([[We live in a world of wonders. All around us are natural energies and wild powers that are a marvel to see and experience. Soaring birds, mighty bears and ice-breathing dragons all abound in towering mountains, deep oceans and luscious forests. And we are part of this glorious environment, with our thoughts and strengths and all our wondrous capabilities. Truly we live in a fantastic world, and we should be glad to have a place amongst the wonders of Maj'Eyal.
+
+But some are not content. Some seek to pervert the wonders of the world with unnatural powers. With arcane forces they rip the threads of nature apart and sew it back however they see fit, uncaring of the damage they cause. Sometimes it is out of curiosity or a misplaced desire to do good, but normally it is out of greed and malice and a perverse obsession with power. Even those who enter into the banes of magic with good intentions inevitably end up doing harm and becoming themselves corrupted by the gross forces they tamper in.
+
+History teaches us well the dangers of these forces. First were the Sher'Tul, of which we know little, but we do know that they manipulated magic to strengths beyond the dreams of current mages. And they led themselves to their own utter destruction. Alas that the lesson was not learnt by the younger races. The first recorded war in our history is between the humans and halflings for control of Sher'Tul ruins. Magic was used in those wars and the battles only stopped after two thousand years of slaughter left both sides too crippled to carry on fighting. It was in this time that our order was formed, and we tried to stop the insanity and the bloodshed. Alas that we failed.
+
+The weakening of our peoples by the magic-fuelled fighting left us then open to attacks by the orcs, whose surging numbers nearly overwhelmed us. But instead of relying on our own strengths and our natural defences, the foolish elves decided that only the arcane forces could save us. How very wrong they were... Their insidious mages tapped the vile powers of the Sher'Tul ruins and unleashed catastrophic waves of energy that burned half the world to a cinder. Mountains crumbled, lakes were boiled, and raging fires stripped the land of all life. The devastation can truly never be fully stated. But it is unforgettable and utterly unforgiveable. The Shaloren try to deny responsibility, but the blood of millions is on their hands.
+
+The suffering that followed the unfortunate survivors lasted centuries, as the unnatural forces created black plagues that wiped out kingdoms and made huge swathes of land uninhabitable. Dread warlocks and necromancers took advantage of the chaos to raise armies and gain power. Kor'Pul was the deadliest of these, and our order fought long and hard to kill him time and time again. We fought viciously to protect the people of Maj'Eyal from all the terrible pains of this time.
+
+But our efforts could not prevent the ultimate tragedy that followed. The plagues were mere echoes of the Spellblaze as its horrible effects rebounded across the land. One dark and terrible day those echoes rose in resonance, and a cataclysmic force tore through the heart of our world. The land was rent in two, earthquakes spouted forth magma from the ground, and the eastern edge of our land was torn away and sunk into the deepest oceans. It was a tragedy beyond comparison.
+
+As our civilisations slowly recovered the orcs began to increase in numbers, and it became clear then that they too had learned the dark arts. For centuries we suffered their attacks, and only by a unification of the races did we manage to finally contain them and wipe them out. Our order was vital in suppressing their pyromancers and blood mages, and many of our people bravely gave up their lives to protect the western armies and towns from destruction.
+
+But we are not clear of danger yet. Magic still exists, though oft it lies secret and hidden. Memories of the dark days have waned, and one can even see alchemists and enchanters walking openly in the streets, unheeding of the pain their ilk have brought to our world. But worse exists... Secret societies hide themselves in unknown places, plotting and scheming to bring further destruction on Maj'Eyal. Dark cults exist in quiet isolation, kidnapping innocents and performing vile ceremonies. We try our best to hunt these monsters down, to root them out from their fell dens and bring an end to their depraved plans. Yet we must try harder, for our world is in mortal peril if these fiends are allowed to act unhindered.
+
+We must never forget the terrors of the Great Evil, and the suffering brought upon us by those who choose to corrupt nature with arcane powers. Be wary in your travels, and be thorough in your duties. Our fight is difficult, but it is just and true, and not until all Maj'Eyal is cleansed of the impurities of magic can we ever know peace. We are the protectors of the world, and by our strength and our union with nature we shall be its saviours.
+
+-- Protector Myssil]], [[Nous vivons dans un monde débordant de merveilles. Tout autour de nous, les énergies naturelles et les forces sauvages se déploient dans un spectacle splendide. Oiseaux planant dans les cieux, ours gigantesques et dragons cracheurs de glace côtoient aisément les montagnes majestueuses, les océans profonds et les forêts luxuriantes. Nous faisons partie intégrante de cet environnement glorieux, dotés de pensées, de forces et de capacités exceptionnelles. Nous habitons véritablement un monde fantastique et devrions nous réjouir d'avoir notre place parmi les merveilles de Maj'Eyal.
+
+Cependant, certains ne s'en contentent pas. Certains cherchent à pervertir les merveilles du monde par des pouvoirs surnaturels. Recourant à des forces arcaniques, ils déchirent le tissu de la nature et le recousent à leur guise, indifférents aux dégâts qu'ils causent. Parfois, ils agissent par curiosité ou par un désir malavisé de bien faire, mais souvent, c'est par cupidité, par malice et par une obsession perverse du pouvoir. Même ceux qui s'engagent dans la pratique de la magie, animés de bonnes intentions, finissent par nuire et se laisser corrompre par les forces brutes qu'ils manipulent.
+
+L'histoire nous enseigne les dangers que représentent ces forces. Les premiers furent les Sher'Tul, dont nous savons peu de choses, si ce n'est qu'ils manipulaient la magie avec des pouvoirs dépassant l'imagination des mages modernes, ce qui causa leur propre perte. Malheureusement, les races plus jeunes ne tirèrent pas les leçons de cette expérience. La première guerre recensée dans notre histoire opposa les humains aux petits êtres pour le contrôle des ruines Sher'Tul. La magie fut utilisée dans ces conflits, et les batailles ne cessèrent qu'après deux mille ans de massacres, laissant les deux camps mutilés au point de ne plus pouvoir se battre. C'est durant cette période que notre ordre fut formé, cherchant à mettre fin à la folie et à l'effusion de sang. Cependant, nous avons échoué.
+
+L'affaiblissement de nos peuples, dû aux guerres magiques, nous rendit vulnérables aux attaques des orcs, dont le nombre croissant faillit nous submerger. Mais, au lieu de compter sur notre propre force et nos défenses naturelles, les elfes, dans leur folie, crurent que seules les forces arcaniques pouvaient nous sauver. Quelle erreur colossale… Leurs mages insidieux exploitèrent les pouvoirs maléfiques des ruines de Sher’Tul, déchaînant des vagues d’énergie cataclysmiques qui réduisirent la moitié du monde en cendres. Les montagnes s’effondrèrent, les lacs se mirent à bouillir et des incendies dévastateurs consumèrent toute vie sur Terre. Cette dévastation est inexplicable, mais inoubliable et absolument impardonnable. Les Shaloren tentent de se dédouaner, mais le sang de millions d’innocents pèse sur leurs mains.
+
+Les souffrances des malheureux survivants durèrent des siècles, tandis que des forces surnaturelles engendraient de sombres fléaux qui ravagèrent des royaumes et rendirent de vastes étendues inhabitables. Les terribles mages et nécromanciens profitèrent du chaos pour lever des armées et accroître leur pouvoir. Kor’Pul était le plus redoutable d’entre eux, et notre ordre lutta sans relâche pour l’exterminer. Nous avons combattu avec bravoure pour protéger le peuple de Maj'Eyal des terribles souffrances de cette époque.
+
+Cependant, nos efforts ne purent empêcher la tragédie finale qui suivit. Les fléaux n'étaient que les prémices de la Conflagration Magique, dont les effets dévastateurs se répandaient sur le pays. Un jour sombre et terrible, ces prémices s'amplifièrent et une force cataclysmique déchira le cœur de notre monde. La terre fut coupée en deux, des tremblements de terre firent jaillir du magma du sol et la frontière orientale de nos terres fut arrachée, engloutie par les profondeurs des océans. Une tragédie sans précédent.
+
+Tandis que nos civilisations se relevaient lentement, les orcs se multiplièrent, révélant qu'eux aussi maîtrisaient les arts obscurs. Pendant des siècles, nous avons subi leurs attaques, et ce n'est qu'avec l'unification des races que nous avons finalement pu les contenir et les exterminer. Notre ordre fut essentiel pour réprimer leurs pyromanciens et leurs mages de sang, et nombre de nos braves membres sacrifièrent leur vie pour protéger les armées et les cités de l'ouest de la destruction.
+
+Mais le danger n'est pas encore écarté. La magie persiste, bien que souvent cachée et dissimulée. Les souvenirs des jours sombres s'estompent, et même les alchimistes et les enchanteurs arpentent les rues au grand jour, indifférents à la souffrance que leurs semblables ont infligée à notre monde. Cependant, quelque chose de plus sinistre encore existe… Des sociétés secrètes se tapissent dans des lieux inconnus, conspirant et complotant pour semer davantage la destruction sur Maj'Eyal. Des cultes obscurs opèrent dans le silence, kidnappant des innocents et se livrant à d'abominables cérémonies. Nous mettons tout en œuvre pour traquer ces monstres, les débusquer de leurs repaires et contrecarrer leurs plans pervers. Cependant, nous devons redoubler d'efforts, car notre monde sera en danger de mort si ces démons agissent sans retenue.
+
+Nous ne devons jamais oublier les terreurs du Grand Mal et les souffrances causées par ceux qui corrompent la nature par des pouvoirs occultes. Soyez prudents dans vos voyages et méticuleux dans vos devoirs. Notre combat est difficile, mais juste et légitime, et ce n'est que lorsque Maj'Eyal sera libérée des impuretés de la magie que nous trouverons la paix. Nous sommes les protecteurs du monde, et par notre force et notre union avec la nature, nous en serons les sauveurs.
+
+-- Protecteur Myssil]], "_t")
+t("The story of my salvation", "L'histoire de mon sauvetage", "_t")
+t([[I used to be a potion merchant in Derth. I brewed alchemical tonics and elixirs for locals and travellers. My trade was good, and I lived very happily from the gold I earned. For a young woman to have such a business I was very proud.
+
+One day however several people in the town fell ill from a mystery disease. Rumours spread that my potions were to blame, and people stopped coming to my shop. My business was in ruins, and I soon ran the risk of becoming destitute. Then one of the elders died, and though he had been ill for some time, I was blamed for his death. People said I had laid a hex on him, and murmurs arose of witchcraft.
+
+I still remember how peaceful the evening had seemed when the townsfolk came for me. I was looking up at the brightness of the stars and the clear crescent Summertide moon, thinking of how I should restart my business, when I heard shouts from the distance. I saw the crowd appear from round the corner, advancing with their torches. I screamed for help, but they broke through my door, smashed through my windows and grabbed me. They dragged me outside and set their torches to my house. I was stripped to my skin and beaten heavily whilst they cursed and jeered, and even the man who had been my fiancé spat on my face and cursed me.
+
+They pulled me over grass and stone to the town square, and though half-blinded by the tears and my swollen flesh I could still make out the wooden stake they were erecting. I tried to cry out, I tried to beg for mercy, but their response was to hold me down by my throat and pull out my tongue with the blacksmith's tongs. As I coughed up blood they put me against the wooden pole and used barbed cords to tie my wrists to it above my head. The pain was unbearable and I passed out, and did not wake until I could feel the burning at my feet. The crowd were cheering as the smoke began to wrap around me, and they cheered louder with every pained scream I released from my lungs.
+
+I was choking from the smoke, barely able to breathe, and I could no longer feel my legs. Just when I felt my consciousness slipping away again I heard a commotion and a woman's voice shouted out, "She is no witch!" Then I saw some people coming towards me, and at the front was a halfling woman in dark armour. She rushed towards me, unheeding of the flames, and with a swift flick from her long sword she cut my bonds. She caught me as I fell and pulled me away from the fire, laying me down on the ground. I saw her soft face above mine as she whispered to me, "Tell me child, do you reject magic in all its forms?" I nodded my head - I could not say no to those bright eyes. She wiped the tears streaming down my face and kissed my forehead. "Then you will be safe - rest now." At once I passed out.
+
+When I awoke I was in another village in a soft bed. There were wrappings round my legs and bandages covering the cuts and bruises over the rest of my body. Healers tended to me, using natural remedies and herbal balms. The halfling woman would come and see me every day to check up on me. I longed for her every visit. She would speak to me sometimes. She explained how the townsfolk weren't to blame for their actions. It was all the mages' fault. They were corrupting the world, spreading chaos, and turning people against each other. I realised I was wrong for ever brewing potions - they were infested with arcane energies and could only bring harm to the world.
+
+She explained how she and her friends were helping to save the world, to rid our lands of all magic. And she has saved me. Not just from a terrible death, but also from the evil influences of the arcane. Even if I still had a tongue I could not find words to express my thanks to her, and my joy at the new life I lead, free from the abominations of magic. Thanks to her help I can now walk again with the aid of a crutch, and I can find true happiness in my rightful place in nature.
+
+I have no voice now to tell my story to others, and so I write it down instead, and I spread it to the winds. I have suffered from my contact with magic, and others will suffer too. Do not trust in the terrible powers of these devious arts. They will only betray you and bring you to harm. Turn your back on magic, and make others repent too. Find your own salvation in nature's joys before it is too late.
+]], [[J'étais marchande de potions à Derth, préparant des toniques et des élixirs alchimiques pour les habitants et les voyageurs. Mon commerce prospérait et je vivais heureuse de l'or que je gagnais, fière d'être une jeune femme entreprenante.
+
+Un jour, une mystérieuse maladie commença à frapper plusieurs personnes en ville. Des rumeurs accusant mes potions d'en être la cause se répandirent et les clients désertèrent ma boutique. Mon commerce s'effondra et je me retrouvai bientôt au bord de la ruine. Lorsqu'un ancien mourut, bien qu'il fût malade depuis longtemps, on me tint pour responsable de sa mort. On crut que je l'avais maudit et des rumeurs de sorcellerie commencèrent à circuler.
+
+Je me souviens du calme de la nuit où les habitants vinrent me chercher. J'admirais la lumière des étoiles et le croissant de lune de Véranil, songeant à la manière de relancer mon commerce, lorsque j'entendis des cris au loin. La foule apparut au coin de la rue, avançant avec des torches allumées. J'ai crié à l'aide, mais ils ont défoncé ma porte, brisé mes fenêtres et m'ont attrapée. Ils m'ont traînée dehors et ont incendié ma maison. Ils m'ont déshabillée et battue en m'insultant et en se moquant de moi. Même mon fiancé m'a craché au visage et m'a insultée.
+
+Ils m'ont traînée à travers l'herbe et les pierres jusqu'à la place du village. Malgré mes yeux à moitié voilés par les larmes et mon corps tuméfié, je voyais le pieu qu'ils dressaient. J'ai essayé de crier, de les supplier, mais ils m'ont saisie à la gorge et m'ont arraché la langue avec des pinces de forgeron. Alors que je crachais du sang, ils m'ont plaquée contre le poteau et m'ont ligoté les poignets au-dessus de la tête avec des cordes barbelées. La douleur était insupportable et j'ai perdu connaissance. Je ne me suis réveillée qu'en sentant la chaleur sur mes pieds. La foule a applaudi tandis que la fumée commençait à m'envelopper, et ses applaudissements redoublaient à chaque cri de douleur qui s'échappait de mes poumons.
+
+Suffoquant sous la fumée, je respirais à peine et ne sentais plus mes jambes. Alors que ma conscience s'estompait à nouveau, j'entendis un tumulte et une voix féminine crier : « Ce n'est pas une sorcière ! » Plusieurs personnes s'approchèrent, et en tête se tenait une petite femme vêtue d'une armure sombre. Elle se précipita vers moi, sans se soucier des flammes, et d'un coup rapide de sa longue épée, elle trancha mes liens. Elle me rattrapa dans ma chute et m'éloigna du feu, me déposant au sol. Je vis son doux visage au-dessus du mien tandis qu'elle murmurait : « Dis-moi, enfant, rejettes-tu la magie sous toutes ses formes ? » J'acquiesçai – je ne pouvais résister à ce regard si lumineux. Elle essuya mes larmes et m'embrassa le front. « Alors tu seras en sécurité – repose-toi maintenant. » Aussitôt, je m'évanouis.
+
+À mon réveil, je me trouvais dans un autre village, sur un lit moelleux. Mes jambes étaient bandées et des pansements recouvraient mes coupures et mes contusions. Des guérisseurs me soignaient avec des remèdes naturels et des baumes à base de plantes. La petite femme me rendait visite chaque jour, et ses visites me manquaient terriblement. Parfois, elle me parlait, m'expliquant que les habitants de la ville n'étaient pas responsables de leurs actes. La faute en incombait aux mages, qui avaient corrompu le monde, semant le chaos et incitant aux conflits. Je compris que j'avais eu tort de préparer des potions, car elles étaient imprégnées d'énergies arcaniques, ne apportant que du mal au monde.
+
+Elle me raconta comment elle et ses amis avaient combattu pour sauver le monde, débarrassant nos terres de toute magie. Elle m'a sauvée non seulement d'une mort terrible, mais aussi des influences maléfiques de la magie. Même si j'avais encore une langue, je n'aurais pas trouvé les mots pour exprimer ma gratitude envers elle et ma joie pour cette nouvelle vie que je menais, libérée des abominations de la magie. Grâce à elle, je marche à nouveau avec une béquille et je trouve le vrai bonheur au contact de la nature.
+
+À présent, je n'ai plus de voix pour raconter mon histoire, alors je l'écris et la laisse s'envoler au gré du vent. J'ai souffert à cause de mon contact avec la magie, et d'autres souffriront aussi. Ne vous fiez pas aux terribles pouvoirs de ces arts malhonnêtes. Ils n'apporteront que trahison et souffrance. Tournez le dos à la magie et faites en sorte que les autres le regrettent aussi. Trouvez votre propre salut dans les joies de la nature avant qu'il ne soit trop tard.
+]], "_t")
+t("Purging Trap", "Piège purifiant", "_t")
+t([[[As you begin to leave, Protector Myssil stops you.]
+
+Actually...  You fight in a more subtle way than most, do you not?  It is a point of pride for many of us that we stand tall in the face of arcane aggression and give warlocks one chance to repent before purging them, and much of our training reflects that, but I won't deny that less...  #{italic}#traditionally glorious#{normal}# methods can be extremely effective.  Decorum's no reason to let a necromancer get away alive when you could've planted a trap in their escape route.
+
+(She hands you a scroll.) Here - some of us have come up with a pre-prepared device which will sap magic from whoever or whatever sets it off.  All we ask is that you use discretion with these devices; no matter what our #{italic}#last#{normal}# assassin thought, planting them in some lesser rune-scribe's shop would be more likely to do us harm than good in the long run.]], [[[Alors que vous vous apprêtez à partir, le Protecteur Myssil vous barre le chemin.
+
+En fait… Vous adoptez une approche plus subtile que la plupart, n'est-ce pas ? Pour beaucoup d'entre nous, c'est une question de fierté de tenir bon face à l'agression arcanique, d'offrir aux mages une chance de se repentir avant de les bannir. Une grande partie de notre entraînement reflète cette philosophie, mais je ne peux nier que… #{italic}#traditionnellement glorieux#{normal}# Ils peuvent être extrêmement efficaces. La bienséance ne devrait pas vous empêcher de vous enfuir alors que vous pourriez, en réalité, lui tendre un piège.
+
+[Elle lui tend un parchemin] Certains d'entre nous ont créé un dispositif qui absorbera la magie de quiconque l'active. Nous vous demandons simplement de l'utiliser avec discrétion. #{italic}#ultime#{normal}# Quelles qu'aient pu penser les assassins, les installer dans la boutique d'un scribe runique quelconque risque fort de nous causer plus de problèmes que d'en résoudre à long terme.]], "_t")
+
+------------------------------------------------
+section "mod-tome/data/lore/maze.lua"
+
+t("maze", "labyrinthe", "newLore category")
+t("diary (the maze)", "journal (le labyrinthe)", "_t")
+t([[Dear diary,
+
+Lessons are off this week as my tutor has fallen ill, so I've decided to sneak out and have a wander round the old mazed ruins nearby. I know I'll get in trouble if I'm caught, but as long as I'm back in a couple of days no one will notice... Besides, I get so bored cooped up in those mountains! I want some fun!
+
+This is rather a dirty place though. I've come across a few bandits and snakes in here, but nothing to threaten a grade 3 mage like me.
+
+I remember hearing that this labyrinth used to be a prison used by the halfling king Roupar during the Age of Dusk, and that with the lawlessness of the time captives were simply sent here to rot. Some say a magical curse infected the place and turned them into bull-like monsters that patrol the halls to this day. How exciting!!
+]], [[Cher journal,
+
+Les cours sont suspendus cette semaine car mon tuteur est tombé malade. J'ai donc décidé de m'éclipser pour explorer les vieilles ruines labyrinthiques des environs. Je sais que j'aurai des ennuis si on me surprend, mais tant que je rentre dans quelques jours, personne ne s'en apercevra... De plus, je m'ennuie tellement, coincée dans ces montagnes ! J'ai besoin de m'amuser un peu !
+
+Cet endroit est plutôt sale, cela dit. J'ai croisé quelques bandits et serpents ici, mais rien qui ne menace une mage de 3e rang comme moi.
+
+Je me souviens avoir entendu dire que ce labyrinthe servait autrefois de prison au roi halfelin Roupar, durant l'Âge du Crépuscule, et que dans l'anarchie de cette époque, les prisonniers étaient simplement envoyés ici pour y pourrir. Certains disent qu'une malédiction magique a infecté les lieux, transformant ces prisonniers en monstres semblables à des taureaux qui patrouillent encore les couloirs aujourd'hui. Comme c'est excitant !!]], "_t")
+t([[I'm having so much fun! Probability Travel is making this little trip a breeze. And you should have seen the look on that bandit's face when I came out one wall, disappeared through another, and came around behind him! Hee hee hee...
+
+I still remember Archmage Tarelion's lecture about the spell - "Probability effects can be employed for ease of use, but beware thee of relying on them. With ease of use comes ease of mind and a weakening of one's will and concentration. Soon one will find oneself in a situation of risk, bereft of normal judgement of danger, and low on the mental resources to save onself. Heed thee well." Bah, what tosh!!! How dumb does he really think I am?!
+
+Besides, I'm enjoying myself - I'm having an adventure!!
+
+I saw something! I don't know what it was... but it was big and shadowy! But when I tried chasing it I got lost... Um, maybe I just imagined it? No, I'm sure it must be something cool and exciting, I just have to keep exploring!]], [[Je m'amuse tellement ! Le sort de Voyage Probabiliste rend ce petit périple d'une facilité incroyable. Et vous auriez dû voir le visage de ce bandit quand je suis sortie d'un mur, j'ai disparu dans un autre, et je suis réapparue juste derrière lui ! Hi hi hi...
+
+Je me souviens encore du discours de l'Archimage Tarelion sur ce sort : « Les effets de probabilité peuvent être employés pour faciliter les déplacements, mais prenez garde à ne pas trop en dépendre. Avec la facilité vient la complaisance, et un affaiblissement de la volonté et de la concentration. On se retrouvera bientôt dans une situation à risque, dépourvu du jugement normal face au danger, et avec trop peu de ressources mentales pour se sauver soi-même. Sois sur tes gardes. » Pff, quelle bêtise ! Me croit-il donc si sotte ?
+
+De toute façon, je m'amuse — je vis une aventure !!
+
+J'ai vu quelque chose ! Je ne sais pas ce que c'était... mais c'était grand et ténébreux ! Mais en essayant de le poursuivre, je me suis perdue... Hum, peut-être l'ai-je simplement imaginé ? Non, je suis sûre que c'est quelque chose de génial et d'excitant, il faut juste que je continue à explorer !]], "_t")
+t("the perfect killing device", "le dispositif de mise à mort parfait", "_t")
+t([[I have now devised the perfect trap for the horned beast that walks these halls! Truly he cannot avoid this amazing contraption - the perfect blend of technical mastery and nature's lethal gifts. Ah, how I look forward to having that monster's head mounted on my walls - it shall be the pride of my collection!
+
+The contraption is elegant and simple, though many months I have spent getting the formula perfect. There are two vials attached together - one containing finely ground hemlock, the other containing a carefully prepared zinc compound. When the vials are broken the materials react with the air and pump out an amazing cloud of poisonous vapour! The poison is supremely effective, killing within minutes. All I have to do is carefully hide the vials beneath a thin piece of slate and wait for my prey to step upon the trap - then POOF, it's dead!
+
+I have prepared a great many vials to last me throughout the hunting season. By this time next year I will have a trophy collection to match the kings!
+
+I seem to have misplaced one though... I'm sure it must be close by.
+
+
+No, NO! I have - I --- acci--- pain, such pa--______
+
+
+#{italic}#You find a dusty case filled with many small vials of powder. They seem serviceable.#{normal}#]], [[J'ai désormais conçu le piège parfait pour la bête cornue qui hante ces couloirs ! En vérité, elle ne pourra échapper à cette ingénieuse machination — le mélange idéal entre maîtrise technique et les dons mortels de la nature. Ah, comme j'attends avec impatience le jour où la tête de ce monstre ornera mes murs — elle sera la fierté de ma collection !
+
+Le dispositif est élégant et simple, bien que j'aie passé de nombreux mois à en perfectionner la formule. Il se compose de deux fioles reliées entre elles : l'une contenant de la ciguë finement broyée, l'autre un composé de zinc soigneusement préparé. Lorsque les fioles se brisent, les substances réagissent à l'air et libèrent un impressionnant nuage de vapeur empoisonnée ! Le poison est extrêmement efficace et tue en quelques minutes. Il me suffit de cacher soigneusement les fioles sous une fine plaque d'ardoise et d'attendre que ma proie marche sur le piège — et alors, POUF, elle est morte !
+
+J'ai préparé un grand nombre de fioles pour toute la saison de chasse. À cette époque l'année prochaine, j'aurai une collection de trophées digne des rois !
+
+Il semblerait toutefois que j'en aie égaré une... Elle doit certainement être tout près.
+
+
+Non, NON ! J'ai - J' --- accide--- douleur, tant de doul--______
+
+
+#{italic}#Vous trouvez une caisse poussiéreuse remplie de plusieurs petites fioles de poudre. Elles semblent utilisables.#{normal}#]], "_t")
+
