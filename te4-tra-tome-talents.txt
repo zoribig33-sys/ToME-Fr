@@ -6666,4 +6666,1051 @@ t("necromancy", "Nécromancie", "_t")
 t("usable during Aether Avatar", "utilisable pendant l'Avatar Éthéré", "_t")
 
 
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/spacetime-folding.lua"
+
+t("warp mine: %s", "mine de distorsion : %s", "tformat")
+t("toward", "vers vous", "_t")
+t("away", "loin de vous", "_t")
+t("trap", "piège", "_t")
+t("The teleport fizzles!", "La téléportation échoue !", "logSeen")
+t("%s resists the teleport!", "%s résiste à la téléportation !", "logSeen")
+t("Warp Mine Toward", "Mine de Distorsion Rapprochante", "talent name")
+t([[Lay Warp Mines in a radius of 1 that teleport enemies to you and inflict %0.2f physical and %0.2f temporal (warp) damage.
+		The mines are hidden traps (%d detection and %d disarm power based on your Magic) and last for %d turns.
+		The damage caused by your Warp Mines will improve with your Spellpower.]], [[Place des Mines de Distorsion dans un rayon de 1 case qui téléportent les ennemis vers vous et infligent %0.2f de dégâts physiques et %0.2f de dégâts temporels (distorsion).
+		Les mines sont des pièges cachés (%d de détection et %d de pouvoir de désamorçage, basé sur votre Magie) et durent %d tours.
+		Les dégâts causés par vos Mines de Distorsion s'améliorent avec votre Puissance des sorts.]], "tformat")
+t("Warp Mine Away", "Mine de Distorsion Repoussante", "talent name")
+t([[Lay Warp Mines in a radius of 1 that teleport enemies away from you and inflict %0.2f physical and %0.2f temporal (warp) damage.
+		The mines are hidden traps (%d detection and %d disarm power based on your Magic) and last for %d turns.
+		The damage caused by your Warp Mines will improve with your Spellpower.]], [[Place des Mines de Distorsion dans un rayon de 1 case qui téléportent les ennemis loin de vous et infligent %0.2f de dégâts physiques et %0.2f de dégâts temporels (distorsion).
+		Les mines sont des pièges cachés (%d de détection et %d de pouvoir de désamorçage, basé sur votre Magie) et durent %d tours.
+		Les dégâts causés par vos Mines de Distorsion s'améliorent avec votre Puissance des sorts.]], "tformat")
+t("Warp Mines", "Mines de Distorsion", "talent name")
+t([[Learn to lay Warp Mines in a radius of 1.  Warp Mines teleport targets that trigger them either toward you or away from you depending on the type of mine used and inflict %0.2f physical and %0.2f temporal (warp) damage.
+		The mines are hidden traps (%d detection and %d disarm power based on your Magic), last for %d turns, and each have a ten turn cooldown.
+		Investing in this talent improves the range of all Spacetime Folding talents and the damage caused by your Warp Mines will improve with your Spellpower.
+		
+		Current Spacetime Folding Range: %d]], [[Apprend à placer des Mines de Distorsion dans un rayon de 1 case. Les Mines de Distorsion téléportent les cibles qui les déclenchent vers vous ou loin de vous selon le type de mine utilisé, et infligent %0.2f de dégâts physiques et %0.2f de dégâts temporels (distorsion).
+		Les mines sont des pièges cachés (%d de détection et %d de pouvoir de désamorçage, basé sur votre Magie), durent %d tours et ont chacune un rechargement de 10 tours.
+		Investir dans ce talent améliore la portée de tous les talents de Pliage d'Espace-Temps et les dégâts causés par vos Mines de Distorsion s'améliorent avec votre Puissance des sorts.
+		
+		Portée actuelle de Pliage d'Espace-Temps : %d]], "tformat")
+t("Spatial Tether", "Attache Spatiale", "talent name")
+t("You can't place a tether here", "Vous ne pouvez pas placer une attache ici", "logPlayer")
+t("%s's spatial tether", "attache spatiale de %s", "tformat")
+t("#CRIMSON#%s has been yanked back to the tether!", "#CRIMSON#%s a été ramené à l'attache !", "logSeen")
+t([[Tether the target to the location for %d turns.  
+		Each turn the target has a %d%% chance per tile it's travelled away from the tether to be teleported back, inflicting %0.2f physical and %0.2f temporal (warp) damage to all enemies in a radius of %d at both the entrance and exit locations.
+		The damage will scale with your Spellpower.]], [[Attache la cible à l'emplacement pendant %d tours.
+		À chaque tour, il y a %d%% de chance par case de distance parcourue depuis l'attache que la cible soit téléportée de retour, infligeant %0.2f de dégâts physiques et %0.2f de dégâts temporels (distorsion) à tous les ennemis dans un rayon de %d cases aux points d'entrée et de sortie.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Banish", "Bannissement", "talent name")
+t("The spell fizzles on %s!", "Le sort échoue sur %s !", "logSeen")
+t("#CRIMSON#%s has been banished!", "#CRIMSON#%s a été banni !", "logSeen")
+t("%s resists the banishment!", "%s résiste au bannissement !", "logSeen")
+t([[Randomly teleports all enemies within a radius of three.  Enemies will be teleported between %d and %d tiles from you and may be stunned, blinded, confused, or pinned for %d turns.
+		The chance of teleportion will scale with your Spellpower.]], [[Téléporte aléatoirement tous les ennemis dans un rayon de 3 cases.
+		Les ennemis seront téléportés entre %d et %d cases de vous et peuvent être étourdis, aveuglés, confus ou immobilisés pendant %d tours.
+		La chance de téléportation augmente avec votre Puissance des sorts.]], "tformat")
+t("Dimensional Anchor", "Ancre Dimensionnelle", "talent name")
+t([[Create a radius three anti-teleport field for %d turns and daze all enemies in the area of effect for two turns.
+		Enemies attempting to teleport while anchored take %0.2f physical and %0.2f temporal (warp) damage.
+		The damage will scale with your Spellpower.]], [[Crée un champ anti-téléportation dans un rayon de 3 cases pendant %d tours et étourdit tous les ennemis dans la zone d'effet pendant 2 tours.
+		Les ennemis qui tentent de se téléporter lorsqu'ils sont ancrés subissent %0.2f de dégâts physiques et %0.2f de dégâts temporels (distorsion).
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/spacetime-weaving.lua"
+
+t("Dimensional Step", "Pas Dimensionnel", "talent name")
+t("You do not have line of sight.", "Vous n'avez pas de ligne de vue.", "logPlayer")
+t("#Source# folds space with with #target#!", "#Source# plie l'espace-temps avec #Target# !", "logCombat")
+t("#Source#'s space-time folding with #target# fizzles!", "Le pliage d'espace-temps de #Source# avec #Target# échoue !", "logCombat")
+t("#Source# resists #target#'s space-time folding!", "#Source# résiste au pliage d'espace-temps de #Target# !", "logCombat")
+t("%s's space-time folding fizzles!", "Le pliage d'espace-temps de %s échoue !", "logSeen")
+t("%s emerges from a space-time rift!", "%s émerge d'une faille spatio-temporelle !", "logSeen")
+t([[Teleports you to up to %d tiles away, to a targeted location in line of sight.
+		At talent level 5 you may swap positions with a target creature.]], [[Vous téléporte jusqu'à %d cases vers un emplacement ciblé dans votre ligne de vue.
+		Au niveau 5, vous pouvez permuter votre position avec une créature ciblée.]], "tformat")
+t("Dimensional Shift", "Décalage Dimensionnel", "talent name")
+t("When you teleport you reduce the duration of a single detrimental effect by %d turns.", "Lorsque vous vous téléportez, vous réduisez la durée d'un seul effet négatif de %d tours.", "tformat")
+t("Wormhole", "Trou de Ver", "talent name")
+t("You can't place a wormhole entrance here.", "Vous ne pouvez pas placer une entrée de trou de ver ici.", "logPlayer")
+t("You can't place a wormhole exit here.", "Vous ne pouvez pas placer une sortie de trou de ver ici.", "logPlayer")
+t("wormhole", "trou de ver", "_t")
+t("trap", "piège", "_t")
+t("@Target@ moves onto the wormhole.", "@Target@ se déplace sur le trou de ver.", "_t")
+t("%s tries to enter the wormhole but a violent force pushes it back.", "%s tente d'entrer dans le trou de ver, mais une force violente le repousse.", "logSeen")
+t("%s ignores the wormhole.", "%s ignore le trou de ver.", "logSeen")
+t("Reality asserts itself and forces the wormhole shut.", "La réalité s'impose et force le trou de ver à se fermer.", "logSeen")
+t("%s folds the space between two points.", "%s plie l'espace entre deux points.", "logSeen")
+t([[You fold the space between yourself and a second point within a range of %d, creating a pair of wormholes.  Any creature stepping on either wormhole will be teleported near the other (radius %d accuracy).  
+		The wormholes will last %d turns and must be placed at least two tiles apart.
+		The chance of teleporting enemies will scale with your Spellpower.]], [[Plie l'espace entre vous et un second point dans un rayon de %d cases, créant une paire de trous de ver reliés. Toute créature qui marchera sur l'un d'eux sera téléportée près de l'autre (%d case(s) de précision).
+		Les trous de ver durent %d tours et doivent être placés à au moins deux cases de distance l'un de l'autre.
+		La chance de téléporter les ennemis augmente avec votre Puissance des sorts.]], "tformat")
+t("Phase Pulse", "Impulsion de Phase", "talent name")
+t([[When you teleport you fire a pulse that jolts enemies out of phase in a radius of %d around both the start and the destination point. 
+		Each target has a %d%% chance per tile you travelled to be stunned, blinded, confused, or pinned for %d turns.]], [[Lorsque vous vous téléportez, vous émettez une impulsion qui met les ennemis hors de phase dans un rayon de %d case(s) autour des points de départ et d'arrivée.
+		Chaque cible a %d%% de chance par case parcourue d'être étourdis, aveuglée, confuse ou immobilisée pendant %d tours.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/speed-control.lua"
+
+t("Celerity", "Célérité", "talent name")
+t("When you move you gain %d%% movement speed for %d turns.  This effect stacks up to three times but can only occur once per turn.", "En vous déplaçant, vous gagnez %d%% de vitesse de déplacement pendant %d tour(s). Cet effet se cumule jusqu'à trois fois, mais ne peut se produire qu'une fois par tour.", "tformat")
+t("Time Dilation", "Dilatation du Temps", "talent name")
+t([[When you use a non-instant chronomancy spell you gain %d%% attack, spell, and mind speed for %d turns.  This effect stacks up to three times but can only occur once per turn.
+		]], "En lançant un sort de Chronomancie non instantané, vous gagnez %d%% de vitesse d'attaque, de vitesse magique et de vitesse mentale pendant %d tour(s). Cet effet se cumule jusqu'à 3 fois, mais ne peut être activé qu'une fois par tour.", "tformat")
+t("Haste", "Hâte", "talent name")
+t("Increases your global speed by %d%% for %d game turns.", "Augmente votre vitesse globale de %d%% pendant %d tours de jeu.", "tformat")
+t("Time Stop", "Arrêt du Temps", "talent name")
+t("#STEEL_BLUE#%s has stopped time!#LAST#", "#STEEL_BLUE#%s a arrêté le temps !#LAST#", "logSeen")
+t("Gain %d turns.  During this time your damage will be reduced by %d%%.", "Gagnez %d tour(s). Pendant ce temps, vos dégâts sont réduits de %d%%.", "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/spellbinding.lua"
+
+t("Empower", "Potentialiser", "talent name")
+t("None", "Aucun", "_t")
+t([[Empowers the selected chronomancy spell, increasing spellpower when casting it by %d%%.
+		Each spell can only be spellbound in one way at a time.
+		
+		Current Empowered Spell: %s]], [[Renforce le sort de Chronomancie sélectionné, augmentant la Puissance des sorts lors de son lancement de %d%%.
+		Chaque sort ne peut être lié que d'une seule façon à la fois.
+		
+		Sort Potentialisé Actuel : %s]], "tformat")
+t("Extension", "Extension", "talent name")
+t([[Extends the duration of the selected chronomancy spell by %d%%.
+		Each spell can only be spellbound in one way at a time.
+		
+		Current Extended Spell: %s]], [[Augmente la durée du sort de Chronomancie sélectionné de %d%%.
+		Chaque sort ne peut être lié que d'une seule façon à la fois.
+		
+		Sort Étendu Actuel : %s]], "tformat")
+t("Matrix", "Matrice", "talent name")
+t([[Reduces the cooldown of the selected chronomancy spell by %d%%.
+		Each spell can only be spellbound in one way at a time.
+		
+		Current Matrix Spell: %s]], [[Réduit le rechargement du sort de Chronomancie sélectionné de %d%%.
+		Chaque sort ne peut être lié que d'une seule façon à la fois.
+		
+		Sort Matrice Actuel : %s]], "tformat")
+t("Quicken", "Accélérer", "talent name")
+t([[Reduces the casting speed of the selected chronomancy spell by %d%%.
+		Each spell can only be spellbound in one way at a time.
+		
+		Current Quickened Spell: %s]], [[Réduit la vitesse d'incantation du sort de Chronomancie sélectionné de %d%%.
+		Chaque sort ne peut être lié que d'une seule façon à la fois.
+		
+		Sort Accéléré Actuel : %s]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/stasis.lua"
+
+t("Spacetime Stability", "Stabilité de l'Espace-Temps", "talent name")
+t([[You automatically adjust your Paradox %0.2f points towards your preferred Paradox each turn.
+		While using Spacetime Tuning twice this value will instead be added to the amount you would normally tune.]], [[Vous ajustez automatiquement votre Paradoxe de %0.2f points vers le Paradoxe souhaité à chaque tour.
+		Lors d'une double utilisation de la Syntonie de l'Espace-Temps, cette valeur s'ajoute à la quantité que vous syntonieriez normalement.]], "tformat")
+t("Time Shield", "Bouclier du Temps", "talent name")
+t([[This intricate spell instantly erects a time shield around the caster, preventing any incoming damage and sending it forward in time.
+		Once either the maximum damage (%d) is absorbed, or the time runs out (%d turns), the stored damage will return as a temporal restoration field over time (5 turns).
+		Each turn the restoration field is active, you get healed for 10%% of the absorbed damage.
+		While under the effect of Time Shield, all newly applied magical, physical and mental effects will have their durations reduced by %d%%.
+		The shield's max absorption will increase with your Spellpower.]], [[Ce sort complexe érige instantanément un bouclier du temps autour du lanceur, empêchant tout dégât entrant et le projetant dans le futur.
+		Lorsque les %d dégâts maximum sont absorbés ou que la durée de %d tours est écoulée, les dégâts stockés reviennent sous forme d'un champ de restauration temporelle sur 5 tours.
+		À chaque tour où le champ de restauration est actif, vous êtes soigné de 10%% des dégâts absorbés.
+		Sous l'effet du Bouclier du Temps, tous les effets magiques, physiques et mentaux nouvellement appliqués verront leur durée réduite de %d%%.
+		L'absorption maximale du bouclier augmente avec votre Puissance des sorts.]], "tformat")
+t("Stop", "Arrêt", "talent name")
+t([[Inflicts %0.2f temporal damage, and attempts to stun all targets in a radius %d ball for %d turns.
+		The damage will scale with your Spellpower.]], [[Inflige %0.2f de dégâts temporels et tente d'assommer toutes les cibles dans un rayon de %d case(s) pendant %d tours.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Static History", "Histoire Statique", "talent name")
+t([[For the next %d turns you may not create minor anomalies.  You do not regain Paradox or lose the spell you're casting if a random anomaly would normally occur.
+		This spell has no effect on major anomalies.]], [[Pendant les %d prochains tours, vous ne pouvez pas créer d'anomalies mineures. Vous ne regagnez pas de Paradoxe et ne perdez pas le sort en cours d'incantation si une anomalie aléatoire se produirait normalement.
+		Ce sort n'a aucun effet sur les anomalies majeures.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/temporal-archery.lua"
+
+t("Phase Shot", "Tir Phasique", "talent name")
+t("You fire a shot that phases out of time and space allowing it to virtually ignore armor.  The shot will deal %d%% weapon damage as temporal damage to its target.", "Vous effectuez un tir qui traverse les phases du temps et de l'espace, lui permettant de pratiquement ignorer l'armure. Le tir inflige %d%% de dégâts d'arme sous forme de dégâts temporels à sa cible.", "tformat")
+t("Unerring Shot", "Tir Infaillible", "talent name")
+t("You focus your aim and fire a shot with great accuracy, inflicting %d%% weapon damage.  Afterwords your attack will remain improved for one turn as the chronomantic effects linger.", "Vous concentrez votre visée et tirez un coup avec une grande précision, infligeant %d%% de dégâts d'arme. Votre attaque reste améliorée pendant un tour car les effets chronomantiques persistent.", "tformat")
+t("Perfect Aim", "Visée Parfaite", "talent name")
+t([[You focus your aim, increasing your critical damage multiplier by %d%% and your physical and spell critical strike chance by %d%%
+		The effect will scale with your Spellpower.]], [[Vous concentrez votre visée, augmentant votre multiplicateur de dégâts critiques de %d%% et votre chance de coup critique physique et magique de %d%%.
+		L'effet augmente avec votre Puissance des sorts.]], "tformat")
+t("Quick Shot", "Tir Rapide", "talent name")
+t([[You pause time around you long enough to fire a single shot, doing %d%% damage.
+		The damage will scale with your Paradox and the cooldown will go down with more talent points invested.]], [[Vous suspendez le temps autour de vous juste assez longtemps pour tirer un seul coup, infligeant %d%% de dégâts.
+		Les dégâts augmentent avec votre Paradoxe et le rechargement diminue avec plus de points de talent investis.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/temporal-combat.lua"
+
+t("Fold Fate", "Plier le Destin", "talent name")
+t([[When you hit with Weapon Folding you have a %d%% chance of dealing an additional %0.2f temporal damage to enemies in a radius of %d.
+		Affected targets may also have their physical and temporal resistance reduced by %d%% for %d turns.
+		This effect has a cooldown.  If it triggers while on cooldown it will reduce the cooldown of Fold Gravity and Fold Warp by one turn.]], [[Lorsque vous touchez avec Pliage d'Armes, vous avez %d%% de chance d'infliger %0.2f dégâts temporels supplémentaires aux ennemis dans un rayon de %d case(s).
+		Les cibles affectées peuvent également voir leur résistance physique et temporelle réduite de %d%% pendant %d tours.
+		Cet effet a un rechargement. S'il se déclenche pendant le rechargement, il réduit le rechargement de Plier la Gravité et Plier la Distorsion d'un tour.]], "tformat")
+t("Fold Warp", "Plier la Distorsion", "talent name")
+t([[When you hit with Weapon Folding you have a %d%% chance of dealing an additional %0.2f physical and %0.2f temporal (warp) damage to enemies in a radius of %d.
+		Each target hit may be stunned, blinded, pinned, or confused for %d turns.
+		This effect has a cooldown.  If it triggers while on cooldown it will reduce the cooldown of Fold Gravity and Fold Fate by one turn.]], [[Lorsque vous touchez avec Pliage d'Armes, vous avez %d%% de chance d'infliger %0.2f dégâts physiques et %0.2f dégâts temporels (distorsion) supplémentaires aux ennemis dans un rayon de %d case(s).
+		Chaque cible touchée peut être étourdis, aveuglée, immobilisée ou confuse pendant %d tours.
+		Cet effet a un rechargement. S'il se déclenche pendant le rechargement, il réduit le rechargement de Plier la Gravité et Plier le Destin d'un tour.]], "tformat")
+t("Fold Gravity", "Plier la Gravité", "talent name")
+t([[When you hit with Weapon Folding you have a %d%% chance of dealing an additional %0.2f physical (gravity) damage to enemies in a radius of %d.
+		Affected targets may also be slowed, decreasing their global speed speed by %d%% for %d turns
+		This effect has a cooldown.  If it triggers while on cooldown it will reduce the cooldown of Fold Fate and Fold Warp by one turn.]], [[Lorsque vous touchez avec Pliage d'Armes, vous avez %d%% de chance d'infliger %0.2f dégâts physiques (gravité) supplémentaires aux ennemis dans un rayon de %d case(s).
+		Les cibles affectées peuvent également être ralenties, diminuant leur vitesse globale de %d%% pendant %d tours.
+		Cet effet a un rechargement. S'il se déclenche pendant le rechargement, il réduit le rechargement de Plier le Destin et Plier la Distorsion d'un tour.]], "tformat")
+t("Weapon Folding", "Pliage d'Armes", "talent name")
+t([[Folds a single dimension of your weapons (or ammo) upon itself, adding %0.2f temporal damage to your strikes.
+		Additionally you have a %d%% chance to gain 10%% of a turn when your weapons hit.
+		The damage will scale with your Spellpower.]], [[Plie une seule dimension de vos armes (ou munitions) sur elle-même, ajoutant %0.2f de dégâts temporels à vos frappes.
+		De plus, vous avez %d%% de chance de gagner 10%% d'un tour lorsque vos armes touchent.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Invigorate", "Revigorer", "talent name")
+t([[For the next %d turns, you recover %0.1f life and talents without fixed cooldowns will have their cooldowns refresh twice as fast as usual.
+		The life regeneration will scale with your Spellpower.]], [[Pendant les %d prochains tours, vous récupérez %0.1f points de vie et les talents sans rechargement fixe verront leurs rechargements se renouveler deux fois plus vite que d'habitude.
+		La régénération de vie augmente avec votre Puissance des sorts.]], "tformat")
+t("Weapon Manifold", "Arme Multiforme", "talent name")
+t([[You now have a %d%% chance to Fold Fate, Gravity, or Warp into your Weapon Folding damage.
+		
+		Fold Fate: Deals %0.2f temporal damage to enemies in a radius of %d.  Affected targets may lose %d%% physical and temporal resistance for %d turns.
+		Fold Warp: Deals %0.2f physical and %0.2f temporal damage to enemies in a radius of %d.  Affected targets may be stunned, blinded, confused, or pinned for %d turns.
+		Fold Gravity: Deals %0.2f physical damage to enemies in a radius of %d.  Affected targets will be slowed (%d%%) for %d turns.
+		
+		Each Fold has an eight turn cooldown.  If an effect would be triggered while on cooldown it will reduce the cooldown of the other two Folds by one turn.]], [[Vous avez maintenant %d%% de chance de Plier le Destin, la Gravité ou la Distorsion dans vos dégâts de Pliage d'Armes.
+		
+		Plier le Destin : Inflige %0.2f de dégâts temporels aux ennemis dans un rayon de %d case(s). Les cibles affectées peuvent perdre %d%% de résistance physique et temporelle pendant %d tours.
+		Plier la Distorsion : Inflige %0.2f de dégâts physiques et %0.2f de dégâts temporels aux ennemis dans un rayon de %d case(s). Les cibles affectées peuvent être étourdies, aveuglées, confuses ou immobilisées pendant %d tours.
+		Plier la Gravité : Inflige %0.2f de dégâts physiques aux ennemis dans un rayon de %d case(s). Les cibles affectées seront ralenties (%d%%) pendant %d tours.
+		
+		Chaque Pli a un rechargement de 8 tours. Si un effet se déclenchait pendant le rechargement, il réduirait le rechargement des deux autres Plis d'un tour.]], "tformat")
+t("Breach", "Brèche", "talent name")
+t("You require a weapon to use this talent.", "Vous avez besoin d'une arme pour utiliser ce talent.", "logPlayer")
+t([[Attack the target with either your ranged or melee weapons for %d%% damage.
+		If the attack hits you'll breach the target's immunities, reducing armor hardiness, stun, pin, blindness, and confusion immunity by 50%% for %d turns.
+		Breach chance scales with your Spellpower.]], [[Attaquez la cible avec vos armes à distance ou de mêlée pour %d%% de dégâts.
+		Si l'attaque touche, vous percez les immunités de la cible, réduisant la robustesse de l'armure et les immunités à l'étourdissement, l'immobilisation, l'aveuglement et la confusion de 50%% pendant %d tours.
+		La chance de brèche augmente avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/temporal-hounds.lua"
+
+t("A trained hound that appears to be all at once a little puppy and a toothless old dog.", "Un chien de chasse entraîné qui semble être à la fois un jeune chiot et un vieux chien édenté.", "_t")
+t("temporal-hound", "chien temporel", "_t")
+t("Temporal Hounds", "Chiens Temporels", "talent name")
+t([[Upon activation summon a Temporal Hound.  Every %d turns another hound will be summoned, up to a maximum of three hounds. If a hound dies you'll summon a new hound in %d turns.  
+		Your hounds inherit your increased damage percent, have %d%% physical resistance and %d%% temporal resistance, and are immune to teleportation effects.
+		Hounds will get, %d Strength, %d Dexterity, %d Constitution, %d Magic, %d Willpower, and %d Cunning, based on your Magic stat.]], [[À l'activation, invoque un Chien Temporel. Toutes les %d tours, un autre chien sera invoqué, jusqu'à un maximum de 3 chiens. Si un chien meurt, vous en invoquerez un nouveau dans %d tours.
+		Vos chiens héritent de vos modificateurs de dégâts, ont %d%% de résistance physique et %d%% de résistance temporelle, et sont immunisés aux effets de téléportation.
+		Les chiens reçoivent %d de Force, %d de Dextérité, %d de Constitution, %d de Magie, %d de Volonté et %d de Ruse, en fonction de votre statistique de Magie.]], "tformat")
+t("Command Hounds: Blink", "Commander les Chiens : Transloquer", "talent name")
+t("Temporal Hounds must be sustained to cast this spell.", "Les Chiens Temporels doivent être soutenus pour lancer ce sort.", "logPlayer")
+t("You do not have line of sight.", "Vous n'avez pas de ligne de vue.", "logPlayer")
+t("The spell fizzles!", "Le sort échoue !", "logSeen")
+t([[Command your Temporal Hounds to teleport to the targeted location.  If you target an enemy your hounds will set that enemy as their target.
+		When you learn this talent, your hounds gain %d defense and %d%% resist all after any teleport.
+		At talent level five, if you're not at your maximum number of hounds when you cast this spell a new one will be summoned.
+		The teleportation bonuses scale with your Spellpower.]], [[Commandez vos Chiens Temporels pour qu'ils se téléportent vers l'emplacement ciblé. Si vous ciblez un ennemi, vos chiens définiront cet ennemi comme leur cible.
+		Lorsque vous apprenez ce talent, vos chiens gagnent %d de défense et %d%% de résistance générale après toute téléportation.
+		Au niveau 5, si vous n'avez pas le nombre maximum de chiens invoqués lorsque vous lancez ce sort, un nouveau sera invoqué.
+		Les bonus de téléportation augmentent avec votre Puissance des sorts.]], "tformat")
+t("Temporal Vigour", "Vigueur Temporelle", "talent name")
+t([[Your hounds can now survive for up to %d turns after their hit points are reduced below 1.  While in this state they deal 50%% less damage but are immune to additional damage.
+		Command Blink will now regenerate your hounds for %d life per turn and increase their global speed by %d%% for five turns.  Hounds below 1 life when this effect occurs will have the bonuses doubled.
+		When you learn this talent, your hounds gain %d%% stun, blind, confusion, and pin resistance.
+		The regeneration scales with your Spellpower.]], [[Vos chiens peuvent maintenant survivre jusqu'à %d tour(s) après que leurs points de vie soient réduits à moins de 1. Dans cet état, ils infligent 50%% moins de dégâts mais sont immunisés aux dégâts supplémentaires.
+		Commander Transloquer régénère maintenant vos chiens de %d points de vie par tour et augmente leur vitesse globale de %d%% pendant 5 tours. Les chiens avec moins de 1 point de vie lors de cet effet verront les bonus doublés.
+		Lorsque vous apprenez ce talent, vos chiens gagnent %d%% de résistance à l'étourdissement, à l'aveuglement, à la confusion et à l'immobilisation.
+		La régénération augmente avec votre Puissance des sorts.]], "tformat")
+t("Command Hounds: Breathe", "Commander les Chiens : Souffler", "talent name")
+t("You must have temporal hounds to use this talent.", "Vous devez avoir des Chiens Temporels actifs pour utiliser ce talent.", "logPlayer")
+t([[Command your Temporal Hounds to breathe time, dealing %0.2f temporal damage and reducing the three highest stats of all targets in a radius %d cone.
+		Affected targets will have their stats reduced by %d for %d turns.  You are immune to the breath of your own hounds and your hounds are immune to stat damage from other hounds.
+		When you learn this talent, your hounds gain %d%% temporal damage affinity.]], [[Commandez vos Chiens Temporels pour qu'ils soufflent le temps, infligeant %0.2f de dégâts temporels et réduisant les trois attributs les plus élevés de toutes les cibles dans un cône de %d case(s).
+		Les cibles affectées verront leurs attributs réduits de %d pendant %d tours. Vous êtes immunisé au souffle de vos propres chiens et vos chiens sont immunisés à la réduction d'attributs des autres chiens.
+		Lorsque vous apprenez ce talent, vos chiens gagnent %d%% d'affinité aux dégâts temporels.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/threaded-combat.lua"
+
+t("Thread Walk", "Marche de Trame", "talent name")
+t("You require a weapon to use this talent.", "Vous avez besoin d'une arme pour utiliser ce talent.", "logPlayer")
+t("The spell fizzles!", "Le sort échoue !", "logSeen")
+t("range %d", "portée %d", "logPlayer")
+t("You cannot use Thread Walk without an appropriate weapon!", "Vous ne pouvez pas utiliser Marche de Trame sans une arme appropriée !", "logPlayer")
+t([[Attack with your bow or dual-weapons for %d%% damage.  If you shoot an arrow you'll teleport near the target location.  If you use your dual-weapons you'll teleport up to your bow's range away.
+		Additionally you now go Out of Phase for five turns after any teleport, gaining %d defense and %d%% resist all.
+		The Out of Phase bonuses will scale with your Magic stat.]], [[Attaquez avec votre arc ou vos armes doubles pour %d%% de dégâts. Si vous tirez une flèche, vous vous téléporterez près de l'emplacement de la cible. Si vous utilisez vos armes doubles, vous vous téléporterez jusqu'à la portée de votre arc.
+		De plus, vous passez maintenant Hors Phase pendant 5 tours après toute téléportation, gagnant %d de défense et %d%% de résistance générale.
+		Les bonus Hors Phase augmentent avec votre statistique de Magie.]], "tformat")
+t("Blended Threads", "Trames Mêlées", "talent name")
+t([[Each time you hit with an arrow you reduce the cooldown of one Blade Threading talent on cooldown by one turn.
+		Each time you hit with a melee weapon you reduce the cooldown of one Bow Threading talent on cooldown by one turn.
+		This effect can only occur %d times per turn.]], [[Chaque fois que vous touchez avec une flèche, vous réduisez le rechargement d'un talent de Tissage de Lame en rechargement d'un tour.
+		Chaque fois que vous touchez avec une arme de mêlée, vous réduisez le rechargement d'un talent de Tissage d'Arc en rechargement d'un tour.
+		Cet effet ne peut se produire que %d fois par tour.]], "tformat")
+t("Thread the Needle", "Enfiler l'Aiguille", "talent name")
+t("You cannot use Thread the Needle without an appropriate weapon!", "Vous ne pouvez pas utiliser Enfiler l'Aiguille sans une arme appropriée !", "logPlayer")
+t("Attack with your bow or dual-weapons for %d%% damage.  If you use your bow you'll shoot all targets in a beam.  If you use your dual-weapons you'll attack all targets within a radius of one around you.", "Attaquez avec votre arc ou vos armes doubles pour %d%% de dégâts. Si vous utilisez votre arc, vous toucherez toutes les cibles dans un faisceau. Si vous utilisez vos armes doubles, vous attaquerez toutes les cibles dans un rayon d'une case autour de vous.", "tformat")
+t("Warden's Call", "Appel du Gardien", "talent name")
+t("%s calls forth a temporal warden from another timeline.", "%s invoque un gardien temporel depuis une autre ligne du temps.", "logSeen")
+t([[When you hit with a melee or arrow attack, there is a %d%% chance that a warden will appear from another timeline to attack a random enemy.
+		The summoned warden will attempt a melee attack if you made an arrow attack, or an arrow attack if you made a melee attack.
+		These wardens are out of phase with your reality and deal %d%% less damage, and their arrows will pass through friendly targets.
+		A warden can only be summoned this way once per turn and they return to their own timeline after attacking.]], [[Lorsque vous touchez avec une attaque de mêlée ou de flèche, il y a %d%% de chance qu'un gardien apparaisse d'une autre ligne du temps pour attaquer un ennemi aléatoire.
+		Le gardien invoqué tentera une attaque de mêlée si vous avez effectué une attaque de flèche, ou une attaque de flèche si vous avez effectué une attaque de mêlée.
+		Ces gardiens sont hors phase avec votre réalité et infligent %d%% moins de dégâts, et leurs flèches traversent les cibles alliées.
+		Un gardien ne peut être invoqué de cette façon qu'une fois par tour et retourne à sa propre ligne du temps après l'attaque.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/timeline-threading.lua"
+
+t("Rethread", "Retramer", "talent name")
+t([[Rethread the timeline, dealing %0.2f temporal damage to the target before moving on to a second target.
+		Rethread can hit up to %d targets up to 10 grids apart, and will never hit the same one twice; nor will it hit the caster.
+		The damage will increase with your Spellpower.]], [[Retrame la ligne du temps, infligeant %0.2f de dégâts temporels à la cible avant de passer à une seconde cible.
+		Retramer peut toucher jusqu'à %d cibles séparées de 10 cases au maximum, et ne touchera jamais la même cible deux fois, ni le lanceur.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Temporal Fugue", "Fugue Temporelle", "talent name")
+t("%s's Fugue Clone", "clone de fugue de %s", "tformat")
+t("The real %s... or so %s says.", "%s est le vrai, pas le clone... ou c'est ce que %s prétend.", "tformat")
+t("Fugue Clone", "Clone de Fugue", "_t")
+t("Not enough space to summon!", "Pas assez d'espace pour invoquer !", "logPlayer")
+t([[For the next %d turns two alternate versions of you enter your timeline.  While the effect is active all damage done by you or your copies is reduced by two thirds and all damage received is split between the three of you.
+		Temporal Fugue does not normally cooldown while active.  You may take direct control of your clones, give them orders, and set their talent usage.
+		Damage you deal to Fugue Clones or that they deal to you or each other is reduced to zero.]], [[Pendant les %d prochains tours, deux versions alternatives de vous entrent dans votre ligne du temps. Pendant que l'effet est actif, tous les dégâts causés par vous ou vos copies sont réduits des deux tiers et tous les dégâts reçus sont partagés équitablement entre les trois.
+		Le rechargement de Fugue Temporelle ne progresse pas tant que l'effet est actif. Vous pouvez prendre le contrôle direct des copies, leur donner des ordres et définir leur utilisation des talents.
+		Les dégâts que vous infligez aux Clones de Fugue ou qu'ils vous infligent mutuellement sont réduits à zéro.]], "tformat")
+t("Braid Lifelines", "Entrelacement de Lignes de Vie", "talent name")
+t([[Your Rethread now braids the lifelines of all targets it hits for %d turns.  Braided targets take %d%% of all damage dealt to other braided targets.
+		The amount of damage shared will scale with your Spellpower.]], [[Votre Retramage entrelace maintenant les lignes de vie de toutes les cibles touchées pendant %d tours.
+		Les cibles entrelacées subissent %d%% de tous les dégâts infligés aux autres cibles entrelacées.
+		La quantité de dégâts partagés augmente avec votre Puissance des sorts.]], "tformat")
+t("Cease to Exist", "Cesser d'Exister", "talent name")
+t("The timeline is too fractured to do this now.", "La ligne du temps est trop fragmentée pour faire cela maintenant.", "logPlayer")
+t("#LIGHT_BLUE#%s never existed, this never happened!", "#LIGHT_BLUE#%s n'a jamais existé, cela ne s'est jamais produit !", "logSeen")
+t("#LIGHT_STEEL_BLUE#%s tries to remove %sself from existance!", "#LIGHT_STEEL_BLUE#%s tente de se supprimer %sde l'existence !", "logSeen")
+t("%s resists!", "%s résiste !", "logSeen")
+t([[Over the next %d turns, you attempt to remove the target from the timeline, lowering its resistance to physical and temporal damage by %d%%.
+		If you manage to kill the target while the spell is in effect, you'll be returned to the point in time you cast this spell and the target will be slain.
+		This spell splits the timeline.  Attempting to use another spell that also splits the timeline while this effect is active will be unsuccessful.
+		The resistance penalty will scale with your Spellpower.]], [[Pendant les %d prochains tours, vous tentez de supprimer la cible de la ligne du temps, réduisant sa résistance aux dégâts physiques et temporels de %d%%.
+		Si vous parvenez à tuer la cible pendant que le sort est actif, vous serez ramené au moment exact où vous avez lancé ce sort et la cible sera éliminée.
+		Ce sort divise la ligne du temps ; pendant qu'il dure, les autres sorts qui divisent le temps ne fonctionneront pas.
+		La pénalité de résistance augmente avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/chronomancy/timetravel.lua"
+
+t("Temporal Bolt", "Rayon Temporel", "talent name")
+t("Temporal Bolt", "Rayon Temporel", "_t")
+t([[Pull a bolt of temporal energy back through time.  The bolt will home in on your location, dealing %0.2f temporal damage to targets, and reducing the cooldown of one chronomancy talent on cooldown by one turn per enemy hit.
+		The bolt gains 5%% damage each time it moves and the damage will scale with your Spellpower.
+		At talent level five cooldowns are reduced by two.]], [[Évoque un rayon d'énergie temporelle vers votre position depuis le futur, infligeant %0.2f de dégâts temporels aux cibles. Pour chaque ennemi touché, le rechargement d'un talent de Chronomancie en attente est réduit d'un tour.
+		Les dégâts du rayon augmentent de 5%% à chaque case parcourue et augmentent avec votre Puissance des sorts.
+		Au niveau 5, la réduction de rechargement passe à 2 tours par cible touchée.]], "tformat")
+t("Time Skip", "Saut Temporel", "talent name")
+t("%s is immune!", "%s est immunisé !", "logSeen")
+t("%s resists!", "%s résiste !", "logSeen")
+t("Something has prevented the timetravel.", "Quelque chose a empêché le voyage dans le temps.", "logPlayer")
+t("temporal instability", "instabilité temporelle", "_t")
+t("%s has moved forward in time!", "%s a avancé dans le temps !", "logSeen")
+t([[Inflicts %0.2f temporal damage.  If your target survives, it may be removed from time for %d turns.
+		The damage will scale with your Spellpower.]], [[Inflige %0.2f de dégâts temporels. Si la cible survit, elle peut être retirée du temps pendant %d tours.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Temporal Reprieve", "Répit Temporel", "talent name")
+t("This talent cannot be used from within the reprieve.", "Ce talent ne peut pas être utilisé depuis l'intérieur du répit.", "logPlayer")
+t("This talent cannot be used here.", "Ce talent ne peut pas être utilisé ici.", "logPlayer")
+t("The spell fizzles...", "Le sort échoue...", "logPlayer")
+t("#STEEL_BLUE#You time travel to a quiet place.", "#STEEL_BLUE#Vous voyagez dans le temps vers un endroit tranquille.", "logPlayer")
+t("What the... ugh.", "Mais quoi... beurk.", "_t")
+t("Some rookie paradox mage is about to find out that the standard-issue Temporal Reprieve takes you to a random safe-zone, not a fixed one, and left the contents of their pack strewn about the place. Nearly all of it is equipment that your transmutation chest won't process and is unusable by anything with less than twelve limbs, so you kick most of it into the void, but a crumpled note catches your eye...", "Un mage paradoxal débutant va bientôt découvrir que le Répit Temporel standard vous emmène dans une zone sûre aléatoire et non fixe, laissant le contenu de son sac éparpillé partout. Presque tout est du matériel que votre coffre de transmogrification ne peut traiter et qui est inutilisable par quiconque a moins de douze membres. Vous jetez la plupart dans le vide, mais un billet froissé attire votre regard...", "_t")
+t("Transport yourself to a safe place for %d turns.", "Vous transportez dans un endroit sûr pendant %d tours.", "tformat")
+t("Echoes From The Past", "Échos du Passé", "talent name")
+t([[Creates a temporal echo in a radius of %d around you.  Affected targets take %0.2f temporal damage, as well as up to %d%% of the difference between their current life and max life as additional temporal damage.
+		The additional damage will be divided by the target's rank and the damage scales with your Spellpower.]], [[Crée un écho temporel dans un rayon de %d cases autour de vous. Inflige %0.2f de dégâts temporels et des dégâts supplémentaires pouvant atteindre %d%% des points de vie perdus des cibles.
+		Les dégâts supplémentaires sont divisés par le rang de la cible et les dégâts totaux augmentent avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/blight.lua"
+
+t("Dark Ritual", "Rituel Sombre", "talent name")
+t([[Increases your critical damage multiplier by %d%%.
+		The multiplier will increase with your Spellpower.]], [[Augmente votre multiplicateur de dégâts critiques de %d%%.
+		Le multiplicateur augmente avec votre Puissance des sorts.]], "tformat")
+t("Corrupted Negation", "Négation Corrompue", "talent name")
+t([[Project a corrupted blast of power that removes up to %d magical or physical effects or any type of sustain and deals %0.2f blight damage to any creatures caught in the radius 3 ball.
+		For each effect, the creature has a chance to resist based on its spell save.
+		The damage will increase with your Spellpower.]], [[Projette une explosion de pouvoir corrompue qui supprime jusqu'à %d effet(s) magique(s) ou physique(s), ou tout type d'effet soutenu, et inflige %0.2f de dégâts de maladie à toutes les créatures touchées dans un rayon de 3 cases.
+		Pour chaque effet, la créature a une chance de résister en fonction de sa sauvegarde magique.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Corrosive Worm", "Ver Corrosif", "talent name")
+t([[Infects the target with a corrosive worm for 6 turns that reduces blight and acid resistance by %d%% and feeds off damage taken.
+		When this effect ends or the target dies the worm will explode, dealing %d acid damage in a 4 radius ball. This damage will increase by %d%% of all damage taken while infected.
+		The damage dealt by the effect will increase with spellpower.]], [[Infecte la cible avec un ver corrosif pendant 6 tours qui réduit la résistance à la maladie et à l'acide de %d%% et se nourrit des dégâts reçus.
+		Lorsque l'effet se termine ou que la cible meurt, le ver explose, infligeant %d de dégâts d'acide dans un rayon de 4 cases. Ces dégâts augmentent de %d%% de tous les dégâts reçus pendant l'infection.
+		Les dégâts causés par l'effet augmentent avec votre Puissance des sorts.]], "tformat")
+t("Poison Storm", "Tempête de Poison", "talent name")
+t([[A furious storm of blighted poison rages around the caster in a radius of %d for %d turns.  Each creature hit by the storm takes %0.2f blight damage and is poisoned for %0.2f blight damage over 4 turns.
+		At talent level 2 you have a chance to inflict Insidious Blight, which reduces healing by %d%%.
+		At talent level 4 you have a chance to inflict Numbing Blight, which reduces all damage dealt by %d%%.
+		At talent level 6 you have a chance to inflict Crippling Blight, which causes talents to have a %d%% chance of failure.
+		Each possible effect is equally likely.
+		The poison damage dealt is capable of a critical strike.
+		The damage will increase with your Spellpower.]], [[Une tempête furieuse de poison maladie se déchaîne autour du lanceur dans un rayon de %d cases pendant %d tours.
+		Chaque créature touchée par la tempête subit %0.2f de dégâts de maladie et est empoisonnée pour %0.2f de dégâts de maladie sur 4 tours.
+		Au niveau 2, vous avez une chance d'infliger Maladie Insidieuse qui réduit les soins de %d%%.
+		Au niveau 4, vous avez une chance d'infliger Maladie Engourdissante, qui réduit tous les dégâts infligés de %d%%.
+		Au niveau 6, vous avez une chance d'infliger Maladie Handicapante, qui fait que les talents ont %d%% de chance d'échouer.
+		Chaque effet possible a la même probabilité de se produire.
+		Les dégâts de poison peuvent être des coups critiques.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/blood.lua"
+
+t("Blood Spray", "Jet de Sang", "talent name")
+t([[You extract corrupted blood from your own body, hitting everything in a frontal cone of radius %d for %0.2f blight damage.
+		Each creature hit has a %d%% chance of being infected by a random disease, doing %0.2f blight damage and weakening either Constitution, Strength or Dexterity for 6 turns.
+		The damage will increase with your Spellpower.]], [[Extrayez du sang corrompu de votre propre corps, frappant tout dans un cône frontal de rayon %d pour %0.2f de dégâts de maladie.
+		Chaque créature touchée a %d%% de chance d'être infectée par une maladie aléatoire, infligeant %0.2f de dégâts de maladie et affaiblissant sa Constitution, Force ou Dextérité pendant 6 tours.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Blood Grasp", "Emprise de Sang", "talent name")
+t([[Project a bolt of corrupted blood, doing %0.2f blight damage and healing you for 20%% the damage dealt.
+			50%% of the damage dealt will be gained as maximum life for 7 turns (before the healing).
+		The damage will increase with your Spellpower.]], [[Projette un rayon de sang corrompu, infligeant %0.2f de dégâts de maladie et vous soignant de 20%% des dégâts infligés.
+		50%% des dégâts infligés sont convertis en vie maximale pendant 7 tours (avant les soins).
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Blood Boil", "Ébullition de Sang", "talent name")
+t([[Make the impure blood of all creatures around you in radius %d boil.
+				Each enemy afflicted by a disease, poison, or wound will have one removed at random dealing %0.2f blight damage, healing you for %d, and slowing them by %d%% for 5 turns.
+			The damage will increase with your Spellpower.]], [[Faites bouillir le sang impur de toutes les créatures autour de vous dans un rayon de %d cases.
+		Chaque ennemi affligé d'une maladie, d'un poison ou d'une blessure se verra supprimer un effet aléatoirement, infligeant %0.2f de dégâts de maladie, vous soignant de %d points de vie et les ralentissant de %d%% pendant 5 tours.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Blood Fury", "Furie de Sang", "talent name")
+t([[Concentrate on the corruption you bring, increasing your spell critical chance by %d%%.
+		Each time your spells go critical, you enter a blood rage for 5 turns, increasing your blight and acid damage by %d%%.
+		The critical chance and damage increase will improve with your Spellpower.]], [[Concentrez-vous sur la corruption que vous apportez, augmentant votre chance de critique magique de %d%%.
+		Chaque fois que vos sorts font un critique, vous entrez dans une rage de sang pendant 5 tours, augmentant vos dégâts de maladie et d'acide de %d%%.
+		La chance de critique et l'augmentation des dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/bone.lua"
+
+t("Bone Spear", "Lance d'Os", "talent name")
+t([[Conjures up a spear of bones, doing %0.2f physical damage to all targets in a line.  Each target takes an additional %d%% damage for each magical debuff they are afflicted with up to a max of %d%% (%d).
+		The damage will increase with your Spellpower.]], [[Conjure une lance d'os, infligeant %0.2f de dégâts physiques à toutes les cibles dans une ligne. Chaque cible subit %d%% de dégâts supplémentaires par malus magique dont elle est affligée, jusqu'à un maximum de %d%% (%d).
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Bone Grab", "Griffe d'Os", "talent name")
+t("%s resists the pin!", "%s résiste à l'immobilisation !", "logSeen")
+t("%s resists being teleported by Bone Grab!", "%s résiste à la téléportation par Griffe d'Os !", "logSeen")
+t([[Grab a target and teleport it to your side or if adjacent up to 6 spaces away from you, pinning it there with a bone rising from the ground for %d turns.
+		The bone will also deal %0.2f physical damage.
+		The damage will increase with your Spellpower.]], [[Agrippe une cible et la téléporte à vos côtés, ou si elle est adjacente, jusqu'à 6 cases de vous, l'immobilisant avec un os surgissant du sol pendant %d tours.
+		L'os inflige également %0.2f de dégâts physiques.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Bone Spike", "Pointe d'Os", "talent name")
+t([[Whenever you use a non-instant talent you launch a spear of bone at all enemies afflicted by 3 or more magical detrimental effects dealing %d physical damage to all enemies it passes through.
+		The damage will increase with your Spellpower.]], [[Chaque fois que vous utilisez un talent non instantané, vous lancez une lance d'os sur tous les ennemis affligés de 3 effets magiques négatifs ou plus, infligeant %d de dégâts physiques à tous les ennemis qu'elle traverse.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Bone Shield", "Bouclier d'Os", "talent name")
+t("#SLATE#(%d to bones)#LAST#", "#SLATE#(%d au bouclier d'os)#LAST#", "tformat")
+t([[Bone shields start circling around you. They will each fully absorb one instance of damage.
+		%d shield(s) will be generated when first activated.
+		Then every %d turns a new one will be created if not full.
+		This will only trigger on hits over %d damage based on Spellpower.]], [[Des boucliers d'os commencent à tournoyer autour de vous. Chacun absorbera entièrement une instance de dégâts.
+		%d bouclier(s) sera(seront) généré(s) lors de la première activation.
+		Ensuite, toutes les %d tours, un nouveau sera créé s'il n'est pas au maximum.
+		Cela ne se déclenchera que sur des coups supérieurs à %d de dégâts en fonction de votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/corruptions.lua"
+
+t("corruption", "corruption", "talent category")
+t("sanguisuge", "sanguisuge", "talent type")
+t("Manipulate life force to feed your own dark powers.", "Manipulez la force vitale pour alimenter vos propres pouvoirs sombres.", "_t")
+t("torment", "tourment", "talent type")
+t("All the tools to torment your foes.", "Tous les outils nécessaires pour tourmenter vos ennemis.", "_t")
+t("vim", "vitae", "talent type")
+t("Touch the very essence of your victims.", "Touchez la véritable essence de vos victimes.", "_t")
+t("bone", "os", "talent type")
+t("Harness the power of bones.", "Maîtrisez le pouvoir des os.", "_t")
+t("hexes", "ensorcellements", "talent type")
+t("Hex your foes, hindering and crippling them.", "Ensorcelez vos ennemis, les entravant et les handicapant.", "_t")
+t("curses", "malédictions", "talent type")
+t("Curse your foes, hindering and crippling them.", "Maudissez vos ennemis, les entravant et les handicapant.", "_t")
+t("vile life", "vie vile", "talent type")
+t("Manipulate life for your vile needs.", "Manipulez la vie pour vos vils besoins.", "_t")
+t("plague", "peste", "talent type")
+t("Spread diseases to your foes.", "Répandez des maladies sur vos ennemis.", "_t")
+t("scourge", "fléau", "talent type")
+t("Bring pain and destruction to the world.", "Apportez douleur et destruction au monde.", "_t")
+t("reaving combat", "éveil du combat", "talent type")
+t("Enhanced melee combat through the dark arts.", "Combat de mêlée amélioré par les arts des ténèbres.", "_t")
+t("blood", "sang", "talent type")
+t("Harness the power of blood, both your own and your foes'.", "Maîtrisez le pouvoir du sang, le vôtre comme celui de vos ennemis.", "_t")
+t("blight", "maladie", "talent type")
+t("Bring corruption and decay to all who oppose you.", "Apportez corruption et décadence à tous ceux qui vous s'opposent.", "_t")
+t("Shadowflame", "flamme ténébreuse", "talent type")
+t("Harness the power of the demonic shadowflame.", "Maîtrisez le pouvoir de la flamme ténébreuse démoniaque.", "_t")
+t("rot", "pourriture", "talent type")
+t("Become one with rot and decay.", "Devenez un avec la pourriture et la décadence.", "_t")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/curses.lua"
+
+t("Curse of Defenselessness", "Malédiction de la Fragilité", "talent name")
+t([[Curses your target, decreasing its Defense and all saves by %d for 5 turns.  This cannot be saved against.
+		The effects will improve with your Spellpower.]], [[Maudit votre cible, réduisant sa Défense et toutes ses sauvegardes de %d pendant 5 tours. Impossible de résister à cet effet.
+		L'effet augmente avec votre Puissance des sorts.]], "tformat")
+t("Curse of Impotence", "Malédiction de l'Impuissance", "talent name")
+t([[Curses your target, decreasing all damage it does by %d%% for 10 turns.
+		The effects will improve with your Spellpower.]], [[Maudit votre cible, réduisant tous les dégâts qu'elle inflige de %d%% pendant 10 tours.
+		L'effet augmente avec votre Puissance des sorts.]], "tformat")
+t("Curse of Death", "Malédiction de la Mort", "talent name")
+t([[Curses your target, preventing normal life regeneration and dealing %0.2f darkness damage over 10 turns.
+		The damage will increase with your Spellpower.]], [[Maudit votre cible, empêchant la régénération normale de vie et infligeant %0.2f de dégâts d'obscurité sur 10 tours.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Curse of Vulnerability", "Malédiction de la Vulnérabilité", "talent name")
+t([[Curses your target, decreasing all its resistances by %d%% for 7 turns.
+		The effect will improve with your Spellpower.]], [[Maudit votre cible, réduisant toutes ses résistances de %d%% pendant 7 tours.
+		L'effet augmente avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/hexes.lua"
+
+t("Pacification Hex", "Ensorcellement de Pacification", "talent name")
+t([[Hexes your target, dazing it and everything in a 2 radius ball around it for 3 turns and giving a %d%% chance to daze affected targets again each turn for 20 turns.
+		The chance will increase with your Spellpower.]], [[Ensorcelle votre cible, l'étourdissant ainsi que tout ce qui l'entoure dans un rayon de 2 cases pendant 3 tours, avec %d%% de chance d'étourdir à nouveau les cibles affectées à chaque tour pendant 20 tours.
+		La chance augmente avec votre Puissance des sorts.]], "tformat")
+t("Burning Hex", "Ensorcellement Ardent", "talent name")
+t([[Hexes your target and everything within a radius 2 ball around it for 20 turns. Each time an affected target uses a resource (stamina, mana, vim, ...), it takes %0.2f fire damage.
+		In addition, the cooldown of any talent used while so hexed is increased by %d%% + 1 turn.
+		The damage will increase with your Spellpower.]], [[Ensorcelle votre cible et tout ce qui l'entoure dans un rayon de 2 cases pendant 20 tours. Chaque fois qu'une cible affectée utilise une ressource (endurance, mana, vitae...), elle subit %0.2f de dégâts de feu.
+		De plus, le rechargement de tout talent utilisé sous l'effet de l'ensorcellement est augmenté de %d%% + 1 tour.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Empathic Hex", "Ensorcellement Empathique", "talent name")
+t([[Hexes your target and everything within a radius 2 ball around it. Each time they do damage, they take %d%% of the same damage for 20 turns.
+		The damage will increase with your Spellpower.]], [[Ensorcelle votre cible et tout ce qui l'entoure dans un rayon de 2 cases. Chaque fois qu'elles infligent des dégâts, elles subissent %d%% des mêmes dégâts pendant 20 tours.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Domination Hex", "Ensorcellement de Domination", "talent name")
+t([[Hexes your target, forcing it to be your thrall for %d turns.
+		If you damage the target, it will be freed from the hex.]], [[Ensorcelle votre cible, la forçant à être votre serviteur pendant %d tours.
+		Si vous causez des dégâts à la cible, elle sera libérée de l'ensorcellement.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/plague.lua"
+
+t("Virulent Disease", "Maladie Virulente", "talent name")
+t("%s resists the disease!", "%s résiste à la maladie !", "logSeen")
+t([[Whenever you deal non-disease blight damage you apply a disease dealing %0.2f blight damage per turn for 6 turns and reducing one of its physical stats (strength, constitution, dexterity) by %d. The three diseases can stack.
+		Virulent Disease will always try to apply a disease the target does not currently have, and also one that will have the most debilitating effect for the target.
+		This disease will try to prioritize being applied to an enemy with a high disease count near the target.
+		The effect will increase with your Spellpower.]], [[Chaque fois que vous infligez des dégâts de maladie (hors maladies), vous appliquez une maladie qui inflige %0.2f de dégâts de maladie par tour pendant 6 tours et réduit un de ses attributs physiques (force, constitution, dextérité) de %d. Les trois maladies peuvent se cumuler.
+		Maladie Virulente tentera toujours d'appliquer une maladie que la cible n'a pas actuellement, et aussi celle qui aura l'effet le plus débilitant pour la cible.
+		Cette maladie tentera de prioriser son application sur un ennemi avec un grand nombre de maladies près de la cible.
+		L'effet augmente avec votre Puissance des sorts.]], "tformat")
+t("Cyst Burst", "Éclatement de Kyste", "talent name")
+t([[Make your target's diseases burst, doing %0.2f blight damage for each disease it is infected with.
+		This will also spread any diseases to any nearby foes in a radius of %d with a minimum duration of 6.
+		The damage will increase with your Spellpower.]], [[Faites éclater les maladies de votre cible, infligeant %0.2f de dégâts de maladie par maladie dont elle est infectée.
+		Cela répandra également toutes les maladies aux ennemis proches dans un rayon de %d cases avec une durée minimale de 6 tours.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Catalepsy", "Catalepsie", "talent name")
+t("Diseases #DARK_GREEN#BURN THROUGH#LAST# %s!", "Les maladies #DARK_GREEN#CONSUMENT#LAST# %s !", "logSeen")
+t("%s resists the stun!", "%s résiste à l'étourdissement !", "logSeen")
+t("All your foes within a radius %d ball infected with a disease enter a cataleptic state, stunning them for %d turns and dealing %d%% of all remaining disease damage instantly.", "Tous vos ennemis dans un rayon de %d cases infectés par une maladie entrent dans un état cataleptique, les étourdissant pendant %d tours et infligeant immédiatement %d%% des dégâts restants de toutes les maladies. Les maladies sont ensuite supprimées.", "tformat")
+t("Epidemic", "Épidémie", "talent name")
+t("The diseases of %s spread!", "Les maladies de %s se répandent !", "logSeen")
+t([[Infects the target with a very contagious disease, doing %0.2f damage per turn for 6 turns.
+		If any blight damage from non-diseases hits the target, the epidemic may activate and spread a random disease to nearby targets within a radius 2 ball.
+		The chance to spread increases with the blight damage dealt and is 100%% if it is at least %d%% of the target's maximum life.
+		Creatures suffering from that disease will also suffer healing reduction (%d%%) and diseases immunity reduction (%d%%).
+		Epidemic is an extremely potent disease; as such, it fully ignores the target's diseases immunity.
+		The damage will increase with your Spellpower, and the spread chance increases with the amount of blight damage dealt.]], [[Infecte la cible avec une maladie très contagieuse, infligeant %0.2f de dégâts par tour pendant 6 tours.
+		Chaque fois que des dégâts de maladie (hors maladies) touchent la cible, l'épidémie peut s'activer et répandre une maladie aléatoire aux cibles proches dans un rayon de 2 cases.
+		La chance de propagation augmente avec les dégâts de maladie infligés et devient 100%% si ces dégâts représentent au moins %d%% de la vie maximale de la cible.
+		Les créatures souffrant de cette maladie subiront également une réduction des soins de %d%% et une réduction de l'immunité aux maladies de %d%%.
+		L'Épidémie est une maladie extrêmement puissante ; à ce titre, elle ignore totalement l'immunité aux maladies de la cible.
+		Les dégâts augmentent avec votre Puissance des sorts, et la chance de propagation augmente avec la quantité de dégâts de maladie infligés.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/reaving-combat.lua"
+
+t("Corrupted Strength", "Force Corrompue", "talent name")
+t([[Allows you to dual wield any type of one handed weapons, and increases the damage of the off-hand weapon to %d%%.
+		Also, casting a spell (which uses a turn) will give a free melee attack at a random target in melee range for %d%% blight damage.]], [[Vous permet de manier en double toute arme à une main et augmente les dégâts de l'arme en main secondaire à %d%%.
+		De plus, lancer un sort (qui utilise un tour) donne une attaque de mêlée gratuite sur une cible aléatoire à portée de mêlée pour %d%% de dégâts de maladie par coup.]], "tformat")
+t("Bloodlust", "Soif de Sang", "talent name")
+t([[Each time you hit an enemy with a melee weapon you enter a bloodlust-infused frenzy, increasing your Spellpower by %0.1f.
+		This effect stacks up to 10 times for a total Spellpower gain of %d.
+		The frenzy lasts 3 turns.]], [[Chaque fois que vous touchez un ennemi avec une arme de mêlée, vous entrez dans une frénésie assoiffée de sang, augmentant votre Puissance des sorts de %0.1f.
+		Cet effet se cumule jusqu'à 10 fois pour un gain total de %d de Puissance des sorts.
+		La frénésie dure 3 tours.]], "tformat")
+t("Carrier", "Porteur", "talent name")
+t([[You gain a %d%% resistance to diseases, and each of your melee attacks have a %d%% chance to spread any diseases on your target.
+		(As the Epidemic talent with the melee attack treated like blight damage.)]], [[Vous gagnez %d%% de résistance aux maladies et chacune de vos attaques de mêlée a %d%% de chance de répandre une maladie aléatoire aux cibles proches dans un rayon de 2 cases.
+		(La maladie se répand comme avec le talent Épidémie, en traitant votre attaque de mêlée comme des dégâts de maladie).]], "tformat")
+t("Acid Blood", "Sang Acide", "talent name")
+t([[Your blood turns into an acidic mixture. When you get hit, the attacker is splashed with acid.
+		This deals %0.2f acid damage each turn for 5 turns, and reduces the attacker's Accuracy by %d.
+		At level 3, it will also reduce Armour by %d for 5 turns.
+		The damage will increase with your Spellpower.]], [[Votre sang se transforme en un mélange acide. Lorsque vous êtes touché, l'attaquant est aspergé d'acide.
+		Cela inflige %0.2f de dégâts d'acide par tour pendant 5 tours et réduit la Précision de l'attaquant de %d.
+		Au niveau 3, cela réduit également l'Armure de %d pendant 5 tours.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/rot.lua"
+
+t("Infectious Bite", "Morsure Infectieuse", "talent name")
+t("@Source@ bites blight poison into @target@.", "@Source@ injecte du poison de maladie dans @Target@.", "_t")
+t([[Bite the target, dealing %d%% melee damage  
+		If the attack hits you'll inject blight poison into the target, dealing %0.2f blight damage and a further %0.2f blight damage over 4 turns.
+		The bonus damage improves with your Spellpower.]], [[Mordez la cible, infligeant %d%% de dégâts de mêlée.
+		Si l'attaque touche, vous injectez du poison de maladie dans la cible, infligeant %0.2f de dégâts de maladie et %0.2f de dégâts de maladie supplémentaires sur 4 tours.
+		Le bonus de dégâts augmente avec votre Puissance des sorts.]], "tformat")
+t("A worm spawned from a damaged horror.  Destroying it may have consequences.", "Un ver engendré par une horreur blessée. Le détruire pourrait avoir des conséquences.", "_t")
+t("%s exudes a corrupted gas as it dies.", "%s exhale un gaz corrompu en mourant.", "logSeen")
+t("Summon", "Invocation", "_t")
+t("Infestation", "Infestation", "talent name")
+t([[Your body has become a mass of living corruption, increasing your blight and acid resistance by %d%% and blight affinity by %d%%.
+On taking damage greater than 15%% of your maximum health, the damage will be reduced by %d%% and a carrion worm mass will burst forth onto a nearby tile, attacking your foes for 5 turns.
+You can never have more than 5 worms active from any source at a time.
+When a carrion worm dies it will explode into a radius 2 pool of blight for 5 turns, dealing %0.2f blight damage each turn and healing you for 33%% of that amount.]], [[Votre corps est devenu une masse de corruption vivante, augmentant votre résistance à la maladie et à l'acide de %d%% et votre affinité à la maladie de %d%%.
+En subissant des dégâts supérieurs à 15%% de votre vie maximale, les dégâts seront réduits de %d%% et une masse de vers charognards surgira sur une case voisine, attaquant vos ennemis pendant 5 tours.
+Vous ne pouvez jamais avoir plus de 5 vers actifs simultanément, quelle que soit la source.
+Lorsqu'un ver charognard meurt, il explose en une mare de maladie dans un rayon de 2 cases pendant 5 tours, infligeant %0.2f de dégâts de maladie par tour et vous soignant de 33%% de cette quantité.]], "tformat")
+t("Worm Walk", "Saut Vermineux", "talent name")
+t("You do not have line of sight to this location.", "Vous n'avez pas de ligne de vue vers cet emplacement.", "logPlayer")
+t("The worm walk fizzles!", "Le saut vermineux échoue !", "logSeen")
+t([[You disperse into a mass of carrion worms, reforming near the target location (%d teleport accuracy).
+If used on a worm mass, you merge with it, moving to it's location, healing you for %d, restoring %d vim, and destroying the mass.]], [[Vous vous dispersez en une masse de vers charognards, vous reformant près de l'emplacement cible (%d case(s) de précision).
+Si utilisé sur une masse de vers, vous fusionnez avec elle, vous déplaçant à son emplacement, vous soignant de %d points de vie, restaurant %d de Vitae et détruisant la masse.]], "tformat")
+t("Pestilent Blight", "Maladie Pestilentielle", "talent name")
+t([[You have a %d%% chance on dealing blight damage to cause the target to rot away, silencing, disarming, blinding or pinning them for %d turns. This effect has a cooldown.
+At talent level 4, this affects targets in a radius 1 ball.
+Your worms also have a %d%% chance to blind, silence, disarm or pin with their melee attacks, lasting 2 turns.
+The chance to apply this effect will increase with your Spellpower.]], [[Lorsque vous infligez des dégâts de maladie, vous avez %d%% de chance de faire pourrir la cible, la réduisant au silence, la désarmant, l'aveuglant ou l'immobilisant pendant %d tours. Cet effet a un rechargement.
+Au niveau 4, affecte les cibles dans un rayon de 1 case.
+Vos vers ont également %d%% de chance d'aveugler, de réduire au silence, de désarmer ou d'immobiliser avec leurs attaques de mêlée, durant 2 tours.
+La chance d'appliquer cet effet augmente avec votre Puissance des sorts.]], "tformat")
+t("Worm Rot", "Pourriture Vermeuse", "talent name")
+t("%s resists the worm rot!", "%s résiste à la pourriture vermeuse !", "logSeen")
+t([[Infects the target with parasitic carrion worm larvae for 5 turns.  Each turn the disease will remove a beneficial physical effect and deal %0.2f acid and %0.2f blight damage.
+If not cleared after five turns it will inflict %0.2f blight damage as the larvae hatch, removing the effect but spawning a full grown carrion worm mass near the target's location.
+Even if this disease is removed early, there is still a %d%% chance for the larvae to hatch.
+You can never have more than 5 worms active from any source at a time.
+The damage dealt will increase with your Spellpower.]], [[Infecte la cible avec des larves de vers charognards parasites pendant 5 tours. À chaque tour, la maladie supprimera un effet physique positif et infligera %0.2f de dégâts d'acide et %0.2f de dégâts de maladie.
+Si non éliminée après 5 tours, elle infligera %0.2f de dégâts de maladie lorsque les larves écloront, supprimant l'effet mais engendrant une masse de vers charognards adultes près de la cible.
+Même si cette maladie est supprimée tôt, il y a toujours %d%% de chance que les larves éclosent.
+Vous ne pouvez jamais avoir plus de 5 vers actifs simultanément, quelle que soit la source.
+Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/sanguisuge.lua"
+
+t("Drain", "Drainage", "talent name")
+t([[Fires a bolt of blight, doing %0.2f blight damage and replenishing 20%% of it as vim energy.
+		The amount of vim regained depends on the target's rank (higher ranks give more vim).
+		The effect will increase with your Spellpower.]], [[Tire un rayon de maladie, infligeant %0.2f de dégâts de maladie et reconstituant 20%% de ces dégâts en Vitae.
+		La quantité de Vitae récupérée dépend du rang de la cible (les rangs plus élevés donnent plus de Vitae).
+		L'effet augmente avec votre Puissance des sorts.]], "tformat")
+t("Bloodcasting", "Diffusion de Sang", "talent name")
+t("The cost of using life instead of vim for talents is reduced to %d%%.", "Lorsqu'il n'y a pas assez de Vitae pour utiliser vos talents, de la vie est consommée à la place. Ce coût en vie est réduit à %d%%.", "tformat")
+t("Absorb Life", "Absorption de Vie", "talent name")
+t([[Absorbs the life force of your foes as you kill them.
+		As long as this talent is active, vim will decrease by 0.5 per turn and increase by %0.1f for each kill of a non-undead creature (in addition to the usual increase based on Willpower).]], [[Absorbe la force vitale de vos ennemis lorsque vous les tuez.
+		Tant que ce talent est actif, la Vitae diminuera de 0.5 par tour et augmentera de %0.1f pour chaque mort d'une créature non-morte (en plus de l'augmentation habituelle basée sur la Volonté).]], "tformat")
+t("Life Tap", "Conversion de Vie", "talent name")
+t([[Feed on the pain you cause your foes.
+			For 2 turns you gain %d%% lifesteal on all damage dealt.
+			The lifesteal will increase with your Spellpower.]], [[Vous vous nourrissez de la douleur que vous causez à vos ennemis.
+		Pendant 2 tours, vous gagnez %d%% de vol de vie sur tous les dégâts infligés.
+		Le vol de vie augmente avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/scourge.lua"
+
+t("Virulent Strike", "Frappe Virulente", "talent name")
+t("You cannot use Virulent Strike without two weapons!", "Vous ne pouvez pas utiliser Frappe Virulente sans deux armes !", "logPlayer")
+t("Strike the target with both weapons dealing %d%% damage with each hit.  Each strike that hits will increase the duration of the lowest duration disease effect by %d.", [[Frappez la cible avec les deux armes, infligeant %d%% de dégâts par coup.
+Chaque coup réussi augmentera la durée de l'effet de maladie de plus courte durée de %d tour(s).]], "tformat")
+t("Ruin", "Ruine", "talent name")
+t([[Concentrate on the corruption you bring, enhancing each of your melee strikes with %0.2f blight damage (which also heals you for %0.2f each hit).
+		The damage will increase with your Spellpower.]], [[Concentrez-vous sur la corruption que vous apportez, améliorant chacune de vos frappes de mêlée de %0.2f de dégâts de maladie (qui vous soigne également de %0.2f par coup).
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Acid Strike", "Frappe Acide", "talent name")
+t("You cannot use Acid Strike without two weapons!", "Vous ne pouvez pas utiliser Frappe Acide sans deux armes !", "logPlayer")
+t([[Strike with each of your weapons, doing %d%% acid weapon damage with each hit.
+		If at least one of the strikes hits, an acid splash is generated, doing %0.2f acid damage to all enemies in radius %d around the foe you struck.
+		The splash damage will increase with your Spellpower.]], [[Frappez avec chacune de vos armes, infligeant %d%% de dégâts d'arme acide par coup.
+		Si au moins un des coups touche, une éclaboussure d'acide est générée, infligeant %0.2f de dégâts d'acide à tous les ennemis dans un rayon de %d cases autour de l'ennemi frappé.
+		Les dégâts d'éclaboussure augmentent avec votre Puissance des sorts.]], "tformat")
+t("Corrupting Strike", "Frappe Corruptrice", "talent name")
+t("You cannot use Corrupting Strike without two weapons!", "Vous ne pouvez pas utiliser Frappe Corruptrice sans deux armes !", "logPlayer")
+t("Corrupt the target reducing disease immunity by 100%% for 2 turns and stripping up to 2 nature sustains then strike with both your weapons dealing %d%% damage.", "Corrompez la cible, réduisant son immunité aux maladies de 100%% pendant 2 tours et supprimant jusqu'à 2 talents soutenus de nature. Puis frappez avec vos deux armes, infligeant %d%% de dégâts par coup.", "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/shadowflame.lua"
+
+t("Wraithform", "Forme Spectrale", "talent name")
+t([[Turn into a wraith, allowing you to walk through walls and removing the need to breath for %d turns.
+		Also increases your defense and armour by %d and %d, respectively.
+		If you are still in a wall when the effect ends you will randomly teleport.
+		]], [[Transformez-vous en spectre, vous permettant de traverser les murs et éliminant le besoin de respirer pendant %d tours.
+		Augmente également votre défense de %d et votre armure de %d.
+		Si vous êtes encore dans un mur lorsque l'effet se termine, vous vous téléporterez aléatoirement.]], "tformat")
+t("Darkfire", "Feu Sombre", "talent name")
+t([[Conjures up a bolt of shadowflame that moves toward the target and explodes into a flash of darkness and fire, doing %0.2f fire damage and %0.2f darkness damage in a radius of %d.
+		The damage will increase with your Spellpower.]], [[Conjure un rayon de flamme ténébreuse qui se dirige vers la cible et explose en un éclair de ténèbres et de feu, infligeant %0.2f de dégâts de feu et %0.2f de dégâts d'obscurité dans un rayon de %d cases.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Flame of Urh'Rok", "Flamme de Urh'Rok", "talent name")
+t([[Call upon the essence of the supreme demon overlord Urh'Rok to turn into a demon.
+		While in demon form, you gain %d%% fire resistance, %d%% darkness resistance, and your global speed is increased by %d%%.
+		The flames of the Fearscape will heal you while in demon form.
+		The resistances and heal will increase with your Spellpower.]], [[Invoquez l'essence du suprême seigneur des démons Urh'Rok pour vous transformer en démon.
+		Sous forme de démon, vous gagnez %d%% de résistance au feu, %d%% de résistance à l'obscurité et votre vitesse globale augmente de %d%%.
+		Les flammes du Plan de la Peur vous soigneront sous forme de démon.
+		Les résistances et les soins augmentent avec votre Puissance des sorts.]], "tformat")
+t("Fearscape", "Plan de la Peur", "talent name")
+t("This spell cannot be used from within the Fearscape.", "Ce sort ne peut pas être utilisé depuis l'intérieur du Plan de la Peur.", "logPlayer")
+t("This spell cannot be cast here.", "Ce sort ne peut pas être lancé ici.", "logPlayer")
+t("The spell fizzles...", "Le sort échoue...", "logPlayer")
+t("#LIGHT_RED#You are taken to the Fearscape!", "#LIGHT_RED#Vous êtes emmené dans le Plan de la Peur !", "logPlayer")
+t("#LIGHT_RED#You are brought back from the Fearscape!", "#LIGHT_RED#Vous êtes ramené du Plan de la Peur !", "logPlayer")
+t([[Summon a part of the Fearscape to intersect with the current level.
+		You and your target are taken to the Fearscape, trapped there until you end the spell or until your target dies.
+		While inside, a constant aura of flames will burn both of you for %0.2f fire damage (demons are healed instead) each turn.
+		When the spell ends, only you and the target (if still alive) plus any loose objects are taken back to your home plane; all summons are left in the Fearscape.
+		This powerful spell drains 5 vim per turn initially, increasing by +1 for each turn it has been active, and ends when your vim is depleted.
+		It has no effect if cast from within the Fearscape.
+		The damage will increase with your Spellpower.]], [[Invoque une partie du Plan de la Peur pour l'intersecter avec le niveau actuel.
+		Vous et votre cible êtes emmenés dans le Plan de la Peur, piégés là jusqu'à ce que vous mettiez fin au sort ou que votre cible meure.
+		À l'intérieur, une aura constante de flammes vous brûlera tous les deux pour %0.2f de dégâts de feu (les démons sont soignés à la place) par tour.
+		Quand le sort prend fin, seulement vous et la cible (si encore en vie), ainsi que tous les objets au sol, êtes ramenés à votre plan d'origine ; toutes les invocations restent dans le Plan de la Peur.
+		Ce puissant sort draine 5 Vitae par tour initialement, augmentant de +1 pour chaque tour d'activité, et se termine lorsque votre Vitae est épuisée.
+		N'a aucun effet si lancé depuis l'intérieur du Plan de la Peur.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/torment.lua"
+
+t("Willful Tormenter", "Tourmenteur Obstiné", "talent name")
+t([[You set your mind toward a single goal: the destruction of all your foes.
+		Increases the maximum amount of vim you can store by %d.]], "Vous vous concentrez sur un seul objectif : la destruction de tous vos ennemis. Augmente la quantité maximale de Vitae que vous pouvez stocker de %d.", "tformat")
+t("Blood Lock", "Verrou de Sang", "talent name")
+t("Reach out and touch the blood and health of your foes. Any creatures caught in the radius 2 ball will be unable to heal above their current life value (at the time of the casting) for %d turns.", "Étendez votre main et touchez le sang et la santé de vos ennemis. Toutes les créatures touchées dans un rayon de 2 cases ne pourront pas se soigner au-delà de leur valeur de vie actuelle (au moment de l'incantation) pendant %d tours.", "tformat")
+t("Overkill", "Massacre", "talent name")
+t([[When you kill a creature, the remainder of the damage done will not be lost. Instead, %d%% of it will splash in a radius 2 as blight damage.
+		The splash damage will increase with your Spellpower.]], [[Lorsque vous tuez une créature, le dommage excédentaire ne sera pas perdu. À la place, %d%% de ce dommage éclabousse dans un rayon de 2 cases sous forme de dégâts de maladie.
+		Les dégâts d'éclaboussure augmentent avec votre Puissance des sorts.]], "tformat")
+t("Blood Vengeance", "Vengeance de Sang", "talent name")
+t("#RED#The powerful blow energizes %s reducing their cooldowns!#LAST#", "#RED#Le puissant coup énergise %s, réduisant ses rechargements !#LAST#", "logSeen")
+t([[When you are dealt a blow that reduces your life by at least %d%%, you have a %d%% chance to reduce the remaining cooldown of all your talents by 1.
+		Temporary life from Sanguine Infusion will not count against the damage threshold.
+		The chance will increase with your Spellpower.]], [[Lorsque vous recevez un coup qui réduit votre vie d'au moins %d%%, vous avez %d%% de chance de réduire de 1 tour le rechargement restant de tous vos talents.
+		La vie temporaire de l'Infusion Sanguine ne compte pas dans le seuil de dégâts.
+		La chance augmente avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/vile-life.lua"
+
+t("Blood Splash", "Éclaboussure de Sang", "talent name")
+t([[Inflicting pain and death invigorates you.
+		Each time you deal a critical strike you gain %d life (this effect can only happen once per turn).
+		Each time you kill a creature you gain %d life (this effect can only happen once per turn).]], [[Infliger douleur et mort vous revigorise.
+		Chaque fois que vous portez un coup critique, vous gagnez %d points de vie (cet effet ne peut se produire qu'une fois par tour).
+		Chaque fois que vous tuez une créature, vous gagnez %d points de vie (cet effet ne peut se produire qu'une fois par tour).]], "tformat")
+t("Elemental Discord", "Discorde Élémentaire", "talent name")
+t([[Use elemental damage dealt to you to trigger terrible effects on the source:
+		- Fire: burn for %0.2f fire damage over 5 turns
+		- Cold: freeze for 3 turns with %d iceblock power
+		- Acid: blind for %d turns
+		- Lightning: daze for %d turns
+		- Nature: %d%% slow for 4 turns
+		This effect can only happen once every 10 turns per damage type.
+		The damage will increase with your Spellpower.]], [[Utilisez les dégâts élémentaires que vous recevez pour déclencher des effets terribles sur leur source :
+		* #LIGHT_RED#Feu#LAST# : brûle pour %0.2f de dégâts de feu sur 5 tours.
+		* #1133F3#Froid#LAST# : gèle en bloc de glace pendant 3 tours, avec %d de puissance.
+		* #GREEN#Acide#LAST# : aveugle pendant %d tours.
+		* #ROYAL_BLUE#Foudre#LAST# : étourdit pendant %d tours.
+		* #LIGHT_GREEN#Nature#LAST# : ralentit de %d%% pendant 4 tours.
+		Cet effet ne peut se produire qu'une fois toutes les 10 tours par type de dégâts.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Healing Inversion", "Inversion de Soin", "talent name")
+t([[You manipulate the vim of enemies in radius %d to temporarily invert all healing done to them (but not natural regeneration).
+		For 5 turns all healing will instead damage them for %d%% of the healing done as blight.
+		The effect will increase with your Spellpower.]], [[Vous manipulez la Vitae des ennemis dans un rayon de %d cases pour inverser temporairement tous les soins qui leur sont prodigués (mais pas la régénération naturelle).
+		Pendant 5 tours, tous les soins infligent à la place des dégâts égaux à %d%% des soins sous forme de maladie.
+		L'effet augmente avec votre Puissance des sorts.]], "tformat")
+t("Vile Transplant", "Transplantation Vile", "talent name")
+t("#CRIMSON##Source# transfers an effect (%s) to #Target#!", "#CRIMSON##Source# transfère un effet (%s) à #Target# !", "tformat")
+t([[You transfer up to %d physical or magical detrimental effects currently affecting you to a nearby creature at a cost of %d vim per effect.
+		Specific effect immunities will not prevent the transfer.
+		The chance to transfer each effect increases with your Spellpower.]], [[Vous transférez jusqu'à %d effets physiques ou magiques négatifs qui vous affectent actuellement vers une créature proche, au coût de %d Vitae par effet.
+		Les immunités à des effets spécifiques n'empêcheront pas le transfert.
+		La chance de transférer chaque effet augmente avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/corruptions/vim.lua"
+
+t("Soul Rot", "Pourriture d'Âme", "talent name")
+t([[Projects a bolt of pure blight, doing %0.2f blight damage.
+		This spell has an improved critical strike chance of +%0.2f%%.
+		The damage will increase with your Spellpower.]], [[Projette un rayon de maladie pure, infligeant %0.2f de dégâts de maladie.
+		Ce sort a une chance de coup critique améliorée de +%0.2f%%.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Dark Portal", "Portail Sombre", "talent name")
+t([[Open a dark portal (radius 3) to the target zone. All creatures caught inside will be teleported to your location, and you to theirs.
+		All creatures (except you) traversing the portal will catch a random disease, doing %0.2f blight damage per turn for 6 turns and reducing one of its physical stats (strength, constitution, dexterity) by %d.
+		The damage will increase with your Spellpower.]], [[Ouvrez un portail sombre (rayon 3) vers la zone cible. Toutes les créatures capturées à l'intérieur seront téléportées à votre emplacement, et vous au leur.
+		Toutes les créatures (sauf vous) traversant le portail contracteront une maladie aléatoire, recevant %0.2f de dégâts de maladie par tour pendant 6 tours et réduisant un de leurs attributs physiques (force, constitution, dextérité) de %d.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Vimsense", "Sens de Vitae", "talent name")
+t([[Feel the very existence of creatures around you for %d turns, in a radius of 10.
+		The evil touch will reduce their blight resistance by %d%% and all saves by %d, but also make them aware of you.
+		The resistance and save reduction will improve with your Spellpower.]], [[Sentez la véritable existence des créatures autour de vous pendant %d tours dans un rayon de 10 cases. Le contact maléfique réduira leur résistance à la maladie de %d%% et toutes leurs sauvegardes de %d, mais les rendra également conscientes de votre position.
+		La résistance et la réduction des sauvegardes augmentent avec votre Puissance des sorts.]], "tformat")
+t("Leech", "Succion", "talent name")
+t("Each time a creature affected by vimsense hurts you, you regain %0.2f vim and %0.2f health.", "Chaque fois qu'une créature affectée par le Sens de Vitae vous blesse, vous récupérez %0.2f de Vitae et %0.2f de vie.", "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/cunning/ambush.lua"
+
+t("Shadowguard", "Garde des Ombres", "talent name")
+t([[Your Soothing Darkness talent effect now grants 25%% all damage resistance on exiting stealth.
+		When your life drops below 50%% you become immune to negative detrimental effects for %d turns and gain %d defense and %d spellpower for %d turns.]], [[L'effet de votre talent Obscurité Apaisante accorde maintenant 25%% de résistance générale lors de la sortie de furtivité.
+		Lorsque votre vie tombe en dessous de 50%%, vous devenez immunisé aux effets négatifs pendant %d tours et gagnez %d de défense et %d de Puissance des sorts pendant %d tours.]], "tformat")
+t("Shadow Grasp", "Emprise des Ombres", "talent name")
+t("%s resists the silence!", "%s résiste au Silence !", "logSeen")
+t("%s resists the disarm!", "%s résiste au Désarmement !", "logSeen")
+t([[You reach out with the shadows silencing and disarming your target for %d turns.
+		The shadows will deal %d darkness damage to the target and pull it to you.
+		The chance to apply debuffs improves with your Accuracy and the damage with your Spellpower.]], [[Vous étendez les ombres pour réduire au silence et désarmer votre cible pendant %d tours.
+		Les ombres infligent %d de dégâts d'obscurité à la cible et la tirent vers vous.
+		La chance d'appliquer les malus augmente avec votre Précision et les dégâts avec votre Puissance des sorts.]], "tformat")
+t("Umbral Agility", "Agilité Ombrale", "talent name")
+t([[Your mastery of dark magic empowers you.
+		You gain %d Accuracy, %d Defense, and %d%% Darkness damage penetration.
+		The effects will increase with your Spellpower stat.]], [[Votre maîtrise de la magie sombre vous renforce.
+		Vous gagnez %d de Précision, %d de Défense et %d%% de pénétration des dégâts d'obscurité.
+		Les effets augmentent avec votre Puissance des sorts.]], "tformat")
+t("Shadow Veil", "Voile des Ombres", "talent name")
+t("No target nearby.", "Aucune cible à proximité.", "logPlayer")
+t([[You veil yourself in shadows and let them control you.
+		Immediately after activation and each turn for %d turns, you blink to a nearby foe (within range %d of the location of the first target hit), hitting it for %d%% darkness weapon damage.
+		While veiled, you become immune to status effects and gain %d%% all resistance.
+		While this goes on, you cannot be stopped unless you are killed, and you cannot control your character.
+		If a target isn't found this effect ends.
+		The movement is not considered a teleport.
+		The resistance will increase with your Spellpower stat.]], [[Vous vous enveloppez d'ombres et les laissez vous contrôler.
+		Immédiatement après l'activation et à chaque tour pendant %d tours, vous vous projetez vers un ennemi proche (dans un rayon de %d cases du premier cible touché), lui infligeant %d%% de dégâts d'arme d'obscurité.
+		Tandis que vous êtes voilé, vous devenez immunisé aux effets de statut et gagnez %d%% de résistance générale.
+		Pendant cet effet, vous ne pouvez pas être arrêté (sauf si vous êtes tué), mais perdez le contrôle de votre personnage.
+		L'effet se termine si aucune cible n'est trouvée.
+		Ce déplacement n'est pas considéré comme une téléportation.
+		La résistance augmente avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/cunning/artifice.lua"
+
+t([[#YELLOW#%s (prepared, level %s)#LAST#:
+]], [[#YELLOW#%s (préparé, niveau %s)#LAST#:
+]], "tformat")
+t([[#GREY#(see talent description)#LAST#
+]], [[#GREY#(voir la description du talent)#LAST#
+]], "_t")
+t("#GREY#You notice %s has prepared: %s.", "#GREY#Vous remarquez que %s a préparé : %s.", "logSeen")
+t("Rogue's Tools", "Outils du Voleur", "talent name")
+t([[With some advanced preparation, you learn to create and equip one of a number of useful tools (at #YELLOW#level %d#WHITE#):
+
+%s
+Preparing a tool sets its talent level and puts it on cooldown.
+]], [[Avec une préparation avancée, vous apprenez à créer et équiper l'un des nombreux outils utiles (au #YELLOW#niveau %d#WHITE#) :
+
+%s
+Préparer un outil définit son niveau de talent et le met en rechargement.
+]], "tformat")
+t("Cunning Tools", "Outils Ingénieux", "talent name")
+t([[With some advanced preparation, you learn to create and equip a second tool (at #YELLOW#level %d#WHITE#):
+
+%s
+Preparing a tool sets its talent level and puts it on cooldown.
+Only one tool of each type can be equipped at a time.
+]], [[Avec une préparation avancée, vous apprenez à créer et équiper un second outil (au #YELLOW#niveau %d#WHITE#) :
+
+%s
+Préparer un outil définit son niveau de talent et le met en rechargement.
+Un seul outil de chaque type peut être équipé à la fois.
+]], "tformat")
+t("Intricate Tools", "Outils Complexes", "talent name")
+t([[With some advanced preparation, you learn to create and equip a third tool (at #YELLOW#level %d#WHITE#):
+
+%s
+Preparing a tool sets its talent level and puts it on cooldown.
+Only one tool of each type can be equipped at a time.
+]], [[Avec une préparation avancée, vous apprenez à créer et équiper un troisième outil (au #YELLOW#niveau %d#WHITE#) :
+
+%s
+Préparer un outil définit son niveau de talent et le met en rechargement.
+Un seul outil de chaque type peut être équipé à la fois.
+]], "tformat")
+t("Master Artificer", "Maître Artificier", "talent name")
+t("none", "aucun", "_t")
+t([[You become a master of your craft, allowing you to focus on a single tool (#YELLOW#currently %s#LAST#) to greatly improve its capabilities:
+
+%s
+The effects depend on this talent's level.
+Mastering a new tool places it (and its special effects, as appropriate) on cooldown.]], [[Vous devenez un maître dans votre art, vous permettant de vous concentrer sur un seul outil (#YELLOW#actuellement : %s#LAST#) pour en améliorer grandement les capacités :
+
+%s
+Les effets dépendent du niveau de ce talent.
+La maîtrise d'un nouvel outil le met en rechargement (ainsi que ses effets spéciaux, le cas échéant).]], "tformat")
+t("Hidden Blades", "Lames Cachées", "talent name")
+t("#Source# strikes #target# with hidden blades!", "#Source# frappe #Target# avec des lames cachées !", "logCombat")
+t("Melee criticals trigger an extra unarmed attack, inflicting %d%% damage. 4 turn cooldown.", "Les coups critiques de mêlée déclenchent une attaque à mains nues supplémentaire, infligeant %d%% de dégâts. Rechargement de 4 tours.", "tformat")
+t("not prepared", "non préparé", "_t")
+t([[You conceal spring loaded blades within your equipment. On scoring a critical strike, you follow up with your blades for %d%% damage (as an unarmed attack).
+This talent has a cooldown.
+#YELLOW#Prepared with: %s#LAST#]], [[Vous dissimulez des lames à ressort dans votre équipement. En portant un coup critique, vous enchaînez avec vos lames pour %d%% de dégâts (en tant qu'attaque à mains nues).
+Ce talent a un rechargement.
+#YELLOW#Préparé avec : %s#LAST#]], "tformat")
+t("Assassinate", "Assassiner", "talent name")
+t("You must have Hidden Blades prepared to use this talent.", "Vous devez avoir les Lames Cachées préparées pour utiliser ce talent.", "logPlayer")
+t("#Source# strikes at a vital spot on #target#!", "#Source# frappe un point vital de #Target# !", "logCombat")
+t("You prime your Hidden Blades to cause bleeding and facilitate the Assassinate ability, which allows you to strike twice for %d%% unarmed damage, hitting automatically while ignoring armor and resistance.", "Vous préparez vos Lames Cachées pour causer un saignement et faciliter la capacité Assassiner, vous permettant de frapper deux fois pour %d%% de dégâts à mains nues par coup, en touchant automatiquement et en ignorant l'armure et la résistance physique.", "tformat")
+t([[You strike your target with your Hidden Blades twice in a vital spot for %d%% unarmed (physical) damage.  You must be able to see your target to use this attack, but it always hits and ignores all armor and physical resistance.
+In addition, your hidden blades now inflict a further %d%% of all damage dealt as bleeding over 5 turns.]], [[Vous frappez votre cible avec vos Lames Cachées deux fois en un point vital pour %d%% de dégâts physiques à mains nues. Vous devez pouvoir voir votre cible pour utiliser cette attaque, mais elle touche toujours et ignore toute l'armure et la résistance physique.
+De plus, vos Lames Cachées infligent désormais %d%% de tous les dégâts infligés sous forme de saignement sur 5 tours.]], "tformat")
+t("Rogue's Brew", "Mixture du Voleur", "talent name")
+t("%s is cured!", "%s est soigné !", "logSeen")
+t("Prepare a potion that restores %d life, %d stamina, and cures %d negative physical effects. 20 turn cooldown.", "Prépare une potion qui restaure %d points de vie, %d d'endurance et soigne %d effet(s) physique(s) négatif(s). Rechargement de 20 tours.", "tformat")
+t([[Imbibe a potent mixture of energizing and restorative substances, restoring %d life, %d stamina and curing %d detrimental physical effects.  The restorative effects improve with your Cunning.
+	#YELLOW#Prepared with: %s#LAST#]], [[Ingérez un puissant mélange de substances énergisantes et restauratrices, restaurant %d points de vie, %d d'endurance et soignant %d effet(s) physique(s) négatif(s). Les effets restaurateurs s'améliorent avec votre Ruse.
+	#YELLOW#Préparé avec : %s#LAST#]], "tformat")
+t("Rogue's Brew Mastery", "Maîtrise de la Mixture du Voleur", "talent name")
+t("Your Rogue's Brew fortifies you for 8 turns, preventing you from dying until you reach -%d life.", "Votre Mixture du Voleur vous fortifie pendant 8 tours, vous empêchant de mourir jusqu'à ce que vous atteigniez -%d points de vie.", "tformat")
+t("Adjust your Rogue's Brew formulation so that it fortifies you for 8 turns, preventing you from dying until you reach -%d life.", "Ajustez la formule de votre Mixture du Voleur pour qu'elle vous fortifie pendant 8 tours, vous empêchant de mourir jusqu'à ce que vous atteigniez -%d points de vie.", "tformat")
+t("Smokescreen", "Écran de Fumée", "talent name")
+t("Throw a smokebomb creating a radius 2 cloud of smoke, lasting %d turns, that blocks sight and reduces enemies' vision by %d. 15 turn cooldown.", "Lance une bombe fumigène créant un nuage de fumée de rayon 2 durant %d tours, bloquant la ligne de vue et réduisant la portée de vision des ennemis de %d. Rechargement de 15 tours.", "tformat")
+t([[Throw a vial of volatile liquid that explodes in a radius %d cloud of smoke lasting %d turns.  The smoke blocks line of sight, and enemies within will have their vision range reduced by %d.
+		Use of this talent will not break stealth, and creatures affected by the smokes can never prevent you from activating stealth, even if their proximity would normally forbid it.
+		#YELLOW#Prepared with: %s#LAST#]], [[Lancez un flacon de liquide volatil qui explose en un nuage de fumée dans un rayon de %d cases durant %d tours. La fumée bloque la ligne de vue et les ennemis à l'intérieur verront leur portée de vision réduite de %d.
+		L'utilisation de ce talent ne rompt pas la furtivité, et les créatures affectées par la fumée ne peuvent jamais vous empêcher d'activer la furtivité, même si leur proximité l'interdirait normalement.
+		#YELLOW#Préparé avec : %s#LAST#]], "tformat")
+t("Smokescreen Mastery", "Maîtrise de l'Écran de Fumée", "talent name")
+t("Your Smokescreen is infused with chokedust. Enemies in the smoke take %0.2f nature damage and may be silenced.", "Votre Écran de Fumée est infusé de poussière asphyxiante. Les ennemis dans la fumée subissent %0.2f de dégâts de nature et peuvent être réduits au silence.", "tformat")
+t("You infuse your smoke bomb with chokedust. Each turn, enemies in the smoke take %0.2f nature damage and are 50%% likely to be silenced.", "Vous infusez votre bombe fumigène avec de la poussière asphyxiante. À chaque tour, les ennemis dans la fumée subissent %0.2f de dégâts de nature et ont 50%% de chance d'être réduits au silence.", "tformat")
+t("Dart Launcher", "Lance-Dards", "talent name")
+t("%s resists the sedation!", "%s résiste à la sédation !", "logSeen")
+t("Fire a poisoned dart dealing %0.2f physical damage that puts the target to sleep for 4 turns. 10 turn cooldown.", "Tire un dard empoisonné infligeant %0.2f de dégâts physiques et endormant la cible pendant 4 tours. Rechargement de 10 tours.", "tformat")
+t([[Fire a poisoned dart from a silent, concealed launcher on your person that deals %0.2f physical damage and puts the target (living only) to sleep for 4 turns, rendering them unable to act. Every %d points of damage the target takes brings it closer to waking by 1 turn.
+This can be used without breaking stealth.
+#YELLOW#Prepared with: %s#LAST#]], [[Tirez un dard empoisonné depuis un lanceur silencieux et dissimulé, infligeant %0.2f de dégâts physiques et endormant la cible (êtres vivants uniquement) pendant 4 tours, l'empêchant d'agir. Pour chaque %d points de dégâts reçus, la cible se réveille 1 tour plus tôt.
+Peut être utilisé sans rompre la furtivité.
+#YELLOW#Préparé avec : %s#LAST#]], "tformat")
+t("Dart Launcher Mastery", "Maîtrise du Lance-Dards", "talent name")
+t("Your darts ignore poison and sleep immunity and waking targets are slowed by %d%% for 4 turns.", "Vos dards ignorent les immunités au poison et au sommeil, et les cibles à leur réveil subissent %d%% de ralentissement pendant 4 tours.", "tformat")
+t("The sleeping poison of your Dart Launcher becomes potent enough to ignore immunity, and upon waking the target is slowed by %d%% for 4 turns.", "Le poison soporifique de votre Lance-Dards devient suffisamment puissant pour ignorer les immunités, et à son réveil, la cible subit %d%% de ralentissement pendant 4 tours.", "tformat")
+t("Grappling Hook", "Grappin", "talent name")
+t("You are too close to your target to swing your hook effectively!", "Vous êtes trop près de votre cible pour utiliser votre grappin efficacement !", "logPlayer")
+t("You cannot move!", "Vous ne pouvez pas vous déplacer !", "logPlayer")
+t("#Source# throws a grappling hook at #target#!", "#Source# lance un grappin sur #Target# !", "logCombat")
+t("#Source#'s grappling hook latches onto #target#!", "Le grappin de #Source# s'accroche à #Target# !", "logCombat")
+t("#Source# is dragged towards #target#!", "#Source# est traîné vers #Target# !", "logCombat")
+t("#Target# is dragged towards #source#!", "#Target# est traîné vers #Source# !", "logCombat")
+t("%s resists the pin!", "%s résiste à l'immobilisation !", "logSeen")
+t("You need more room to swing your hook effectively.", "Vous avez besoin de plus d'espace pour utiliser votre grappin efficacement.", "logPlayer")
+t("%s uses a grappling hook to pull %s %s!", "%s utilise un grappin pour tirer %s vers %s !", "logSeen")
+t("You must anchor the hook to something solid.", "Vous devez ancrer le grappin à quelque chose de solide.", "logPlayer")
+t("Throw a grappling hook up to range %d that drags you towards the target or the target towards you. 8 turn cooldown.", "Lance un grappin jusqu'à %d cases de distance qui vous attire vers la cible ou attire la cible vers vous. Rechargement de 8 tours.", "tformat")
+t([[Toss out a grappling hook to a target within range %d.  If this strikes either a wall or a creature that is immovable or larger than you, you will pull yourself towards it, otherwise, you will drag the target towards you.  Creatures struck by the hook will be pinned for 2 turns.
+		Your grapple target must be at least 2 tiles from you.
+#YELLOW#Prepared with: %s#LAST#]], [[Lancez un grappin vers une cible dans un rayon de %d cases. S'il frappe un mur ou une créature inamovible ou plus grande que vous, vous vous lancerez vers elle ; sinon, vous attirerez la cible vers vous. Les créatures frappées par le grappin seront immobilisées pendant 2 tours.
+		La cible de votre grappin doit être à au moins 2 cases de vous.
+#YELLOW#Préparé avec : %s#LAST#]], "tformat")
+t("Grappling Hook Mastery", "Maîtrise du Grappin", "talent name")
+t("Your grappling hook deals %d%% unarmed damage when it hits, plus a further %0.2f physical and %0.2f nature damage over 4 turns.", "Votre grappin inflige %d%% de dégâts à mains nues lorsqu'il touche, plus %0.2f de dégâts physiques et %0.2f de dégâts de nature supplémentaires sur 4 tours.", "tformat")
+t("Your grappling hook is tipped with vicious, venomous barbs. Creatures struck by it will be hit for %d%% unarmed damage, bleed for %0.2f physical damage and be poisoned for %0.2f nature damage over 4 turns.", "Votre grappin est muni de barbes cruelles et venimeuses. Les créatures frappées subissent %d%% de dégâts à mains nues, saignent pour %0.2f de dégâts physiques et sont empoisonnées pour %0.2f de dégâts de nature sur 4 tours.", "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/cunning/called-shots.lua"
+
+t("Kneecapper", "Brise-Rotule", "talent name")
+t("%s resists being knocked down.", "%s résiste au renversement.", "logSeen")
+t([[Strike your opponent in the knee (or other critical point in an ambulatory appendage) for %d%% weapon damage, knocking them down (%d turn pin) and slowing their movement by %d%% for %d turns afterwards.
+		This shot will bypass other enemies between you and your target.
+		The slow effect becomes more powerful with your Cunning.]], [[Frappez votre adversaire au genou (ou autre point critique d'un membre locomoteur) pour %d%% de dégâts d'arme, le renversant (%d tour(s) d'immobilisation) et ralentissant son mouvement de %d%% pendant %d tours.
+		Ce tir traverse tous les ennemis entre vous et votre cible.
+		L'effet de ralentissement s'intensifie avec votre Ruse.]], "tformat")
+t("Kill Shot", "Tir Fatal", "talent name")
+t("#DARK_ORCHID##Source# snipes #Target# (%+d%%%%%%%% weapon bonus for range)!#LAST#", "#DARK_ORCHID##Source# tire en précision sur #Target# (%+d%%%%%%%% de bonus d'arme selon la distance) !#LAST#", "delayedLogMessage")
+t([[Employ a specialized sniping shot at a target.
+		This shot is focused on precision at long range and deals base %d%% ranged damage with a bonus that increases with distance.
+		The ranged bonus is %d%% (penalty) at point blank range, while at your maximum range of %d it is %d%%.
+		This shot will bypass other enemies between you and your target.]], [[Effectuez un tir de précision spécialisé sur une cible.
+		Ce tir est axé sur la précision à longue portée et inflige %d%% de dégâts de base à distance, avec un bonus qui augmente avec la distance.
+		Le bonus de portée est de %d%% (pénalité) à bout portant, tandis qu'à votre portée maximale de %d il est de %d%%.
+		Ce tir traverse tous les ennemis entre vous et votre cible.]], "tformat")
+t("Noggin Knocker", "Cogneur de Crâne", "talent name")
+t("%s resists the stunning shot!", "%s résiste au tir étourdissant !", "logSeen")
+t([[Fire three shots in quick succession at a vulnerable point on the target (usually the head).
+		Each shot deals %d%% Ranged damage and will try to stun or increase the target's stun duration by 1.
+		These shots will bypass other enemies between you and your target.
+		The chance to stun increases with your Accuracy.]], [[Tirez trois coups en rapide succession sur un point vulnérable de la cible (généralement la tête).
+		Chaque tir inflige %d%% de dégâts à distance et tente d'étourdir la cible ou d'augmenter sa durée d'étourdissement de 1 tour.
+		Ces tirs traversent tous les ennemis entre vous et votre cible.
+		La chance d'étourdir augmente avec votre Précision.]], "tformat")
+t("Sling Sniper", "Franc-Tireur à la Fronde", "talent name")
+t("Your mastery of called shots is unparalleled. and you gain %d%% bonus critical chance and %d%% critical damage with your Called Shots Talents. At rank 3 the cooldowns of all of your Called Shots Talents are reduced by 2 each. At rank 5 you gain %d%% Physical resistance penetration with all Called Shot attacks.", [[Votre maîtrise des tirs ciblés est sans pareille et vous gagnez +%d%% de chance de coup critique et +%d%% de dégâts critiques avec vos talents de Tirs Ciblés.
+Au rang 3, le rechargement de tous vos talents de Tirs Ciblés est réduit de 2 tours chacun.
+Au rang 5, vous gagnez %d%% de pénétration de résistance physique avec tous vos attaques de Tirs Ciblés.]], "tformat")
+
+------------------------------------------------
+section "mod-tome/data/talents/cunning/cunning.lua"
+
+t("cunning", "ruse", "talent category")
+t("stealth", "furtivité", "talent type")
+t("Allows the user to enter stealth.", "Permet à l'utilisateur d'entrer en mode furtif.", "_t")
+t("trapping", "piégeage", "talent type")
+t("The knowledge of trap laying and assorted trickeries.", "La connaissance de la pose de pièges et de diverses ruses.", "_t")
+t("traps", "pièges", "talent type")
+t("Collection of known traps.", "Collection de pièges connus.", "_t")
+t("poisons", "poisons", "talent type")
+t("The knowledge of poisons and how to apply them to 'good' effects.", "La connaissance des poisons et comment les utiliser pour obtenir de 'bons' effets.", "_t")
+t("Collection of known poisons.", "Collection de poisons connus.", "_t")
+t("dirty fighting", "combat déloyal", "talent type")
+t("Teaches various talents to cripple your foes.", "Enseigne divers talents pour handicaper vos ennemis.", "_t")
+t("lethality", "létalité", "talent type")
+t("How to make your foes feel the pain.", "Comment faire ressentir la douleur à vos ennemis.", "_t")
+t("shadow magic", "magie des ombres", "talent type")
+t("Blending magic and shadows.", "Mêlant magie et ombres.", "_t")
+t("ambush", "embuscade", "talent type")
+t("Using darkness and a bit of magic, you manipulate the shadows.", "En utilisant les ténèbres et un peu de magie, vous manipulez les ombres.", "_t")
+t("survival", "survie", "talent type")
+t("The knowledge of the dangers of the world, and how to best avoid them.", "La connaissance des dangers du monde et comment les éviter au mieux.", "_t")
+t("tactical", "tactique", "talent type")
+t("Tactical combat abilities.", "Capacités de combat tactique.", "_t")
+t("scoundrel", "gredin", "talent type")
+t("The use of ungentlemanly techniques.", "L'utilisation de techniques peu courtoises.", "_t")
+t("artifice", "artifice", "talent type")
+t("Create and use cunning tools.", "Créez et utilisez des outils ingénieux.", "_t")
+t("tools", "outils", "talent type")
+t("Artificer's tools.", "Outils de l'artificier.", "_t")
+t("Called Shots", "tirs ciblés", "_t")
+t("Inflict maximum pain to specific places on your enemies.", "Infligez un maximum de douleur à des endroits précis sur vos ennemis.", "_t")
+t("Talent not unlocked", "Talent non débloqué", "_t")
+
+
 
