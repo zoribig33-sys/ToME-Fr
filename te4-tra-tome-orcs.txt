@@ -3473,5 +3473,1459 @@ nous trouverons les hérétiques ensemble
 ceci est le premier jour d’une nouvelle existence
 #{italic}##CRIMSON#et vous n’êtes pas digne d’en voir l’aube#LAST##{normal}#]], "tformat")
 
+------------------------------------------------
+section "tome-orcs/data/lore/sunwall.lua"
+
+t("sunwall", "Mur Solaire", "newLore category")
+t("a page from Commander Trelle's journal", "une page du journal du Commandant Trelle", "_t")
+
+t([[We've done it... we've finally done it. Well, granted, our %s did much of the work, but the result is the same: neither the East nor the West will ever need to fear Orcish rule again. The Prides have been crushed, the survivors have been contained, and our patrols are mopping up the few remaining bands of futile stragglers. Our long-lost allies from the West have come to support us with materials and manpower, and we can finally turn this entire continent into something beautiful. For the first time, Sunwall will not be the solitary bastion of civilization on Var'Eyal.
+
+And yet...
+
+There is one group that remains.  A tiny Orcish pride, really more of a small town, managed to evade our savior's wrath...  a single weed on the edges of our pristine garden, a troubling ember threatening to set the whole continent aflame.  King Tolak has noble aims in trying to set a better example than his vengeful father, but I doubt he'd risk redeeming the Orcs if he'd been through what we have.  The Allied Kingdoms don't know what it's like to live in fear of the Prides, knowing that at any moment they could overrun the Sunwall and take our heads as trophies.  They've got a farportal to hide behind, and don't have to think about their homes and families falling to the same horror that we've been struggling against for our entire lives.  If they did...  suffice to say, they wouldn't have bothered putting up a comfortable camp for the surviving Orcs until the continent was truly safe.
+
+By the Sun...  why would our High Paladin agree to this treaty?  After what we've all been through...
+
+The Orcish scouts are getting bolder.  They've been approaching closer before fleeing, and coming more frequently.  They haven't engaged us yet, but it's only a matter of time...  and all I'm allowed to do is sit and wait on this ugly little bridge, as the West watches from a continent away.  Staring at an open wound, waiting for it to become infected, because they'd rather make a pretty little bow out of the bandages.]], [[Nous l'avons fait... nous l'avons enfin fait. Certes, %s a accompli l'essentiel du travail, mais le résultat est le même : ni l'Orient ni l'Occident n'auront plus jamais à craindre la domination des orcs. Les Fiertés orcs ont été écrasées, les survivants contenus, et nos patrouilles traquent les dernières bandes d'égarés sans espoir. Nos alliés de l'Ouest, retrouvés après une longue séparation, nous apportent matériaux et main-d'œuvre, et nous pouvons enfin faire de ce continent tout entier quelque chose de beau. Pour la première fois, le Mur Solaire ne sera plus l'unique bastion de la civilisation en Var'Eyal.
+
+Et pourtant...
+
+Un groupe subsiste encore. Une minuscule Fierté orc, davantage un petit village qu'autre chose, a réussi à échapper à la colère de notre sauveur... Une mauvaise herbe aux abords de notre jardin immaculé, une braise inquiétante menaçant d'embraser tout le continent. Le roi Tolak poursuit de nobles idéaux en cherchant à montrer un meilleur exemple que son père animé par la vengeance, mais je doute qu'il risquerait de racheter les orcs s'il avait traversé ce que nous avons enduré. Les Royaumes Alliés ignorent ce que signifie vivre dans la peur des Fiertés orcs, en sachant qu'à tout instant elles pourraient submerger le Mur Solaire et emporter nos têtes comme trophées. Ils disposent d'un Portail lointain derrière lequel se cacher et n'ont pas à craindre que leurs foyers et leurs familles soient dévorés par la même horreur contre laquelle nous luttons depuis toujours. Si c'était le cas... disons simplement qu'ils n'auraient pas pris la peine d'installer un camp confortable pour les orcs survivants avant que le continent soit réellement en sécurité.
+
+Par le Soleil... pourquoi notre Haute Paladine aurait-elle accepté ce traité ? Après tout ce que nous avons traversé...
+
+Les éclaireurs orcs se montrent de plus en plus audacieux. Ils s'approchent davantage avant de battre en retraite, et leurs apparitions se font plus fréquentes. Ils ne nous ont pas encore attaqués, mais ce n'est qu'une question de temps... et tout ce que l'on m'autorise à faire est d'attendre sur ce petit pont disgracieux pendant que l'Ouest observe depuis l'autre bout du continent. Ils contemplent une plaie ouverte en attendant qu'elle s'infecte, parce qu'ils préfèrent nouer un joli ruban autour des bandages.]], "tformat")
+
+t("hero", "notre héros", "_t")
+t("heroine", "notre héroïne", "_t")
+
+t("a letter addressed to Outpost Leader John", "une lettre adressée au chef de l'avant-poste John", "_t")
+
+t([[Sir,
+
+The Orcs grow more impudent every day.  Surely you've noticed too - their scouts growing closer, the smoke of their forges drifting over the mountains alongside the clanging of metal being pounded into weaponry, the guttural shouts of their training drills...  Are you really going to obey this suicidal treaty, and keep us from acting until their swords are already through our throats?
+If you were to... [i]see[/i] an approaching assault force, I would verify your report. Legally, we would be untouchable for defending ourselves.  Please, ensure that this inevitable conflict is at least one that gives us the tactical advantage of surprise, not them.
+
+-Cmdr. Trelle]], [[Monsieur,
+
+Les orcs deviennent chaque jour plus insolents. Vous l'avez certainement remarqué vous aussi : leurs éclaireurs s'approchent davantage, la fumée de leurs forges dérive au-dessus des montagnes tandis que résonne le fracas du métal martelé pour fabriquer des armes, et les cris gutturaux de leurs exercices militaires portent jusqu'à nous. Allez-vous vraiment respecter ce traité suicidaire et nous empêcher d'agir jusqu'à ce que leurs lames soient déjà sous nos gorges ?
+
+Si vous veniez à... [i]voir[/i] une force d'assaut approcher, je confirmerais votre rapport. Légalement, nul ne pourrait nous reprocher d'avoir agi en état de légitime défense. Je vous en prie, veillez à ce que ce conflit inévitable nous accorde au moins l'avantage tactique de la surprise, plutôt qu'à eux.
+
+- Cmdt. Trelle]], "_t")
+
+t("a letter addressed to Commander Trelle", "une lettre adressée au Commandant Trelle", "_t")
+
+t([[Trelle,
+
+I respect your intentions and your dedication to our safety, which is the only reason I'm not handing this letter over to Aeryn right this second.  Do you have the faintest clue what this treaty is buying us?  Do you really think we could have kept the Prides' remnants from banding together and becoming, at a minimum, a massive thorn in our side for the next few decades without King Tolak's help? Even if I disagreed with Aeryn that the Orcs deserve a chance of redemption, this treaty is ensuring an [i]extraordinary[/i] amount of help from a nation that, last year, still tolerated roving gangs of mage-lynchers.
+
+I'll spare you the speech about insubordination, lying, and bypassing the chain of command, because a: technically you were "only" asking me to commit those crimes, and b: I've got better things to do than write up a full-blown reprimand for someone who I'm [i]certain[/i] knows exactly what they're doing wrong.  Instead, I'll cut to the chase: Never even think of pulling something like this again.  I'm saving your letter, and if you're ever involved in a questionable use of force, I'm submitting it as evidence.  I thought you were better than this.
+
+-Outpost Leader John]], [[Trelle,
+
+Je respecte tes intentions et ton dévouement à notre sécurité, ce qui est la seule raison pour laquelle je ne remets pas cette lettre à Aeryn à l'instant même. As-tu la moindre idée de ce que ce traité nous apporte ? Penses-tu vraiment que nous aurions pu empêcher les restes des Fiertés de s'unir et de devenir, au minimum, une énorme épine dans notre pied pour les prochaines décennies sans l'aide du roi Tolak ? Même si je n'étais pas d'accord avec Aeryn sur le fait que les Orcs méritent une chance de rédemption, ce traité garantit une quantité [i]extraordinaire[/i] d'aide de la part d'une nation qui, l'année dernière, tolérait encore des gangs itinérants de lyncheurs de mages.
+
+Je t'épargnerai le discours sur l'insubordination, le mensonge et le contournement de la chaîne de commandement, car a : techniquement, tu me demandais « seulement » de commettre ces crimes, et b : j'ai mieux à faire que de rédiger un blâme complet pour quelqu'un dont je suis [i]certain[/i] qu'il sait exactement ce qu'il fait de mal. Au lieu de cela, je vais aller droit au but : n'imagine même pas refaire une chose pareille. Je garde ta lettre, et si jamais tu es impliqué dans un usage discutable de la force, je la présenterai comme preuve. Je pensais que tu valais mieux que ça.
+
+-Chef d'avant-poste John]], "_t")
+
+t("a large, embossed envelope", "un grand enveloppe en relief", "_t")
+t([[#{bold}#TO WHOM IT MAY CONCERN:#{normal}#
+
+Whereas, it can be assumed with 100% certainty that the individual reading this note is the most esteemed authority of the group residing on the bridge connecting Var'Eyal and the Clork Peninsula, as the construct trusted to deliver this message cannot be coerced to decode it;
+and whereas, our observation balloons tell us that this organization is one of high culture and civilization, one comprised of several different species, and would be open to friendly negotiation;
+and whereas, the Orcs have none of the aforementioned qualities, and their continued presence on the Clork Peninsula either directly causes or can lead to countless difficulties and unpleasant situations for both of our groups;
+and whereas, cooperation in the immediate future would be beneficial to both of us, as would a longer period of peace between our two cultures;
+it is therefore imperative that I, and the rest of our species, introduce ourselves.
+
+I am Chief Councillor Tantalos, and I represent the people of #{bold}#Atmos#{normal}#; the orcs call us "Steam Giants" when not using a slew of impolite pejoratives, and we find the name amusing enough to accept it.  The Clork Peninsula is our land, as we have resided here in peace for many thousands of years, before becoming overrun with these distasteful ruffians.  We have been content to let them roam in the undesirable backwater territories of this peninsula, while we looked down from our rightfully elevated places, but various unfortunate circumstances have forced our hand.
+
+We have invented technology #{bold}#far#{normal}# more impressive than yours, or that of any of the remaining miniature races.  Our plebeian citizens are accustomed to luxurious appliances which even your king lacks; our military has abominable weaponry which puts an untrained commoner on even footing with a skilled archer, and lets a moderately experienced marksman kill with range and precision that all but the most powerful archmages would be envious of.  Our people are strong, stronger than any of yours even on a per-pound basis, let alone the advantages of towering over you child-like creatures.  We have countless valuable natural resources, and our many, talented artisans will quickly become accustomed to making smaller garments, jewelry, and bottles of fine spirits for export (among many other high-quality goods).  It should be clear that your diminutive people have much to gain from us; all we wish, for the time being, is for the Clork Peninsula to remain #{bold}#our#{normal}# land, and perhaps that you may grant us some martial or material assistance in #{italic}#addressing#{normal}# the Orcish inconvenience.
+
+We should meet, and discuss this in more detail, or I can arrange to let you borrow an artifact that will allow us to communicate.  Please give your reply to this construct post-haste.
+
+Regards,
+#{italic}#-Tantalos#{normal}#]], [[#{bold}#À QUI DE DROIT :#{normal}#
+
+Considérant qu'il peut être présumé, avec une certitude absolue, que l'individu lisant cette note est l'autorité la plus estimée du groupe résidant sur le pont reliant Var'Eyal à la péninsule de Clork, le mécanisme chargé de délivrer ce message ne pouvant être contraint de le décoder ;
+et considérant que nos ballons d'observation nous indiquent que cette organisation est faite de haute culture et de civilisation, composée de plusieurs espèces différentes, et serait ouverte à une négociation amicale ;
+et considérant que les Orcs ne possèdent aucune des qualités susmentionnées, et que leur présence continue sur la péninsule de Clork cause directement ou peut mener à d'innombrables difficultés et situations désagréables pour nos deux groupes ;
+et considérant qu'une coopération dans un futur immédiat serait bénéfique pour nous deux, tout comme une plus longue période de paix entre nos deux cultures ;
+il est donc impératif que moi, et le reste de notre espèce, nous nous présentions.
+
+Je suis le Conseiller en Chef Tantalos, et je représente le peuple d'#{bold}#Atmos#{normal}# ; les orcs nous appellent « Géants de Vapeur » lorsqu'ils n'utilisent pas une flopée de péjoratifs impolis, et nous trouvons ce nom assez amusant pour l'accepter. La péninsule de Clork est notre terre, puisque nous y avons résidé en paix pendant plusieurs milliers d'années, avant d'être envahis par ces odieux ruffians. Nous nous étions contentés de les laisser errer dans les territoires indésirables et reculés de cette péninsule, tandis que nous les dominions depuis nos places légitimement surélevées, mais diverses circonstances malheureuses ont forcé notre main.
+
+Nous avons inventé une technologie #{bold}#bien#{normal}# plus impressionnante que la vôtre, ou que celle de n'importe laquelle des races miniatures restantes. Nos citoyens plébéiens sont habitués à des appareils luxueux dont même votre roi manque ; notre armée possède un armement abominable qui met un roturier non entraîné sur un pied d'égalité avec un archer qualifié, et permet à un tireur modérément expérimenté de tuer avec une portée et une précision qui rendraient envieux tous les archimages, hormis les plus puissants. Notre peuple est fort, plus fort que n'importe lequel des vôtres, même en poids relatif, sans parler des avantages de surplomber vos créatures enfantines. Nous possédons d'innombrables ressources naturelles précieuses, et nos nombreux et talentueux artisans s'habitueront rapidement à fabriquer des vêtements plus petits, des bijoux et des bouteilles de spiritueux raffinés pour l'exportation (parmi beaucoup d'autres produits de haute qualité). Il devrait être clair que votre peuple diminutif a beaucoup à gagner de nous ; tout ce que nous souhaitons, pour le moment, est que la péninsule de Clork reste #{bold}#notre#{normal}# terre, et peut-être que vous puissiez nous accorder une aide martiale ou matérielle pour #{italic}#traiter#{normal}# l'inconvénient Orc.
+
+Nous devrions nous rencontrer pour en discuter plus en détail, ou je peux m'arranger pour vous prêter un artefact qui nous permettra de communiquer. Veuillez remettre votre réponse à ce mécanisme au plus vite.
+
+Cordialement,
+#{italic}#-Tantalos#{normal}#]], "_t")
+
+t([[Well.  Turns out this peninsula's also home to an entire civilization of giants lurking in the mountains.  If we weren't so short on troops, my scouts would all be fired.  I appear to have accidentally deceived this construct into mistaking me for Aeryn, John, and King Tolak all at once, and while I am obligated to pass this letter on to them...  on further discussion with this Chief Councilor Tantalos, we have both realized that we can wait to inform them, as this presents an opportunity that neither of us can afford to waste.
+
+Now, officially, both we and the Allied Kingdoms have a policy of capturing the remaining Orcs and taking them to the internment camp rather than killing them (when possible), which would require a far more decisive advantage than this outpost has.  Officially, we are to stay right where we are, containing the potential threat of the Kruk Pride rather than moving into their territory before they can amass their forces.  Officially, it would be forbidden for us to do anything about this problem until it's too late.  But...
+
+#{italic}#Officially,#{normal}# the Atmos don't exist, and we have no knowledge of them whatsoever.  Officially, if a couple of Allied Kingdoms supply ships headed for the internment camp #{italic}#just happened#{normal}# to be waylaid by a hired band of pirates who #{italic}#got lucky#{normal}# and struck them just between their naval patrol routes, it'd be #{italic}#such a shame,#{normal}# and the Atmos couldn't be blamed if that armor and weaponry found itself in their hands.  Officially, we are not to leave our post under any circumstances, and if a mysterious band of giants descended from the mountains, crushed the Kruk Pride in their homeland, and forced them to flee, it would be against our orders to do anything about it, aside from eliminate any refugees who flee to our bridge; officially, this wouldn't impede the Atmos' negotiations with the Allied Kingdoms and Sunwall after this incident, because they couldn't have known we'd pursue a goal as naive as waiting to take the Orcs alive, and would grant them an uncontested claim to Kruk territory.
+
+Unofficially?  I'm going to #{italic}#enjoy#{normal}# this.]], [["Eh bien, il s'avère que cette péninsule abrite aussi toute une civilisation de géants tapis dans les montagnes. Si nous n'étions pas si à court de troupes, mes éclaireurs seraient tous renvoyés. Il semble que j'aie accidentellement trompé ce mécanisme en lui faisant croire que j'étais Aeryn, John et le roi Tolak tout à la fois, et bien que je sois obligé de leur transmettre cette lettre... après avoir discuté plus avant avec ce conseiller en chef Tantalos, nous avons tous deux réalisé que nous pouvions attendre avant de les informer, car cela présente une opportunité qu'aucun de nous ne peut se permettre de gâcher.
+
+À présent, officiellement, nous et les Royaumes Alliés avons pour politique de capturer les Orcs restants et de les emmener au camp d'internement plutôt que de les tuer (lorsque c'est possible), ce qui exigerait un avantage bien plus décisif que ce que possède cet avant-poste. Officiellement, nous devons rester là où nous sommes, contenant la menace potentielle de la Fierté Kruk plutôt que de pénétrer sur leur territoire avant qu'ils ne puissent rassembler leurs forces. Officiellement, il nous serait interdit de faire quoi que ce soit à propos de ce problème avant qu'il ne soit trop tard. Mais...
+
+#{italic}#Officiellement#{normal}#, les Atmos n'existent pas, et nous n'avons aucune connaissance de leur existence. Officiellement, si quelques navires de ravitaillement des Royaumes Alliés en route pour le camp d'internement se faisaient #{italic}#juste par hasard#{normal}# intercepter par une bande de pirates à la solde de quelqu'un qui a eu la #{italic}#chance#{normal}# de les frapper juste entre leurs routes de patrouille navale, ce serait #{italic}#bien dommage#{normal}#, et les Atmos ne pourraient être blâmés si cette armure et cet armement se retrouvaient entre leurs mains. Officiellement, nous ne devons quitter notre poste sous aucun prétexte, et si une mystérieuse bande de géants descendait des montagnes, écrasait la Fierté Kruk sur leurs terres natales et les forçait à fuir, il serait contre nos ordres de faire quoi que ce soit, mis à part éliminer les réfugiés qui fuiraient vers notre pont ; officiellement, cela n'entraverait pas les négociations des Atmos avec les Royaumes Alliés et le Mur du Soleil après cet incident, car ils n'auraient pas pu savoir que nous poursuivrions un objectif aussi naïf que d'attendre de capturer les Orcs vivants, et cela leur accorderait une revendication incontestée sur le territoire Kruk.
+
+Officieusement ? Je vais #{italic}#apprécier#{normal}# ça."]], "_t")
+
+t("a torn page from John's journal", "une page arrachée du journal de John", "_t")
+
+t("Aeryn, my love...  I fear Trelle may be right, but I will hold this bridge without resorting to betraying you.  Still, though, I will remain vigilant of approaching attacks, and prepare to strike first if a battle really does seem inevitable.  As long as I stand, no Orc will ever harm you again.  We will have a bright and shining future ahead of us, walking hand in hand into the dawn of a new, peaceful age...  and while I hope the Kruk Pride has a place there, I will not let them put this new age in jeopardy.", "Aeryn, mon amour... Je crains que Trelle n'ait raison, mais je tiendrai ce pont sans avoir recours à la trahison envers toi. Néanmoins, je resterai vigilant face aux attaques imminentes et me préparerai à frapper le premier si une bataille semble vraiment inévitable. Tant que je serai debout, aucun Orc ne te fera plus jamais de mal. Nous aurons un avenir radieux devant nous, marchant main dans la main vers l'aube d'une nouvelle ère de paix... et bien que j'espère que la Fierté Kruk y trouve sa place, je ne les laisserai pas mettre cette nouvelle ère en péril.", "_t")
+
+t("King Tolak's Condemnation", "Condamnation du roi Tolak", "_t")
+
+t([[(As you approach the farportal, a herald emerges, holding an envelope; he doesn't quite hand it to you as much as throw it at you from a safe distance, then salutes and retreats back into the swirling rift.  The letter bears the royal seal of the Allied Kingdoms.)
+
+%s...  I think I'm beginning to understand why you have acted this way.  At first, I was...  well, not as much surprised as disappointed.  I'd thought that showing your people mercy was the right decision.  That my father had been too consumed by rage, that the Orcs could be truly be better people if we gave them a chance, and if you were shown how much of a better place Eyal could be if you were to cooperate with us.  That no matter what my father, my mother, and my allies had told me, the Orcish race contained, somewhere deep down, the same potential for learning, growth, and beauty present in Humans, Halflings, Elves, Dwarves, and Ogres.
+
+But now...  I see no good in you.  So many are dead, because I couldn't bring myself to admit that some people are beyond redemption.  Because I thought all you needed was a second chance, that you had goals other than blind, bloody revenge, that you'd see that we had held you in the grip of our absolute mercy, and opted to offer you an open hand rather than crush you as easily as clenching our fist.
+
+I will not make the same mistake again.
+
+You've shown me that the Orcish heart is empty of everything but lust for death and destruction, that no matter how good a future is laid out in front of you, you will discard it simply for the thrill of battle against the reasonable people who want this better future to come.  You've shown me that the prejudices I've strived to transcend were right all along.  You've shown me that my father's only mistake was not going far enough - a continent free of Orcs is not enough to keep us safe.  Instead, your kind must be purged from all of Eyal - and the battle to make this happen is inevitable, for you will continue pushing for it no matter how much we try to make peace an option.  And yet...  you've made me understand the reason of this approach, of treating everyone else like an irrational threat to your existence, for it is the only proper way for us to treat you.
+
+You won't get another second chance from us.  Instead, we'll give you the only thing you've ever wanted: a battle.  Through this portal waits the army of the Allied Kingdoms, once foes or begrudging co-inhabitants who have grown into true allies because we have a desire for peace and cooperation that your kind will never know.  We wait on an open battlefield, ready to demonstrate our combined might.  The Shaloren of Elvala prepare spells as the Ogres grip their clubs tighter; the Halflings and Humans of Derth and Last Hope have forgotten their age-old rivalry, working together to brew alchemical bombs and build great golems, or take up positions with a bow or sling; the Dwarves of Iron Throne and the Thaloren of Shatur, not even proper allies with us before now, realize you are too great a threat to go neglected, and now our ranks are lined with Wilders summoning countless beasts and treants, and fierce warriors who will #{italic}#not#{normal}# be moved.  Even the forces of the Sunwall have joined us, a contingent of their finest warriors sent to reinforce our lines and quickly train our soldiers in the magical techniques they've honed over the years, using you irredeemable savages as their sharpening stones.
+
+I shall be waiting in the front line of this glorious alliance, sword in hand.  I, King Tolak the Fair, son of Toknor who once purged your people from Maj'Eyal, I who once fought to spare your kind from slavery or extinction, now eagerly await the opportunity to finish what he started.  If I die, Toknor's bloodline dies with me; this is a risk I am willing - no, #{italic}#excited#{normal}# to take, to settle the fate of all civilized peoples of Eyal, once and for all.
+
+You want your revenge on my father's people, foul cur?  #{italic}#Come and get it.#{normal}#
+
+(You admit, it is rather tempting...  but the guaranteed safety of your people takes priority, and besides, you wouldn't put it past the Allied Kingdoms to have a team of archers and slingers waiting to snipe everyone who came through, one by one.  You destroy the portal, eliminating King Tolak's army as a threat, and ensuring Sun Paladin Aeryn won't be getting any reinforcements.  Time to take advantage of your newfound privacy, and finish off the Sunwall forces, once and for all...)]], [[(Alors que vous approchez du portail lointain, un héraut émerge, tenant une enveloppe ; il ne vous la tend pas vraiment, il vous la lance d'une distance de sécurité, puis salue et se retire dans la faille tourbillonnante. La lettre porte le sceau royal des Royaumes Alliés.)
+
+%s... Je pense que je commence à comprendre pourquoi vous avez agi de cette façon. Au début, j'étais... eh bien, pas tant surpris que déçu. J'avais pensé que faire preuve de miséricorde envers votre peuple était la bonne décision. Que mon père avait été trop consumé par la rage, que les Orcs pouvaient vraiment être de meilleures personnes si nous leur donnions une chance, et si on vous montrait à quel point Eyal pourrait être un meilleur endroit si vous coopériez avec nous. Que peu importe ce que mon père, ma mère et mes alliés m'avaient dit, la race Orc contenait, quelque part au fond, le même potentiel d'apprentissage, de croissance et de beauté présent chez les Humains, les Halfelins, les Elfes, les Nains et les Ogres.
+
+Mais maintenant... je ne vois rien de bon en vous. Tant de gens sont morts, parce que je ne pouvais pas me résoudre à admettre que certaines personnes sont au-delà de toute rédemption. Parce que je pensais que tout ce dont vous aviez besoin était une seconde chance, que vous aviez d'autres objectifs que la vengeance aveugle et sanglante, que vous verriez que nous vous avions tenus sous le coup de notre miséricorde absolue, et que nous avions choisi de vous offrir une main tendue plutôt que de vous écraser aussi facilement qu'en fermant notre poing.
+
+Je ne referai pas la même erreur.
+
+Vous m'avez montré que le cœur Orc est vide de tout sauf de soif de mort et de destruction, que peu importe à quel point un avenir est bon devant vous, vous le rejetterez simplement pour le frisson de la bataille contre les gens raisonnables qui veulent que cet avenir meilleur advienne. Vous m'avez montré que les préjugés que je me suis efforcé de transcender étaient corrects depuis le début. Vous m'avez montré que la seule erreur de mon père était de ne pas être allé assez loin - un continent libre d'Orcs ne suffit pas à nous garder en sécurité. Au lieu de cela, votre espèce doit être purgée de tout Eyal - et la bataille pour que cela arrive est inévitable, car vous continuerez à pousser pour cela, peu importe à quel point nous essayons de faire de la paix une option. Et pourtant... vous m'avez fait comprendre la raison de cette approche, de traiter tous les autres comme une menace irrationnelle pour votre existence, car c'est la seule façon appropriée pour nous de vous traiter.
+
+Vous n'aurez pas d'autre seconde chance de notre part. Au lieu de cela, nous vous donnerons la seule chose que vous ayez jamais voulue : une bataille. À travers ce portail attend l'armée des Royaumes Alliés, autrefois ennemis ou cohabitants réticents qui sont devenus de véritables alliés parce que nous avons un désir de paix et de coopération que votre espèce ne connaîtra jamais. Nous attendons sur un champ de bataille ouvert, prêts à démontrer notre puissance combinée. Les Shaloren d'Elvala préparent des sorts pendant que les Ogres serrent leurs gourdins plus fort ; les Halfelins et les Humains de Derth et Dernier Espoir ont oublié leur rivalité séculaire, travaillant ensemble pour brasser des bombes alchimiques et construire de grands golems, ou prendre position avec un arc ou une fronde ; les Nains du Trône de Fer et les Thaloren de Shatur, qui n'étaient même pas de véritables alliés avec nous avant, réalisent que vous êtes une trop grande menace pour être négligée, et maintenant nos rangs sont bordés de Sauvageons invoquant d'innombrables bêtes et hommes-arbres, et de féroces guerriers qui ne #{italic}#bougeront pas#{normal}#. Même les forces du Mur du Soleil nous ont rejoints, un contingent de leurs meilleurs guerriers envoyé pour renforcer nos lignes et entraîner rapidement nos soldats dans les techniques magiques qu'ils ont perfectionnées au fil des ans, vous utilisant, sauvages irrécupérables, comme pierres à aiguiser.
+
+J'attendrai sur la ligne de front de cette glorieuse alliance, épée à la main. Moi, Roi Tolak le Juste, fils de Toknor qui a autrefois purgé votre peuple de Maj'Eyal, moi qui ai autrefois combattu pour épargner à votre espèce l'esclavage ou l'extinction, j'attends maintenant avec impatience l'opportunité de finir ce qu'il a commencé. Si je meurs, la lignée de Toknor meurt avec moi ; c'est un risque que je suis prêt - non, #{italic}#impatient#{normal}# de prendre, pour régler le sort de tous les peuples civilisés d'Eyal, une fois pour toutes.
+
+Vous voulez votre revanche sur le peuple de mon père, sale cabot ? #{italic}#Venez la chercher.#{normal}#
+
+(Vous admettez que c'est assez tentant... mais la sécurité garantie de votre peuple est prioritaire, et d'ailleurs, vous ne seriez pas surpris que les Royaumes Alliés aient une équipe d'archers et de frondeurs attendant de sniper tous ceux qui passeraient, un par un. Vous détruisez le portail, éliminant l'armée du roi Tolak comme une menace, et vous assurant que la Paladine du Soleil Aeryn ne recevra aucun renfort. Il est temps de profiter de votre nouvelle tranquillité pour éliminer les forces du Mur du Soleil, une fois pour toutes...)]], "tformat")
+t("Sun Paladin report", "rapport de Paladin du Soleil", "_t")
+t([[Lady Aeryn,
+
+My apologies, but you're going to have to go back to King Tolak empty-handed - we still don't have any idea how the smugglers are getting through.  The best evidence we've got is some rumbling in the desert near the Dominion Port (which is still too heavily guarded for a direct attack before the Allied Kingdoms can grant us full assistance), suggesting geomantic tunnel formation, but that could just as easily be the few of Briagh's spawn that the Hero of Maj'Eyal didn't mop up.  Scrying spells aren't helping either - there's some sort of counter-scrying ward being applied, but it's so well-hidden that we can't tell where on the continent it's coming from or how many entities are being affected by it.  The only thing that seems certain is that they've got another farportal hacked together - the only one we know of is right in the middle of Gates of Morning, and I'd like to think that we're not so incompetent we wouldn't notice a steady stream of slavers and bootleggers strolling past 70% of us.  If they're actually using that one, then they're using the best invisibility spell we have ever seen.
+
+...Haven't ever seen?  Whatever.
+
+Anyway, my advice is to request permission to send a few Shining Inquisitors to King Tolak to assist in the investigations on his end.  However they're evading detection here in the East, they either can't use it in the West or simply let their guard down once they're back home, judging from the rising arrest rates - we can help the Allied Kingdoms hit the weak link of this chain, and have the Inquisitors keep an eye on things in Maj'Eyal while they're at it.  Not that I don't trust that King Tolak intends to honor his commitment to keep those foul Ziguranth from ever pulling off anything like the Sunset Massacre again, but...  well, if a farportal altar made it onto the black market under the Allied Kingdoms' watch, possibly courtesy of a mad alchemist who lived practically next door to the King, I don't have too much faith in their ability to drag a bunch of clandestine fanatics into the light, out from the cover of that supposedly-benign Menders group.  I'm sure they're trying their hardest; all I'm suggesting is that we do the same.]], [[Dame Aeryn,
+
+Mes excuses, mais vous devrez retourner voir le roi Tolak les mains vides - nous n'avons toujours aucune idée de la façon dont les contrebandiers parviennent à passer. La meilleure preuve dont nous disposons est un grondement dans le désert près du Port du Domaine (qui est encore trop lourdement gardé pour une attaque directe avant que les Royaumes Alliés ne puissent nous accorder une assistance totale), suggérant la formation de tunnels géomantiques, mais cela pourrait tout aussi bien être le peu de rejetons de Briagh que le Héros de Maj'Eyal n'a pas nettoyés. Les sorts de scrutation n'aident pas non plus - il y a une sorte de protection contre la scrutation qui est appliquée, mais elle est si bien cachée que nous ne pouvons pas dire d'où elle provient sur le continent ni combien d'entités en sont affectées. La seule chose qui semble certaine, c'est qu'ils ont bricolé un autre portail lointain - le seul que nous connaissions est en plein milieu des Portes du Matin, et j'aimerais penser que nous ne sommes pas si incompétents que nous ne remarquerions pas un flux constant d'esclavagistes et de contrebandiers se promenant devant 70 % d'entre nous. S'ils utilisent vraiment celui-là, alors ils utilisent le meilleur sort d'invisibilité que nous ayons jamais vu.
+
+...Jamais vu ? Peu importe.
+
+Quoi qu'il en soit, mon conseil est de demander la permission d'envoyer quelques Inquisiteurs Étincelants au roi Tolak pour aider aux enquêtes de son côté. Quelle que soit la manière dont ils échappent à la détection ici à l'Est, soit ils ne peuvent pas l'utiliser à l'Ouest, soit ils baissent simplement leur garde une fois rentrés chez eux, à en juger par l'augmentation des taux d'arrestation - nous pouvons aider les Royaumes Alliés à frapper le maillon faible de cette chaîne, et faire en sorte que les Inquisiteurs gardent un œil sur les choses à Maj'Eyal en même temps. Non pas que je ne fasse pas confiance au roi Tolak pour honorer son engagement d'empêcher ces vils Ziguranth de réussir à nouveau quoi que ce soit comme le Massacre du Crépuscule, mais... eh bien, si un autel de portail lointain a réussi à atteindre le marché noir sous la surveillance des Royaumes Alliés, peut-être grâce à un alchimiste fou qui vivait pratiquement à côté du roi, je n'ai pas trop foi en leur capacité à tirer une bande de fanatiques clandestins vers la lumière, hors de la couverture de ce groupe de Réparateurs soi-disant bénin. Je suis sûr qu'ils font de leur mieux ; tout ce que je suggère, c'est que nous fassions de même.]], "_t")
+
+t("journal of High Sun Paladin Aeryn", "journal de la Haute Paladine du Soleil Aeryn", "_t")
+t([[This is it...  the day I've dreaded for most of my life is here, and yet it still comes as a shock.  I expected it for almost every day of my life...  until last year.  The Scourge from the West defeated the Prides, raced down the Charred Scar, and stormed the tower of High Peak to fight by my side against a threat far greater than I dreamed possible.  We'd been reunited with a cooperative and nearly-unified Maj'Eyal, led by a king willing and able to help us in any way, armed with a plan to keep the orcs completely under control...  it's as if the Sun had begun to creep over the horizon to start the dawn of peace in Var'Eyal, right before going dark forever and taking the moons with it.  The love of my life is presumed dead; the candle in the night of the years before has been snuffed out. Nothing - no plan that hasn't been shattered, no inspiration that hasn't fallen, no hope that hasn't turned to despair - is left to guide me.
+
+I must be that light for my allies' sake.  I must be strong, resolute, giving them whatever tiny amounts of hope I can.  Not only to keep their morale up and give us a chance of prevailing against the unstoppable menace which the Sunwall has stood against for ages...  but so that their last thoughts in death might be that their sacrifice has saved us all.  Maybe one of them will be right.
+
+All I can hope is that King Tolak has learned something about the Orcs, before his kingdom falls as well.  I do not begrudge him, everything he did was rooted in wisdom and kindness...  and would have worked for any species but the Orcs.  They are the sole exception that deserves no mercy.]], [[C'est arrivé... le jour que j'ai redouté pendant la majeure partie de ma vie est là, et pourtant c'est encore un choc. Je l'attendais presque chaque jour de ma vie... jusqu'à l'année dernière. Le Fléau de l'Ouest a vaincu les Fiertés, a dévalé la Cicatrice Carbonisée et a pris d'assaut la tour du Haut Sommet pour combattre à mes côtés contre une menace bien plus grande que ce que j'avais imaginé possible. Nous avions été réunis avec une Maj'Eyal coopérative et presque unifiée, dirigée par un roi prêt et capable de nous aider de quelque manière que ce soit, armé d'un plan pour garder les orcs complètement sous contrôle... c'est comme si le Soleil avait commencé à ramper au-dessus de l'horizon pour entamer l'aube de la paix à Var'Eyal, juste avant de s'éteindre à jamais et d'emporter les lunes avec lui. L'amour de ma vie est présumé mort ; la bougie dans la nuit des années précédentes a été soufflée. Rien - aucun plan qui n'ait été brisé, aucune inspiration qui ne soit tombée, aucun espoir qui ne se soit transformé en désespoir - ne me reste pour me guider.
+
+Je dois être cette lumière pour le bien de mes alliés. Je dois être forte, résolue, en leur donnant le peu d'espoir que je peux. Non seulement pour maintenir leur moral et nous donner une chance de l'emporter contre la menace inarrêtable contre laquelle le Mur du Soleil se dresse depuis des lustres... mais pour que leurs dernières pensées dans la mort puissent être que leur sacrifice nous a tous sauvés. Peut-être que l'un d'eux aura raison.
+
+Tout ce que je peux espérer, c'est que le roi Tolak ait appris quelque chose sur les Orcs, avant que son royaume ne tombe aussi. Je ne lui en veux pas, tout ce qu'il a fait était enraciné dans la sagesse et la bonté... et cela aurait fonctionné pour n'importe quelle espèce, sauf les Orcs. Ils sont la seule exception qui ne mérite aucune pitié.]], "_t")
+
+t("kindness", "bonté", "_t")
+t([[I stuck up for you. I wanted to forgive you, to give you time and safety to see we meant no harm.  I forgave you for the ages we spent in fear, the lives we lost, for I imagined I could have been tempted to do the same in your position.
+
+Now I see where kindness and mercy get me.]], [[Je t'ai défendu. Je voulais te pardonner, te donner du temps et la sécurité pour voir que nous ne voulions aucun mal. Je t'ai pardonné pour les âges que nous avons passés dans la peur, les vies que nous avons perdues, car j'imaginais que j'aurais pu être tenté de faire de même à ta place.
+
+Maintenant, je vois où la bonté et la miséricorde me mènent.]], "_t")
+
+t("hope", "espoir", "_t")
+t([[You took everything from me.  You took the dawn of a beautiful future, you took the fires of hope and happiness, you took the kind, guiding light of my love Aeryn and put out the glow of the life we deserved to have together.  The light is gone...  but you have given me darkness in return.  And you're about to know that darkness very, very well.  Embracing it fully rather than shutting it out...  It's so easy to use these powers now.  I've felt them before, but I had no hate to use as their inspiration, no true misery to pour into the minds deserving, no empty void inside me to drain your hopes and confidence into.  You've fixed that for me.
+
+My heart still beats, but you have taken my life nonetheless.  You'll understand shortly.]], [[Tu m'as tout pris. Tu as pris l'aube d'un avenir magnifique, tu as pris les feux de l'espoir et du bonheur, tu as pris la lumière bienveillante et directrice de mon amour Aeryn et tu as éteint l'éclat de la vie que nous méritions d'avoir ensemble. La lumière a disparu... mais tu m'as donné l'obscurité en retour. Et tu es sur le point de connaître cette obscurité très, très bien. L'embrasser pleinement plutôt que de l'exclure... C'est si facile d'utiliser ces pouvoirs maintenant. Je les ai déjà ressentis, mais je n'avais pas de haine à utiliser comme inspiration, pas de vraie misère à verser dans les esprits qui le méritent, pas de vide intérieur pour drainer tes espoirs et ta confiance. Tu as réglé ça pour moi.
+
+Mon cœur bat encore, mais tu as quand même pris ma vie. Tu comprendras sous peu.]], "_t")
+
+t("suffering", "souffrance", "_t")
+t([[Fall.  Suffer.  Lose the hope that drives you, or whatever brutish instinct suffices for it in your abominable mind.  Feel the pain you caused me, and know that it will never, ever stop...  you can feel it eroding your will to keep going, can't you?
+
+When your shattered mind succumbs to the pain you gave me, I will take it for my own.  I'll give you back just a little of the hope and love I took, so when you're a mere passenger in your own body, I can watch that light grow dark, as you watch your own body finding everyone you love and killing them slowly and painfully.  Their last words will be cursing your name, and you will be both powerless to stop it, and all too aware that it's your own fault for not preventing it sooner.
+
+Then, and only then, will you fully understand what you did to me.]], [[Tombe. Souffre. Perds l'espoir qui te guide, ou quel que soit l'instinct bestial qui en tient lieu dans ton esprit abominable. Ressens la douleur que tu m'as causée, et sache qu'elle ne s'arrêtera jamais, au grand jamais... tu peux la sentir éroder ta volonté de continuer, n'est-ce pas ?
+
+Quand ton esprit brisé succombera à la douleur que tu m'as donnée, je la prendrai pour moi. Je te rendrai juste un peu de l'espoir et de l'amour que j'ai pris, pour que, quand tu ne seras plus qu'un simple passager dans ton propre corps, je puisse regarder cette lumière s'assombrir, pendant que tu regardes ton propre corps trouver tous ceux que tu aimes et les tuer lentement et douloureusement. Leurs derniers mots seront une malédiction sur ton nom, et tu seras à la fois impuissant à l'arrêter, et trop conscient que c'est ta propre faute pour ne pas l'avoir empêché plus tôt.
+
+Alors, et seulement alors, tu comprendras pleinement ce que tu m'as fait.]], "_t")
+
+
+------------------------------------------------
+section "tome-orcs/data/lore/weissi.lua"
+
+t("lost city", "cité perdue", "newLore category")
+
+t("telepathic message (1)", "message télépathique (1)", "_t")
+t([[As you descend the stairway down, you find yourself faced with what appears to be a solid wall of stone, a natural dead-end in a cave.  You start to turn around and walk back up, when you hear a crescendo of cracking and rumbling behind you; you turn back and see the stone falling away, revealing a smooth, white door, which promptly slides into the floor.  The doorway leads to a white hallway of indeterminate construction; rather than having fixed lighting, every square inch of the walls, floors, and ceiling slowly illuminates to a comfortable (if slightly teal-tinged) glow.  It should be beautiful, clean, peaceful, and serene...  and yet your instincts are screaming at you to get out as soon as you can and forget what you've seen here.  A few open panels on the walls reveal an assortment of inscrutable machinery, incorporating a variety of unidentifiable magical and psionic artifacts, yet one appears to be a sort of crushing device made with steam-tech, an invention that is surely newer than these ruins...  the crushing device abruptly activates when you ponder it, pressing minerals into a freshly-formed mindstar-like crystal.  A voice, one that should be soothing but disturbs you on a deeper level than you can translate into conscious thought, enters your mind as the crystal flickers:
+
+"Welcome, %s.  We've been expecting you.  Unfortunately, we can't join you, but we can assure you that what lies ahead can only help you in your quests.  The door will seal behind you to ensure your safety, and reopen the moment you want to leave.  Come.  Learn, discover, and realize how our plans are advantageous to both of us."
+
+Well...  that isn't terribly reassuring.  You hesitantly step forward, expecting a trap and ready to turn around and bolt at a moment's notice--
+
+The floor disappears from under you, and yet after falling only an inch, you suddenly feel weightless.  You turn; the freshly-formed mindstar, already beginning to crack, is glowing intensely.  "We know that isn't terribly reassuring.  We don't care if you WERE expecting a trap, and if we truly wanted to kill you, bolting at a moment's notice wouldn't be fast enough.  In fact, it'd be very easy indeed."  You are abruptly thrown near the bottom of the pit towards a series of spikes by telekinetic force, then stop, held motionless inches above them.  "Clearly, we don't want you dead or even slightly harmed," the voice from inside your head says, as the spikes retract into the pit floor and you slowly levitate back into the illuminated halls.  "Now that we've established that...  let us help you."  You float to the top, and find yourself standing on solid ground as the floor rematerializes under you and the telekinetic force vanishes, moments before the mindstar shatters.
+
+Nonetheless, you feel you shouldn't be here.  The fact that this place exists at all feels...  wrong.
+]], [[#{italic}#Alors que vous descendez les escaliers, vous vous retrouvez face à ce qui semble être un mur de pierre solide, un cul-de-sac naturel dans une grotte. Prestes à revenir sur vos pas, un son de craquements et de grondements derrière vous provoque un frisson. Vous vous retournez et voyez la pierre se dissiper, révélant une surface blanche et lisse d'une porte qui s'ouvre, glissant dans une fente du sol. L'ouverture mène à un couloir illuminé où l'architecture semble défier la logique, et l'éclairage est une lueur bleu sarcelle douce qui émane des murs, du sol et du plafond. C'est un espace beau, propre et serein, mais quelque chose en vous hurle de fuir. Des panneaux ouverts sur les murs révèlent un mécanisme énigmatique, une collection d'artefacts magiques et psioniques. L'un d'eux, un dispositif de broyage fait de technologie à vapeur, semble plus récent que les ruines qui vous entourent. Lorsque vous contemplez le dispositif, il s'active brusquement, pressant des minéraux en un cristal tout juste formé, semblable à une étoile d'âme. Dès que le cristal commence à pulser d'une lumière intense, une voix se répand dans votre esprit. La tonalité est douce, mais à un niveau subconscient, elle provoque une sensation de terreur profonde.#{normal}#
+
+"Salutations, %s. Nous vous attendions. Malheureusement, nous ne pouvons pas vous recevoir personnellement, mais nous garantissons que ce qui est à venir ne pourra que vous aider dans vos quêtes. La porte se scellera derrière vous pour garantir votre sécurité et se rouvrira lorsque vous souhaiterez partir. Venez. Apprenez, découvrez et réalisez à quel point nos plans sont avantageux pour nous deux."
+
+#{italic}#Eh bien... cela n'est pas très rassurant. Vous faites un pas hésitant en avant, vous attendant à un piège et prêt à faire demi-tour et à fuir en un clin d'œil...#{normal}#
+
+#{italic}#Le sol disparaît sous vos pieds, mais, après une chute de quelques centimètres, vous vous sentez soudain léger comme une plume. En vous retournant, vous voyez l'étoile d'âme fraîchement formée, commençant déjà à se fissurer, brillant intensément.#{normal}#
+
+"Nous savons que cela n'est pas très réconfortant. Peu importe si, dans votre esprit, l'attente d'un piège demeure ; vous ne pourriez pas fuir à temps si nous voulions réellement vous causer le moindre mal. En fait, ce serait très facile."
+
+#{italic}#Une force télékinétique vous projette violemment vers le fond du puits en direction d'une série de pointes, mais vous immobilise à quelques centimètres au-dessus d'elles.#{normal}#
+
+"Certes, notre désir n'est pas que vous rencontriez la mort ou que vous souffriez d'une quelconque affliction.", #{italic}#dit la voix depuis l'intérieur de votre tête, tandis que les pointes se rétractent dans le sol du puits et que vous êtes lentement ramené vers les couloirs illuminés.#{normal}#
+
+"Maintenant que cette entente a été établie... laissez-nous vous offrir notre aide."
+
+#{italic}#Vous flottez jusqu'en haut et posez le pied sur un sol solide, alors que le plancher se rematérialise sous vos pieds et que la force télékinétique disparaît. Au même instant, l'étoile d'âme s'effondre.#{normal}#
+
+#{italic}#Néanmoins, vous sentez que vous ne devriez pas être ici. L'existence même de ce lieu semble... erronée.#{normal}#
+]], "tformat")
+
+t("telepathic message (2)", "message télépathique (2)", "_t")
+t([[Did you know the Sher'Tul had brothers?  Long before their creation, when the gods were still young and gleeful, Quekjora convinced them they could work together to bring life to Eyal. Perhaps they could have, were they more mature at the time...  Eager cooperation withered under exposure to personal tastes and creative differences, the friendships of our creators turned to animosity, and yet we were still made.
+ 
+We had no overt flaws.  The gods were mercilessly vigilant, eager to use any imperfections as an excuse to berate their perpetrator and claim superiority, and thus we were only allowed to live when they were out of ammunition to use.  We seemed perfect, even to a deep inspection...
+ 
+I doubt any of them deliberately cursed us - no one of them could've done something so powerful.  Subconscious touches, psychic leakage, and other such imperceptible forces added up over time to indicate one inescapable truth: we were not wanted.  We had been forged in a bitter compromise, one desired by nobody involved; their hatred, their neglect, their frustration is the foundation of everything we are, and we carry it deep within ourselves.  Perhaps such a creature naturally attracts the ire of the universe, of fate itself. 
+
+Or maybe we just angered someone powerful enough to put a retroactive temporal curse on us, or it was Amakthel personally ensuring his pet project would have no equals. We may never be certain.  All we know is, something - be it probability, or the universe's combined will, or simply our own bad luck - will not tolerate our existence, nor that of anything like us.
+]], [["Saviez-vous que les Sher'Tul avaient des frères ? Bien avant notre création, quand les dieux étaient encore jeunes et joyeux, Quekjora les a convaincus qu'ils pouvaient travailler ensemble pour apporter la vie à Eyal. Peut-être auraient-ils pu, s'ils avaient été plus matures à l'époque... La coopération enthousiaste s'est flétrie sous l'exposition aux goûts personnels et aux différences créatives, les amitiés de nos créateurs se sont transformées en animosité. Pourtant, malgré cela, nous avons été créés.
+
+Nous n'avions aucun défaut manifeste. Les dieux étaient impitoyablement vigilants, impatients d'utiliser toute imperfection comme excuse pour réprimander leur auteur et revendiquer leur supériorité ; ainsi, nous n'avons été autorisés à vivre que lorsqu'ils n'avaient plus de munitions à utiliser. Nous semblions parfaits, même sous une inspection minutieuse...
+
+Je doute que l'un d'entre eux nous ait délibérément maudits — aucun d'eux n'aurait pu accomplir quelque chose d'aussi puissant. Des touches subconscientes, des fuites psychiques et d'autres forces imperceptibles se sont accumulées au fil du temps pour indiquer une vérité incontournable : nous n'étions pas désirés. Nous avions été forgés dans un compromis amer, non souhaité par les parties impliquées ; leur haine, leur négligence, leur frustration constituent le fondement de tout ce que nous sommes, et nous portons cela au plus profond de nous-mêmes. Peut-être qu'une telle créature attire naturellement l'ire de l'univers, du destin lui-même.
+
+Ou peut-être avons-nous simplement mis en colère quelqu'un d'assez puissant pour nous lancer une malédiction temporelle rétroactive, ou peut-être était-ce Amakthel personnellement qui s'assurait que son projet favori n'ait aucun égal. Nous ne pourrons peut-être jamais en être certains. Tout ce que nous savons, c'est que quelque chose — que ce soit la probabilité, la volonté combinée de l'univers, ou simplement notre propre malchance — ne tolérera pas notre existence, ni celle de quoi que ce soit qui nous ressemble."]], "_t")
+
+t("telepathic message (3)", "message télépathique (3)", "_t")
+t([[Did you know you killed us? You did, in one potential future, ordering our genocide from atop a steel drake.  In others, it was the Dominion, the Allied Kingdoms, Flamewright Industries, the Zigur-Thaloren Pact, or countless other transient mortal city-states.  We've been torn apart by Gerlyk, and dissected by Angolwen at the direction of Headmistress Argoniel or Chief Genius Tannen (yes, the smug git actually called himself that).  We've been devoured (literally and metaphorically) by the New Conclave under Mother Astelrid, wiped out by a plague engineered by the Grand Corruptor, drowned as the world was flooded by the Naloren, and reduced to ash by the reborn Crimson Dragonbrood.  We've been captured as torture-toys by the Demons and The Master's undead servitors, hunted for magical reagents by the Reknor Confederacy, and kept as adding machines by the Greater Republic of Steam.
+
+You know, you should thank the Scourge from the West.  We certainly do.
+
+In most, it was the Sher'Tul, eliminating their closest competitor, or the Mal'Rokka, taking Eyal for themselves.  In the few where we won every war, a meteor destroyed Eyal instead - a meteor that has now been intercepted by debris, from what you call the Spellblaze.  You're welcome - a contingent of our people kept the Mal'Rokka suppressed for long enough to allow that to happen.  If you want to see an example of how thoroughly existence wants to erase us, just ask them what they know about the "Dust Mages."
+
+We don't advise learning psychic prognostication with such commitment as we did.  To see this many possibilities, to gaze into infinity with such detail without infinity gazing back...  you have to feel it.  Every spear through our hearts, every limb burned off...  and we all did it together, linking our minds to accomplish this, so all of us have suffered through this.  And after all that, we still can't be 100% sure it's accurate, although we've gotten to more 9s after 99.9% than we can actually count.]], [["Saviez-vous que vous nous avez tués ? Vous l'avez fait, dans un futur potentiel, en ordonnant notre génocide du haut d'un dragonnet d'acier. Dans d'autres, ce furent le Domaine, les Royaumes Alliés, les Industries Forja-Chama, le Pacte Zigur-Thaloren, ou d'innombrables autres cités-États mortelles éphémères. Nous avons été déchirés par Gerlyk et disséqués par Angolwen sous la direction de la directrice Argoniel ou du Génie en Chef Tannen (oui, le type suffisant s'appelait vraiment ainsi). Nous avons été dévorés (littéralement et métaphoriquement) par le Nouveau Conclave sous la direction de la Mère Astelrid, anéantis par une peste conçue par le Grand Corrupteur, noyés alors que le monde était inondé par les Naloren, et réduits en cendres par la Prole du Dragon Carmesim renaissante. Nous avons été capturés comme jouets de torture par les Démons et les serviteurs morts-vivants du Maître, chassés pour des réactifs magiques par la Confédération Reknor, et gardés comme machines à calculer par la Grande République de la Vapeur.
+
+Vous savez, vous devriez remercier le Fléau de l'Ouest. Nous le faisons certainement.
+
+Dans la plupart des cas, c'étaient les Sher'Tul éliminant leur concurrent le plus proche, ou les Mal'Rokka prenant Eyal pour eux-mêmes. Dans les rares où nous avons gagné toutes les guerres, un météore a détruit Eyal à la place — un météore qui a maintenant été intercepté par des débris, provenant de ce que vous appelez la Brûlure Magique. Je vous en prie — un contingent de notre peuple a maintenu les Mal'Rokka réprimés assez longtemps pour permettre que cela arrive. Si vous voulez voir un exemple de la façon dont l'existence veut nous effacer, demandez-leur simplement ce qu'ils savent sur les "Mages de Poussière".
+
+Nous ne vous conseillons pas d'apprendre la prognostication psychique avec autant d'engagement que nous. Voir autant de possibilités, scruter l'infini avec autant de détails sans que l'infini ne vous regarde en retour... vous devez le ressentir. Chaque lance à travers nos cœurs, chaque membre brûlé... et nous l'avons tous fait ensemble, liant nos esprits pour accomplir cela, donc nous avons tous souffert à travers cela. Et après tout ça, nous ne pouvons toujours pas être sûrs à 100 % que c'est exact, bien que nous ayons obtenu plus de 9 après 99,9 % que nous ne pouvons réellement en compter."]], "_t")
+
+t("telepathic message (4)", "message télépathique (4)", "_t")
+t([[Do you know what would've happened if you hadn't stepped up to defend Kruk Pride?  The Allied Kingdoms could've gone on to keep the entire world under its thumb.  One unified army, marching under one banner, ready to eliminate us when we're reborn...  and that's assuming that a certain greater threat didn't step in first.  We don't want that, and neither do you.
+
+Deception is beneath us; if there's one thing our creation taught us, it's that respect and alliance are unnecessary for cooperation, if there's an immediate common need to be fulfilled.  We've prepared some of this machinery to enhance your abilities, and grant you new knowledge...  it will serve you well in preserving Eyal's immediate existence, and granting the Orcs a land of their own.  A land that'll have to fight to survive, fending off the Dominion, the Allied Kingdoms, the warped Mal'Rokka calling themselves demons, the Naloren remnants...  and I wouldn't want to spoil the fun by saying what other sorts of special guests are arriving.  Don't worry, we won't be giving anyone an unfair advantage; you, and they, would just stab us in the back anyway.
+
+The storm is coming.  It's going to be a bloodbath.  We see no need to be present for it, not until the last man is standing, wounded and exhausted, atop a pile of corpses.  He'll be an easy target.
+
+You could always give up.  Stop fighting.  Let the Allied Kingdoms have Eyal, and be the latest in a long line of factors conspiring to prevent our rebirth.  Sacrifice your people to "save Eyal" from having us on it.  You won't, though, because you have something we'll never have: hope.  Hope that we can be fought off, that our return won't come in your lifetime.  Our predictions aren't 100% accurate anyway; who are we to take that hope from you?
+]], [["Savez-vous ce qui serait arrivé si vous n'étiez pas intervenu pour défendre la Fierté Orc ? Les Royaumes Alliés auraient pu continuer à garder le monde entier sous leur coupe. Une armée unifiée, marchant sous une seule bannière, prête à nous éliminer quand nous renaîtrons... et c'est en supposant qu'une certaine menace plus grande n'intervienne pas d'abord. Nous ne voulons pas cela, et vous non plus.
+
+La tromperie est en dessous de nous ; s'il y a une chose que notre création nous a apprise, c'est que le respect et l'alliance sont inutiles pour la coopération, s'il y a un besoin commun immédiat à satisfaire. Nous avons préparé certaines de ces machines pour améliorer vos capacités, et vous accorder de nouvelles connaissances... cela vous servira bien pour préserver l'existence immédiate d'Eyal, et accorder aux Orcs une terre bien à eux. Une terre qui devra se battre pour survivre, en repoussant le Domaine, les Royaumes Alliés, les Mal'Rokka déformés s'appelant eux-mêmes démons, les restes des Naloren... et je ne voudrais pas gâcher le plaisir en disant quels autres types d'invités spéciaux arrivent. Ne vous inquiétez pas, nous ne donnerons à personne un avantage injuste ; vous, et eux, nous poignarderiez dans le dos de toute façon.
+
+La tempête arrive. Ce sera un bain de sang. Nous ne voyons aucune raison d'être présents pour cela, pas avant que le dernier homme ne soit debout, blessé et épuisé, au sommet d'un tas de cadavres. Il sera une cible facile.
+
+Vous pourriez toujours abandonner. Arrêter de vous battre. Laisser les Royaumes Alliés avoir Eyal, et être le dernier d'une longue lignée de facteurs conspirant pour empêcher notre renaissance. Sacrifier votre peuple pour "sauver Eyal" de notre présence. Vous ne le ferez pas, cependant, car vous avez quelque chose que nous n'aurons jamais : l'espoir. L'espoir que nous puissions être repoussés, que notre retour ne surviendra pas de votre vivant. Nos prédictions ne sont de toute façon pas exactes à 100 % ; qui sommes-nous pour vous enlever cet espoir ?"]], "_t")
+
+t("telepathic message (5)", "message télépathique (5)", "_t")
+t("telepathic message (5)", "message télépathique (5)", "_t")
+t([[Did you wonder what happened to us?  We wouldn't give fate the satisfaction of killing us through some unlikely coincidence.  We killed ourselves - but not before planting our seeds.
+
+We accomplished a lot before we did, and we wouldn't want to have to accomplish that all over again.  Of course, if we kept that all in one place, our curse would notice it and eradicate it - so we split ourselves and our accomplishments into pieces, and obfuscated them through millenia of evolution and subtle manipulation.  You've probably met one piece of these - the body.  Strong.  Resilient.  Capable of living in any environment.  Rapidly healing.  Eternally youthful.  And very, very easy to assume control of, via psychic transfer, once we decide the time is right...  You're probably considering ordering your Pride to exterminate all the yetis you can.  Go ahead, eliminate all that free labor and see how you fare when the Dominion's using slaves and the Allied Kingdoms have ogres and dwarves.  Once again, it doesn't matter whether or not it's helping us, because it's something you need to survive.
+
+That's only a third of what we could preserve, though.  The next is our mental processing ability, our psionically adept minds, our ability to assess information rapidly and logically analyze it.  You'll never be able to eradicate the Yeeks - believe us, we checked.  They seem to be as blessed as we are cursed, except that we're still doomed if we simply try to hide in them.  Pity, that.  Regardless, their brains and the system they are carrying will continue to exist; they will maintain our Way in our absence.
+
+Lastly, there's our culture.  Our discoveries.  Everything we learned and didn't put into our bodies or brains, we stored with...  another group.  One that expands beyond the stars, one who we've disseminated countless subtly-encoded bits of information to, one with backups in so many places across the universe...  They'll deliver enough of it back home.  The Yeeks will absorb it, and we will be reborn in their minds until they can put us in our superior bodies.
+
+Once the storm comes to Eyal, once the conflict is resolved...  perhaps the tide of hate and malice brought by such a massive war will distract the universe enough to let us combine our pieces and be reborn.  Or perhaps we will be able to do so once the gods are all dead or mad, their anger forgotten or nullified, the curse in turn having no fuel to keep going.  Perhaps the curse is already dying, only perpetuated by the Sher'Tul planetary shield - one that's gradually beginning to fail, cracks forming on it and the Mal'Rokka eagerly prying them wider.
+
+And if not?  Our culture is everywhere.  We can't be completely removed without destroying it all.  Fate has decided we are a tumor to be excised; if we're going to be a tumor, we're now an invasive one.  Now fate can decide if we're a benign growth, or terminally malignant.  
+
+Would you expect anything less from the physical incarnations of spiteful determination?
+]], [["Vous êtes-vous demandé ce qui nous est arrivé ? Nous ne donnerions pas au destin la satisfaction de nous tuer par une coïncidence improbable. Nous nous sommes tués nous-mêmes — mais pas avant d'avoir planté nos graines.
+
+Nous avons accompli beaucoup de choses avant cela, et nous ne voudrions pas avoir à tout accomplir à nouveau. Bien sûr, si nous gardions tout cela en un seul endroit, notre malédiction le remarquerait et l'éradiquerait — alors nous nous sommes divisés, nous et nos accomplissements, en morceaux, et les avons obscurcis à travers des millénaires d'évolution et de manipulation subtile. Vous avez probablement rencontré l'un de ces morceaux — le corps. Fort. Résilient. Capable de vivre dans n'importe quel environnement. Guérissant rapidement. Éternellement jeune. Et très, très facile à contrôler, via un transfert psionique, une fois que nous déciderons que le moment est venu... Vous envisagez probablement d'ordonner à votre Fierté Orc d'exterminer tous les Yétis que vous pouvez. Allez-y, éliminez toute cette main-d'œuvre gratuite et voyez comment vous vous en sortez quand le Domaine utilise des esclaves et que les Royaumes Alliés ont des ogres et des nains. Encore une fois, peu importe que cela nous aide ou non, car c'est quelque chose dont vous avez besoin pour survivre.
+
+Ce n'est cependant qu'un tiers de ce que nous avons pu préserver. Le suivant est notre capacité de traitement mental, nos esprits doués en pouvoirs psioniques, notre capacité à évaluer rapidement l'information et à l'analyser logiquement. Vous ne pourrez jamais éradiquer les Yeeks — croyez-nous, nous avons vérifié. Ils semblent être aussi bénis que nous sommes maudits, sauf que nous sommes toujours condamnés si nous essayons simplement de nous cacher en eux. Dommage. Quoi qu'il en soit, leurs cerveaux et le système qu'ils portent continueront d'exister ; ils maintiendront notre Voie en notre absence.
+
+Enfin, il y a notre culture. Nos découvertes. Tout ce que nous avons appris et que nous n'avons pas mis dans nos corps ou nos cerveaux, nous l'avons stocké avec... un autre groupe. Un groupe qui s'étend au-delà des étoiles, un groupe à qui nous avons disséminé d'innombrables bribes d'informations subtilement encodées, un groupe avec des sauvegardes dans tant d'endroits à travers l'univers... Ils en livreront suffisamment à la maison. Les Yeeks l'absorberont, et nous renaîtrons dans leurs esprits jusqu'à ce qu'ils puissent nous mettre dans nos corps supérieurs.
+
+Une fois que la tempête arrivera à Eyal, une fois que le conflit sera résolu... peut-être que la marée de haine et de malice apportée par une guerre aussi massive distraira l'univers assez pour nous laisser combiner nos morceaux et renaître. Ou peut-être pourrons-nous le faire une fois que les dieux seront tous morts ou fous, leur colère oubliée ou annulée, la malédiction n'ayant à son tour plus de carburant pour continuer. Peut-être que la malédiction est déjà en train de mourir, seulement perpétuée par le bouclier planétaire des Sher'Tul — un bouclier qui commence progressivement à échouer, des fissures se formant dessus et les Mal'Rokka les élargissant avec empressement.
+
+Et sinon ? Notre culture est partout. Nous ne pouvons pas être complètement éliminés sans tout détruire. Le destin a décidé que nous sommes une tumeur à exciser ; si nous devons être une tumeur, nous sommes maintenant une tumeur invasive. Maintenant, le destin peut décider si nous sommes une croissance bénigne ou terminalement maligne.
+
+En attendriez-vous moins des incarnations physiques de la détermination rancunière ?"]], "_t")
+
+t("telepathic message (6)", "message télépathique (6)", "_t")
+t([[If you would indulge us...  Next to you is a tablet that was just carved by our machines, moments before you arrived.  If our curse holds, it will be completely illegible, but if it has been lifted, it will bear our name.  A blatant, distinct word that is an undeniable mark of our existence, a sign that no matter how it may have wanted to, the universe could not forget us.  Look to your right, and learn the name of those who have far more right to exist than you do, who have fought far harder for it, and will sink their hooks so deep into reality that it must either lift them up or be dragged into the depths with them.  Learn the name feared by existence itself!
+
+#{italic}#(You look to your right, and see a tablet which has been broken into fragments.  The fragments are still arranged roughly in the right shape, and you can read a single word; another, larger fragment bears a sentence.)#{normal}#
+]], [["Si vous vouliez bien nous accorder une faveur... À côté de vous se trouve une tablette qui vient d'être gravée par nos machines, quelques instants avant votre arrivée. Si notre malédiction tient, elle sera complètement illisible, mais si elle a été levée, elle portera notre nom. Un mot flagrant, distinct, qui est une marque indéniable de notre existence, un signe que, peu importe ce qu'il a pu vouloir, l'univers n'a pas pu nous oublier. Regardez à votre droite, et apprenez le nom de ceux qui ont bien plus le droit d'exister que vous, qui se sont battus bien plus durement pour cela, et qui enfonceront leurs crochets si profondément dans la réalité qu'elle devra soit les soulever, soit être entraînée dans les profondeurs avec eux. Apprenez le nom craint par l'existence elle-même !
+
+#{italic}#(Vous regardez à votre droite, et voyez une tablette qui a été brisée en fragments. Les fragments sont toujours disposés approximativement dans la bonne forme, et vous pouvez lire un seul mot ; un autre fragment, plus grand, porte une phrase.)#{normal}#"]], "_t")
+
+t([[#{bold}#WEISSI
+
+DO YOU KNOW OUR NAME?#{normal}#]], [[#{bold}#WEISSI
+
+CONNAISSEZ-VOUS NOTRE NOM ?#{normal}#]], "_t")
+
+t([[#{italic}#(Somehow the name seems to have faded from your memory!)#{normal}#
+
+DO YOU KNOW OUR NAME?#{normal}#]], [[#{italic}#(D'une manière ou d'une autre, le nom semble s'être effacé de votre mémoire !)#\{normal}#
+
+#{bold}#CONNAISSEZ-VOUS NOTRE NOM ?#{normal}#]], "_t")
+
+------------------------------------------------
+section "tome-orcs/data/lore/yeti.lua"
+
+t("yeti's cave", "caverne des yétis", "newLore category")
+
+t("crude cave painting (1)", "peinture rupestre rudimentaire (1)", "_t")
+t("You see here a crude cave painting, depicting a drake attacking a group of yetis, as an indistinct figure watches over them.  To the right, you see a drawing of the figure attacking the drake, and the yetis cheering.", "Vous voyez ici une peinture rupestre rudimentaire, représentant un drake attaquant un groupe de yétis, tandis qu'une silhouette indistincte les observe. Sur la droite, vous voyez un dessin de cette silhouette attaquant le drake, et les yétis en train de jubiler.", "_t")
+
+t("crude cave painting (2)", "peinture rupestre rudimentaire (2)", "_t")
+t("You see here a cave painting, depicting a giant attempting to lead some yetis away in chains, but being pulled down and mauled by other yetis.", "Vous voyez ici une peinture rupestre, représentant un géant tentant d'emmener quelques yétis enchaînés, mais se faisant renverser et mettre en pièces par d'autres yétis.", "_t")
+
+t("crude cave painting (3)", "peinture rupestre rudimentaire (3)", "_t")
+t("You see here a cave painting, depicting a giant holding an object, which is projecting some sort of beam at a yeti.  The affected yeti is walking toward the giant, while other yetis are looking on in horror.", "Vous voyez ici une peinture rupestre, représentant un géant tenant un objet qui projette une sorte de rayon sur un yéti. Le yéti affecté marche vers le géant, tandis que les autres yétis regardent la scène avec horreur.", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/maps/zones/worldmap.lua"
+
+t("Far East", "Extrême-Orient", "_t")
+t("WARNING", "ATTENTION", "_t")
+t("Danger!", "Danger !", "_t")
+t("Warning, to the west is #CRIMSON##{bold}#Atmos Tribe#{normal}##LAST# territory. Likely far too dangerous for you!", "Attention, à l'ouest se trouve le territoire de la #CRIMSON##{bold}#Tribu Atmos#{normal}##LAST#. C'est probablement beaucoup trop dangereux pour vous !", "_t")
+t("Clork Peninsula", "Péninsule de Clork", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/quests/amakthel.lua"
+
+t("The Dead God Awaits", "Le Dieu Mort attend", "_t")
+t("Deep within Eyal you found a huge cavern containing some of the remains of the great dead god Amakthel...", "Au plus profond d'Eyal, vous avez trouvé une immense caverne contenant certains des restes du grand dieu mort, Amakthel...", "_t")
+t("Along with what appears to be a living Sher'tul that seems to be trying to resurrect him.", "Accompagnés de ce qui semble être un Sher'Tul vivant, manifestement en train d'essayer de le ressusciter.", "_t")
+t("It must be stopped at all cost, the Prides only just got their freedom back, you can not allow anything to take it away again!", "Il doit être arrêté à tout prix. Les Fiertés viennent tout juste de recouvrer leur liberté, vous ne pouvez pas permettre à quoi que ce soit de la leur reprendre !", "_t")
+t("The Sher'tul Priest has been taken care of, Amakthel will keep on sleeping forever now. The Prides and the world are safe.", "Le prêtre Sher'Tul a été mis hors d'état de nuire, Amakthel continuera de dormir pour l'éternité désormais. Les Fiertés et le monde sont en sécurité.", "_t")
+t("#LIGHT_GREEN#You have won the game!.#WHITE#", "#LIGHT_GREEN#Vous avez gagné la partie !#WHITE#", "_t")
+t("#CRIMSON#You feel as if your Rod of Recall is working again in this area.", "#CRIMSON#Vous sentez que votre Baguette de Rappel fonctionne à nouveau dans cette zone.", "log")
+t("Orc Warrior", "Guerrier Orc", "_t")
+t("Winner", "Vainqueur", "_t")
+t("#GOLD#Well done! You have won the Tales of Maj'Eyal: Embers of Rage!#WHITE#", "#GOLD#Bien joué ! Vous avez gagné la campagne Tales of Maj'Eyal : Embers of Rage !#WHITE#", "_t")
+t("You have thwarted the Steam Giants' genocidal plans, and avenged those killed in the attack on Kruk Pride.  Their desperate pact with the High Priest did nothing to stop you; the priest and his god lay dead at your feet, and you have ensured they will #{italic}#stay#{normal}# dead for the foreseeable future.", "Vous avez déjoué les plans génocidaires des Géants de Vapeur et vengé ceux qui ont été tués lors de l'attaque contre la Fierté Kruk. Leur pacte désespéré avec le Grand Prêtre n'a rien fait pour vous arrêter ; le prêtre et son dieu gisent morts à vos pieds, et vous avez assuré qu'ils #{italic}#resteront#{normal}# morts dans un avenir prévisible.", "_t")
+t("The humans, elves, and halflings will not be able to hurt your people again.  By destroying the farportal and denying King Tolak's army its glorious battle, you have ensured the safety of your people from the Allied Kingdoms, and by storming the Gates of Morning you have eliminated the last bearers of the West's hateful aggression in Var'Eyal.", "Les humains, les elfes et les halfelins ne pourront plus jamais faire de mal à votre peuple. En détruisant le portail lointain et en refusant au roi Tolak la glorieuse bataille qu'il espérait, vous avez assuré la sécurité de votre peuple face aux Royaumes Alliés, et en prenant d'assaut les Portes du Matin, vous avez éliminé les derniers porteurs de l'agression haineuse de l'Ouest à Var'Eyal.", "_t")
+t("For now, peace reigns.  You know that this will not last forever.  You may have repelled its vanguard, but the Kar'Haïb Dominion bides its time waiting for a weakness it can exploit; the smugglers' portals from Maj'Eyal remain undiscovered, and while neither you nor King Tolak has any remaining desire to take the other's continent, the fear of invasion will linger in the backs of your minds.", "Pour l'instant, la paix règne. Vous savez que cela ne durera pas éternellement. Vous avez peut-être repoussé son avant-garde, mais le Dominion Kar'Haïb attend son heure, guettant une faiblesse à exploiter ; les portails des contrebandiers venant de Maj'Eyal restent non découverts, et bien que ni vous ni le roi Tolak n'ayez plus le moindre désir de conquérir le continent de l'autre, la peur d'une invasion persistera dans un coin de vos esprits.", "_t")
+t("  The messages of the Lost City give you cause to remain ever vigilant for the threats they warned of, including their authors, and you wonder what your people will do now that their struggle to escape eradication, one that has defined them for their entire recorded history, has ceased to be a concern.", " Les messages de la Cité Perdue vous donnent des raisons de rester vigilant face aux menaces contre lesquelles ils mettaient en garde, y compris leurs auteurs, et vous vous demandez ce que fera votre peuple maintenant que sa lutte pour échapper à l'éradication, lutte qui l'a défini tout au long de son histoire connue, a cessé d'être une préoccupation.", "_t")
+t("Regardless...  You just killed a god and gave your people the first chance to relax in thousands of years.  It's been a pretty good day.", "Quoi qu'il en soit... Vous venez de tuer un dieu et d'offrir à votre peuple sa première chance de se détendre depuis des milliers d'années. C'était une plutôt bonne journée.", "_t")
+t("You may continue playing and enjoy the rest of the world.  Your soldiers may want to speak with you outside...", "Vous pouvez continuer à jouer et profiter du reste du monde. Vos soldats voudront peut-être vous parler à l'extérieur...", "_t")
+
+
+------------------------------------------------
+section "tome-orcs/data/quests/annihilator.lua"
+
+t("Research. Tinker. Annihilate.", "Recherchez. Bricolez. Anéantissez.", "_t")
+t("Inside some of your foes you have found some intact pieces that give you new ideas.", "À l'intérieur de certains de vos ennemis, vous avez trouvé des pièces intactes qui vous donnent de nouvelles idées.", "_t")
+t("Keep on killing mechanical contraptions or steam-related foes...", "Continuez à détruire des engins mécaniques ou des ennemis liés à la vapeur...", "_t")
+t("#LIGHT_GREEN#* You destroyed a mecharachnid equiped with a flamethrower. Both those things could prove very useful.#WHITE#", "#LIGHT_GREEN#* Vous avez détruit une mécharachnide équipée d'un lance-flammes. Ces deux éléments pourraient s'avérer très utiles.#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have studied the 'remains' of an greater or ultimate hethugoroth, providing new ideas for ways to annihilate with heat.#WHITE#", "#LIGHT_GREEN#* Vous avez étudié les « restes » d'un hethugoroth majeur ou ultime, fournissant de nouvelles idées sur des méthodes d'anéantissement par la chaleur.#WHITE#", "_t")
+t("#LIGHT_GREEN#* The impressive Automated Defense System remains will prove very useful to create automated and self-deploying constructs.#WHITE#", "#LIGHT_GREEN#* Les impressionnants restes du Système de Défense Automatisé s'avéreront très utiles pour créer des constructions automatisées et auto-déployables.#WHITE#", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/quests/destroy-sunwall.lua"
+
+t("The Deconstruction of Falling Stars", "La Déconstruction des Étoiles Filantes", "_t")
+t([[The people of the sunwall have lingered on this land for too long and now they are spreading their control to all the mainland. This must not be allowed!
+With the help of their newfound allies in the west they keep a permanent guard over the farportal. The portal must be permanently destroyed to prevent reinforcements.
+The leader of the Sunwall, High Sun Paladin Aeryn must be punished for her crimes against the Prides.]], [[Le peuple du Mur du Soleil s'attarde sur ces terres depuis bien trop longtemps et désormais, ils étendent leur contrôle à tout le continent. Cela ne doit pas être permis !
+Avec l'aide de leurs nouveaux alliés de l'ouest, ils maintiennent une garde permanente sur le portail lointain. Le portail doit être détruit définitivement afin d'empêcher l'arrivée de renforts.
+La chef du Mur du Soleil, la Haute Paladine du Soleil Aeryn, doit être punie pour ses crimes contre les Fiertés.]], "_t")
+t("#LIGHT_GREEN#* You have killed Aeryn, making sure no more troops will come from the west.#WHITE#", "#LIGHT_GREEN#* Vous avez tué Aeryn, vous assurant qu'aucune autre troupe ne viendra de l'ouest.#WHITE#", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/quests/free-prides.lua"
+
+t("Children of Garkul, Unite!", "Enfants de Garkul, unissez-vous !", "_t")
+t("All the few remaining orcs of the mainland have been captured by Sunwall and their western allies.", "Les quelques orcs restants sur le continent ont tous été capturés par le Mur du Soleil et leurs alliés occidentaux.", "_t")
+t("To ensure a future, any future, for our race they must be freed.", "Pour garantir un avenir, quel qu'il soit, à notre race, ils doivent être libérés.", "_t")
+t("The internment camp is located somewhere to the north. The orcs are subdued into obedience by a powerful #{halfling}# psionic, Mindwall, and guarded by elite Sunwall troops.", "Le camp d'internement est situé quelque part au nord. Les orcs sont maintenus dans l'obéissance par un puissant psionique #{halfling}#, Rempart Mental, et gardés par des troupes d'élite du Mur du Soleil.", "_t")
+t("Mindwall must be taken care of and the prides set free.", "Rempart Mental doit être éliminé et les Fiertés libérées.", "_t")
+t("But #{bold}#BEFORE#{normal}# that you should go and destroy the Sunwall Observatory to the east, as our spies have found a way to resist Mindwall's psionic powers which requries #{italic}#ingredients#{normal}# from there.", "Mais #{bold}#AVANT#{normal}# cela, vous devriez aller détruire l'Observatoire du Mur du Soleil à l'est, car nos espions ont découvert un moyen de résister aux pouvoirs psioniques de Rempart Mental qui nécessite des #{italic}#ingrédients#{normal}# provenant de là-bas.", "_t")
+t("#LIGHT_GREEN#* You have destroyed Mindwall body but he managed to split his mind into many pieces and taken direct control of the subdued orcs. Destroy the pillars in each level four other levels.#WHITE#", "#LIGHT_GREEN#* Vous avez détruit le corps de Rempart Mental, mais il a réussi à diviser son esprit en plusieurs morceaux et à prendre le contrôle direct des orcs soumis. Détruisez les piliers dans chacun des quatre autres niveaux.#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have freed all the Vor Pride orcs.#WHITE#", "#LIGHT_GREEN#* Vous avez libéré tous les orcs de la Fierté Vor.#WHITE#", "_t")
+t("#GREY#* You need to have free the Vor Pride orcs.#WHITE#", "#GREY#* Vous devez libérer les orcs de la Fierté Vor.#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have freed all the Rak'Shor Pride orcs.#WHITE#", "#LIGHT_GREEN#* Vous avez libéré tous les orcs de la Fierté Rak'Shor.#WHITE#", "_t")
+t("#GREY#* You need to have free the Rak'Shor Pride orcs.#WHITE#", "#GREY#* Vous devez libérer les orcs de la Fierté Rak'Shor.#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have freed all the Gorbat Pride orcs.#WHITE#", "#LIGHT_GREEN#* Vous avez libéré tous les orcs de la Fierté Gorbat.#WHITE#", "_t")
+t("#GREY#* You need to have free the Gorbat Pride orcs.#WHITE#", "#GREY#* Vous devez libérer les orcs de la Fierté Gorbat.#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have freed all the Grushnak Pride orcs.#WHITE#", "#LIGHT_GREEN#* Vous avez libéré tous les orcs de la Fierté Grushnak.#WHITE#", "_t")
+t("#GREY#* You need to have free the Grushnak Pride orcs.#WHITE#", "#GREY#* Vous devez libérer les orcs de la Fierté Grushnak.#WHITE#", "_t")
+t("#LIGHT_GREEN#* The Pride is once again free and united.#WHITE#", "#LIGHT_GREEN#* La Fierté est à nouveau libre et unie.#WHITE#", "_t")
+
+
+
+------------------------------------------------
+section "tome-orcs/data/quests/gem.lua"
+
+t("Mole Down, Two To Go", "Une taupe de moins, deux à faire", "_t")
+t("As you left the Gates of Morning in ruins you noticed a strange powerful tremor that seems to come from nearby.", "Alors que vous laissiez les Portes du Matin en ruines, vous avez remarqué un étrange tremblement puissant semblant provenir des environs.", "_t")
+t("Investigating you have found a huge mechanical mole of obvious steam giant origin.", "En enquêtant, vous avez découvert une immense taupe mécanique, manifestement d'origine des géants de vapeur.", "_t")
+t("#LIGHT_GREEN#* You have crushed both the horrors and the giants, making sure no precious information will come back to the Palace of Fumes.#WHITE#", "#LIGHT_GREEN#* Vous avez écrasé à la fois les horreurs et les géants, vous assurant qu'aucune information précieuse ne retourne au Palais des Vapeurs.#WHITE#", "_t")
+
+
+
+------------------------------------------------
+section "tome-orcs/data/quests/kaltor-shop.lua"
+
+t("The Grumpy Shopowner", "Le boutiquier grincheux", "_t")
+t("Kaltor's shop seems to be nearby in the mountain. Maybe it could be interesting to pay him a visit?", "La boutique de Kaltor semble être toute proche, dans la montagne. Peut-être serait-il intéressant de lui rendre visite ?", "_t")
+t("He does sound well armed, though, so be prepared as it is likely very dangerous.", "Il semble cependant bien armé, alors soyez prêt car c'est probablement très dangereux.", "_t")
+t("So maybe take some time to plan the raid.", "Prenez donc peut-être le temps de planifier le raid.", "_t")
+t("#LIGHT_GREEN#* You have disposed of Kaltor, the loot is yours!#WHITE#", "#LIGHT_GREEN#* Vous vous êtes débarrassé de Kaltor, le butin est à vous !#WHITE#", "_t")
+t("#PURPLE#You heard a loud noise!", "#PURPLE#Vous avez entendu un grand bruit !", "saySimple")
+
+------------------------------------------------
+section "tome-orcs/data/quests/kill-dominion.lua"
+
+t("This is our land!", "Ceci est notre terre !", "_t")
+t("A group of trolls from the Kar'Haïb Dominion is trying to take foot on the mainland.", "Un groupe de trolls du Dominion de Kar'Haïb tente de prendre pied sur le continent.", "_t")
+t("With the Sunwall at full force we can not have the luxury of having to fight on both fronts, the Dominion port of the south must be destroyed.", "Avec le Mur du Soleil en pleine force, nous ne pouvons pas nous permettre le luxe de devoir combattre sur deux fronts ; le port du Dominion au sud doit être détruit.", "_t")
+t("A potent bomb was given to you, you must place it at a weak spot of the tower where it will detonate and destroy the port.", "Une bombe puissante vous a été remise, vous devez la placer à un point faible de la tour où elle explosera et détruira le port.", "_t")
+t("It would be a good idea for you to not be there anymore when the bomb explodes however.", "Ce serait toutefois une bonne idée de ne plus être sur place quand la bombe explosera.", "_t")
+t("#LIGHT_GREEN#* You have destroyed the Dominion port, the trolls will not be a problem in the near future.#WHITE#", "#LIGHT_GREEN#* Vous avez détruit le port du Dominion, les trolls ne seront plus un problème dans un avenir proche.#WHITE#", "_t")
+t("Tower Detonator", "Détonateur de tour", "_t")
+t("This bomb was tailored to weaken the structure of the Dominion's port tower. If placed at the right spot it will explode after 100 turns and destroy the whole port.", "Cette bombe a été conçue pour fragiliser la structure de la tour du port du Dominion. Si elle est placée au bon endroit, elle explosera après 100 tours et détruira tout le port.", "_t")
+t("place the bomb on the structural weakness.", "placer la bombe sur le point faible de la structure.", "_t")
+t("Sewer Detonator", "Détonateur d'égout", "_t")
+t("You must first locate the structural weakness in the Dominion's port tower.", "Vous devez d'abord localiser le point faible structurel de la tour du port du Dominion.", "_t")
+t([[You place the detonator, you have 100 turns to get out or be destroyed by the explosion.
+Use your #{bold}##GOLD#Rod of Recall#LAST##{normal}#!]], [[Vous placez le détonateur, vous avez 100 tours pour sortir ou être détruit par l'explosion.
+Utilisez votre #{bold}##GOLD#Baguette de Rappel#LAST##{normal}#!]], "_t")
+
+------------------------------------------------
+section "tome-orcs/data/quests/krimbul.lua"
+
+t("Clan of the Unicorn", "Clan de la Licorne", "_t")
+t("Metash has asked you to investigate the Krimbul Clan, south of the peninsula.", "Metash vous a demandé d'enquêter sur le Clan Krimbul, au sud de la péninsule.", "_t")
+t("A whitehoof turned mad with power is trying to lead them in a war against Kruk Pride.", "Un sabot-blanc devenu fou de pouvoir tente de les mener dans une guerre contre la Fierté Kruk.", "_t")
+t("#LIGHT_GREEN#* You have stopped the pitiful Nektosh, ensuring one less threat for the Pride and a future for the Whitehooves.#WHITE#", "#LIGHT_GREEN#* Vous avez arrêté le pitoyable Nektosh, garantissant une menace de moins pour la Fierté et un avenir pour les Sabots-blancs.#WHITE#", "_t")
+
+
+------------------------------------------------
+section "tome-orcs/data/quests/kruk-invasion.lua"
+
+t("Homeland", "Terre Natale", "_t")
+t("The giants have breached the mountain-side of Kruk pride!", "Les géants ont brisé le flanc de la montagne de la Fierté Kruk !", "_t")
+t("They are invading the town just when most of our forces are outside.", "Ils envahissent la ville juste au moment où la plupart de nos forces sont à l'extérieur.", "_t")
+t([[Only you and few others are left to close the breach by collapsing the tunnel from the inside.
+]], [[Il ne reste que vous et quelques autres pour fermer la brèche en faisant s'effondrer le tunnel de l'intérieur.
+]], "_t")
+t("#LIGHT_GREEN#* You have collapsed the tunnel, saving the Pride. For now.#WHITE#", "#LIGHT_GREEN#* Vous avez fait s'effondrer le tunnel, sauvant la Fierté. Pour l'instant.#WHITE#", "_t")
+t("#LIGHT_GREY#* You must place the bomb at the end of the tunnel to destroy it.#WHITE#", "#LIGHT_GREY#* Vous devez placer la bombe au bout du tunnel pour le détruire.#WHITE#", "_t")
+t("Cave Detonator", "Détonateur de grotte", "_t")
+t("This bomb was tailored to crumble the tunnel used by the Steam Giants to invade Kruk Pride.", "Cette bombe a été conçue pour faire s'effondrer le tunnel utilisé par les Géants de Vapeur pour envahir la Fierté Kruk.", "_t")
+t([[You place the detonator, you have 220 turns to get out or be destroyed by the explosion.
+Use your #{bold}##GOLD#Rod of Recall#LAST##{normal}#!]], [[Vous placez le détonateur, vous avez 220 tours pour sortir ou être détruit par l'explosion.
+Utilisez votre #{bold}##GOLD#Baguette de Rappel#LAST##{normal}#!]], "_t")
+t("#LIGHT_GREEN#Kruk Pride is safe for now. Now is time for revenge!", "#LIGHT_GREEN#La Fierté Kruk est en sécurité pour l'instant. Il est temps de se venger !", "saySimple")
+
+------------------------------------------------
+section "tome-orcs/data/quests/palace.lua"
+
+t("No Fumes Without Fire", "Pas de fumée sans feu", "_t")
+t("The time for revenge is at hand! The Tribe stands crippled under your assaults.", "L'heure de la vengeance est arrivée ! La Tribu est paralysée sous vos assauts.", "_t")
+t("Enter the Palace of Fumes and crush their leaders once and for all!", "Entrez dans le Palais des Vapeurs et écrasez leurs chefs une fois pour toutes !", "_t")
+t("For Kruk!", "Pour Kruk !", "_t")
+t("For the Prides!", "Pour les Fiertés !", "_t")
+t("For the Garkul!", "Pour Garkul !", "_t")
+t("#LIGHT_GREEN#* Council Member Nashal is dead.#WHITE#", "#LIGHT_GREEN#* Le membre du Conseil Nashal est mort.#WHITE#", "_t")
+t("#LIGHT_GREEN#* Council Member Tormak is dead.#WHITE#", "#LIGHT_GREEN#* Le membre du Conseil Tormak est mort.#WHITE#", "_t")
+t("#LIGHT_GREEN#* Council Member Pendor is dead.#WHITE#", "#LIGHT_GREEN#* Le membre du Conseil Pendor est mort.#WHITE#", "_t")
+t("#LIGHT_GREEN#* Council Member Palaquie is dead.#WHITE#", "#LIGHT_GREEN#* Le membre du Conseil Palaquie est mort.#WHITE#", "_t")
+t("#LIGHT_GREEN#* Council Member Tantalos is dead.#WHITE#", "#LIGHT_GREEN#* Le membre du Conseil Tantalos est mort.#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have destroyed the Council and shattered the Tribe.#WHITE#", "#LIGHT_GREEN#* Vous avez détruit le Conseil et brisé la Tribu.#WHITE#", "_t")
+t("What is all this noise about!", "C'est quoi tout ce boucan !", "_t")
+t("Tantalos! What have you done!", "Tantalos ! Qu'as-tu fait !", "_t")
+
+
+------------------------------------------------
+section "tome-orcs/data/quests/quarry.lua"
+
+t("Hunter, Quarry", "Chasseur, Carrière", "_t")
+t("The Steam Quarry is a strategic zone for the Atmos tribe, it provides them with much of their energy needs.", "La Carrière de Vapeur est une zone stratégique pour la tribu Atmos ; elle leur fournit une grande partie de leurs besoins en énergie.", "_t")
+t("If you are to assault the Palace of Fumes you need to cut that supply off. Destroy the three giant steam valves to make the Palace vulnerable.", "Si vous devez prendre d'assaut le Palais des Vapeurs, vous devez couper cet approvisionnement. Détruisez les trois valves à vapeur géantes pour rendre le Palais vulnérable.", "_t")
+t("#LIGHT_GREEN#* The first valve has been destroyed.#WHITE#", "#LIGHT_GREEN#* La première valve a été détruite.#WHITE#", "_t")
+t("#LIGHT_GREEN#* The second valve has been destroyed.#WHITE#", "#LIGHT_GREEN#* La deuxième valve a été détruite.#WHITE#", "_t")
+t("#LIGHT_GREEN#* The third valve has been destroyed.#WHITE#", "#LIGHT_GREEN#* La troisième valve a été détruite.#WHITE#", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/quests/ritch-hive.lua"
+
+t("A Ritch Party", "Une fête de Rithes", "_t")
+t("Our ultimate goal on the mainland is to get rid of the Sunwall once and for all.", "Notre objectif ultime sur le continent est de nous débarrasser du Mur du Soleil une fois pour toutes.", "_t")
+t("To do that we will prepare a special surprise to help our final attack.", "Pour ce faire, nous préparerons une surprise spéciale pour appuyer notre attaque finale.", "_t")
+t("Go to the Ritch Hive in the mountains north of the Erúan desert and collect a big pile of ritch eggs.  About 30 viable eggs should be sufficient.", "Rendez-vous à la Ruche des Rithes dans les montagnes au nord du désert d'Erúan et collectez un grand tas d'œufs de Rithe. Environ 30 œufs viables devraient suffire.", "_t")
+t("When you have enough, find a tunnel leading north and use the special sand shredder gloves tinker to open a path under the Gates of Morning.", "Lorsque vous en aurez assez, trouvez un tunnel menant au nord et utilisez le gadget « gants déchiqueteurs de sable » pour ouvrir un passage sous les Portes du Matin.", "_t")
+t("Finally, place the eggs in a protected spot to hatch.  With luck, they will provide a distraction while you later assault the city.", "Enfin, placez les œufs dans un endroit protégé pour les faire éclore. Avec un peu de chance, ils fourniront une distraction pendant que vous assiégerez la ville plus tard.", "_t")
+t("#LIGHT_GREEN#* You have collected enough eggs.#WHITE#", "#LIGHT_GREEN#* Vous avez collecté assez d'œufs.#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have tunnelled close enough to the Gates of Morning.#WHITE#", "#LIGHT_GREEN#* Vous avez creusé assez près des Portes du Matin.#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have placed the little surprise.#WHITE#", "#LIGHT_GREEN#* Vous avez déposé la petite surprise.#WHITE#", "_t")
+t("Stralite Sand Shredder", "Déchiqueteur de sable en Stralite", "_t")
+t("Automatically deploy a huge rotating drill when you hit a sandwall, carving out a big part of it quickly.", "Déploie automatiquement une énorme foreuse rotative lorsque vous frappez un mur de sable, en en découpant une grande partie rapidement.", "_t")
+t("You cannot bring yourself to drop the %s", "Vous ne pouvez pas vous résoudre à lâcher %s", "logPlayer")
+
+
+------------------------------------------------
+section "tome-orcs/data/quests/start-orc.lua"
+
+t("Of Steamwork and Pain", "De vapeur et de douleur", "_t")
+t([[To win the war you must help the Pride by striking a blow to the giant's morale and supply lines.
+]], [[Pour gagner la guerre, vous devez aider la Fierté en portant un coup au moral et aux lignes de ravitaillement des géants.
+]], "_t")
+t("#LIGHT_GREEN#* You have assaulted the Vaporous Emporium, crushing the morale of the Atmos tribe.#WHITE#", "#LIGHT_GREEN#* Vous avez pris d'assaut l'Emporium Vapeureux, écrasant le moral de la tribu Atmos.#WHITE#", "_t")
+t("#SLATE#* You must assault the Vaporous Emporium to crush the morale of the Atmos tribe!#WHITE#", "#SLATE#* Vous devez prendre d'assaut l'Emporium Vapeureux pour écraser le moral de la tribu Atmos !#WHITE#", "_t")
+t("#LIGHT_GREEN#* You have explored the yeti cave and vanquished the Yeti Patriarch.#WHITE#", "#LIGHT_GREEN#* Vous avez exploré la caverne des yétis et vaincu le Patriarche Yéti.#WHITE#", "_t")
+t("#SLATE#* You must explore the Yeti Cave and destroy the patriarch!#WHITE#", "#SLATE#* Vous devez explorer la caverne des yétis et détruire le patriarche !#WHITE#", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/quests/sunwall-observatory.lua"
+
+t("Stargazers", "Observateurs d'étoiles", "_t")
+t("Our ultimate goal on the mainland is to get rid of the Sunwall once and for all.", "Notre objectif ultime sur le continent est de nous débarrasser du Mur du Soleil une fois pour toutes.", "_t")
+t("Our scouts have noticed the Gates of Morning is being reinforced with sun and moon orbs.", "Nos éclaireurs ont remarqué que les Portes du Matin sont renforcées par des orbes de soleil et de lune.", "_t")
+t("Go to the Sunwall Observatory and destroy everything there to reduce their supplies.", "Rendez-vous à l'Observatoire du Mur du Soleil et détruisez tout sur place pour réduire leurs approvisionnements.", "_t")
+t("#LIGHT_GREEN#* You have destroyed the Observatory, the Gates of Morning defenses will be weakened.#WHITE#", "#LIGHT_GREEN#* Vous avez détruit l'Observatoire, les défenses des Portes du Matin seront affaiblies.#WHITE#", "_t")
+
+
+------------------------------------------------
+section "tome-orcs/data/quests/to-mainland.lua"
+
+t("You Shall Pass!", "Vous passerez !", "_t")
+t("The Atmos tribe is not our sole problem. The Sunwall as grown in strength since the Scourge from the West came and murdered the other Prides leaders.", "La tribu Atmos n'est pas notre seul problème. Le Mur du Soleil a gagné en puissance depuis que le Fléau de l'Ouest est venu assassiner les chefs des autres Fiertés.", "_t")
+t("Our brothers on the mainland lay enslaved, but before we free them you must secure a way to the mainland.", "Nos frères sur le continent sont réduits en esclavage, mais avant de les libérer, vous devez sécuriser un passage vers le continent.", "_t")
+t([[Go to the sunwall outpost. Show them the wrath of Garkul, show no mercy for they have none for us.
+]], [[Allez à l'avant-poste du Mur du Soleil. Montrez-leur la colère de Garkul, ne faites aucune pitié car ils n'en ont aucune pour nous.
+]], "_t")
+t("#LIGHT_GREEN#* You have destroyed the sunwall outpost, and secured a way to the mainland.#WHITE#", "#LIGHT_GREEN#* Vous avez détruit l'avant-poste du Mur du Soleil et sécurisé un passage vers le continent.#WHITE#", "_t")
+t("To the mainland!", "Vers le continent !", "_t")
+t([[The way to the mainland is now clear.
+Travel there using the bridge on the worldmap.]], [[Le chemin vers le continent est désormais libre.
+Voyagez jusqu'à lui en utilisant le pont sur la carte du monde.]], "_t")
+
+------------------------------------------------
+section "tome-orcs/data/quests/voyage.lua"
+
+t("Voyage to the Center of Eyal", "Voyage au centre d'Eyal", "_t")
+t("In the Palace of Fumes you found a geothermal vent that digs deep into the planet's core.", "Dans le Palais des Vapeurs, vous avez trouvé une cheminée géothermique qui s'enfonce profondément dans le noyau de la planète.", "_t")
+t("Strange mutated giants came out. You must find the source of those titans!", "D'étranges géants mutés en sont sortis. Vous devez trouver la source de ces titans !", "_t")
+t("#LIGHT_GREEN#* Travelling deep within Eyal you found the source of all corruptions: the dead god #{bold}##CRIMSON#Amakthel#LAST##{normal}#.#WHITE#", "#LIGHT_GREEN#* En voyageant au plus profond d'Eyal, vous avez trouvé la source de toutes les corruptions : le dieu mort #{bold}##CRIMSON#Amakthel#LAST##{normal}#.#WHITE#", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/quests/weissi.lua"
+
+t("Mystery of the Yetis", "Mystère des yétis", "_t")
+t("You have found a bit of preserved yeti muscle, probably somebody somewhere will be interested.", "Vous avez trouvé un morceau de muscle de yéti préservé, quelqu'un quelque part sera probablement intéressé.", "_t")
+t("For each yeti muscle you return to the psy-machines in the ruins of a lost city you will gain a great reward.", "Pour chaque muscle de yéti que vous rapporterez aux machines psioniques dans les ruines d'une cité perdue, vous recevrez une grande récompense.", "_t")
+t("#LIGHT_GREEN#* You have helped the strange psionic machines and got rewards out of them. You still feel like somehow you did wrong...", "#LIGHT_GREEN#* Vous avez aidé les étranges machines psioniques et obtenu des récompenses en échange. Vous avez tout de même l'impression d'avoir mal agi...", "_t")
+
+
+------------------------------------------------
+section "tome-orcs/data/quests/yeti-abduction.lua"
+
+t("Yeti Reinforcements", "Renforts Yétis", "_t")
+t("You found a yeti mind control tinker. If you can tame 8 wild yetis and send them back to Kruk Pride they can be trained and sent back to you at your request using a psychoportation beacon.", "Vous avez trouvé un gadget de contrôle mental pour yéti. Si vous parvenez à dompter 8 yétis sauvages et à les renvoyer à la Fierté Kruk, ils pourront être entraînés et renvoyés vers vous à votre demande via une balise de psychoportation.", "_t")
+t("Wild yetis are mostly found in yeti's caves.", "Les yétis sauvages se trouvent principalement dans les cavernes à yétis.", "_t")
+t("#LIGHT_GREEN#* Captured eight yetis (will be available to summon at level 20).#WHITE#", "#LIGHT_GREEN#* Vous avez capturé huit yétis (ils seront disponibles pour invocation au niveau 20).#WHITE#", "_t")
+t("#LIGHT_GREY#* Captured %d/8 yetis.#WHITE#", "#LIGHT_GREY#* Yétis capturés : %d/8.#WHITE#", "tformat")
+t("Yeti's Psychoportation Beacon", "Balise de Psychoportation Yéti", "_t")
+t("Call a trained yeti to your side.", "Appelez un yéti entraîné à vos côtés.", "_t")
+t("Yetis left to call: %d", "Yétis restants à appeler : %d", "tformat")
+t("call a trained yeti for help", "appeler un yéti entraîné à l'aide", "_t")
+t("The yetis are not ready yet.", "Les yétis ne sont pas encore prêts.", "log")
+t("You extract the psychoportation beacon from the mind controller. Yetis will require some time to train before being usable.", "Vous extrayez la balise de psychoportation du contrôleur mental. Les yétis nécessiteront un certain temps d'entraînement avant d'être utilisables.", "log")
+
+------------------------------------------------
+section "tome-orcs/data/resolvers.lua"
+
+t("Using medical injector with %d%% efficiency and %d%% cooldown modifier.", "Utilisation d'un injecteur médical avec une efficacité de %d%% et un modificateur de temps de recharge de %d%%.", "tformat")
+t("No medical injector available, values are indicative only.", "Aucun injecteur médical disponible, les valeurs sont données à titre indicatif.", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/talents/celestial/celestial-empyreal.lua"
+
+t("Cosmic", "Cosmique", "talent type")
+t("Energies", "Énergies", "talent type")
+t("Reflection", "Réflexion", "talent type")
+t("Void", "Vide", "talent type")
+
+------------------------------------------------
+section "tome-orcs/data/talents/celestial/cosmic.lua"
+
+t("Lunar Orb", "Orbe Lunaire", "talent name")
+t("Fires out a bolt of cosmic energy in the target direction. The projectile continues until it hits a wall or the edge of the map, dealing %0.2f dark damage to enemies hit and restoring %d negative energy. The negative energy gained is reduced by 25%% per enemy hit, restoring a maximum of %d. Enemies hit will become aware of you.", "Tire un trait d'énergie cosmique dans la direction ciblée. Le projectile continue jusqu'à ce qu'il frappe un mur ou le bord de la carte, infligeant %0.2f dégâts d'obscurité aux ennemis touchés et restaurant %d énergie négative. L'énergie négative gagnée est réduite de 25%% par ennemi touché, pour un maximum de %d restaurés. Les ennemis touchés prendront conscience de votre présence.", "tformat")
+t("Astral Path", "Chemin Astral", "talent name")
+t("The spell fizzles: there are no available spots to teleport to.", "Le sort échoue : aucun emplacement disponible pour se téléporter.", "logSeen")
+t([[Fire an orb of negative energy towards a spot within range %d.
+		When the orb reaches its destination, it will teleport you to its location.
+		The speed of the projectile (%d%%) increases with your movement speed]], [[Tire un orbe d'énergie négative vers un emplacement à portée %d.
+		Lorsque l'orbe atteint sa destination, il vous téléporte à son emplacement.
+		La vitesse du projectile (%d%%) augmente selon votre vitesse de déplacement.]], "tformat")
+t("Galactic Pulse", "Impulsion Galactique", "talent name")
+t([[Sends out a slow-moving spiral of cosmic energy towards a target location within range 8.
+		As the cosmic energy moves, it pulls in targets adjacent to it, dealing %0.2f darkness damage and granting you 1 negative energy per hit.]], [[Envoie une spirale d'énergie cosmique se déplaçant lentement vers un emplacement cible à portée 8.
+		À mesure que l'énergie cosmique se déplace, elle attire les cibles adjacentes, infligeant %0.2f dégâts d'obscurité et vous accordant 1 énergie négative par coup.]], "tformat")
+t([[Expend all of your negative energy to create a massive burst of dark energy (radius %d) at a target location within range %d.
+		This deals %0.2f darkness damage and pins targets hit for %d turns.
+		The damage and pin chance increase with your spellpower, and the damage, radius and pin duration all increase with negative energy and talent level]], [[Dépense toute votre énergie négative pour créer une explosion massive d'énergie obscure (rayon %d) à un emplacement cible à portée %d.
+		Ceci inflige %0.2f dégâts d'obscurité et immobilise les cibles touchées pendant %d tours.
+		Les dégâts et les chances d'immobilisation augmentent avec votre puissance magique, tandis que les dégâts, le rayon et la durée de l'immobilisation augmentent avec l'énergie négative et le niveau du talent.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/celestial/crepescula.lua"
+
+t("Twilit Echoes", "Échos du Crépuscule", "talent name")
+t([[The target feels the echoes of all your light and dark damage for %d turns.
+
+Light damage slows the target by %0.2f%% per point of damage dealt for %d turns, up to a maximum of %d%% at %d damage.
+Dark damage creates an effect at the tile for %d turns which deals %d%% of the damage dealt each turn. It will be refreshed as long as the target continues taking damage from it or another source while Twilit Echoes is active, dealing its remaining damage over the new duration as well as the new damage.]], [[La cible ressent les échos de tous vos dégâts de lumière et d'obscurité pendant %d tours.
+
+Les dégâts de lumière ralentissent la cible de %0.2f%% par point de dégâts infligés pendant %d tours, jusqu'à un maximum de %d%% à %d dégâts.
+Les dégâts d'obscurité créent un effet sur la case pendant %d tours qui inflige %d%% des dégâts infligés chaque tour. Il sera réinitialisé tant que la cible continue de subir des dégâts provenant de cette source ou d'une autre pendant que Échos du Crépuscule est actif, infligeant ses dégâts restants sur la nouvelle durée ainsi que les nouveaux dégâts.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/celestial/energies.lua"
+
+t("Celestial Acceleration", "Accélération Céleste", "talent name")
+t("Increases your movement speed by %0.2f%% per percent of positive energy and your casting speed by %0.2f%% per percent of negative energy, up to a maximum of %0.2f%% at 80%%. Sustained energy still counts toward the maximum.", "Augmente votre vitesse de déplacement de %0.2f%% par pourcentage d'énergie positive et votre vitesse d'incantation de %0.2f%% par pourcentage d'énergie négative, jusqu'à un maximum de %0.2f%% à 80%%. L'énergie entretenue compte toujours pour le maximum.", "tformat")
+t("Polarization", "Polarisation", "talent name")
+t("Whichever of your positive and negative energies is a higher percentage regenerates towards its max instead of its normal resting value (%d positive, %d negative). Your negative and positive regeneration/degeneration rates are increased to %0.2f.", "Celle de vos énergies positive ou négative qui possède le pourcentage le plus élevé se régénère vers son maximum au lieu de sa valeur de repos normale (%d positive, %d négative). Vos taux de régénération/dégénération négatifs et positifs sont augmentés à %0.2f.", "tformat")
+t("Magnetic Inversion", "Inversion Magnétique", "talent name")
+t("Swap your current positive and negative energy levels. This spell takes no time to cast.", "Inverse vos niveaux d'énergie positive et négative actuels. Ce sort ne prend aucun temps à lancer.", "_t")
+t("Plasma Bolt", "Trait de Plasma", "talent name")
+t("Fires out a bolt of pure energy, dealing %0.2f light and %0.2f darkness damage in a radius of %d, and slowing targets hit. Their movement is reduced by %d%% and attacking, casting and mind attacks by %d%%. The bolt will attune to your current positive and negative energy amounts.", "Tire un trait d'énergie pure, infligeant %0.2f dégâts de lumière et %0.2f dégâts d'obscurité dans un rayon de %d, et ralentissant les cibles touchées. Leur mouvement est réduit de %d%%, et leurs capacités d'attaque, d'incantation et d'attaques mentales de %d%%. Le trait s'accordera avec vos montants actuels d'énergie positive et négative.", "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/celestial/reflection.lua"
+
+t("Diffraction Pulse", "Impulsion de Diffraction", "talent name")
+t("Create a distortion at the target tile, knocking back all projectiles and changing their direction to face away if possible.", "Crée une distorsion sur la case ciblée, repoussant tous les projectiles et changeant leur direction pour les détourner, si possible.", "_t")
+t("Mirror Wall", "Mur Miroir", "talent name")
+t("mirror wall", "mur miroir", "_t")
+t("Creates a wall %d units long for %d turns, reflecting all projectiles that hit it and blocking sight.", "Crée un mur de %d unités de long pendant %d tours, réfléchissant tous les projectiles qui le touchent et bloquant la vue.", "tformat")
+t("Spatial Prism", "Prisme Spatial", "talent name")
+t("Target a projectile in mid-flight to clone it and target that projectile independently. You gain ownership over the new projectile.", "Cible un projectile en plein vol pour le cloner et cibler ce projectile indépendamment. Vous gagnez la propriété du nouveau projectile.", "_t")
+t("Mirror Self", "Double Miroir", "talent name")
+t("Mirror Image (%s)", "Image Miroir (%s)", "tformat")
+t("A cloned image of you.", "Une image clonée de vous-même.", "_t")
+t("Mirror Self", "Double Miroir", "_t")
+t("Summons a clone for %d turns which casts all the spells you cast, dealing %d%% damage and having %d%% health. Additionally, all light damage the clone deals becomes darkness damage and all darkness damage becomes light damage.", "Invoque un clone pendant %d tours qui lance tous les sorts que vous lancez, infligeant %d%% de dégâts et ayant %d%% de santé. De plus, tous les dégâts de lumière infligés par le clone deviennent des dégâts d'obscurité et tous les dégâts d'obscurité deviennent des dégâts de lumière.", "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/celestial/sol.lua"
+
+t("Solar Orb", "Orbe Solaire", "talent name")
+t("Solar Orb", "Orbe Solaire", "_t")
+t("Fire out an orb of light that deals %0.2f light damage and then returns, dealing the same amount of damage again and reducing the cooldown by half (%d) when it reaches you. The damage will increase with your spellpower. The ball will travel at most %d distance to return to you.", "Tire un orbe de lumière qui inflige %0.2f dégâts de lumière puis revient, infligeant à nouveau la même quantité de dégâts et réduisant le temps de recharge de moitié (%d) lorsqu'il vous atteint. Les dégâts augmentent avec votre puissance magique. La balle parcourra au maximum %d de distance pour revenir vers vous.", "tformat")
+t("Solar Wind", "Vent Solaire", "talent name")
+t("While sustained, this ability speeds up outgoing projectiles by %d%% while slowing incoming projectiles by %d%%. The increase and decrease improve with your spellpower", "Pendant qu'il est entretenu, ce pouvoir accélère vos projectiles sortants de %d%% tout en ralentissant les projectiles entrants de %d%%. L'augmentation et la diminution s'améliorent avec votre puissance magique.", "tformat")
+t("Lucent Wrath", "Courroux Luminescent", "talent name")
+t("After %d turns, the target area in (radius %d) is blasted with a beam of light, dealing %0.2f damage and lighting the area", "Après %d tours, la zone ciblée (rayon %d) est frappée par un faisceau de lumière, infligeant %0.2f dégâts et illuminant la zone.", "tformat")
+t("Lightspeed", "Vitesse de la Lumière", "talent name")
+t("%s moves at light speed!", "%s se déplace à la vitesse de la lumière !", "logSeen")
+t("Instantly gain %d%% percent of a turn.", "Gagne instantanément %d%% d'un tour.", "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/celestial/void.lua"
+
+t("Nebula Spear", "Lance Nébuleuse", "talent name")
+t("Fire out a spear of cosmic energies. If it hits an enemy it deals %0.2f damage, otherwise it explodes in a thin cone of radius %d at the end of its range, blocked by enemies, which deals %0.2f to %0.2f damage depending on how much the enemies block.", "Tire une lance d'énergies cosmiques. Si elle touche un ennemi, elle inflige %0.2f dégâts ; sinon, elle explose dans un cône étroit de rayon %d à la fin de sa portée, bloqué par les ennemis, ce qui inflige %0.2f à %0.2f dégâts selon la part bloquée par les ennemis.", "tformat")
+t("Crescent Wave", "Vague Croissant", "talent name")
+t("Fires out a projectile in a clockwise arc. If it hits an enemy it deals %0.2f damage and roots them for one turn. If another projectile damages them within %d turns, they take half that damage and are rooted again.", "Tire un projectile selon un arc dans le sens des aiguilles d'une montre. S'il touche un ennemi, il inflige %0.2f dégâts et l'immobilise pendant un tour. Si un autre projectile leur inflige des dégâts dans les %d tours, ils subissent la moitié de ces dégâts et sont à nouveau immobilisés.", "_t")
+t("Twilit Echoes", "Échos du Crépuscule", "talent name")
+t([[The target feels the echoes of all your light and dark damage for %d turns.  
+
+Light damage slows the target by %0.2f%% per point of damage dealt for %d turns, up to a maximum of %d%% at %d damage.
+Dark damage creates an effect at the tile for %d turns which deals %d%% of the damage dealt each turn. It will be refreshed as long as the target continues taking damage from it or another source while Twilit Echoes is active, dealing its remaining damage over the new duration as well as the new damage.]], [[La cible ressent les échos de tous vos dégâts de lumière et d'obscurité pendant %d tours.
+
+Les dégâts de lumière ralentissent la cible de %0.2f%% par point de dégâts infligés pendant %d tours, jusqu'à un maximum de %d%% à %d dégâts.
+Les dégâts d'obscurité créent un effet sur la case pendant %d tours qui inflige %d%% des dégâts infligés chaque tour. Il sera réinitialisé tant que la cible continue de subir des dégâts provenant de cette source ou d'une autre pendant que Échos du Crépuscule est actif, infligeant ses dégâts restants sur la nouvelle durée ainsi que les nouveaux dégâts.]], "tformat")
+t("Starscape", "Paysage Stellaire", "talent name")
+t("This spell cannot be cast here.", "Ce sort ne peut pas être lancé ici.", "logPlayer")
+t("Summons the starscape in the surrounding area in a radius of %d. For %d turns, this area exists outside normal time, and in zero gravity. In addition to the effects of zero gravity, Movement of projectiles and other creatures is three times as slow. Spells and attacks cannot escape the radius until the effect ends.", "Invoque le paysage stellaire dans la zone environnante sur un rayon de %d. Pendant %d tours, cette zone existe en dehors du temps normal et en apesanteur. En plus des effets de l'apesanteur, le mouvement des projectiles et des autres créatures est trois fois plus lent. Les sorts et les attaques ne peuvent pas s'échapper du rayon tant que l'effet n'a pas pris fin.", "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/misc/npcs.lua"
+
+t("Petrifying Gaze", "Regard Pétrifiant", "talent name")
+t([[Gaze at your foes and turn them to stone for %d turns.
+		Stoned creatures are unable to act or regen life, and are very brittle.
+		If a stoned creature is hit by an attack that deals more than 30%% of its life, it will shatter and be destroyed.
+		Stoned creatures are highly resistant to fire and lightning, and somewhat resistant to physical attacks.
+		This spell may fail against creatures resistant to being stunned, that are specifically immune to stoning, or certain bosses.]], [[Fixez vos ennemis et transformez-les en pierre pendant %d tours.
+		Les créatures pétrifiées ne peuvent plus agir ni régénérer de vie et sont très fragiles.
+		Si une créature pétrifiée est touchée par une attaque infligeant plus de 30%% de sa vie, elle se brisera et sera détruite.
+		Les créatures pétrifiées sont hautement résistantes au feu et à la foudre, et modérément résistantes aux attaques physiques.
+		Ce sort peut échouer contre les créatures résistantes à l'étourdissement, celles spécifiquement immunisées à la pétrification, ou certains boss.]], "tformat")
+t("Gnashing Maw", "Gueule Tranchante", "talent name")
+t([[Hits the target with your weapon, doing %d%% damage. If the attack hits, the target's Accuracy is reduced by %d for %d turns.
+		Accuracy reduction chance increases with your Physical Power.]], [[Frappe la cible avec votre arme, infligeant %d%% de dégâts. Si l'attaque touche, la Précision de la cible est réduite de %d pendant %d tours.
+		La chance de réduction de précision augmente avec votre Puissance Physique.]], "tformat")
+t("Sandrush", "Ruée de Sable", "talent name")
+t("@Source@ dives in the sand!", "@Source@ plonge dans le sable !", "_t")
+t("You are too close to build up momentum!", "Vous êtes trop près pour prendre de l'élan !", "logPlayer")
+t([[Dive into the sand and rush towards your target at up to range %d, gaining a free attack if you reach it.
+		At the exit point, up to 9 sand pits will appear that last for %d turns (based on your Strength).
+		You must rush from at least 2 tiles away.]], [[Plongez dans le sable et foncez vers votre cible jusqu'à une portée de %d, gagnant une attaque gratuite si vous l'atteignez.
+		Au point de sortie, jusqu'à 9 puits de sable apparaîtront et dureront %d tours (basé sur votre Force).
+		Vous devez foncer depuis au moins 2 cases de distance.]], "tformat")
+t("Ritch Larva Infect", "Infection de Larve de Rithe", "talent name")
+t("@Source@ stings with her ovipositor!", "@Source@ pique avec son ovipositeur !", "_t")
+t([[Sting the target with your ovipositor, injecting %d larvae into it to finish their hatching process.
+		Over a 5 turn gestation period, the larvae will feed on the victim internally, dealing %0.2f to %0.2f physical damage each turn (increasing as they grow).
+		After the gestation period is complete, each larva will rip itself free of its host, dealing %0.2f physical and %0.2f fire damage.
+		]], [[Piquez la cible avec votre ovipositeur, injectant %d larve(s) pour terminer leur processus d'éclosion.
+		Sur une période de gestation de 5 tours, les larves se nourriront de la victime de l'intérieur, infligeant %0.2f à %0.2f dégâts physiques par tour (augmentant à mesure qu'elles grandissent).
+		Une fois la période de gestation terminée, chaque larve s'extirpera de son hôte, infligeant %0.2f dégâts physiques et %0.2f dégâts de feu.]], "tformat")
+t("Slumbering...", "Sommeil...", "talent name")
+t("@Source@ enters a deep slumber.", "@Source@ entre dans un sommeil profond.", "_t")
+t("#STEEL_BLUE#%s slumbers...", "#STEEL_BLUE#%s sommeille...", "saySimple")
+t("#CRIMSON#%s awakens!", "#CRIMSON#%s se réveille !", "saySimple")
+t("The Dead God slumbers. For now.", "Le Dieu Mort sommeille. Pour l'instant.", "_t")
+t("Tentacle Spawn", "Invocation de Tentacule", "talent name")
+t("@Source@ spawns a tentacle near @target@.", "@Source@ fait apparaître un tentacule près de @target@.", "_t")
+t("You cannot summon; you are suppressed!", "Vous ne pouvez pas invoquer ; vous êtes supprimé !", "logPlayer")
+t("Not enough space to summon!", "Pas assez d'espace pour invoquer !", "logPlayer")
+t("#ORCHID#%s summons a %s...", "#ORCHID#%s invoque un %s...", "logCombat")
+t("#ORCHID#%s summons a %s...", "#ORCHID#%s invoque un %s...", "saySimple")
+t("The Dead God wishes to tickle you...", "Le Dieu Mort souhaite vous chatouiller...", "_t")
+t("Curse of Amakthel", "Malédiction d'Amakthel", "talent name")
+t([[Create a circle of cursed ground (radius %d) for %d turns. Any foes inside will be cursed, all new negative effects on them will have their duration doubled.
+		]], [[Crée un cercle de sol maudit (rayon %d) pendant %d tours. Tous les ennemis à l'intérieur seront maudits, et tous les nouveaux effets négatifs qui les affecteront verront leur durée doublée.]], "tformat")
+t("Temporal Ripples", "Ondulations Temporelles", "talent name")
+t([[Creates a circle of radius %d of altered time for %d turns. Any damage your foes take while standing in it will heal the attacker for 200%% of the damage dealt.
+		]], [[Crée un cercle de rayon %d de temps altéré pendant %d tours. Tous les dégâts que vos ennemis subissent en se tenant à l'intérieur soigneront l'attaquant de 200%% des dégâts infligés.]], "tformat")
+t("Saw Storm", "Tempête de Scies", "talent name")
+t([[Summon a storm of swirling sawblades to slice your foes, inflicting %d physical damage and bleeding to anyone who approaches for %d turns.
+		The damage and duration will increase with your Mindpower.]], [[Invoque une tempête de lames de scie tourbillonnantes pour trancher vos ennemis, infligeant %d dégâts physiques et un saignement à quiconque s'approche pendant %d tours.
+		Les dégâts et la durée augmenteront avec votre Puissance Mentale.]], "tformat")
+t("Razor Saw", "Scie Rasoir", "talent name")
+t([[Launches a sawblade with intense power doing %0.2f physical damage to all targets in line.
+		The damage will increase with Mindpower]], [[Lance une lame de scie avec une puissance intense infligeant %0.2f dégâts physiques à toutes les cibles en ligne.
+		Les dégâts augmenteront avec la Puissance Mentale]], "tformat")
+t("Rocket Dash", "Ruée de Fusée", "talent name")
+t("@Source@ rockets forward!", "@Source@ fonce en avant grâce à des fusées !", "_t")
+t([[Dash forward using rockets.
+		If the spot is reached and occupied, you will perform a free melee attack against the target there.
+		This attack does 130% weapon damage.
+		You must dash from at least 2 tiles away.]], [[Foncez en avant en utilisant des fusées.
+		Si l'emplacement est atteint et occupé, vous effectuerez une attaque de mêlée gratuite contre la cible qui s'y trouve.
+		Cette attaque inflige 130% des dégâts de l'arme.
+		Vous devez foncer depuis au moins 2 cases de distance.]], "_t")
+t("Mind Controlled Yeti", "Yéti Sous Contrôle Mental", "talent name")
+
+
+------------------------------------------------
+section "tome-orcs/data/talents/misc/objects.lua"
+
+t("steam", "vapeur", "talent category")
+t("object techniques", "techniques d'objets", "talent type")
+t("Steam powers of the various objects of the world.", "Pouvoirs de vapeur des différents objets du monde.", "_t")
+t("Overgrowth", "Prolifération", "talent name")
+t([[Instantly grow a moss circle of radius %d at target area.
+		Each turn the moss deals %0.2f nature damage to each foe within its radius.
+		This moss is very thick and sticky causing all foes passing through it have their movement speed reduced by %d%% and have a %d%% chance to be pinned to the ground for 4 turns.
+		The moss lasts %d turns.
+		Moss talents are instant but place all other moss talents on cooldown for 3 turns.
+		The damage will increase with your Mindpower.]], [[Fait immédiatement pousser un cercle de mousse de rayon %d sur la zone ciblée.
+		À chaque tour, la mousse inflige %0.2f dégâts de nature à chaque ennemi dans son rayon.
+		Cette mousse est très épaisse et collante, faisant que tous les ennemis qui la traversent voient leur vitesse de déplacement réduite de %d%% et ont %d%% de chance d'être immobilisés au sol pendant 4 tours.
+		La mousse dure %d tours.
+		Les talents de mousse sont instantanés mais placent tous les autres talents de mousse en rechargement pendant 3 tours.
+		Les dégâts augmentent avec votre Puissance mentale.]], "tformat")
+t("Ceasefire", "Cessez-le-feu", "talent name")
+t("You require at least a steamgun for this talent.", "Vous avez besoin d'au moins un pistolet à vapeur pour ce talent.", "logPlayer")
+t("%s resists!", "%s résiste !", "logSeen")
+t([[You fire an incredibly potent shot at an enemy, doing %d%% damage and dazing them for %d turns.
+		The daze chance increases with your Steampower.]], [[Vous tirez un coup incroyablement puissant sur un ennemi, infligeant %d%% de dégâts et l'étourdissant pendant %d tours.
+		La chance d'étourdissement augmente avec votre Puissance de vapeur.]], "tformat")
+t("Surekill", "Mort Assurée", "talent name")
+t([[You fire an exceptionally lethal shot at an enemy, doing %d%% damage.
+Damage dealt by this talent is increased by half your critical multiplier, if doing so would kill the target.]], [[Vous tirez un coup exceptionnellement léthal sur un ennemi, infligeant %d%% de dégâts.
+Les dégâts de ce talent sont augmentés de la moitié de votre multiplicateur de coup critique, si cela devait tuer la cible.]], "tformat")
+t("Rocket Smash", "Fracas à Fusée", "talent name")
+t("@Source@ rockets forward!", "@Source@ se propulse vers l'avant !", "_t")
+t("You are too close to build up momentum!", "Vous êtes trop proche pour prendre de l'élan !", "logPlayer")
+t([[Dash forward using rockets.
+		If the spot is reached and occupied, you will perform a free melee attack against the target there and knock them back 4 spaces as well as anyone else they collide with.
+		This attack does 180% weapon damage.
+		You must dash from at least 2 tiles away.]], [[Vous propulsez vers l'avant à l'aide de fusées.
+		Si l'emplacement atteint est occupé, vous effectuez une attaque de mêlée gratuite contre la cible s'y trouvant et la repoussez de 4 cases, ainsi que tout être avec lequel elle entre en collision.
+		Cette attaque inflige 180%% de dégâts d'arme.
+		Vous devez vous élancer depuis au moins 2 cases de distance.]], "_t")
+t("Laser Powered Smash", "Fracas à Laser", "talent name")
+t("@Source@ unleashes the power of the Gloryhammer!", "@Source@ déchaîne la puissance du Marteau Glorieux !", "_t")
+t([[Unleash the ultimate power of the Gloryhammer to all foes around in radius 1.
+		This attack creates an explosion of radius 1 around every affected target, dealing 50% weapon damage and blinding them for 4 turns.]], [[Déchaîne la puissance ultime du Marteau Glorieux sur tous les ennemis dans un rayon de 1.
+		Cette attaque crée une explosion de rayon 1 autour de chaque cible affectée, infligeant 50%% de dégâts d'arme et les aveuglant pendant 4 tours.]], "_t")
+
+------------------------------------------------
+section "tome-orcs/data/talents/misc/races.lua"
+
+t("race", "race", "talent category")
+t("The various racial bonuses a character can have.", "Les différents bonus raciaux qu'un personnage peut avoir.", "_t")
+t("Algid Rage", "Rage Algide", "talent name")
+t([[Your yeti is attuned to the cold climates.
+		For 5 turns all damage you deal has %d%% chance to encase the target in an iceblock for 3 turns.
+		While Algid Rage is up you easily pierce through iceblocks, reducing the damage they absorb by 50%%.
+		The bonus will increase with your Willpower.]], [[Votre yéti est accordé aux climats froids.
+		Pendant 5 tours, tous les dégâts que vous infligez ont %d%% de chance d'emprisonner la cible dans un bloc de glace pendant 3 tours.
+		Tant que la Rage Algide est active, vous percez facilement les blocs de glace, réduisant les dégâts qu'ils absorbent de 50%%.
+		Le bonus augmente avec votre Volonté.]], "tformat")
+t("Thick Fur", "Fourrure Épaisse", "talent name")
+t("Your yeti's fur acts like a shield, providing %d%% cold resistance, %d%% physical resistance and %d magical save.", "La fourrure de votre yéti agit comme un bouclier, procurant %d%% de résistance au froid, %d%% de résistance physique et %d de sauvegarde magique.", "tformat")
+t("Resilient Body", "Corps Résilient", "talent name")
+t([[Your yeti's body is very resilient to detrimental effects.
+		Each time you are hit by a physical, magical, or mental detrimental effect your body reacts with a burst of healing.
+		This effect heals for %d and can only occur up to 3 times per turn.
+		It increases with your Constitution stat.]], [[Le corps de votre yéti est très résistant aux effets négatifs.
+		Chaque fois que vous êtes touché par un effet négatif physique, magique ou mental, votre corps réagit par une bouffée de soin.
+		Cet effet soigne %d et ne peut se produire que jusqu'à 3 fois par tour.
+		Il augmente avec votre statistique de Constitution.]], "tformat")
+t("Mindwave", "Vague Mentale", "talent name")
+t([[You willingly fry a few parts of your yeti's brain to trigger a huge psionic blast in cone of radius %d.
+		Any foes caught in the blast will suffer %0.2f mind damage and be confused (35%% power) for %d turns.
+		The damage will increase with your Constitution and the apply power will be the highest of your mind, spell, or physical power.]], [[Vous grillé volontairement quelques parties du cerveau de votre yéti pour déclencher une énorme explosion psionique en cône de rayon %d.
+		Tout ennemi pris dans l'explosion subira %0.2f dégâts mentaux et sera confus (35%% de puissance) pendant %d tours.
+		Les dégâts augmentent avec votre Constitution et la puissance d'application sera la plus élevée entre votre puissance mentale, magique ou physique.]], "tformat")
+t("whitehooves", "sabots blancs", "talent type")
+t("Whitehooves", "Sabots Blancs", "talent name")
+t([[Improves your undead body, increasing Strength and Magic by %d.
+		Each time you move you gain a charge (up to %d) of death momentum, increasing your movement speed by 20%%.
+		Each turn spent not moving you lose a charge.]], [[Améliore votre corps mort-vivant, augmentant la Force et la Magie de %d.
+		Chaque fois que vous vous déplacez, vous gagnez une charge (jusqu'à %d) d'Élan de Mort, augmentant votre vitesse de déplacement de 20%%.
+		Chaque tour passé sans vous déplacer, vous perdez une charge.]], "tformat")
+t("Dead Hide", "Peau Morte", "talent name")
+t("Your undead skin hardens under stress. Each charge of death momentum also increases all flat damage resistance by %d.", "Votre peau de mort-vivant se durcit sous le stress. Chaque charge d'Élan de Mort augmente également toutes les résistances aux dégâts fixes de %d.", "tformat")
+t("Lifeless Rush", "Ruée Sans Vie", "talent name")
+t([[You summon your undead energies to instantly build up death momentum to its maximum possible charges.
+		The effect will only start to decrease after %d turns.
+		In addition, the death momentum effect also grants +%d%% to all damage per charge.]], [[Vous invoquez vos énergies de mort-vivant pour accumuler instantanément l'Élan de Mort au maximum de charges possible.
+		L'effet ne commencera à décroître qu'après %d tours.
+		De plus, l'effet d'Élan de Mort accorde également +%d%% à tous les dégâts par charge.]], "tformat")
+t("Essence Drain", "Drain d'Essence", "talent name")
+t([[You send a wave of darkness at your foe, dealing %0.2f darkness damage.
+		The darkness will drain a part of its life essence (only works on living targets) to increase the duration before the next charge of death momentum is used by %d.
+		Only usable when you have the death momentum effect.
+		The damage scales with your Magic stat.]], [[Vous envoyez une vague d'obscurité sur votre ennemi, infligeant %0.2f dégâts d'obscurité.
+		L'obscurité drainera une partie de son essence vitale (fonctionne uniquement sur des cibles vivantes) pour augmenter la durée avant que la prochaine charge d'Élan de Mort ne soit utilisée de %d.
+		Utilisable uniquement lorsque vous possédez l'effet Élan de Mort.
+		Les dégâts augmentent avec votre statistique de Magie.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/psionic/action-at-a-distance.lua"
+
+t("Condensate", "Condensation", "talent name")
+t([[Condensate hot steam around your foes in radius %d, burning them for %0.2f fire damage and applying the wet effect for 4 turns, halving their stun resistances.
+		The damage will increase with your Mindpower.]], [[Condense de la vapeur chaude autour de vos ennemis dans un rayon de %d, les brûlant pour %0.2f dégâts de feu et appliquant l'effet mouillé pendant 4 tours, réduisant de moitié leurs résistances à l'étourdissement.
+		Les dégâts augmentent avec votre Puissance mentale.]], "tformat")
+t("Solidify Air", "Solidifier l'Air", "talent name")
+t("solid air", "air solidifié", "_t")
+t("a piece of solidified air", "Un morceau d'air solidifié.", "_t")
+t([[You concentrate your will in a cone in front of you, condensing the air into a tangible, solid form.
+		Any creatures caught inside take %0.2f physical damage.
+		Any places with no creatures will be filled with solid air, blocking the way for %d turns.
+		The damage will increase with your Mindpower.]], [[Vous concentrez votre volonté en un cône devant vous, condensant l'air en une forme solide et tangible.
+		Toutes les créatures prises à l'intérieur subissent %0.2f dégâts physiques.
+		Les emplacements sans créature seront remplis d'air solidifié, bloquant le passage pendant %d tours.
+		Les dégâts augmentent avec votre Puissance mentale.]], "tformat")
+t("Superconduction", "Superconduction", "talent name")
+t([[Call a streak of lightning on your target, dealing %0.2f to %0.2f lightning damage.
+		If it is wet the lightning propagates to all foes in radius %d, doing the same damage to each.
+		All affected foes are seared for 4 turns, reducing their fire resistance by %d%% and and mind save by %d.
+		The damage will increase with your Mindpower.]], [[Appelle un éclair sur votre cible, infligeant de %0.2f à %0.2f dégâts de foudre.
+		Si elle est mouillée, la foudre se propage à tous les ennemis dans un rayon de %d, infligeant les mêmes dégâts à chacun.
+		Tous les ennemis affectés sont cautérisés pendant 4 tours, réduisant leur résistance au feu de %d%% et leur sauvegarde mentale de %d.
+		Les dégâts augmentent avec votre Puissance mentale.]], "tformat")
+t("Negative Biofeedback", "Biofeedback Négatif", "talent name")
+t([[Any time you deal damage with a psionic ability you incur a negative biofeedback in your foes, stacking up to %d times for 5 turns.
+		Each stack reduces their physical save by %d, defense and armour by %d.
+		This effect may only occur once per turn.]], [[Chaque fois que vous infligez des dégâts avec une capacité psionique, vous provoquez un biofeedback négatif sur vos ennemis, s'accumulant jusqu'à %d fois pendant 5 tours.
+		Chaque accumulation réduit leur sauvegarde physique de %d, et leur défense et armure de %d.
+		Cet effet ne peut se produire qu'une fois par tour.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/psionic/gestalt.lua"
+
+t([[You let your mind tap into your steam generators for energy, increasing your Mindpower in proportion to your steam level: %d when at full steam and 0 when at 0 steam.
+		Using a psionic talent will feedback into your generators, increasing your Steam power by %d for your next steamtech talent.
+		Using a steamtech talent will feedback into psionic focus, increasing your psi level by %d.
+		The effects increase with your Willpower.]], [[Vous laissez votre esprit puiser dans vos générateurs de vapeur pour obtenir de l'énergie, augmentant votre Puissance mentale proportionnellement à votre niveau de vapeur : %d à pleine vapeur et 0 à zéro vapeur.
+		L'utilisation d'un talent psionique alimentera en retour vos générateurs, augmentant votre Puissance de vapeur de %d pour votre prochain talent de vapotech.
+		L'utilisation d'un talent de vapotech alimentera en retour votre concentration psionique, augmentant votre niveau de psi de %d.
+		Les effets augmentent avec votre Volonté.]], "tformat")
+t("Improved Gestalt", "Gestalt Amélioré", "talent name")
+t([[When you use a steamtech talent while Gestalt is active you drain some residual power to form a psionic shield.
+		The shield forms for 3 turns and absorbs %d damage.
+		The effects increase with your Mindpower.]], [[Lorsque vous utilisez un talent de vapotech tandis que Gestalt est actif, vous drainez une partie de la puissance résiduelle pour former un bouclier psionique.
+		Le bouclier se forme pendant 3 tours et absorbe %d dégâts.
+		Les effets augmentent avec votre Puissance mentale.]], "tformat")
+t("Instant Channeling", "Canalisation Instantanée", "talent name")
+t("You must have either a psionic damage shield active or Improved Gestalt available to use this talent.", "Vous devez avoir soit un bouclier de dégâts psionique actif, soit Gestalt Amélioré disponible pour utiliser ce talent.", "logPlayer")
+t([[Instantly channel all of your remaining steam to replenish your psi energies and either enhance your active psionic damage shield or trigger a new one.
+		The (new or existing) shield duration is increased by 3 turns and its power is boosted by %d%% of the steam used.
+		You restore psi equal to %d%% of the steam used.
+		This talent requires Gestalt to be active and either an active psionic damage shield or Improved Gestalt off cooldown.]], [[Canalise instantanément toute votre vapeur restante pour reconstituer vos énergies psi et soit améliorer votre bouclier de dégâts psionique actif, soit en déclencher un nouveau.
+		La durée du bouclier (nouveau ou existant) est augmentée de 3 tours et sa puissance est amplifiée de %d%% de la vapeur utilisée.
+		Vous restaurez du psi égal à %d%% de la vapeur utilisée.
+		Ce talent nécessite que Gestalt soit actif et soit un bouclier de dégâts psionique actif, soit Gestalt Amélioré hors rechargement.]], "tformat")
+t("Forced Gestalt", "Gestalt Forcé", "talent name")
+t([[Temporarily expand your mind to force your Gestalt upon your foes in a radius of 5. Up to %d foe(s) will be affected.
+		The Gestalt will drain each affected foe's powers (physical power, mind power, spell power and steam power) by %d for 5 turns.
+		Your own powers will be increased in return by the drained amount (reduced for each additional foe).
+		In addition for 5 turns you can sense creatures beyond your sight, even through walls in radius %d.
+		The effects improve with your Mindpower.]], [[Étend temporairement votre esprit pour imposer votre Gestalt à vos ennemis dans un rayon de 5. Jusqu'à %d ennemi(s) seront affectés.
+		Le Gestalt drainera les pouvoirs de chaque ennemi affecté (puissance physique, puissance mentale, puissance des sorts et puissance de vapeur) de %d pendant 5 tours.
+		Vos propres pouvoirs seront augmentés en retour du montant drainé (réduit pour chaque ennemi supplémentaire).
+		De plus, pendant 5 tours, vous pouvez détecter des créatures au-delà de votre vision, même à travers les murs dans un rayon de %d.
+		Les effets s'améliorent avec votre Puissance mentale.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/psionic/psionic-fog.lua"
+
+t("Vaporous Step", "Pas Vaporeux", "talent name")
+t([[You concentrate your will to psychoport some of the steam of your generator to a remote location. Each turn steam accumulates there, up to %d charges.
+		When you deactivate the effect you release the accumulated psionic and steam energies, instantly switching places with the target location and releasing the charges in a fiery explosion of hot wet steam in radius 4.
+		The explosion will do %0.2f fire damage, multiplied by 33%% (diminutive) for each charge and apply the wet effect.
+		The effect will fizzle if the charged grid is currently occupied by a creature or not in sight.
+		The damage will increase with your Steampower.]], [[Vous concentrez votre volonté pour psycho-transporter une partie de la vapeur de votre générateur vers un emplacement distant. À chaque tour, la vapeur s'y accumule, jusqu'à %d charges.
+		Lorsque vous désactivez l'effet, vous libérez les énergies psioniques et de vapeur accumulées, échangeant instantanément de place avec l'emplacement cible et libérant les charges dans une explosion enflammée de vapeur chaude et humide dans un rayon de 4.
+		L'explosion infligera %0.2f dégâts de feu, multipliés par 33%% (avec des retours décroissants) par charge et appliquera l'effet mouillé.
+		L'effet s'annulera si la case chargée est actuellement occupée par une créature ou hors de vue.
+		Les dégâts augmentent avec votre Puissance de vapeur.]], "tformat")
+t("Inhale Vapours", "Inhalation de Vapeurs", "talent name")
+t([[When you deactivate Vaporous Step, if the psychoport succeeds you inhale some of the vapours, regenerating %d steam and %d life.
+		The effects will be multiplied by 33%% (diminutive) for each charge of Vaporous Step.
+		The healing done will increase with your Mindpower.]], [[Lorsque vous désactivez Pas Vaporeux, si la psycho-téléportation réussit, vous inhalez une partie des vapeurs, régénérant %d de vapeur et %d de vie.
+		Les effets seront multipliés par 33%% (avec des retours décroissants) par charge de Pas Vaporeux.
+		Les soins prodigués augmentent avec votre Puissance mentale.]], "tformat")
+t("Psionic Fog", "Brouillard Psionique", "talent name")
+t([[Using the steam of your generators you shape it into a psionic fog that lasts %d turns. Any foes caught inside will take %0.2f damage per turn and be seared, reducing their fire resistance by %d%% and and mind save by %d.
+		The damage will increase with your Mindpower.]], [[En utilisant la vapeur de vos générateurs, vous la façonnez en un brouillard psionique qui dure %d tours. Tout ennemi pris à l'intérieur subira %0.2f dégâts par tour et sera cautérisé, réduisant sa résistance au feu de %d%% et sa sauvegarde mentale de %d.
+		Les dégâts augmentent avec votre Puissance mentale.]], "tformat")
+t("Uncertainty Principle", "Principe d'Incertitude", "talent name")
+t("#STEEL_BLUE#(%d quantum shifted)#LAST#", "#STEEL_BLUE#(%d déplacement quantique)#LAST#", "tformat")
+t([[While inside a psionic fog the quantum state of space is warped by your powerful tech-augmented psionic powers.
+		When you would get hit you instead find yourself in an adjacent location.
+		This effect has a cooldown.]], [[Lorsque vous êtes à l'intérieur d'un brouillard psionique, l'état quantique de l'espace est déformé par vos puissants pouvoirs psioniques augmentés technologiquement.
+		Lorsque vous seriez touché, vous vous retrouvez à la place dans un emplacement adjacent.
+		Cet effet a un rechargement.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/psionic/psionic.lua"
+
+t("psionic", "psionique", "talent category")
+t("Harness steam energies to power your own mind.", "Exploitez les énergies de vapeur pour alimenter votre propre esprit.", "_t")
+t("action at a distance", "action à distance", "talent type")
+t("Focus your mental energies to make things happen. Or combust.", "Concentrez vos énergies mentales pour faire arriver des choses. Ou s'enflammer.", "_t")
+t("psionic fog", "brouillard psionique", "talent type")
+t("Psionically manipulate steam to harass your foes and protect yourself.", "Manipulez psioniquement la vapeur pour harceler vos ennemis et vous protéger.", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/talents/spells/galvanic-technomancy.lua"
+
+t("Galvanic Rod", "Bâtonnet Galvanique", "talent name")
+t("You need an arcane dynamo to cast this spell.", "Vous avez besoin d'une dynamo arcanique pour lancer ce sort.", "logPlayer")
+t([[You summon a galvanic rod at a location. Upon arrival the rod releases a shock in radius %d dealing %0.2f galvanic damage (fire and lightning) to all creatures.
+		You have 3 rods each with their own %d turns cooldown.
+		This spell works with Burning Wake.
+		This spell has 25%% chance to try to activate Hurricane, if used.
+		The damage will increase with your Spellpower.]], [[Vous invoquez un bâtonnet galvanique à un emplacement. À son arrivée, le bâtonnet libère un choc dans un rayon de %d, infligeant %0.2f dégâts galvaniques (feu et foudre) à toutes les créatures.
+		Vous disposez de 3 bâtonnets, chacun avec son propre rechargement de %d tours.
+		Ce sort fonctionne avec Sillage Ardent.
+		Ce sort a 25%% de chance d'essayer d'activer Ouragan, si utilisé.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Galvanic Arcing", "Arc Galvanique", "talent name")
+t([[Using your arcane power you force galvanic rods to linger for %d turns. While lingering they are inert, but can link up to other rods.
+		When two rods are present in range %d of one another they link with a galvanic beam.
+		When three rods are present in range %d of one another they link with a triangular galvanic zone.
+		Any creature caught in a galvanic beam or zone take %0.2f galvanic damage per turn.
+		You can maintain at most 3 rods.
+		At level 3 all affected creatures are shocked, reducing their stun and pin resistances by half.
+		At level 5 your weapon (if metallic, or embedded with a metallic tinker) acts as a rod that does not count towards your maximum.
+		This spell has 15%% chance to try to activate Hurricane, if used.
+		The damage will increase with your Spellpower.]], [[En utilisant votre pouvoir arcanique, vous forcez les bâtonnets galvaniques à persister pendant %d tours. Tant qu'ils persistent, ils sont inertes, mais peuvent se connecter à d'autres bâtonnets.
+		Lorsque deux bâtonnets sont présents à portée de %d l'un de l'autre, ils se connectent avec un faisceau galvanique.
+		Lorsque trois bâtonnets sont présents à portée de %d l'un de l'autre, ils se connectent en une zone galvanique triangulaire.
+		Toute créature prise dans un faisceau ou une zone galvanique subit %0.2f dégâts galvaniques par tour.
+		Vous pouvez maintenir au maximum 3 bâtonnets.
+		Au niveau 3, toutes les créatures affectées sont choquées, réduisant de moitié leurs résistances à l'étourdissement et à l'immobilisation.
+		Au niveau 5, votre arme (si métallique, ou dotée d'une babiole métallique) agit comme un bâtonnet supplémentaire ne comptant pas dans votre maximum.
+		Ce sort a 15%% de chance d'essayer d'activer Ouragan, si utilisé.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Unstable Blast", "Explosion Instable", "talent name")
+t("You need Galvanic Arcing active and at least one rod to cast this spell.", "Vous avez besoin d'Arc Galvanique actif et d'au moins un bâtonnet pour lancer ce sort.", "logPlayer")
+t([[Reaching through the aether you temporarily destabilize a galvanic rod's control systems. (Using your weapon as a rod does not count as a valid target)
+		This creates a blast in radius 1 around it, or through all connected rods if they are linked dealing %0.2f galvanic damage to all creatures and stunning them for %d turns.
+		This spell works with Burning Wake.
+		The damage will increase with your Spellpower.]], [[En atteignant l'éther, vous déstabilisez temporairement les systèmes de contrôle d'un bâtonnet galvanique. (Utiliser votre arme comme bâtonnet ne compte pas comme cible valide)
+		Cela crée une explosion dans un rayon de 1 autour de lui, ou à travers tous les bâtonnets connectés s'ils sont liés, infligeant %0.2f dégâts galvaniques à toutes les créatures et les étourdissant pendant %d tours.
+		Ce sort fonctionne avec Sillage Ardent.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Energy Mass Conversion", "Conversion Énergie-Masse", "talent name")
+t("You need Galvanic Arcing active and three rods to cast this spell.", "Vous avez besoin d'Arc Galvanique actif et d'au moins trois bâtonnets pour lancer ce sort.", "logPlayer")
+t([[Using large amounts of arcane power you create a supercharged Unstable Blast in your rods.
+		The extra energy is briefly converted to a huge mass, pulling in all creatures (but you) in range %d of any rod towards the center of the galvanic field.
+		Can only be used with a triangular field is setup.]], [[En utilisant de grandes quantités de pouvoir arcanique, vous créez une Explosion Instable surchargée dans vos bâtonnets.
+		L'énergie supplémentaire est brièvement convertie en une énorme masse, attirant toutes les créatures (sauf vous) à portée de %d de tout bâtonnet vers le centre du champ galvanique.
+		Ne peut être utilisé que lorsqu'un champ triangulaire est configuré.]], "tformat")
+
+
+------------------------------------------------
+section "tome-orcs/data/talents/spells/occult-technomancy.lua"
+
+t("Metaphasic Spin", "Rotation Métaphasique", "talent name")
+t("You need an arcane dynamo to cast this spell.", "Vous avez besoin d'une dynamo arcanique pour lancer ce sort.", "logPlayer")
+t("Select the steamsaw to use?", "Sélectionnez une scie à vapeur :", "_t")
+t([[You imbue a steamsaw with arcane and temporal forces, making it spin very fast around your waist (ignoring requirements).
+		The saw spins so fast it it disturbs spacetime around you, increasing your spellpower by up to %d, your spell critical chance by up to %d and your mana regen by up to %0.1f (depending on steamsaw tier).
+		Any successful melee attack against you also triggers an automatic steamsaw attack that cannot miss dealing %d%% weapon damage as occult damage (arcane and temporal).
+		The steamsaw used will provide its bonus as if it was worn, but you can not Block with it.
+		Increases steamsaws weapon damage by %d%% and uses Magic instead of Strength to determine their damage.
+		If using Aether Avatar, all Occult Technomancy spells become usable for its duration and all occult damage becomes pure arcane.
+
+		#{italic}#When you first learn this talent you also learn the Steamsaw tinker creation if you didn't already know it.#{normal}#
+		]], [[Vous imbuez une scie à vapeur de forces arcaniques et temporelles, la faisant tourner très rapidement autour de votre taille (en ignorant les prérequis).
+		La scie tourne si vite qu'elle perturbe l'espace-temps autour de vous, augmentant votre Puissance des sorts jusqu'à %d, votre chance de critique de sort jusqu'à %d et votre régénération de mana jusqu'à %0.1f (selon le rang de la scie à vapeur).
+		Toute attaque de mêlée réussie contre vous déclenche également une attaque automatique de scie à vapeur qui ne peut pas rater, infligeant %d%% de dégâts d'arme sous forme de dégâts occultes (arcanique et temporel).
+		La scie à vapeur utilisée fournira ses bonus comme si elle était équipée, mais vous ne pouvez pas Bloquer avec elle.
+		Augmente les dégâts d'arme des scies à vapeur de %d%% et utilise la Magie plutôt que la Force pour déterminer leurs dégâts.
+		Si vous utilisez Avatar Éthéré, tous les sorts de Technomancie Occulte deviennent utilisables pendant sa durée et tous les dégâts occultes deviennent des dégâts arcaniques purs.
+
+		#{italic}#Lorsque vous apprenez ce talent pour la première fois, vous apprenez également à créer la babiole Scie à Vapeur si vous ne le saviez pas déjà.#{normal}#]], "tformat")
+t("Reality Breach", "Brèche de Réalité", "talent name")
+t("You need to activate Metatemporal Spinner to cast this spell.", "Vous devez activer Rotation Métaphasique pour lancer ce sort.", "logPlayer")
+t("#Source# annihilates '#Target#'!", "#Source# anéantit #Target# !", "logCombat")
+t([[Spin your saw at incredible speeds for an instant, fully breaking reality in a 3-wide beam in front of you.
+		Any creatures caught by the beam take %0.2f occult damage and are untethered from reality, reducing their global speed by %d%% and the speed of any projectiles they fire by %d%% for 4 turns.
+		At level 3 any projectiles caught in the beam are instantly annihilated.
+		At level 5 the beam is so strong that all creatures caught inside are knocked back 3 tiles.
+		The breach is so deep that the beam will always have the maximum possible length it can.
+		The damage will increase with your Spellpower.]], [[Faites tourner votre scie à des vitesses incroyables un instant, brisant totalement la réalité en un faisceau de 3 unités de large devant vous.
+		Toutes les créatures prises dans le faisceau subissent %0.2f dégâts occultes et sont déconnectées de la réalité, réduisant leur vitesse globale de %d%% et la vitesse de tout projectile qu'elles tirent de %d%% pendant 4 tours.
+		Au niveau 3, tout projectile pris dans le faisceau est instantanément annihilé.
+		Au niveau 5, le faisceau est si puissant que toutes les créatures prises à l'intérieur sont repoussées de 3 cases.
+		La brèche est si profonde que le faisceau aura toujours la longueur maximale possible.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Ethereal Steam", "Vapeur Éthérée", "talent name")
+t([[You reach out through the aether to all creatures in sight that were slowed by Reality Breach or Congeal Time.
+		For each target you create a link of arcane infused steam to it that lasts %d turns.
+		Any time the target uses a talent one of your cooling down spells is reduced by 1 (prioritizing Technomancy spells).
+		Each turn the link is up the target and any creature inside the link takes %0.2f occult damage.
+		As long as at least one link is up, the cooldown of your Metaphasic Spin spell is set to 6 turns instead of 30.
+		The damage will increase with your Spellpower.]], [[Vous tendez votre pouvoir à travers l'éther vers toutes les créatures en vue qui ont été ralenties par Brèche de Réalité ou Gel du Temps.
+		Pour chaque cible, vous créez un lien de vapeur infusée d'arcane qui dure %d tours.
+		Chaque fois que la cible utilise un talent, l'un de vos sorts en rechargement est réduit de 1 (en priorisant les sorts de Technomancie).
+		À chaque tour où le lien est actif, la cible et toute créature à l'intérieur du lien subissent %0.2f dégâts occultes.
+		Tant qu'au moins un lien est actif, le rechargement de votre sort Rotation Métaphasique est fixé à 6 tours au lieu de 30.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Metaphasic Echoes", "Échos Métaphasiques", "talent name")
+t("You can only cast this spell on the turn after Reality Breach.", "Vous ne pouvez lancer ce sort que le tour suivant Brèche de Réalité.", "logPlayer")
+t([[Using your sheer arcane power you keep breaches in spacetime open for %d turns.
+		Each turn they are open you project an occult clone of your saw along each breach, damaging any creature caught for %d%% occult weapon damage.
+		The saw cuts both in a physical and arcane way, reducing the duration of a random beneficial effect on each target by %d each time.
+		Each target can only be affected once per turn.
+		This spell is only usable for one turn after casting Reality Breach but any Reality Breach cast during its duration is also recorded inside.]], [[En utilisant votre puissance arcanique brute, vous maintenez les brèches dans l'espace-temps ouvertes pendant %d tours.
+		À chaque tour où elles sont ouvertes, vous projetez un clone occulte de votre scie le long de chaque brèche, infligeant %d%% de dégâts d'arme occultes à toute créature touchée.
+		La scie coupe à la fois de manière physique et arcanique, réduisant la durée d'un effet bénéfique aléatoire sur chaque cible de %d à chaque fois.
+		Chaque cible ne peut être affectée qu'une seule fois par tour.
+		Ce sort n'est utilisable que pendant un tour après le lancement de Brèche de Réalité, mais toute Brèche de Réalité lancée pendant sa durée est également enregistrée à l'intérieur.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/spells/other-technomancy.lua"
+
+t("Electron Incantation", "Incantation d'Électrons", "talent name")
+t("You need an arcane dynamo to cast this spell.", "Vous avez besoin d'une dynamo arcanique pour lancer ce sort.", "logPlayer")
+t("You can only cast this spell after casting an other technomancy spell.", "Vous ne pouvez lancer ce sort qu'après avoir lancé un autre sort de technomancie.", "logPlayer")
+t([[After casting a technomancy spell you store some of its energies that you can then use to overload your arcane dynamo, increasing the steam it generates per 10 mana spent by 4 for 4 turns.
+		In addition the energies spills outward in radius 3, dealing %0.2f damage (damage type based on the type of technomancy spell used).
+		This spell is only usable after casting a technomancy spell and until you use any other spell or talent.
+		The damage will increase with your Spellpower.]], [[Après avoir lancé un sort de technomancie, vous stockez une partie de ses énergies afin de surcharger votre dynamo arcanique, augmentant la vapeur qu'elle génère de 4 par tranche de 10 mana dépensé pendant 4 tours.
+		De plus, les énergies se répandent dans un rayon de 3, infligeant %0.2f dégâts (le type dépend du sort de technomancie utilisé).
+		Ce sort n'est utilisable qu'après avoir lancé un sort de technomancie et jusqu'à ce que vous utilisiez tout autre sort ou talent.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/spells/spells.lua"
+
+t("spell", "sort", "talent category")
+t("undead drake", "dragonnet mort-vivant", "talent type")
+t("Take on the defining aspects of an Undead Drake.", "Adoptez les caractéristiques d'un Dragonnet Mort-Vivant.", "_t")
+t("galvanic technomancy", "technomancie galvanique", "talent type")
+t("Combine the power of steamtech and arcane forces to destroy your foes with fire and lightning.", "Combinez la puissance de la vapotech et des forces arcaniques pour détruire vos ennemis avec le feu et la foudre.", "_t")
+t("terrene technomancy", "technomancie terrène", "talent type")
+t("Combine the power of steamtech and arcane forces to destroy your foes with earth and water.", "Combinez la puissance de la vapotech et des forces arcaniques pour détruire vos ennemis avec la terre et l'eau.", "_t")
+t("occult technomancy", "technomancie occulte", "talent type")
+t("Combine the power of steamtech and arcane forces to destroy your foes with arcane and time.", "Combinez la puissance de la vapotech et des forces arcaniques pour détruire vos ennemis avec l'arcane et le temps.", "_t")
+t("other technomancy", "autre technomancie", "talent type")
+t("Combine the power of steamtech and arcane forces to destroy your foes.", "Combinez la puissance de la vapotech et des forces arcaniques pour détruire vos ennemis.", "_t")
+
+------------------------------------------------
+section "tome-orcs/data/talents/spells/terrene-technomancy.lua"
+
+t("Micro Spiderbot", "Micro Robot-Araignée", "talent name")
+t("You need an arcane dynamo to cast this spell.", "Vous avez besoin d'une dynamo arcanique pour lancer ce sort.", "logPlayer")
+t([[You build %d micro spiderbot(s) from the earthly elements around you. Spiderbots are powered by an arcane cryogenic power unit directly linked to your own power.
+		Spiderbots will deal %0.2f terrene damage (physical and cold) each turn to their targets. The deep cold of the attack has 25%% chance to freeze the feet of the target, pinning it to the ground for 5 turns.
+		If a target dies, the spiderbot will jump onto a new target in range %d around you.
+		If there are multiple spiderbots on a single target and more free targets are in range they will dispatch on as many as possible.
+		If there are multiple spiderbots on a single target they attack as one, stacking their damage (with disminishing returns) and trying to freeze once.
+		You can maintain up to %d spiderbots at once and each can last up to %d turns, but spiderbots need to be in sight to be able to act.
+		The cooldown of this spell is affected by Body of Stone.
+		The damage will increase with your Spellpower.
+
+		You have currently %d spiderbot(s) up.]], [[Vous construisez %d micro robot(s)-araignée à partir des éléments terrestres autour de vous. Les robots-araignées sont alimentés par une unité de puissance cryogénique arcanique directement liée à votre propre puissance.
+		Les robots-araignées infligent %0.2f dégâts terriens (physique et froid) à chaque tour à leurs cibles. Le froid intense de l'attaque a 25%% de chance de geler les pieds de la cible, l'immobilisant au sol pendant 5 tours.
+		Si une cible meurt, le robot-araignée saute sur une nouvelle cible à portée de %d autour de vous.
+		S'il y a plusieurs robots-araignées sur une seule cible et que d'autres cibles libres sont à portée, ils se disperseront sur autant que possible.
+		S'il y a plusieurs robots-araignées sur une seule cible, ils attaquent comme un seul, cumulant leurs dégâts (avec des retours décroissants) et tentant de geler une seule fois.
+		Vous pouvez maintenir jusqu'à %d robots-araignées à la fois et chacun peut durer jusqu'à %d tours, mais ils doivent être en vue pour pouvoir agir.
+		Le rechargement de ce sort est affecté par Corps de Pierre.
+		Les dégâts augmentent avec votre Puissance des sorts.
+
+		Vous avez actuellement %d robot(s)-araignée actif(s).]], "tformat")
+t("Cryogenic Digs", "Fouilles Cryogéniques", "talent name")
+t([[Each time a spiderbot expires it digs around, producing either a Glacial Vapour (%0.2f cold damage and doing 30%% more damage to wet targets) or Earthquake (%0.2f physical damage and 25%% chances to stun for 2 turns) of radius 1 that last for %d turns.
+		Those special kinds of Glacial Vapour and Earthquake do not affect the caster.
+		The damage will increase with your Spellpower.]], [[Chaque fois qu'un robot-araignée expire, il creuse autour de lui, produisant soit une Vapeur Glaciale (%0.2f dégâts de froid, avec +30%% de dégâts contre les cibles mouillées) soit un Tremblement de Terre (%0.2f dégâts physiques, avec 25%% de chance d'étourdir pendant 2 tours), de rayon 1 et durant %d tours.
+		Ces types spéciaux de Vapeur Glaciale et de Tremblement de Terre n'affectent pas le lanceur.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Ramming Bot", "Robot Bélier", "talent name")
+t("You need an arcane dynamo and an active spiderbot to cast this spell.", "Vous avez besoin d'une dynamo arcanique et d'un robot-araignée actif pour lancer ce sort.", "logPlayer")
+t([[Command a random spiderbot to jump onto your target at ramming speed. The impact destroys the bot (possibly triggering Cryogenic Digs).
+		This creates a radius %d explosion dealing %0.2f terrene damage to all creatures while also freezing them for %d turns and rendering them wet for %d turns.
+		The cooldown of this spell is affected by Body of Stone.
+		The damage will increase with your Spellpower.]], [[Ordonnez à un robot-araignée aléatoire de sauter sur votre cible à toute vitesse. L'impact détruit le robot (déclenchant éventuellement Fouilles Cryogéniques).
+		Cela crée une explosion de rayon %d infligeant %0.2f dégâts terriens à toutes les créatures, les gelant également pendant %d tours et les rendant mouillées pendant %d tours.
+		Le rechargement de ce sort est affecté par Corps de Pierre.
+		Les dégâts augmentent avec votre Puissance des sorts.]], "tformat")
+t("Spiderbot Shield", "Bouclier de Robots-Araignées", "talent name")
+t([[You call back up to %d spiderbots to you to create protective barrier for %d turns.
+		Spiderbots have %d life and they take damage in order, always fully absorbing the blow that destroyed them.
+		If Cryogenic Digs is active when a spiderbot is destroyed it jumps to the attacker and triggers the dig there.
+		The cooldown of this spell is affected by Body of Stone.
+		]], [[Vous rappelez jusqu'à %d robots-araignées pour créer une barrière protectrice pendant %d tours.
+		Les robots-araignées ont %d points de vie et subissent les dégâts dans l'ordre, absorbant toujours entièrement le coup qui les détruit.
+		Si Fouilles Cryogéniques est actif lorsqu'un robot-araignée est détruit, il saute sur l'attaquant et déclenche les fouilles à son emplacement.
+		Le rechargement de ce sort est affecté par Corps de Pierre.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/spells/undead-drake.lua"
+
+t("Raze", "Dévastation", "talent name")
+t([[You revel in death, devouring the souls of your victims. Whenever you inflict damage to a target, you deal an additional %0.2f darkness damage.
+		Additionally, you gain %d souls whenever you score a kill.
+		The damage will scale with the highest of your spell or mind power and can only occur up to 25 times per turn.]], [[Vous vous délectez de la mort, dévorant les âmes de vos victimes. Chaque fois que vous infligez des dégâts à une cible, vous infligez %0.2f dégâts d'obscurité supplémentaires.
+		De plus, vous gagnez %d âme(s) à chaque mise à mort.
+		Les dégâts augmentent avec votre Puissance des sorts ou Puissance mentale (la plus élevée) et ne peuvent se produire que jusqu'à 25 fois par tour.]], "tformat")
+t("Infectious Miasma", "Miasme Infectieux", "talent name")
+t([[Release a cloud of deadly miasma over a targeted area, dealing %0.2f darkness damage to all units inside it with a 20%% chance of inflicting a disease that will do blight damage and weaken either Constitution, Strength or Dexterity for %d turns.
+		The damage will scale with the highest of your spell or mind power.]], [[Libérez un nuage de miasme mortel sur une zone ciblée, infligeant %0.2f dégâts d'obscurité à toutes les unités à l'intérieur avec 20%% de chance d'infliger une maladie qui causera des dégâts de désolation et affaiblira la Constitution, la Force ou la Dextérité pendant %d tours.
+		Les dégâts augmentent avec votre Puissance des sorts ou Puissance mentale (la plus élevée).]], "tformat")
+t("Vampiric Surge", "Sursaut Vampirique", "talent name")
+t([[You surge with a life draining energy for %d turns.
+		While the effect lasts, you heal yourself for %d%% of all damage you deal.]], [[Vous êtes submergé d'une énergie drainant la vie pendant %d tours.
+        Pendant la durée de l'effet, vous vous soignez de %d%% de tous les dégâts que vous infligez.]], "tformat")
+t("Necrotic Breath", "Souffle Nécrotique", "talent name")
+t("@Source@ breathes a wave of darkness!", "@Source@ exhale une vague d'obscurité !", "_t")
+t([[You breathe a wave of deathly miasma in a cone of radius %d. Any target caught in the area will take %0.2f darkness damage over 4 turns and receive either a bane of confusion or a bane of blindness for 4 turns.
+		The damage will increase with your Magic, and the critical chance is based on your Spell crit rate.]], [[Vous expirez une vague de miasme mortel en cône de rayon %d. Toute cible prise dans la zone subira %0.2f dégâts d'obscurité sur 4 tours et recevra soit un fléau de confusion soit un fléau d'aveuglement pendant 4 tours.
+		Les dégâts augmentent avec votre Magie et la chance de critique est basée sur votre taux de critique de sort.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/steam/artillery.lua"
+
+t("Rocket Pod", "Lanceur de Roquettes", "talent name")
+t([[You equip an automated, shoulder mounted rocket launcher. Each turn it will launch rockets at up to %d enemies in weapon range, dealing %d%% steamgun damage as fire.
+		The rockets will pass harmlessly through allies, but on-hit effects triggered by them only deal 50%% of their usual damage.]], [[Vous équipez un lanceur de roquettes automatisé monté sur l'épaule. À chaque tour, il lancera des roquettes sur jusqu'à %d ennemis à portée d'arme, infligeant %d%% de dégâts de feu.
+		Les roquettes traversent inoffensivement les alliés, mais les effets déclenchés lors des impacts n'infligent que 50%% de leurs dégâts habituels.]], "tformat")
+t("Incendiary Powder", "Poudre Incendiaire", "talent name")
+t([[Augment your rockets with highly flammable materials, causing them to burn targets for %0.2f fire damage over 3 turns. Subsequent shots against burning targets refresh the effect of the duration (but do not stack) and inflict %0.2f additional fire damage.
+Targets affected by this burning that fall below 25%% life enter a state of panic, giving them a %d%% chance each turn to flee in terror from you.
+The fire damage will increase with your Steampower.]], [[Augmentez vos roquettes avec des matériaux hautement inflammables, leur faisant brûler les cibles pour %0.2f dégâts de feu sur 3 tours. Les tirs suivants contre des cibles en feu renouvellent la durée de l'effet (sans s'empiler) et infligent %0.2f dégâts de feu supplémentaires.
+Les cibles affectées par cette brûlure qui tombent en dessous de 25%% de vie entrent dans un état de panique, leur donnant %d%% de chance à chaque tour de s'enfuir de vous en proie à la terreur.
+Les dégâts de feu augmentent avec votre Puissance de vapeur.]], "tformat")
+t("Lock On", "Verrouillage de Cible", "talent name")
+t("You require a steamgun for this talent.", "Vous avez besoin d'un pistolet à vapeur pour ce talent.", "logPlayer")
+t([[Lock on to your target with your rocket pod for 5 turns.
+While locked on your regular rocket pod attacks are disabled. However, each turn you automatically fire a rocket barrage dealing %d%% increased damage at your target.
+Marked targets also lose %d defense and cannot benefit from concealment or evasion.
+The defense loss will increase with your Steampower.]], [[Verrouillez votre cible avec votre lanceur de roquettes pendant 5 tours.
+Pendant le verrouillage, les attaques normales du lanceur de roquettes sont désactivées. Cependant, à chaque tour, vous tirez automatiquement un barrage de roquettes infligeant %d%% de dégâts supplémentaires à votre cible.
+Les cibles marquées perdent également %d en défense et ne peuvent pas bénéficier de la dissimulation ou de l'évasion.
+La perte de défense augmente avec votre Puissance de vapeur.]], "tformat")
+t("Death From Above", "Mort du Ciel", "talent name")
+t([[You use your rocket pods to launch yourself into the air for 3 turns, firing a radius 2 barrage of rockets that deal %d%% steamgun damage as fire in radius 2. 
+		While flying you gain %d%% movement speed, %d%% chance to evade melee and ranged attacks, and can reactivate this talent at will to repeat the rocket barrage.
+		Using any talent other than Rocket Barrage will end this effect immediately.]], [[Vous utilisez vos lanceurs de roquettes pour vous propulser dans les airs pendant 3 tours, tirant un barrage de roquettes de rayon 2 qui inflige %d%% de dégâts de feu dans un rayon de 2. 
+		Pendant que vous volez, vous gagnez %d%% de vitesse de déplacement, %d%% de chance d'esquiver les attaques de mêlée et à distance, et pouvez réactiver ce talent à volonté pour répéter le barrage de roquettes.
+		L'utilisation de tout talent autre que Barrage de Roquettes mettra fin à cet effet immédiatement.]], "tformat")
+t("Rocket Barrage", "Barrage de Roquettes", "talent name")
+t("Fires a barrage of rockets in radius 2, dealing %d%% steamgun damage as fire.", "Tire un barrage de roquettes dans un rayon de 2, infligeant %d%% de dégâts de pistolet à vapeur sous forme de feu.", "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/steam/automated-butchery.lua"
+
+t("Continuous Butchery", "Boucherie Continue", "talent name")
+t("You require a steamsaw for this talent.", "Vous avez besoin d'une scie à vapeur pour ce talent.", "logPlayer")
+t([[You attune your saws to a specific target for 5 turns.
+		Each time you strike this target all damage done with steamsaws (including by other talents) is increased by +%d%%.
+		If you strike any other foe the bonus ends.
+		#{italic}#Metal your foes to death!#{normal}#]], [[Vous accordez vos scies à une cible spécifique pendant 5 tours.
+		Chaque fois que vous frappez cette cible, tous les dégâts infligés avec des scies à vapeur (y compris par d'autres talents) sont augmentés de +%d%%.
+		Si vous frappez un autre ennemi, le bonus prend fin.
+		#{italic}#Tuez vos ennemis à coups de métal !#{normal}#]], "tformat")
+t("Explosive Saw", "Scie Explosive", "talent name")
+t([[You send a saw mounted on an automated steam propulsor to assault a foe, dealing %0.2f physical damage each turn for 4 turns and silencing it.
+		At the end of the duration, the saw explodes for %0.2f fire damage and flies back, pulling the target up to %d tiles towards you.
+		The damage will increase with your Steampower.]], [[Vous envoyez une scie montée sur un propulseur à vapeur automatisé pour attaquer un ennemi, lui infligeant %0.2f dégâts physiques à chaque tour pendant 4 tours et le réduisant au silence.
+		À la fin de la durée, la scie explose pour %0.2f dégâts de feu et revient vers vous, attirant la cible jusqu'à %d cases dans votre direction.
+		Les dégâts augmentent avec votre Puissance de vapeur.]], "tformat")
+t("Mow Down", "Faucheur", "talent name")
+t([[When you kill a foe with a melee strike you quickly throw some of their remains in your steam engine, instantly regenerating %d steam.
+		When you deal a critical melee strike you also have a %d%% chance to cut a part of your foe and use it in your steam engine.
+		When either of those happens this strikes fear in all foes in radius 4 of the victim, brainlocking them for %d turns.
+		#{italic}#To the meat grinder!#{normal}#]], [[Lorsque vous tuez un ennemi avec une frappe de mêlée, vous jetez rapidement quelques-uns de ses restes dans votre moteur à vapeur, régénérant instantanément %d de vapeur.
+		Lorsque vous effectuez une frappe de mêlée critique, vous avez également %d%% de chance de couper une partie de votre ennemi et de l'utiliser dans votre moteur à vapeur.
+		Lorsque l'un ou l'autre se produit, cela sème la terreur chez tous les ennemis dans un rayon de 4 de la victime, les frappant d'une Paralysie Mentale pendant %d tours.
+		#{italic}#Direction le broyeur à viande !#{normal}#]], "tformat")
+t("Tech Overload", "Surcharge Technologique", "talent name")
+t([[You override all security measures of your tinkers, allowing you to reset the cooldown of %d of most of your steamtech talents of tier %d or less and instantly increases your steam level by %d%% of the maximum.
+		In addition for 6 turns your maximum steam capacity is doubled, but steam regeneration is halved.
+		#{italic}#Master of Tech, Master of Death!#{normal}#]], [[Vous court-circuitez toutes les mesures de sécurité de vos babioles, vous permettant de réinitialiser le rechargement de %d de vos talents vapotech de rang %d ou inférieur et d'augmenter instantanément votre niveau de vapeur de %d%% du maximum.
+		De plus, pendant 6 tours, votre capacité maximale de vapeur est doublée, mais la régénération de vapeur est réduite de moitié.
+		#{italic}#Maître de la technologie, maître de la mort !#{normal}#]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/steam/automation.lua"
+
+t("Pulse Detonator", "Détonateur à Impulsion", "talent name")
+t([[Sends a pulse detonator to the target. Upon arrival it explodes in radius 4 cone, dealing %0.2f physical damage, knocking back foes by 3 and dazing them for %d turns.
+		Damage increases with your steampower.]], [[Envoie un détonateur à impulsion vers la cible. À son arrivée, il explose en un cône de rayon 4, infligeant %0.2f dégâts physiques, repoussant les ennemis de 3 cases et les étourdissant pendant %d tours.
+		Les dégâts augmentent avec votre Puissance de vapeur.]], "tformat")
+t("Flying Grapple", "Grappin Volant", "talent name")
+t("Flying Grapple", "Grappin Volant", "_t")
+t("A flying grapple pull %s into %s!", "Un grappin volant attire %s vers %s !", "logSeen")
+t([[You send a small steam-powered flying grapple to a target. The drone is homing so if the target moves it will follow.
+		When it reaches its target it deploys grapples in all directions around it in radius 4.
+		The grapples latch onto any foes and pull them toward the target. If they are stopped by a creature (or the target) both them and the creature take %0.2f physical damage.
+		]], [[Vous envoyez un petit grappin volant propulsé à vapeur vers une cible. Le drone est guidé, donc si la cible se déplace il la suivra.
+		Lorsqu'il atteint sa cible, il déploie des grappins dans toutes les directions autour d'elle dans un rayon de 4.
+		Les grappins s'accrochent à tous les ennemis et les attirent vers la cible. S'ils sont stoppés par une créature (ou la cible), les deux subissent %0.2f dégâts physiques.]], "tformat")
+t("Net Projector", "Projecteur de Filet", "talent name")
+t("%s resists the net.", "%s résiste au filet.", "logSeen")
+t([[Sends a lightly electrified net of radius 2 toward a target, all creatures caught inside will be pinned in place for 5 turns.
+		While the electricity is not enough to do damage it does shock their body, reducing all resistances by %d%%.]], [[Envoie un filet légèrement électrifié de rayon 2 vers une cible ; toutes les créatures prises à l'intérieur seront immobilisées pendant 5 tours.
+		Bien que l'électricité ne soit pas suffisante pour causer des dégâts, elle choque leur corps, réduisant toutes les résistances de %d%%.]], "tformat")
+t("Sawfield", "Champ de Scies", "talent name")
+t([[For 4 turns many small saws circle around the target in radius %d, making any creature caught inside bleed for %0.2f physical damage.
+		Damage increases with your steampower.]], [[Pendant 4 tours, de nombreuses petites scies tournent autour de la cible dans un rayon de %d, faisant saigner toute créature à l'intérieur pour %0.2f dégâts physiques.
+		Les dégâts augmentent avec votre Puissance de vapeur.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/steam/avoidance.lua"
+
+t("Automated Cloak Tessellation", "Tessellation de Cape Automatisée", "talent name")
+t("@Source@ tessellates @hisher@ cloak!", "@Source@ tessellise sa cape !", "_t")
+t("You require a cloak to use this talent.", "Vous avez besoin d'une cape pour utiliser ce talent.", "logPlayer")
+t([[You tessellate your cloak with small pieces of metal, providing %d damage reduction against all attacks.
+		The myriad metal scraps also help against incoming projectiles, providing a %d%% chance of deflecting them to a nearby spot.]], [[Vous tessellisez votre cape avec de petits morceaux de métal, procurant %d de réduction de dégâts contre toutes les attaques.
+		La myriade de fragments de métal aide également contre les projectiles entrants, offrant %d%% de chance de les dévier vers un endroit proche.
+		La réduction de dégâts et la chance de déviation augmentent avec votre Puissance de vapeur.]], "tformat")
+t("Cloak Gesture", "Geste de Cape", "talent name")
+t("@Source@ weaves @hisher@ cloak!", "@Source@ agite sa cape !", "_t")
+t([[With a gesture of your cloak, you drop a small incendiary device in front of you, creating a wall of thick steam of %d length that burns creatures passing it for %0.2f fire damage and blocks sight for 5 turns.
+		At level 5 the action is so perfect that your foes even lose track of you entirely.
+		Damage increases with your steampower.]], [[D'un geste de votre cape, vous lâchez un petit dispositif incendiaire devant vous, créant un mur de vapeur épaisse de longueur %d qui brûle les créatures qui le traversent pour %0.2f dégâts de feu et bloque la vue pendant 5 tours.
+		Au niveau 5, l'action est si parfaite que vos ennemis vous perdent entièrement de vue.
+		Les dégâts augmentent avec votre Puissance de vapeur.]], "tformat")
+t("Embedded Restoration Systems", "Systèmes de Restauration Intégrés", "talent name")
+t("#LIGHT_BLUE#%s's embedded restoration system activate.", "#LIGHT_BLUE#Le système de restauration intégré de %s s'active.", "logSeen")
+t("%s activates %s cloak's restoration systems!", "%s active %sson système de restauration intégré !", "logSeen")
+t("%s deactivates %s cloak's restoration systems.", "%s désactive %sson système de restauration intégré.", "logSeen")
+t([[Your cloak is lined with an automated health system that activate when no enemies are visible.
+		When it triggers, you will be healed for %d life.
+		At talent level 3, it will also remove one detrimental physical effect.
+		The system can only trigger once every %d turns.]], [[Votre cape est doublée d'un système de restauration automatisé qui s'active lorsqu'aucun ennemi n'est visible.
+		Lorsqu'il se déclenche, vous êtes soigné de %d points de vie.
+		Au niveau 3, il supprime également un effet physique négatif.
+		Le système ne peut se déclencher qu'une fois tous les %d tours.]], "tformat")
+t("Cloaking Device", "Dispositif de Camouflage", "talent name")
+t([[Trigger an array of small mirrors to appear all over your cloak.
+		The mirrors are positioned to reflect all light shining on you, granting %d stealth power for 10 turns.
+		Stealth power increases with your steampower.]], [[Déclenchez un réseau de petits miroirs qui apparaissent sur toute votre cape.
+		Les miroirs sont positionnés pour réfléchir toute la lumière qui brille sur vous, accordant %d de puissance de furtivité pendant 10 tours.
+		La puissance de furtivité augmente avec votre Puissance de vapeur.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/steam/battle-machinery.lua"
+
+t("Explosive Steam Engine", "Moteur à Vapeur Explosif", "talent name")
+t("critical steam engine", "moteur à vapeur critique", "_t")
+t("trap", "piège", "_t")
+t([[Throw a small, unstable steam engine on the battlefield that will go critical after 2 turns.
+		It will then create an explosion of hot vapour in radius %d, burning all foes for %0.2f fire damage.
+		Any bleeding foe caught in the flames will take 40%% more damage.
+		Damage scales with your Steampower.
+		#{italic}#Tick Tock Tick BOOM!#{normal}#]], [[Lancez un petit moteur à vapeur instable sur le champ de bataille qui entrera en état critique après 2 tours.
+		Il créera alors une explosion de vapeur chaude dans un rayon de %d, brûlant tous les ennemis pour %0.2f dégâts de feu.
+		Tout ennemi saignant pris dans les flammes subira 40%% de dégâts supplémentaires.
+		Les dégâts augmentent avec votre Puissance de vapeur.
+		#{italic}#Tic Tac Tic BOUM !#{normal}#]], "tformat")
+t("Lingering Cloud", "Nuage Persistant", "talent name")
+t([[Explosive Steam Engine vapour now lingers for 5 turns.
+		Each turn, bleeding foes inside the cloud will take %0.2f fire damage.
+		Any steamtech-using creature will also regenerate %d additional steam per turn while inside the cloud.
+		Damage scales with your Steampower.
+		#{italic}#Modern technology at the service of burnination!#{normal}#]], [[La vapeur du Moteur à Vapeur Explosif persiste désormais pendant 5 tours.
+		À chaque tour, les ennemis saignants à l'intérieur du nuage subissent %0.2f dégâts de feu.
+		Toute créature utilisant la vapotech régénère également %d vapeur supplémentaire par tour dans le nuage.
+		Les dégâts augmentent avec votre Puissance de vapeur.
+		#{italic}#La technologie moderne au service de l'incinération !#{normal}#]], "tformat")
+t("Tremor Engine", "Moteur à Tremblements", "talent name")
+t("tremor engine", "moteur à tremblements", "_t")
+t([[Throw a tremor engine on the battlefield that will trigger after 2 turns.
+		For 5 turns after triggering, it will constantly shake the ground and stun, pin, or disarm any creature in radius %d for %d turns.
+		#{italic}#The ground is mere paper to you!#{normal}#]], [[Lancez un moteur à tremblements sur le champ de bataille qui se déclenchera après 2 tours.
+		Pendant 5 tours après déclenchement, il secouera constamment le sol et étourdira, immobilisera ou désarmera toute créature dans un rayon de %d pendant %d tours.
+		#{italic}#Le sol n'est que du papier pour vous !#{normal}#]], "tformat")
+t("Seismic Activity", "Activité Sismique", "talent name")
+t("raging volcano", "volcan en furie", "_t")
+t([[On its last pulse, your Tremor Engine shakes violently, raising a volcano for %d turns.
+		Each turn, the volcano will send out fiery boulders that deal %0.2f fire and %0.2f physical damage.
+		Damage scales with your Steampower.
+		#{italic}#All the fury of fire at your disposal!#{normal}#]], [[À son dernier souffle, votre Moteur à Tremblements tremble violemment, faisant surgir un volcan pendant %d tours.
+		À chaque tour, le volcan envoie des rochers enflammés qui infligent %0.2f dégâts de feu et %0.2f dégâts physiques.
+		Les dégâts augmentent avec votre Puissance de vapeur.
+		#{italic}#Toute la fureur du feu à votre disposition !#{normal}#]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/steam/battlefield-management.lua"
+
+t("Saw Wheels", "Roues de Scies", "talent name")
+t("You require a steamsaw for this talent.", "Vous avez besoin d'une scie à vapeur pour ce talent.", "logPlayer")
+t([[Firmly plant your steamsaws in the ground, using them to propel yourself very quickly (+%d%% movement speed).
+		Any foes on either side of your movement get wrecked by the saws, knocking them 3 tiles away from you.
+		Attacking or using any talent will break this effect.
+		When this effect is broken or cancelled the sudden change in motion deals %d%% weapon damage to all foes around you. To do full damage you need to have moved at least 5 times, otherwise damage is lower (or null for no movement).
+		#{italic}#The wheels of death! Amazing!#{normal}#]], [[Plantez fermement vos scies à vapeur dans le sol pour vous propulser très rapidement (+%d%% de vitesse de déplacement).
+		Tous les ennemis des deux côtés de votre déplacement sont frappés par les scies, les repoussant de 3 cases.
+		Attaquer ou utiliser tout talent brisera cet effet.
+		Lorsque cet effet est brisé ou annulé, le changement soudain de mouvement inflige %d%% de dégâts d'arme à tous les ennemis autour de vous. Pour infliger les dégâts complets, vous devez vous être déplacé au moins 5 fois ; sinon, les dégâts seront inférieurs (ou nuls sans déplacement).
+		#{italic}#Les roues de la mort ! Incroyable !#{normal}#]], "tformat")
+t("Grinding Shield", "Bouclier Broyeur", "talent name")
+t([[Spin your saws wildly around you to create a wall of steamy sawteeth.
+		All melee damage against you is reduced by %d%%, you have %d%% chance to evade projectiles and you can never take a blow that deals more than %d%% of your max life.
+		#{italic}#Split their bones on the saws of death!#{normal}#]], [[Faites tournoyer vos scies sauvagement autour de vous pour créer un mur de dents de scie fumantes.
+		Tous les dégâts de mêlée subis sont réduits de %d%%, vous avez %d%% de chance d'esquiver les projectiles et vous ne pouvez jamais recevoir un coup infligeant plus de %d%% de votre vie maximale.
+		#{italic}#Brisez leurs os sur les scies de la mort !#{normal}#]], "tformat")
+t("Punishment", "Punition", "talent name")
+t("#CRIMSON#%s unleashes a punishing strike for %d%% bonus damage!", "#CRIMSON#%s déchaîne un coup punitif avec %d%% de dégâts bonus !", "logSeen")
+t([[Slam your saws into your target, dealing 100%% weapon damage + %d%% per physical, magical, or mental effect on them (up to 7 effects).
+			Sustains are not effects.
+		#{italic}#The Metal Punisher!#{normal}#]], [[Frappez votre cible avec vos scies, infligeant 100%% de dégâts d'arme + %d%% par effet physique, magique ou mental sur elle (jusqu'à 7 effets).
+		Les talents soutenus ne sont pas des effets.
+		#{italic}#Le Punisseur de Métal !#{normal}#]], "tformat")
+t("Battlefield Veteran", "Vétéran de Champ de Bataille", "talent name")
+t([[You have lived through many battles, and your experience makes you a gritty veteran.
+		Saw Wheels end of effect attack increased by %d%%.
+		Grinding Shield lets you live below your normal limits, up to -%d life.
+		Punishment has a %d%% chance to have its cooldown reduced by 1 for each effect.
+		#{italic}#Domination for all!#{normal}#]], [[Vous avez survécu à de nombreuses batailles, et votre expérience fait de vous un vétéran endurci.
+		L'attaque de fin d'effet de Roues de Scies est augmentée de %d%%.
+		Bouclier Broyeur vous permet de vivre en dessous de vos limites normales, jusqu'à -%d de vie.
+		Punition a %d%% de chance d'avoir son rechargement réduit de 1 pour chaque effet.
+		#{italic}#Domination pour tous !#{normal}#]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/steam/blacksmith.lua"
+
+t("Massive Physique", "Physique Imposant", "talent name")
+t([[Working iron has honed your body into an amazing shape, granting %d strength and constitution.
+		At talent level 5, you are so incredibly built that you gain one size category.]], [[Travailler le fer a sculpté votre corps à la perfection, accordant %d de Force et de Constitution.
+		Au niveau 5, votre constitution est si incroyable que vous gagnez une catégorie de taille.]], "tformat")
+t("Endless Endurance", "Endurance Sans Fin", "talent name")
+t([[Working long hours at a forge has made you incredibly slow to tire and given you endless vitality.
+		Your healing factor is increased by %d%% and your life regeneration by %0.2f.
+		Stopping you is nearly impossible; your pinning resistance is increased by %d%%.]], [[Travailler de longues heures à la forge vous a rendu incroyablement résistant à la fatigue et vous a donné une vitalité sans fin.
+		Votre facteur de soin est augmenté de %d%% et votre régénération de vie de %0.2f.
+		Vous arrêter est presque impossible ; votre résistance à l'immobilisation est augmentée de %d%%.]], "tformat")
+t("Life in the Flames", "Vie dans les Flammes", "talent name")
+t([[Slaving for many years at the forge has made you more resilient to physical pain and fire burns.
+		Your fire resistance is increased by %d%% and your physical resistance by %d%%.
+		At talent level 5, you are so accustomed to the flames that you become immune to the fireburn effect.]], [[Des années d'esclavage à la forge vous ont rendu plus résistant à la douleur physique et aux brûlures.
+		Votre résistance au feu est augmentée de %d%% et votre résistance physique de %d%%.
+		Au niveau 5, vous êtes si habitué aux flammes que vous devenez immunisé à l'effet de brûlure.]], "tformat")
+t("Craftsman's Eye", "Œil de l'Artisan", "talent name")
+t([[You can easily see the weak points in your enemy's defenses. After all, you know to look for the same flaws in your own work.
+		This grants %d armour penetration and %d%% critical strike multiplier.
+		At talent level 5, you can also fight stealthed and invisible creatures without penalty.]], [[Vous pouvez facilement repérer les points faibles des défenses de votre ennemi. Après tout, vous savez chercher les mêmes défauts dans votre propre travail.
+		Ceci accorde %d de pénétration d'armure et %d%% de multiplicateur de coup critique.
+		Au niveau 5, vous pouvez également combattre des créatures furtives et invisibles sans pénalité.]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/data/talents/steam/bullets-mastery.lua"
+
+t("Overheat Bullets", "Balles Surchauffées", "talent name")
+t("You must dual wield steamguns for this talent.", "Vous devez manier deux pistolets à vapeur simultanément pour ce talent.", "logPlayer")
+t([[By sending a stream of hot steam over your bullets you overheat them. For the next %d turns, each bullet will set the target ablaze, making it burn for %0.2f fire damage over 5 turns (most of your shooting talents fire two bullets at once).
+		Damage will increase with Steampower.
+		Only one bullet enhancement can be used at once.]], [[En envoyant un flux de vapeur chaude sur vos balles, vous les surchauffez. Pendant les %d prochains tours, chaque balle enflammera la cible, la faisant brûler pour %0.2f dégâts de feu sur 5 tours (la plupart de vos talents de tir tirent deux balles à la fois).
+		Les dégâts augmentent avec votre Puissance de vapeur.
+		Une seule amélioration de balle peut être utilisée à la fois.]], "tformat")
+t("Supercharge Bullets", "Balles Surpuissantes", "talent name")
+t([[You are able to polish your bullets so well they can go through multiple targets for %d turns.
+		This also improves their armour penetration by %d.
+		Only one bullet enhancement can be used at once.]], [[Vous êtes capable de polir vos balles si bien qu'elles peuvent traverser plusieurs cibles pendant %d tours.
+		Cela améliore également leur pénétration d'armure de %d.
+		Une seule amélioration de balle peut être utilisée à la fois.]], "tformat")
+t("Percussive Bullets", "Balles Percutantes", "talent name")
+t([[You swap your bullets for more massive ones for %d turns.
+		When striking a creature, these bullets have a %d%% chance of knocking it back 3 tiles and a %d%% chance of stunning it for 3 turns.
+		The chances to knockback and stun increase with your Steampower.
+		Only one bullet enhancement can be used at once.]], [[Vous remplacez vos balles par des balles plus lourdes pendant %d tours.
+		En frappant une créature, ces balles ont %d%% de chance de la repousser de 3 cases et %d%% de chance de l'étourdir pendant 3 tours.
+		Les chances de repoussage et d'étourdissement augmentent avec votre Puissance de vapeur.
+		Une seule amélioration de balle peut être utilisée à la fois.]], "tformat")
+t("Combustive Bullets", "Balles Combustibles", "talent name")
+t([[You coat your bullets with flammable materials, for the next %d turns each bullet will explode when it hits its target, dealing %0.2f fire damage to all foes within radius 2 (most of your shooting talents fire two bullets at once).
+		Damage will increase with Steampower.
+		Only one bullet enhancement can be used at once.]], [[Vous enduisez vos balles de matériaux inflammables ; pendant les %d prochains tours, chaque balle explosera en touchant sa cible, infligeant %0.2f dégâts de feu à tous les ennemis dans un rayon de 2 (la plupart de vos talents de tir tirent deux balles à la fois).
+		Les dégâts augmentent avec votre Puissance de vapeur.
+		Une seule amélioration de balle peut être utilisée à la fois.]], "tformat")
+
 
 
