@@ -8185,5 +8185,251 @@ Caractéristiques de classe :#YELLOW#
 Toutes les classes de Bricoleurs utilisent la Vapeur pour leurs pouvoirs.
 ]], "_t")
 
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-tinker_psyshot.lua"
 
+t("New Class: #LIGHT_GREEN#Psyshot (Tinker)", "Nouvelle Classe : #LIGHT_GREEN#Psychotir (Bricoleur)", "_t")
+t([[You have found extremely old machines powered by advanced psionics and technology. Psionics without a living mind was never thought possible.
+You can now create new characters with the #LIGHT_GREEN#Psyshot class#WHITE#.
+
+Psyshots are Tinkers that merge psionics and steamtech in a lethal blend, wielding a steamgun in one hand and a mindstar in the other.
+Class features:#YELLOW#
+- Project mindstar attacks with each bullet you fire
+- Inspire dread to weaken your foes to your gunslinging
+- Manipulate the very air around your victims
+- Enter a psionic gestalt with your steam generators, boosting them#WHITE#
+
+All Tinker classes use Steam for their powers.
+]], [[Vous avez découvert des machines extrêmement anciennes, alimentées par une technologie et une psionique avancées. On pensait jusqu'alors que la psionique sans esprit vivant était impossible.
+
+Vous pouvez désormais créer de nouveaux personnages avec la classe #LIGHT_GREEN#Psychotir#WHITE#.
+
+Les Psychotirs sont des Bricoleurs qui fusionnent psionique et vapotechnique en un mélange mortel, maniant un pistolet à vapeur d'une main et une étoile d'âme de l'autre.
+
+Caractéristiques :#YELLOW#
+* Projette des attaques d'étoile d'âme à chaque balle tirée
+* Inspire l'effroi pour affaiblir vos ennemis face à vos tirs
+* Manipule l'air même autour de vos victimes
+* Entre en gestalt psionique avec vos générateurs de vapeur, les amplifiant#WHITE#
+
+Toutes les classes de Bricoleur utilisent la Vapeur pour leurs pouvoirs.
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-wyrmic_undead.lua"
+
+t("New Talent Category: #LIGHT_GREEN#Undead Drake", "Nouvelle Catégorie de Talent : #LIGHT_GREEN#Dragonnet Mort-Vivant", "_t")
+t([[Drakes are forces of Nature, the ultimate apex predators. But as they grow old some gain sentience and some of those may wish to prolong their lives beyond death.
+You have encountered one such and vanquished it.
+
+You can now master Undead Drake magic and create new Wyrmic characters that can learn the #LIGHT_GREEN#Undead Drake talents#WHITE#.
+
+Talents:
+- #YELLOW#Raze: #WHITE#Augment your melee strikes with deadly energies, absorbing the souls of your foes
+- #YELLOW#Infectious Miasma: #WHITE#Release a deadly cloud of diseases and blight
+- #YELLOW#Vampiric Surge: #WHITE#Revel in the pain of others to heal yourself
+- #YELLOW#Necrotic Breath: #WHITE#Breath pure darkness
+]], [[Les dragonnets sont des forces de la Nature, les prédateurs suprêmes. Mais en vieillissant, certains acquièrent une conscience, et certains d'entre eux peuvent désirer prolonger leur vie au-delà de la mort.
+Vous en avez rencontré un tel spécimen, et l'avez vaincu.
+
+Vous pouvez désormais maîtriser la magie du Dragonnet Mort-Vivant et créer de nouveaux personnages Draconiens capables d'apprendre les talents #LIGHT_GREEN#Dragonnet Mort-Vivant#WHITE#.
+
+Talents :
+* #YELLOW#Ravage : #WHITE#Renforcez vos frappes de corps à corps avec des énergies mortelles, absorbant les âmes de vos ennemis
+* #YELLOW#Miasme Infectieux : #WHITE#Libérez un nuage mortel de maladies et de fléau
+* #YELLOW#Poussée Vampirique : #WHITE#Délectez-vous de la douleur d'autrui pour vous soigner
+* #YELLOW#Souffle Nécrotique : #WHITE#Exhalez des ténèbres pures
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/mod/class/OrcCampaign.lua"
+
+t("Steam", "Vapeur", "_t")
+t("Your reserve of steam. Steam is used to power most technological things. It is very hard to increase your maximum steam, but it regenerates quickly.", "Votre réserve de vapeur. La vapeur sert à alimenter la plupart des dispositifs technologiques. Il est très difficile d'augmenter votre vapeur maximale, mais elle se régénère rapidement.", "_t")
+t("Tail", "Queue", "_t")
+t("Object held in your tail. It can be a steamgun or steamsaw.", "Objet tenu par votre queue. Il peut s'agir d'un pistolet à vapeur ou d'une scie à vapeur.", "_t")
+t("SteamTech", "Vapotech", "_t")
+t("Steampower: #00ff00#%s", "Puissance de Vapeur : #00ff00#%s", "tformat")
+t("Crit. chance: #00ff00#%s", "Chance de critique : #00ff00#%s", "tformat")
+t("Steam speed : #00ff00#%s", "Vitesse de vapeur : #00ff00#%s", "tformat")
+t("Powered by ", "Alimenté par ", "_t")
+t("steamtech", "vapotech", "_t")
+t("%+d #LAST#(%+d eff.)", "%+d #LAST#(%+d eff.)", "_t")
+t("Steampower: ", "Puissance de Vapeur : ", "_t")
+t("Steam crit. chance: ", "Chance de critique de vapeur : ", "_t")
+t("Steamtech Speed: ", "Vitesse Vapotechnique : ", "_t")
+t("Steam each turn: ", "Vapeur par tour : ", "_t")
+t("Maximum steam: ", "Vapeur maximale : ", "_t")
+t("You may not shoot while using a heavy weapon.", "Vous ne pouvez pas tirer tant que vous utilisez une arme lourde.", "logPlayer")
+t("lost tinker", "bricoleur perdu", "_t")
+t("Please help me! I am afraid I lost myself in this place while testing some new steamtech. I know there is a recall portal left around here by a friend, but I have fought too many battles, and I fear I will not make it. Would you help me?", "Aidez-moi, je vous en prie ! Je crains de m'être perdue en cet endroit en testant une nouvelle vapotechnique. Je sais qu'un portail de rappel a été laissé quelque part par ici par une amie, mais j'ai livré trop de combats, et je crains de ne pas y parvenir. Voudriez-vous m'aider ?", "_t")
+t("%s, the experimenting tinker", "%s, la bricoleuse expérimentatrice", "_t")
+t("She looks tired and wounded.", "Elle semble épuisée et blessée.", "_t")
+t("[Ask where to learn tinkers crafting]", "[Demander où apprendre l'art des Bricoleurs]", "_t")
+t("Reveal the location of a teacher.", "Révèle l'emplacement d'un enseignant.", "_t")
+t("Tinker's Master", "Maître Bricoleur", "_t")
+t("She points a location on your map, in a remote area to the north.", "Elle vous indique un emplacement sur votre carte, dans une région isolée au nord.", "_t")
+t("You are given a strange metal contraption, explaining that using it will transport you to tinker's cave.", "On vous remet une étrange engeance métallique, en vous expliquant que son utilisation vous transportera jusqu'à la caverne du bricoleur.", "_t")
+t("gained knowledge of tinker technology", "a acquis la connaissance de la technologie des Bricoleurs", "_t")
+t("Steamtech", "Vapotech", "_t")
+t("I've changed my mind.", "J'ai changé d'avis.", "_t")
+t("Which kind of item would you like ?", "Quel type d'objet souhaitez-vous ?", "_t")
+t("#CRIMSON#Your timetravel has no effect on pre-determined outcomes such as this.", "#CRIMSON#Votre voyage dans le temps n'a aucun effet sur des résultats prédéterminés tels que celui-ci.", "_t")
+t([[Do you want to name your item?
+%s]], [[Souhaitez-vous nommer votre objet ?
+%s]], "tformat")
+t("Yes, please.", "Oui, s'il vous plaît.", "_t")
+t("Name your item", "Nommez votre objet", "_t")
+t("Name", "Nom", "_t")
+t("#LIGHT_BLUE#The merchant carefully hands you: %s", "#LIGHT_BLUE#Le marchand vous tend soigneusement : %s", "log")
+t("No thanks.", "Non merci.", "_t")
+t("Oh I am sorry, it seems we could not make the item your require.", "Oh, je suis désolé, il semble que nous n'ayons pas pu fabriquer l'objet que vous demandiez.", "_t")
+t("Oh, let's try something else then.", "Oh, essayons autre chose alors.", "_t")
+t("Oh well, maybe later then.", "Eh bien, peut-être plus tard alors.", "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/mod/class/interface/PartyTinker.lua"
+
+t("unknown tinker", "babiole inconnue", "_t")
+t("can not create tier %d", "impossible de créer le palier %d", "tformat")
+t("requires %s level %d", "Requiert %s niveau %d", "tformat")
+t("requires %d %s", "Requiert %dx %s", "tformat")
+t("requires %s", "Requiert %s", "tformat")
+t("Impossible to create %s(%s)", "Impossible de créer %s (%s)", "tformat")
+t("Created tinker: %s", "Babiole créée : %s", "log")
+t("Created tinker: %s", "Babiole créée : %s", "saySimple")
+t("Learnt new tinker schematic: #LIGHT_GREEN#%s", "Nouveau schéma appris : #LIGHT_GREEN#%s", "log")
+t("Learnt new tinker schematic: #LIGHT_GREEN#%s", "Nouveau schéma appris : #LIGHT_GREEN#%s", "saySimple")
+
+------------------------------------------------
+section "tome-orcs/overload/mod/dialogs/CreateTinker.lua"
+
+t("Tinkers", "Babioles", "_t")
+t("Search: ", "Rechercher : ", "_t")
+t("Tinker", "Babiole", "_t")
+t("Slot", "Emplacement", "_t")
+t("School", "École", "_t")
+t("Status", "État", "_t")
+t("Create", "Créer", "_t")
+t("Tier 1", "Palier 1", "_t")
+t("Tier 2", "Palier 2", "_t")
+t("Tier 3", "Palier 3", "_t")
+t("Tier 4", "Palier 4", "_t")
+t("Tier 5", "Palier 5", "_t")
+t("Requires talents:", "Requiert des talents :", "_t")
+t("Requires ingredients:", "Requiert des ingrédients :", "_t")
+t(" (You have: %s)", " (Vous possédez : %s)", "tformat")
+t("Requires items:", "Requiert des objets :", "_t")
+t("Requires:", "Requiert :", "_t")
+t("Example Item:", "Exemple d'Objet :", "_t")
+t("body", "corps", "_t")
+t("create tier( %s )", "palier %s", "tformat")
+t("missing reqs", "prérequis manquants", "_t")
+
+
+------------------------------------------------
+section "tome-orcs/superload/mod/class/Actor.lua"
+
+t("#FFD700#St. power#FFFFFF#: ", "#FFD700#P. vapeur#FFFFFF# : ", "_t")
+t("Kruk Invasion", "Invasion de Kruk", "_t")
+t("You can not recall until you have placed the bomb at the tunnel's end!", "Vous ne pouvez pas être rappelé tant que vous n'avez pas placé la bombe au bout du tunnel !", "_t")
+t("scroll", "parchemin", "_t")
+t("This parchment contains some lore.", "Ce parchemin contient quelques connaissances.", "_t")
+t("time-warped paper scrap", "morceau de papier distordu par le temps", "_t")
+t("It came a long way away!", "Il vient de très loin !", "_t")
+t("#LIGHT_BLUE#Spacetime shudders for an instant as a note falls out from a different timeline!", "#LIGHT_BLUE#L'espace-temps frémit un instant tandis qu'un billet tombe d'une ligne temporelle différente !", "saySimple")
+t("You gain %0.2f gold from the melting of %s.", "Vous gagnez %0.2f pièces d'or grâce à la fonte de %s.", "log")
+t("APE", "EPA", "_t")
+t("When you close the inventory window, all items in the APE will be melted.", "Lorsque vous fermez la fenêtre d'inventaire, tous les objets présents dans l'EPA seront fondus.", "_t")
+t("melt down", "Fondre", "_t")
+
+------------------------------------------------
+section "tome-orcs/superload/mod/class/Game.lua"
+
+t("Race: Yeti", "Race : Yéti", "_t")
+t("Race: Whitehooves", "Race : Sabot blanc", "_t")
+t("Class tree: Undead drake", "Arbre de classe : Dragonnet Mort-Vivant", "_t")
+t("Cosmetic: orcs", "Option cosmétique : orcs", "_t")
+t("Build Option: Tinkers in Maj'Eyal Campaign", "Option de création : Bricoleurs dans la Campagne de Maj'Eyal", "_t")
+t("Build Option: Mages in Orcs Campaign", "Option de création : Mages dans la Campagne des Orcs", "_t")
+t("Build Option: Rogues in Orcs Campaign", "Option de création : Brigands dans la Campagne des Orcs", "_t")
+t("Build Option: All classes in Orcs Campaign", "Option de création : Toutes les classes dans la Campagne des Orcs", "_t")
+t("Class: Psyshot", "Classe : Psychotir", "_t")
+t("Class evolution: Technomancer", "Évolution de classe : Technomancien", "_t")
+
+------------------------------------------------
+section "tome-orcs/superload/mod/class/Object.lua"
+
+t("You have no medical injector available.", "Vous n'avez aucun injecteur médical disponible.", "_t")
+
+------------------------------------------------
+section "tome-orcs/superload/mod/class/Projectile.lua"
+
+t("#PURPLE#Automated Reflex System activated!", "#PURPLE#Système de Réflexes Automatisé activé !", "saySimple")
+t("#PURPLE#Automated Reflex System activated!", "#PURPLE#Système de Réflexes Automatisé activé !", "log")
+
+------------------------------------------------
+section "tome-orcs/superload/mod/class/interface/Archery.lua"
+
+t("%s is knocked back!", "%s est repoussé !", "logSeen")
+
+------------------------------------------------
+section "tome-orcs/superload/mod/class/interface/Combat.lua"
+
+t("#{bold}#%s's tinker attains critical power!#{normal}#", "#{bold}#La babiole de %s atteint sa puissance critique !#{normal}#", "logSeen")
+
+------------------------------------------------
+section "tome-orcs/superload/mod/class/interface/TooltipsData.lua"
+
+t([[#GOLD#Steam#LAST#
+Steam is created by special generators and is used to power most technological things.
+It is very hard to increase your maximum steam capacity, but it regenerates quickly.
+Use it or lose it fast.
+]], [[#GOLD#Vapeur#LAST#
+La vapeur est produite par des générateurs spéciaux et sert à alimenter la plupart des dispositifs technologiques.
+Il est très difficile d'augmenter votre capacité maximale de vapeur, mais elle se régénère rapidement.
+Utilisez-la, ou perdez-la rapidement.
+]], "_t")
+t([[#GOLD#Steampower#LAST#
+Your steampower represents how powerful and effective your steamtech abilities are.
+It is similar to Physical Power but is improved with Cunning.
+]], [[#GOLD#Puissance de Vapeur#LAST#
+Votre Puissance de Vapeur représente la force et l'efficacité de vos capacités vapotechniques.
+Elle est similaire à la Puissance Physique, mais s'améliore avec la Ruse.
+]], "_t")
+t([[#GOLD#Steamtech critical chance#LAST#
+Each time you deal damage with a steamtech - based attack you may have a chance to perform a critical hit that deals extra damage.
+Some talents allow you to increase this percentage.
+It is improved by Cunning.
+]], [[#GOLD#Chance de Critique Vapotechnique#LAST#
+Chaque fois que vous infligez des dégâts avec une attaque basée sur la vapotechnique, vous avez une chance de porter un coup critique infligeant des dégâts supplémentaires.
+Certains talents vous permettent d'augmenter ce pourcentage.
+Elle s'améliore avec la Ruse.
+]], "_t")
+t([[#GOLD#Steamtech speed#LAST#
+Steamtech speed represents how fast you use your steamtech - powered abilities compared to normal.
+Higher is faster.
+]], [[#GOLD#Vitesse Vapotechnique#LAST#
+La vitesse vapotechnique représente la rapidité avec laquelle vous utilisez vos capacités alimentées à la vapeur, par rapport à la normale.
+Plus elle est élevée, plus c'est rapide.]], "_t")
+
+------------------------------------------------
+section "tome-orcs/superload/mod/dialogs/Birther.lua"
+
+t("Welcome to #CRIMSON#Embers of Rage", "Bienvenue dans #CRIMSON#Braises de la Rage", "_t")
+t([[Thank you for purchasing #CRIMSON#Embers of Rage#WHITE#, the second expansion pack of Tales of Maj'Eyal.
+
+To begin your steamy adventures of hot metal mayhem simply select the #LIGHT_GREEN#Embers of Rage Campaign#WHITE# and be on your way to glory!
+
+Have fun crushing the foes of the Pride!
+]], [[Merci d'avoir acquis #CRIMSON#Braises de la Rage#WHITE#, la deuxième extension de Tales of Maj'Eyal.
+
+Pour commencer vos aventures fumantes de chaos en métal brûlant, sélectionnez simplement la campagne #LIGHT_GREEN#Braises de la Rage#WHITE# et partez sur le chemin de la gloire !
+
+Amusez-vous à écraser les ennemis de la Fierté !]], "tformat")
+
+------------------------------------------------
+section "tome-orcs/superload/mod/dialogs/LevelupDialog.lua"
+
+t("Steampower: ", "Puissance de Vapeur : ", "_t")
 
