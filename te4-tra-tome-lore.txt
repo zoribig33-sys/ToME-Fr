@@ -4738,3 +4738,1147 @@ Que la blague était terminée
 #{normal}#]], "_t")
 
 
+------------------------------------------------
+section "mod-tome/data/lore/infinite-dungeon.lua"
+
+t("ruined dungeon", "donjon en ruines", "newLore category")
+t("clue (ruined dungeon)", "indice (donjon en ruines)", "_t")
+t([[There is an inscription here:
+#{italic}#The river flows in its bed of stone...#{normal}#]], [[Il y a une inscription ici :
+#{italic}#La rivière coule dans son lit de pierre...#{normal}#]], "_t")
+t([[There is an inscription here:
+#{italic}#...The feather flies gently in the wind.
+The tree's roots run deep...#{normal}#]], [[Il y a une inscription ici :
+#{italic}#...La plume vole doucement dans le vent.
+Les racines de l'arbre plongent profondément...#{normal}#]], "_t")
+t([[There is an inscription here:
+#{italic}#...The eldritch force burns all that lives.#{normal}#]], [[Il y a une inscription ici :
+#{italic}#...La force occulte brûle tout ce qui vit.#{normal}#]], "_t")
+t([[There is an inscription here:
+#{italic}#Darkness beyond twilight.
+Crimson from the blood that flows...#{normal}#]], [[Il y a une inscription ici :
+#{italic}#Ténèbres au-delà du crépuscule.
+Carmin du sang qui coule...#{normal}#]], "_t")
+t([[There is an inscription here:
+#{italic}#...Buried in the flow of time.
+Colder than the coldest ice...#{normal}#]], [[Il y a une inscription ici :
+#{italic}#...Enseveli dans le flot du temps.
+Plus froid que la glace la plus froide...#{normal}#]], "_t")
+t([[There is an inscription here:
+#{italic}#...Unleash dark thoughts.
+Upon this blighted land!#{normal}#]], [[Il y a une inscription ici :
+#{italic}#...Libérez des pensées sombres.
+Sur cette terre frappée par le fléau !#{normal}#]], "_t")
+t("infinite dungeon (ruined dungeon)", "donjon infini (donjon en ruines)", "_t")
+t([[There is an inscription here:
+The deceptive god Ralkur fled before the wrath of the godslayer Branzir and his dark blade Madrath. But though he fled to the depths of the dungeon he came to an end. Seeing himself cornered he used his power to delve deeper into the ground, laying traps and summoning enemies to confound his enemy. But Branzir would not be lost. He pursued his prey ever on, hunting him ever deeper. And Ralkur fled further, and faster, delving to fathoms beyond knowledge, with the godslayer always behind him, hunting relentlessly.
+
+And so the chase continues. Over centuries beyond count Branzir has never stopped to rest or sleep as he pursues his prey through the ravages of infinity. And though death would be a welcome reprieve he thinks only of the hunt and of vanquishing the cowardly god. Ralkur continues to run, and he does not take a breath that it is not a gasp, and he does not take a step that it is not in flight, and every beat of his traitorous heart is a pounding of terror as he flees deeper and deeper till the ends of time.
+
+This passage seems to point to the passage there, it seems to indicate there are no possible exits.
+You should not enter it.]], [[Il y a une inscription ici :
+
+Le dieu trompeur Ralkur a fui devant la colère du tueur de dieux Branzir et de sa lame sombre, Madrath. Mais bien qu'il ait fui jusqu'aux profondeurs du donjon, il y trouva une impasse. Se voyant acculé, il usa de son pouvoir pour creuser plus profondément dans le sol, posant des pièges et invoquant des ennemis pour désorienter son adversaire. Mais Branzir ne se laissa pas égarer. Il poursuivit sa proie sans relâche, la traquant toujours plus profond. Et Ralkur fuit plus loin, et plus vite encore, plongeant vers des abîmes qui dépassent tout savoir, avec le tueur de dieux toujours à ses trousses, chassant sans merci.
+
+Et ainsi la traque se poursuit. Depuis des siècles innombrables, Branzir ne s'est jamais arrêté pour se reposer ou dormir, poursuivant sa proie à travers les ravages de l'infini. Et bien que la mort serait un répit bienvenu, il ne pense qu'à la chasse et à la défaite du dieu couard. Ralkur continue de courir, et il ne prend pas un souffle qui ne soit un halètement, et il ne fait pas un pas qui ne soit une fuite, et chaque battement de son cœur traître est un coup de terreur tandis qu'il s'enfonce toujours plus profond, jusqu'à la fin des temps.
+
+Ce passage semble indiquer le chemin plus loin ; il semble indiquer qu'il n'y a aucune issue possible.
+Vous ne devriez pas y entrer.]], "_t")
+t("infinite dungeon", "donjon infini", "newLore category")
+t("The Hunter and the Hunted chapter 1", "Le Chasseur et le Traqué, chapitre 1", "_t")
+t([[Branzir was the mightiest of the Sher'Tul hunters, and his fame was known at every Farportal. He could run for days without rest, cross terrain no others would dare to pass, and had senses more keen than all the wildest animals of Eyal. It was for this reason that Caldizar came to him at his forest keep and beseeched him to join in the Godhunt. At first Branzir refused, for he said he was not one to meddle in such mighty affairs, and he wanted but peace to hunt and fend for his family. But Caldizar convinced him that this life of peace was not possible whilst the schemes and machinations of the gods continued. And so reluctantly Branzir accepted, and took in his hands the great sword Madrath, and upon his shoulders was laid the title "Godslayer".
+
+In the great Godhunt that followed Branzir became the most fervent of the Godslayers, and would not sleep nor rest whilst a hunt was on. He it was that chased the troll-spawner Ugg'matho through the snow-capped mountains of Pertolias and broke his body on the highest peak. He it was that tracked the blight-weaver Xadoch through the howling vales of Anvion and trapped him and throttled him and cut him into seven pieces to be cast into the Glonglum lake. And he it was that was tasked with finding and killing Ralkur the Deceptor, god of charms and illusions, who had taken hiding amongst the lesser races.]], [[Branzir était le plus puissant des chasseurs Sher'Tul, et sa renommée était connue de tout Portail lointain. Il pouvait courir des jours durant sans repos, traverser des terrains qu'aucun autre n'aurait osé franchir, et possédait des sens plus aiguisés que ceux des animaux les plus sauvages d'Eyal. C'est pour cette raison que Caldizar vint à lui, dans son bastion forestier, et le supplia de se joindre à la Chasse aux Dieux. Branzir refusa d'abord, disant qu'il n'était pas homme à se mêler d'affaires si considérables, et qu'il ne désirait que la paix, pour chasser et subvenir aux besoins de sa famille. Mais Caldizar le convainquit que cette vie paisible resterait impossible tant que se poursuivraient les intrigues et manigances des dieux. Et c'est ainsi qu'à contrecœur Branzir accepta, saisissant en ses mains la grande épée Madrath, et sur ses épaules fut posé le titre de « Tueur de Dieux ».
+
+Dans la grande Chasse aux Dieux qui suivit, Branzir devint le plus fervent des Tueurs de Dieux, et ne dormait ni ne se reposait tant qu'une chasse était en cours. C'est lui qui pourchassa Ugg'matho l'engendreur de trolls à travers les montagnes enneigées de Pertolias et brisa son corps sur le plus haut sommet. C'est lui qui traqua Xadoch le tisseur de fléau à travers les vallées hurlantes d'Anvion, le piégea, l'étrangla et le découpa en sept morceaux pour les jeter dans le lac Glonglum. Et c'est encore lui qui reçut la tâche de trouver et de tuer Ralkur le Trompeur, dieu des charmes et des illusions, qui s'était réfugié parmi les races inférieures.]], "_t")
+t("The Hunter and the Hunted chapter 2", "Le Chasseur et le Traqué, chapitre 2", "_t")
+t([[Thus began the greatest hunt there ever was. Branzir used forceful coercion and the spilling of blood to uncover the secret of his enemy's hiding place. He tracked Ralkur down to the primitive settlement where he had taken the form of one of the lesser races. Branzir rooted him out, and came upon him with Madrath in hand. But Ralkur seeing the wrath of the hunter and the terrible sword became frightful, and he took on the form of an antelope and fled across the Harloe Plains. But Branzir ran after and ran swifter and nigh caught him before they reached the Woods of Darmin. There Ralkur assumed the form of a monkey and took to the trees. But Branzir tracked him and followed close, overcoming the traps his foe left behind. Then the forest fell away and they came to the Azure Sea, and Ralkur took the form of a gull and flew over the waters cawing with prideful glee. But Branzir was unfazed and leapt into the water, swimming after the cowardly god with all his strength. Twenty days and nights he followed through the ocean, feeding off fish he could catch near the surface, whilst Ralkur beat his wings on the winds above. Not once did Branzir lose sight of his target, and with each passing day Ralkur became more and more filled with fright.
+
+Finally they came to the far shore of Tar'Eyal, and Ralkur fell onto the sandy beach bereft of strength. Depleted of all energy he reverted to his natural form, short and squat, and stumbled across the sand before falling down exhausted. Branzir arose from the water behind, and in spite of his trials he stood tall and fierce, and marched with purpose towards the cowering god. He drew out the fell blade Madrath from its sheath and held it to the throat of his prey.
+
+But Ralkur, in a last desperate effort, took on a pathetic and piteous form, and wailing and crying he begged Branzir for mercy, promising to leave all Eyal and never return. And Branzir, looking on the divine form sunk to such depths, was moved in his heart, and agreed. But he said in a solemn tone, "Get thee then from this world, which we mortals now claim for our own. Remove thyself from all influence in Eyal, and never dare thee to return. But if thou doest break my trust, let thee be afeared. For then not a breath shalt thou take that it will not be a gasp, and not a step shalt thou take that it will not be in flight, and each beat of thy traitorous heart shalt be a pounding of terror. For I shalt come for thee and I shalt find thee and even to the depths of Infinity I shalt hunt thee without rest till my hands are on thy throat and thy life is crushed to dust." And when he spake the wind fell silent and the sky turned black, for when a Sher'Tul speaks so his words become Words of Power, and they can change the world forever. And Ralkur hearing those words was filled with a dread beyond conception, and forgetting all exhaustion he immediately took the form of a swallow and flew high into the sky beyond all sight.]], [[Ainsi commença la plus grande chasse qui fut jamais. Branzir usa de coercition brutale et de sang versé pour découvrir le secret de la cachette de son ennemi. Il traqua Ralkur jusqu'à l'établissement primitif où celui-ci avait pris la forme de l'une des races inférieures. Branzir le débusqua et fondit sur lui, Madrath en main. Mais Ralkur, voyant la colère du chasseur et la terrible épée, fut saisi d'effroi, et il prit la forme d'une antilope et s'enfuit à travers les Plaines de Harloe. Mais Branzir courut à sa poursuite, plus rapide encore, et faillit le rattraper avant qu'ils n'atteignent les Bois de Darmin. Là, Ralkur prit la forme d'un singe et grimpa aux arbres. Mais Branzir le pista et le suivit de près, surmontant les pièges que son ennemi laissait derrière lui. Puis la forêt s'effaça, et ils parvinrent à la Mer Azur ; Ralkur prit alors la forme d'une mouette et survola les eaux en croassant d'une joie orgueilleuse. Mais Branzir ne se laissa pas décontenancer et plongea dans l'eau, nageant à la poursuite du dieu couard de toutes ses forces. Vingt jours et vingt nuits il le suivit à travers l'océan, se nourrissant des poissons qu'il parvenait à attraper près de la surface, tandis que Ralkur battait des ailes dans les vents au-dessus. Pas une seule fois Branzir ne perdit sa cible de vue, et à chaque jour qui passait, Ralkur se remplissait davantage d'effroi.
+
+Ils atteignirent enfin le rivage lointain de Tar'Eyal, et Ralkur s'effondra sur la plage de sable, dépourvu de toute force. Vidé de toute énergie, il reprit sa forme naturelle, petite et trapue, et titubant à travers le sable avant de s'écrouler, épuisé. Branzir émergea de l'eau derrière lui, et malgré ses épreuves, il se tint grand et féroce, marchant avec détermination vers le dieu recroquevillé. Il tira du fourreau la funeste lame Madrath et la posa contre la gorge de sa proie.
+
+Mais Ralkur, dans un dernier effort désespéré, prit une forme pathétique et pitoyable, et en gémissant et pleurant, il implora la pitié de Branzir, promettant de quitter Eyal tout entier et de ne jamais revenir. Et Branzir, contemplant la forme divine ainsi tombée si bas, en fut ému au fond du cœur, et accepta. Mais il dit d'un ton solennel : « Va-t'en donc de ce monde, que nous, mortels, revendiquons désormais comme nôtre. Retire-toi de toute influence en Eyal, et n'ose jamais y revenir. Mais si tu venais à trahir ma confiance, sois averti. Car alors pas un souffle que tu prendras qui ne soit un halètement, et pas un pas que tu feras qui ne soit une fuite, et chaque battement de ton cœur traître sera un coup de terreur. Car je viendrai te chercher, et je te trouverai, et même jusqu'aux profondeurs de l'Infini je te traquerai sans repos, jusqu'à ce que mes mains soient sur ta gorge et que ta vie soit réduite en poussière. » Et quand il parla ainsi, le vent se tut et le ciel s'assombrit, car lorsqu'un Sher'Tul parle de la sorte, ses mots deviennent des Paroles de Pouvoir, capables de changer le monde à jamais. Et Ralkur, entendant ces mots, fut saisi d'une terreur au-delà de toute conception, et, oubliant toute son épuisement, il prit aussitôt la forme d'une hirondelle et s'envola haut dans le ciel, hors de toute vue.]], "_t")
+t("The Hunter and the Hunted chapter 3", "Le Chasseur et le Traqué, chapitre 3", "_t")
+t([[Branzir returned to his people, and continued the hunt for the other gods, till but one god remained: Amakthel. Then the last great Godhunt began, as the Sher'Tul fought to overcome their maker and master. And this was no easy feat, for Amakthel was by far the strongest of all the gods, and many Sher'Tul were still loyal to their creator. Much blood was spilled before ever the assault on his throne could begin, and much blood would spill still after.
+
+Now Ralkur had fled into the heavens with the full intent of passing beyond all reach of mortals forever more, such was the fear laid on him by the solemn words of Branzir. But as he soared higher and the fear faded, he came to change his mind, for he was a prideful god and moreso a vengeful one. Thoughts and schemes began to build in his mind for how he could gain retribution on the Sher'Tul that had brought him to shame. So he took on the form of an eagle and flew above the highest volcano in Eyal, and there he stretched his wings and glided high on the rising heat, watching all that happened in the lands below and biding his time for vengeance.
+
+He watched with joy as he saw the Sher'Tul armies fall before the forces of Amakthel's fortress. He watched with anxiety as he saw the Sher'Tul finally break through the defences and come upon the great god himself. He watched with awe as he saw the nine Godslayers do battle with their creator, and several broken before his almighty wrath. And then he watched with utter terror as he saw the mightiest of all gods felled, and maimed and mutilated and bound, and cast into the darkest depths of the world.
+]], [[Branzir retourna auprès de son peuple et poursuivit la chasse aux autres dieux, jusqu'à ce qu'il n'en restât plus qu'un : Amakthel. Alors commença la dernière grande Chasse aux Dieux, tandis que les Sher'Tul combattaient pour vaincre leur créateur et maître. Et ce ne fut pas un mince exploit, car Amakthel était de loin le plus puissant de tous les dieux, et de nombreux Sher'Tul demeuraient encore loyaux à leur créateur. Beaucoup de sang fut versé avant même que l'assaut contre son trône ne puisse commencer, et beaucoup de sang serait versé encore après.
+
+Or Ralkur avait fui vers les cieux avec la ferme intention de se soustraire à jamais à toute atteinte des mortels, tant était grande la peur que lui avaient inspirée les paroles solennelles de Branzir. Mais tandis qu'il s'élevait plus haut et que la peur s'estompait, il en vint à changer d'avis, car c'était un dieu orgueilleux, et plus encore vindicatif. Des pensées et des complots commencèrent à germer dans son esprit, sur la manière dont il pourrait se venger des Sher'Tul qui l'avaient couvert de honte. Il prit alors la forme d'un aigle et vola au-dessus du plus haut volcan d'Eyal, et là, il déploya ses ailes et plana haut dans la chaleur ascendante, observant tout ce qui se passait dans les terres en contrebas, attendant patiemment son heure de vengeance.
+
+Il observa avec joie les armées Sher'Tul s'effondrer devant les forces de la forteresse d'Amakthel. Il observa avec anxiété les Sher'Tul percer enfin les défenses et affronter le grand dieu lui-même. Il observa avec stupeur les neuf Tueurs de Dieux livrer bataille à leur créateur, plusieurs d'entre eux brisés devant sa colère toute-puissante. Et alors, il observa avec une terreur absolue le plus puissant de tous les dieux être abattu, mutilé, estropié et enchaîné, puis jeté dans les plus sombres profondeurs du monde.
+]], "_t")
+t("The Hunter and the Hunted chapter 4", "Le Chasseur et le Traqué, chapitre 4", "_t")
+t([[Seeing the full powers of the Sher'Tul Ralkur felt paralysed with fear, and thought his quest for vengeance hopeless. But he bided his time still, and his patience was rewarded as he saw dissention begin to arise in the great race. When Caldizar disappeared and the Godslayers separated he felt his time was ripe, and he came upon the forest keep of Branzir under a storm of wrath. He flew down screeching, and spreading his wings he let loose spikes of steel that rained down on the keep, cutting through wood and stone and flesh. All who were in the keep were killed, and the air was filled with Ralkur's cackling laughter as he flew away.
+
+But the vengeful god had been hasty at the last, for Branzir was out hunting at the time. Coming back the next day he saw his home in ruins, and all his family and servants butchered, and sorrow and torment filled every corner of his being. On hearing reports of what happened he knew well the perpetrator and his fury was incandescent. He sought the aid of the other Godhunters in scouring out the stray god, but they were all divided, and each engaged in the politics that would lay the seeds for war. Perhaps if they had aided him then the popular Branzir could have helped unify the people and stop the madness that was to come. But Caldizar was gone, reportedly aggrieved and repentant at their acts, and the remaining Godslayers thought only of their own powers and making gods of themselves.]], [[En voyant l'étendue des pouvoirs des Sher'Tul, Ralkur se sentit paralysé de peur, et crut sa quête de vengeance sans espoir. Mais il attendit encore son heure, et sa patience fut récompensée lorsqu'il vit la discorde commencer à naître au sein de la grande race. Quand Caldizar disparut et que les Tueurs de Dieux se séparèrent, il sentit que son heure était venue, et il fondit sur le bastion forestier de Branzir dans une tempête de colère. Il piqua en poussant des cris stridents, et déployant ses ailes, il libéra une pluie de pointes d'acier qui s'abattit sur le bastion, tranchant le bois, la pierre et la chair. Tous ceux qui se trouvaient dans le bastion furent tués, et l'air se remplit du rire cruel de Ralkur tandis qu'il s'envolait.
+
+Mais le dieu vindicatif avait agi trop hâtivement, car Branzir était alors parti chasser. En rentrant le lendemain, il découvrit son foyer en ruines, toute sa famille et ses serviteurs massacrés, et le chagrin et le tourment envahirent chaque recoin de son être. En entendant les récits de ce qui s'était passé, il connut bien vite le coupable, et sa fureur devint incandescente. Il chercha l'aide des autres Chasseurs de Dieux pour traquer le dieu fugitif, mais tous étaient divisés, chacun pris dans les intrigues politiques qui allaient semer les graines de la guerre. Peut-être que s'ils l'avaient aidé, le populaire Branzir aurait pu contribuer à unifier le peuple et arrêter la folie qui s'annonçait. Mais Caldizar était parti, prétendument affligé et repentant de leurs actes, et les Tueurs de Dieux restants ne pensaient qu'à leurs propres pouvoirs, cherchant à se faire dieux eux-mêmes.]], "_t")
+t("The Hunter and the Hunted chapter 5", "Le Chasseur et le Traqué, chapitre 5", "_t")
+t([[So Branzir set out alone, with Madrath in his sheath. It did not take long to find his prey, who had now stopped all attempts at hiding. He came upon the god in a settlement of lesser creatures who worshipped him, and he ruthlessly cut down the pathetic wretches that tried to protect their new deity. Ralkur fled at the sight of Branzir and his dark blade, filled with all-encompassing fright. But Branzir was not to be lost, and chased him into some nearby ruins. There Ralkur laid traps and summoned enemies and fled deeper into the darkness. But Branzir overcame them all and came on faster, till they reached the depths of the dungeons. And being out of space the god created new space and fled further, and kept on fleeing. And Branzir carried on chasing, not letting up for a second as the pursued god continued to delve deeper into the ground.
+
+And so the chase continues. Over centuries beyond count Branzir has never stopped to rest or sleep as he pursues his prey through the ravages of infinity. And though death would be a welcome reprieve he thinks only of the hunt and of vanquishing the cowardly god. Ralkur continues to run, and he does not take a breath that it is not a gasp, and he does not take a step that it is not in flight, and every beat of his traitorous heart is a pounding of terror as he flees deeper and deeper till the ends of time.]], [[Branzir partit donc seul, Madrath en son fourreau. Il ne lui fallut guère de temps pour retrouver sa proie, qui avait désormais renoncé à toute tentative de dissimulation. Il trouva le dieu dans un établissement de créatures inférieures qui le vénéraient, et il abattit sans pitié les misérables qui tentaient de protéger leur nouvelle divinité. Ralkur, à la vue de Branzir et de sa lame sombre, s'enfuit, empli d'une terreur absolue. Mais Branzir ne se laisserait pas égarer, et le poursuivit jusque dans des ruines voisines. Là, Ralkur posa des pièges, invoqua des ennemis, et s'enfonça plus profondément dans les ténèbres. Mais Branzir surmonta tous les obstacles et avança plus vite encore, jusqu'à ce qu'ils atteignissent les profondeurs des donjons. Et n'ayant plus d'espace où fuir, le dieu créa un nouvel espace et fuit plus loin, sans jamais cesser de fuir. Et Branzir poursuivit la chasse, ne relâchant pas un instant sa traque tandis que le dieu poursuivi continuait de s'enfoncer toujours plus profond dans le sol.
+
+Et ainsi la traque se poursuit. Depuis des siècles innombrables, Branzir ne s'est jamais arrêté pour se reposer ou dormir, poursuivant sa proie à travers les ravages de l'infini. Et bien que la mort serait un répit bienvenu, il ne pense qu'à la chasse et à la défaite du dieu couard. Ralkur continue de courir, et il ne prend pas un souffle qui ne soit un halètement, et il ne fait pas un pas qui ne soit une fuite, et chaque battement de son cœur traître est un coup de terreur tandis qu'il s'enfonce toujours plus profond, jusqu'à la fin des temps.]], "_t")
+
+------------------------------------------------
+section "mod-tome/data/lore/iron-throne.lua"
+
+t("iron throne", "trône de fer", "newLore category")
+t("Iron Throne Profits History: Age of Allure", "Histoire des Profits du Trône de Fer : Ère de la Séduction", "_t")
+t([[#{bold}#3800: #{normal}#Gold accepted as standard unit of currency amongst all races after heavy lobbying. This is greatly to our favour, as our vein resources are high and the material otherwise has no practical usage. Must continue to stockpile more.
+#{bold}#4200: #{normal}#New smelting techniques developed allow more stralite to be recovered from existing veins. Techniques must be kept hidden from other races.
+#{bold}#4362: #{normal}#Grand Smith Dakhtun has discovered new methods of infusing magical effects in weapons and armour. Potential for profit growth in this area very high.
+#{bold}#4550: #{normal}#First special meeting of Iron Throne Profits Committee. War with humans and halflings worrying, as it is reducing potential market size. Threat of complete market elimination forces us to drastic action - all weapons trade must cease. Increase stockpiles of construction materials in hope of eventual reconciliation.
+#{bold}#5967: #{normal}#Shaloren involvement in war is becoming too grave a risk - legends of Sher'Tul destruction are a pertinent reminder of the dangers of high magic. Increasing investment in new Ziguranth order in hopes of opposing this problem.
+#{bold}#6550: #{normal}#War ended. Opportunity presents itself - now reopening trade, with high prices on all construction items. Profits forecast is very high.
+#{bold}#6827: #{normal}#Killed Kroltar the Crimson Wyrm and recovered his hoard. Value of hoard: 20 million gold. Resources lost in recovery effort: 7 million gold (estimation based on standard assessment of 350 gold per capita lost). Net profit: 13 million gold. Profit margin is 186%!
+#{bold}#6980: #{normal}#Resources based on dragon hoards are dwindling. Must reduce cull targets to allow recovery of numbers.
+#{bold}#7420: #{normal}#Major orc attacks are ruining trade arrangements. Cutting off all contracts until markets settle.
+#{bold}#7494: #{normal}#Disastrous use of magic by Shaloren elves has had an unprecedented impact on profitability of our operations. Increasing protectionist measures to prevent economic ruin.]], [[#{bold}#3800 : #{normal}#L'or fut accepté comme unité de monnaie standard parmi toutes les races après un lobbying intensif. Ceci nous est grandement favorable, car nos réserves de filons sont abondantes et ce matériau n'a par ailleurs aucun usage pratique. Nous devons continuer à en stocker davantage.
+#{bold}#4200 : #{normal}#De nouvelles techniques de fonte développées permettent de récupérer davantage de stralite à partir des filons existants. Ces techniques doivent être tenues secrètes vis-à-vis des autres races.
+#{bold}#4362 : #{normal}#Le Grand Forgeron Dakhtun a découvert de nouvelles méthodes pour infuser des effets magiques dans les armes et les armures. Le potentiel de croissance des profits dans ce domaine est très élevé.
+#{bold}#4550 : #{normal}#Première réunion spéciale du Comité des Profits du Trône de Fer. La guerre entre humains et Halfelins est préoccupante, car elle réduit la taille potentielle du marché. La menace d'une élimination totale du marché nous force à prendre des mesures drastiques - tout commerce d'armes doit cesser. Augmenter les stocks de matériaux de construction dans l'espoir d'une éventuelle réconciliation.
+#{bold}#5967 : #{normal}#L'implication des Shaloréens dans la guerre devient un risque trop grave - les légendes de la destruction des Sher'Tul nous rappellent pertinemment les dangers de la haute magie. Augmentation de l'investissement dans le nouvel ordre des Zigurantes dans l'espoir de contrer ce problème.
+#{bold}#6550 : #{normal}#La guerre est terminée. Une opportunité se présente - nous rouvrons désormais le commerce, avec des prix élevés sur tous les articles de construction. Les prévisions de profit sont très élevées.
+#{bold}#6827 : #{normal}#Nous avons tué Kroltar le Draconien Cramoisi et récupéré son trésor. Valeur du trésor : 20 millions d'or. Ressources perdues dans l'effort de récupération : 7 millions d'or (estimation basée sur une évaluation standard de 350 pièces d'or par personne perdue). Profit net : 13 millions d'or. La marge de profit est de 186 % !
+#{bold}#6980 : #{normal}#Les ressources issues des trésors de dragons s'amenuisent. Il faut réduire les objectifs d'abattage pour permettre le rétablissement des populations.
+#{bold}#7420 : #{normal}#De grandes attaques orques ruinent nos accords commerciaux. Suspension de tous les contrats jusqu'à ce que les marchés se stabilisent.
+#{bold}#7494 : #{normal}#L'usage désastreux de la magie par les elfes Shaloréens a eu un impact sans précédent sur la rentabilité de nos opérations. Renforcement des mesures protectionnistes pour éviter la ruine économique.]], "_t")
+t("Iron Throne Profits History: Age of Dusk", "Histoire des Profits du Trône de Fer : Ère du Crépuscule", "_t")
+t([[#{bold}#412: #{normal}#Diseases and food shortages force increased trade with other races. For the first time in our great history we are in the red. Morale amongst the people is at an all-time low, and is badly affecting productivity.
+#{bold}#1430: #{normal}#Several mages visited and used their arts to cure many of the plagues we have suffered for centuries. When offered payment they refused. How very odd...
+#{bold}#1490: #{normal}#Production now nearing pre-Spellblaze levels. Profits high, and commerce with other races increasing.
+#{bold}#1567: #{normal}#Gigantic earthquakes have completely destroyed many of our major production facilities. Loss of personnel resources is also very tragic, especially key production experts. This is having a very negative effect on our forecasts.]], [[#{bold}#412 : #{normal}#Les maladies et pénuries alimentaires nous forcent à accroître le commerce avec les autres races. Pour la première fois de notre grande histoire, nous sommes dans le rouge. Le moral du peuple est au plus bas jamais atteint, et cela affecte gravement la productivité.
+#{bold}#1430 : #{normal}#Plusieurs mages nous ont rendu visite et ont utilisé leurs arts pour guérir bon nombre des fléaux que nous subissions depuis des siècles. Lorsqu'on leur a proposé un paiement, ils l'ont refusé. Comme c'est étrange...
+#{bold}#1490 : #{normal}#La production se rapproche désormais des niveaux d'avant la Brûlure Magique. Les profits sont élevés, et le commerce avec les autres races augmente.
+#{bold}#1567 : #{normal}#De gigantesques tremblements de terre ont complètement détruit plusieurs de nos principales installations de production. La perte de ressources humaines est également très tragique, en particulier celle de nos experts clés de production. Cela a un effet très négatif sur nos prévisions.]], "_t")
+t("Iron Throne Profits History: Age of Pyre", "Histoire des Profits du Trône de Fer : Ère du Bûcher", "_t")
+t([[#{bold}#240: #{normal}#Market forecasts recovering better than expected. Increasing expansion in external trade areas.
+#{bold}#490: #{normal}#Orcish attacks have become much worse - seem to be using higher magic and some demonic forces. Potential threat to resources.
+#{bold}#581: #{normal}#Several key cities overwhelmed from underground by attacks from orcs and strange horrors. Have collapsed lower caverns to prevent further penetration. Working on continued resource protection measures.
+#{bold}#711: #{normal}#Developed key strategic agreements with outside races to help contain orcish threat to resources and infrastructure. Relations with Toknor of the humans are seen to be especially important - have sent him some of our best armour and weapons to ensure a good return on our investments. In hindsight we should have charged more for these.
+#{bold}#713: #{normal}#Orcish threat eliminated. Profits beginning to soar due to increased external trade relations.
+]], [[#{bold}#240 : #{normal}#Les prévisions de marché se redressent mieux que prévu. Expansion croissante dans les zones de commerce extérieur.
+#{bold}#490 : #{normal}#Les attaques orques sont devenues bien plus violentes - elles semblent impliquer de la haute magie et certaines forces démoniaques. Menace potentielle pour nos ressources.
+#{bold}#581 : #{normal}#Plusieurs cités clés ont été submergées par en dessous par des attaques d'orcs et d'étranges horreurs. Nous avons fait s'effondrer les cavernes inférieures pour empêcher toute nouvelle pénétration. Mise en place de mesures continues de protection des ressources.
+#{bold}#711 : #{normal}#Développement d'accords stratégiques clés avec des races extérieures pour aider à contenir la menace orque sur nos ressources et infrastructures. Les relations avec Toknor, chez les humains, sont jugées particulièrement importantes - nous lui avons envoyé certaines de nos meilleures armures et armes pour garantir un bon retour sur nos investissements. Avec le recul, nous aurions dû les facturer plus cher.
+#{bold}#713 : #{normal}#Menace orque éliminée. Les profits commencent à s'envoler grâce à l'augmentation des relations commerciales extérieures.
+]], "_t")
+t("Iron Throne Profits History: Age of Ascendancy", "Histoire des Profits du Trône de Fer : Ère de l'Ascendance", "_t")
+t([[#{bold}#28: #{normal}#Mutual defence treaty signed with newly formed Allied Kingdom, and further trade routes opened. Highest ever recorded profit in final quarter of this year.
+#{bold}#115: #{normal}#Noted a return of an orcish presence in the collapsed caverns beneath the Iron Throne. Also increased reports of horrors and demons affecting mining operations. Key strategic decision taken: these must be kept hidden from the other races. Uncertainty will only destabilise the markets. Increase stockpiles of weapons and armour, especially voratun and stralite materials, in case of new war trade.
+#{bold}#120: #{normal}#Orcish raid has stolen many of our stockpiled weapons. Pressures on mining operations have increased, cutting off key stralite veins. Resource protection measures need increasing, whilst threat must be contained beneath us. Profits are stable, but under heavy threat.]], [[#{bold}#28 : #{normal}#Traité de défense mutuelle signé avec le Royaume Allié récemment formé, et ouverture de nouvelles routes commerciales. Profit le plus élevé jamais enregistré au dernier trimestre de cette année.
+#{bold}#115 : #{normal}#On note un retour de présence orque dans les cavernes effondrées sous le Trône de Fer. Également, augmentation des rapports d'horreurs et de démons affectant les opérations minières. Décision stratégique clé prise : cela doit être tenu caché des autres races. L'incertitude ne fera que déstabiliser les marchés. Augmenter les stocks d'armes et d'armures, en particulier de matériaux en voratun et en stralite, en cas de nouveau commerce de guerre.
+#{bold}#120 : #{normal}#Un raid orque a dérobé une grande partie de nos armes stockées. Les pressions sur les opérations minières se sont accrues, coupant l'accès à des filons clés de stralite. Les mesures de protection des ressources doivent être renforcées, tandis que la menace doit être contenue sous nos pieds. Les profits sont stables, mais sous forte menace.]], "_t")
+t("Iron Throne Edict", "Décret du Trône de Fer", "_t")
+t([[#{bold}#AN EDICT TO ALL CITIZENS OF THE IRON THRONE. LONG MAY OUR EMPIRE ENDURE.#{normal}#
+
+The rumours you have heard are true. It is with a heavy heart that I confirm one of our mines, Reknor, has been overtaken and inhabited by a large and organised orcish force. How there could be such a decisive and total failure on our part to stop this threat remains a mystery - the source of the orcish invasion remains unknown. A battalion of soldiers will form a defensive perimeter around Reknor until a force to retake the mine and exterminate the orcs can be mustered. All civilians residing within the surrounding halls are to be evacuated.
+
+This is a grave and unprecedented issue, so I decree an oath of silence to be laid upon all citizens of the Iron Throne, regardless of class and station: NO NEWS OF THIS INVASION MUST REACH FOREIGN EARS. We must maintain an image of stability and strength with the Allied Kingdom, as any signs of weakness or internal strife would be catastrophic to our alliance and future trade agreements. Any citizen found divulging this information to any outside party will be punished with exile. Rest assured, I will personally send messages to those outside the Throne who can be trusted with this information, and I trust this orcish intrusion shall be dealt with swiftly and decisively. So speaks the ruler of the Iron Throne, long may our empire endure.]], [[#{bold}#UN DÉCRET À TOUS LES CITOYENS DU TRÔNE DE FER. QUE NOTRE EMPIRE PERDURE LONGTEMPS.#{normal}#
+
+Les rumeurs que vous avez entendues sont vraies. C'est avec un cœur lourd que je confirme qu'une de nos mines, Reknor, a été envahie et occupée par une force orque nombreuse et organisée. Comment un échec aussi décisif et total ait pu se produire de notre part pour arrêter cette menace demeure un mystère - la source de l'invasion orque reste inconnue. Un bataillon de soldats formera un périmètre défensif autour de Reknor jusqu'à ce qu'une force puisse être rassemblée pour reprendre la mine et exterminer les orcs. Tous les civils résidant dans les salles environnantes doivent être évacués.
+
+Il s'agit d'une question grave et sans précédent ; je décrète donc un serment de silence qui devra être respecté par tous les citoyens du Trône de Fer, sans distinction de classe ni de rang : AUCUNE NOUVELLE DE CETTE INVASION NE DOIT ATTEINDRE DES OREILLES ÉTRANGÈRES. Nous devons maintenir une image de stabilité et de force face au Royaume Allié, car tout signe de faiblesse ou de discorde interne serait catastrophique pour notre alliance et nos futurs accords commerciaux. Tout citoyen surpris à divulguer cette information à une partie extérieure sera puni d'exil. Soyez assurés que j'enverrai personnellement des messages à ceux, hors du Trône, en qui cette information peut être confiée, et j'ai confiance que cette intrusion orque sera traitée rapidement et de façon décisive. Ainsi parle le souverain du Trône de Fer ; que notre empire perdure longtemps.]], "_t")
+t("Iron Throne trade ledger", "registre commercial du Trône de Fer", "_t")
+t([[#{bold}#IRON THRONE TRADE LEDGER - Allied Kingdom#{normal}#
+#{italic}#Age of Ascendancy, 121#{normal}#
+
+#{bold}#Last Hope - Exports#{normal}#
+      Steel Plate Armour (Human) - 500pcs.
+      Steel Plate Armour (Halfling) - 460pcs.
+      Steel Armaments -
+      * Longswords - 170pcs.
+      * Spears - 200pcs.
+      * Maces - 150pcs.
+      Crafts, Sundries - 2,200pcs.
+
+#{bold}#Derth - Exports#{normal}#
+      Iron Hatchets - 50pcs.
+      Tools, Sundries - 65pcs.
+
+#{bold}#Last Hope - Imports#{normal}#
+      Gold - 500,000pcs.
+      Grains, Etc. - 1,000tons
+
+#{bold}#CONFIDENTIAL: Angolwen - Exports#{normal}#
+      Garnets - 50pcs.
+      Rubies - 40pcs.
+      Diamonds - 20pcs.
+
+low diamond yield this year - +50% charge? ziguranth raided our last ang. caravan - more guards? - D.
+yes to diamonds. arm our merchants in the caravan, no extra guards. profits are thin enough as it is! - S.]], [[#{bold}#REGISTRE COMMERCIAL DU TRÔNE DE FER - Royaume Allié#{normal}#
+#{italic}#Ère de l'Ascendance, 121#{normal}#
+
+#{bold}#Dernier Espoir - Exportations#{normal}#
+      Armure de Plates en Acier (Humain) - 500 unités
+      Armure de Plates en Acier (Halfelin) - 460 unités
+      Armement en Acier -
+      * Épées longues - 170 unités
+      * Lances - 200 unités
+      * Masses - 150 unités
+      Artisanat, Articles divers - 2 200 unités
+
+#{bold}#Derth - Exportations#{normal}#
+      Hachettes en Fer - 50 unités
+      Outils, Articles divers - 65 unités
+
+#{bold}#Dernier Espoir - Importations#{normal}#
+      Or - 500 000 unités
+      Céréales, Etc. - 1 000 tonnes
+
+#{bold}#CONFIDENTIEL : Angolwen - Exportations#{normal}#
+      Grenats - 50 unités
+      Rubis - 40 unités
+      Diamants - 20 unités
+
+faible rendement en diamants cette année - facturer +50% ? les zigurantes ont attaqué notre dernière caravane pour ang. - plus de gardes ? - D.
+oui pour les diamants. armons nos marchands dans la caravane, pas de gardes supplémentaires. les profits sont déjà assez maigres comme ça ! - S.]], "_t")
+t("Iron Throne Reknor expedition, last words", "expédition du Trône de Fer à Reknor, derniers mots", "_t")
+t("...We are lost. The orcish forces are too great. No matter how many our squad slays, yet more surge from the depths. Where are the cursed creatures coming from?! We have spied their leader, but have had no hope in killing him; he is a beast, a destroyer, burning with fire infernal and ice cruel and chilling. The power these orcs wield now fills me with dread... perhaps they have found new, mighty allies? This news must reach our ruler. My comrades... I am sorry. I will flee once the opportunity arises, but know that your sacrifices will not be in vain. Long may our empire endure.", "...Nous sommes perdus. Les forces orques sont trop nombreuses. Peu importe combien notre escouade en abat, d'autres surgissent encore des profondeurs. D'où viennent ces créatures maudites ? Nous avons repéré leur chef, mais nous n'avons aucun espoir de le tuer ; c'est une bête, un destructeur, brûlant d'un feu infernal et d'une glace cruelle et glaçante. Le pouvoir que ces orcs manient désormais m'emplit d'effroi... peut-être ont-ils trouvé de nouveaux et puissants alliés ? Cette nouvelle doit parvenir à notre souverain. Mes camarades... je suis désolé. Je fuirai dès que l'occasion se présentera, mais sachez que vos sacrifices n'auront pas été vains. Que notre empire perdure longtemps.", "_t")
+t("Deep Bellow excavation report 1", "rapport d'excavation du Grondement des Profondeurs (1)", "_t")
+t([[10 days into initial site survey, hmm! Recent tremors have opened deep new chasms, but we must work cautiously to ensure they're stable before conducting major operations, oh yes! Proceeding well at start, with supports being put in place and no flammable gases detected, hmm hmm.
+
+Some Sher'Tul relics have been found. Perhaps great profit to be had here! High margins on Shaloren market, yes yes.
+
+Some miners saying they feel ill, hrm hrm. The drem fools have likely been gorging on too much mead. Will deduct it from their pay, yes yes!
+
+-- Foreman Tamoth]], [[10 jours dans l'étude initiale du site, hmm ! De récentes secousses ont ouvert de nouveaux gouffres profonds, mais nous devons travailler prudemment pour nous assurer de leur stabilité avant de mener des opérations majeures, oh oui ! Bon début, avec des étais mis en place et aucun gaz inflammable détecté, hmm hmm.
+
+Quelques reliques Sher'Tul ont été trouvées. Peut-être un grand profit à en tirer ici ! Marges élevées sur le marché Shaloréen, oui oui.
+
+Certains mineurs disent se sentir malades, hrm hrm. Ces idiots de Drems se sont sans doute gavés d'hydromel. Je le déduirai de leur paie, oui oui !
+
+-- Contremaître Tamoth]], "_t")
+t("Deep Bellow excavation report 2", "rapport d'excavation du Grondement des Profondeurs (2)", "_t")
+t([[Chasms go deep, yes yes. More relics found, oh yes. Will be mighty profitable! But ah, my secret treasure is even better, indeed! Gold! Beautiful lovely gold, buried deep, so deep... Have kept it hidden, sealed, yes. Looks like the remains of a giant throne. I touched it, yes, I even put my lips to it - ahhh, the taste!
+
+But must stay focussed, much work to be done. Miners are rowdy, hrm! One of the drem fools went mad and killed himself with a pickaxe - messy business. Must restore order, yes yes! More Sher'Tul artifacts found, possibly even remains of weapons. Imagine the profit! Will keep them hidden yes, the dreams say yes, in the darkness, secret, waiting waiting, for the right time...
+
+Hmm, that fellow's blood was so red, spilling on the cavernous floor. I wonder where they buried him? My mouth... it wants to taste, yes yes...
+
+-- Foreman Tamoth]], [[Les gouffres sont profonds, oui oui. Plus de reliques trouvées, oh oui. Ce sera très profitable ! Mais ah, mon trésor secret est encore meilleur, en effet ! De l'or ! Bel or magnifique, enterré profond, si profond... Je l'ai gardé caché, scellé, oui. On dirait les restes d'un trône géant. Je l'ai touché, oui, j'y ai même posé mes lèvres - ahhh, ce goût !
+
+Mais il faut rester concentré, beaucoup de travail à faire. Les mineurs sont agités, hrm ! Un des idiots de Drems est devenu fou et s'est tué avec une pioche - une sale affaire. Il faut rétablir l'ordre, oui oui ! Plus d'artefacts Sher'Tul trouvés, peut-être même des restes d'armes. Imaginez le profit ! Je les garderai cachés, oui, les rêves disent oui, dans l'obscurité, en secret, attendant, attendant le bon moment...
+
+Hmm, le sang de ce type était si rouge, se répandant sur le sol caverneux. Je me demande où ils l'ont enterré ? Ma bouche... elle veut goûter, oui oui...
+
+-- Contremaître Tamoth]], "_t")
+t("Deep Bellow excavation report 3", "rapport d'excavation du Grondement des Profondeurs (3)", "_t")
+t([[Hah, my mouth, it tastes, it feels, hmm hmm. It grows, yes yes! The others are changing, flying, screaming, squelching, warping. Bad for profit, hmm hmm. My teeth, they grow, they hunger, yes. They want to escape!
+
+I can feel in my dreams, the dark depths. Bound, buried, forgotten. My mouth wants to open, to scream, to destroy! Hmm hmm, deep below, yes... Want to get out!
+
+Must stay down here to be close to the dreams, yes yes. Must plant my mouth in the soil and watch it grow! It will devour me, and grow and grow, hmm hmm. It will call from the dark place, and bring back Him from the deepest below, oh yes.
+
+-- Ta...moth... The mouth... yes yes!]], [[Hah, ma bouche, elle goûte, elle sent, hmm hmm. Elle grandit, oui oui ! Les autres changent, volent, hurlent, giclent, se déforment. Mauvais pour le profit, hmm hmm. Mes dents, elles grandissent, elles ont faim, oui. Elles veulent s'échapper !
+
+Je peux sentir dans mes rêves les profondeurs sombres. Liées, enterrées, oubliées. Ma bouche veut s'ouvrir, crier, détruire ! Hmm hmm, tout en bas, oui... Je veux sortir !
+
+Je dois rester ici, en bas, pour être proche des rêves, oui oui. Je dois planter ma bouche dans le sol et la regarder grandir ! Elle me dévorera, et grandira, et grandira encore, hmm hmm. Elle appellera depuis l'endroit sombre, et Le ramènera des profondeurs les plus reculées, oh oui.
+
+-- Ta... moth... La bouche... oui oui !]], "_t")
+
+------------------------------------------------
+section "mod-tome/data/lore/keepsake.lua"
+
+t("keepsake", "souvenir", "newLore category")
+t("A Tranquil Meadow", "Une Prairie Paisible", "_t")
+t([[You've entered a tranquil meadow. Something about this place seems familiar but you're not quite sure.
+The only thing that you are sure of is that it has offered you a moment of rest from the long suffering of your cursed life.
+You feel the hate inside you melt away. You feel as if the curse has subsided for a moment.
+
+This place makes you wonder if there is a way to end the curse.
+And if you can't overcome it you might be able to master it and take back a part of your life.
+Either way, you feel the time has come to do something more about this curse.
+]], [[Vous entrez dans une prairie paisible. Quelque chose dans cet endroit vous semble familier, sans que vous en soyez tout à fait certain.
+La seule chose dont vous êtes sûr, c'est qu'il vous offre un moment de répit dans la longue souffrance de votre vie maudite.
+Vous sentez la haine en vous se dissiper. Vous avez l'impression que la malédiction s'est apaisée, l'espace d'un instant.
+
+Cet endroit vous fait vous demander s'il existe un moyen de mettre fin à la malédiction.
+Et si vous ne pouvez la vaincre, vous pourriez peut-être parvenir à la maîtriser et reprendre une part de votre vie.
+Quoi qu'il en soit, vous sentez que le moment est venu de faire quelque chose de plus au sujet de cette malédiction.
+]], "_t")
+t("A Haunting Dream", "Un Rêve Obsédant", "_t")
+t([[As you wander the meadow you grow more relaxed. You lie down for a moment and close your eyes...
+
+You wake up (if you can call it that) in a vivid dream. A small trail winds through the dense forest.
+The branches of the trees seem to close in around you. The tranquil feeling of the meadow is gone.
+Instead you feel the rising fear and hatred that rule your waking life. Further down the trail you hear voices.
+]], [[Tandis que vous errez dans la prairie, vous vous détendez de plus en plus. Vous vous allongez un instant et fermez les yeux...
+
+Vous vous réveillez (si l'on peut appeler cela ainsi) dans un rêve vivace. Un petit sentier serpente à travers la forêt dense.
+Les branches des arbres semblent se refermer autour de vous. La sensation de paix de la prairie a disparu.
+À la place, vous ressentez la peur et la haine grandissantes qui gouvernent votre vie éveillée. Plus loin sur le sentier, vous entendez des voix.
+]], "_t")
+t("Bander's Notes", "Notes de Bander", "_t")
+t([[#{italic}#You find a folded up piece of paper with some notes on it...#{normal}#
+
+* Mom apparently died like the others but they refuse to say much more about it. I think all of the bodies were burned.
+
+* Terrik mentioned the caravan was having a good year. Profits were great and the usual bandits and thieves were absent. Something scaring them off?
+
+* Some of the dead had 'normal' wounds but some were just 'lifeless' or 'pale'. Jak was found the same way. That was 2 months earlier.
+
+* All of the attackers were spirits or wisps of darkess. As far as I can tell no one was spared attack, though a few survived. I'll need to check their stories.
+
+* People keep mentioning the 3 new hires when I ask about this. Why do they come to mind? I hear Berethh is some kind of hero around these parts. Alva thought Kyless was a rotten person. She's not the only one.
+
+* Someone said "Bander, you ask too many questions." I'll have to give them some time. Even after all these years.
+]], [[#{italic}#Vous trouvez un morceau de papier plié avec des notes...#{normal}#
+
+* Maman est apparemment morte comme les autres, mais ils refusent d'en dire davantage. Je pense que tous les corps ont été brûlés.
+
+* Terrik a mentionné que la caravane avait une bonne année. Les profits étaient excellents et les bandits et voleurs habituels étaient absents. Quelque chose les aurait-il effrayés ?
+
+* Certains des morts avaient des blessures « normales », mais d'autres étaient simplement « inertes » ou « pâles ». Jak a été retrouvé de la même façon. C'était deux mois plus tôt.
+
+* Tous les attaquants étaient des esprits ou des volutes de ténèbres. Autant que je sache, personne n'a été épargné par les attaques, bien que quelques-uns aient survécu. Je devrai vérifier leurs récits.
+
+* Les gens n'arrêtent pas de mentionner les 3 nouvelles recrues quand je pose des questions à ce sujet. Pourquoi me viennent-elles à l'esprit ? On dit que Berethh est une sorte de héros dans ces contrées. Alva pensait que Kyless était quelqu'un de pourri. Elle n'est pas la seule.
+
+* Quelqu'un a dit : « Bander, tu poses trop de questions. » Je devrai leur laisser du temps. Même après toutes ces années.
+]], "_t")
+t("The Acorn", "Le Gland", "_t")
+t([[Along the trail you see something at your feet. It's a small acorn, made of iron. You stare at the acorn for a while and pick it up.
+It belonged to Bander's mom, and before that, his dad. You remember she never went anywhere without it.
+Bander was just a kid then. You wonder how he's turned out. Not well you imagine. Thanks to Berethh, Kyless and you.
+You keep turning the acorn in your hand and squeezing it until the cold iron bites into your skin.
+That gives you comfort somehow. Unable to part with it, you put it in your pack.
+]], [[Le long du sentier, vous voyez quelque chose à vos pieds. C'est un petit gland, fait de fer. Vous fixez le gland un moment, puis le ramassez.
+Il appartenait à la mère de Bander, et avant elle, à son père. Vous vous souvenez qu'elle n'allait jamais nulle part sans lui.
+Bander n'était alors qu'un enfant. Vous vous demandez ce qu'il est devenu. Rien de bon, imaginez-vous. Grâce à Berethh, Kyless, et à vous.
+Vous continuez à faire tourner le gland dans votre main, le serrant jusqu'à ce que le fer froid morde votre peau.
+Cela vous apporte un certain réconfort. Incapable de vous en séparer, vous le rangez dans votre sac.]], "_t")
+t("The Merchant Caravan", "La Caravane Marchande", "_t")
+t([[The trail leads out to a clearing where a group of people sit around talking.	
+This is the merchant caravan you once belonged to. You haven't thought of them for a long time, but now they haunt your dreams.
+
+You suddenly realize how much you despise them now. Is it this hate that fuels your curse?
+They wanted to kill you, but left you to die instead. They could feel what you had become.
+And they can feel it now. Each in turn grabs a weapon and begins to head your way...
+]], [[Le sentier mène à une clairière où un groupe de gens est assis, discutant.	
+C'est la caravane marchande à laquelle vous apparteniez autrefois. Vous n'aviez pas pensé à eux depuis longtemps, mais désormais ils hantent vos rêves.
+
+Vous réalisez soudain à quel point vous les méprisez maintenant. Est-ce cette haine qui alimente votre malédiction ?
+Ils voulaient vous tuer, mais vous ont laissé mourir à la place. Ils pouvaient sentir ce que vous étiez devenu.
+Et ils peuvent le sentir maintenant. Chacun à son tour saisit une arme et commence à s'avancer vers vous...
+]], "_t")
+t("The Dream's End", "La Fin du Rêve", "_t")
+t([[You wake up in the tranquil meadow, feeling refreshed. The dream seemed to release you from a burden you've been carrying.
+As you lie there you notice yourself turning something around in your hand. It is the small acorn from the dream.
+You open your hand and see that it has been stained with someone else's blood. You grip the acorn tighter until you can feel the pain of the biting iron.
+
+Your hate is burning inside you again. If it has to be released then there is only one person who deserves it more than anyone.
+He had a sanctuary: a cave where he would store his 'profits'. Perhaps you could find him there.
+
+As you look around the meadow you realize what this place is and perhaps what drew you here.
+Kyless had taken you this way once. On the north side of the meadow was a secret path that led to his cave.
+]], [[Vous vous réveillez dans la prairie paisible, vous sentant régénéré. Le rêve semble vous avoir libéré d'un fardeau que vous portiez.
+Allongé là, vous remarquez que vous faites tourner quelque chose dans votre main. C'est le petit gland du rêve.
+Vous ouvrez la main et voyez qu'il a été taché du sang de quelqu'un d'autre. Vous serrez le gland plus fort, jusqu'à sentir la douleur du fer mordant.
+
+Votre haine brûle de nouveau en vous. Si elle doit être libérée, il n'y a qu'une seule personne qui la mérite plus que quiconque.
+Il possédait un sanctuaire : une grotte où il entreposait ses « profits ». Peut-être pourriez-vous l'y trouver.
+
+En regardant autour de vous dans la prairie, vous comprenez ce qu'est cet endroit, et peut-être ce qui vous y a attiré.
+Kyless vous avait emmené par ici, une fois. Sur le côté nord de la prairie se trouvait un chemin secret menant à sa grotte.
+]], "_t")
+t("The Stone Marker", "Le Marqueur de Pierre", "_t")
+t([[#{italic}#You find a stone marker at the entrance to a sealed off cave...#{normal}#
+#{bold}#Do Not Enter#{normal}#
+
+This cave holds a danger that should never be released upon this world again. Break the seal and you will suffer.
+
+* Under the protection of Berethh
+]], [[#{italic}#Vous trouvez un marqueur de pierre à l'entrée d'une grotte scellée...#{normal}#
+#{bold}#Défense d'Entrer#{normal}#
+
+Cette grotte renferme un danger qui ne doit plus jamais être relâché sur ce monde. Brisez le sceau et vous en souffrirez.
+
+* Sous la protection de Berethh
+]], "_t")
+t("The Sealed Cave", "La Grotte Scellée", "_t")
+t([[The entrance to the cave appears to be sealed. There are many strange markings and glyphs carved into the rock.
+You suspect the cave is protected by some kind of natural magic.
+
+It looks as if the protections were meant to keep someone in. You don't think it would be difficult to force the door from the outside.
+]], [[L'entrée de la grotte semble scellée. De nombreuses marques et glyphes étranges sont gravés dans la roche.
+Vous soupçonnez que la grotte est protégée par une sorte de magie naturelle.
+
+On dirait que les protections étaient destinées à retenir quelqu'un à l'intérieur. Vous pensez qu'il ne serait pas difficile de forcer la porte depuis l'extérieur.]], "_t")
+t("The Battle of the Cave", "La Bataille de la Grotte", "_t")
+t([[You step into the cave and give your eyes a moment to adjust to the darkness.
+There are signs of an old battle here. Two skeletons lie on the floor dressed in hand-crafted armor, their simple but well-made weapons still in hand.
+The bodies don't look old enough to have decomposed but seem rather gnawed on. The remains of several large dogs also lie nearby.
+Suddenly you catch movement in the corner. One of the dogs appears to be alive. It's lean and dirty and has an unnatural way of moving.
+That's when you notice shadows move across the floor towards the dog. The animal lifts its head as if listening to something.
+Together the dog and the shadows rise up to face you.
+]], [[Vous pénétrez dans la grotte et laissez à vos yeux le temps de s'ajuster à l'obscurité.
+Il y a ici des traces d'une ancienne bataille. Deux squelettes gisent au sol, vêtus d'armures artisanales, leurs armes simples mais bien faites encore en main.
+Les corps ne semblent pas assez anciens pour s'être décomposés, mais paraissent plutôt rongés. Les restes de plusieurs grands chiens gisent également à proximité.
+Soudain, vous percevez un mouvement dans un coin. L'un des chiens semble être vivant. Il est maigre et sale, et se déplace d'une façon peu naturelle.
+C'est alors que vous remarquez des ombres glissant sur le sol en direction du chien. L'animal lève la tête comme s'il écoutait quelque chose.
+Ensemble, le chien et les ombres se dressent pour vous faire face.
+]], "_t")
+t("Kyless' Journal: First Entry", "Journal de Kyless : Premier Récit", "_t")
+t([[#{italic}#This is a page from what you assume is Kyless' journal.#{normal}#
+
+I finally made it out. I don't think I could stay another year on that farm.
+Dad had no ambition. Every time I went with him to sell our crop he took whatever the merchants offered him.
+When the job with the caravan came up, how could I not take it? I'm sure I'll be back to see the parents soon.
+So far the work at the caravan is pretty dull. I've been paying attention to the merchants though.
+They let me follow them on their trips into the towns. I'm learning a lot. In time I may become one of them.
+The caravan hired a couple of other porters too. They won't say but I think the last ones were killed in some kind of raid.
+I'll have to learn to defend myself or let others do it for me. Still, this is better than being a farmer.
+]], [[#{italic}#Ceci est une page de ce que vous supposez être le journal de Kyless.#{normal}#
+
+J'ai enfin réussi à partir. Je ne crois pas que j'aurais pu supporter une année de plus dans cette ferme.
+Papa n'avait aucune ambition. Chaque fois que je l'accompagnais pour vendre notre récolte, il acceptait tout ce que les marchands lui offraient.
+Quand l'emploi avec la caravane s'est présenté, comment aurais-je pu refuser ? Je suis sûr que je reviendrai voir mes parents bientôt.
+Pour l'instant, le travail à la caravane est plutôt ennuyeux. Mais j'ai fait attention aux marchands.
+Ils me laissent les suivre lors de leurs déplacements en ville. J'apprends beaucoup. Avec le temps, je pourrais devenir l'un d'eux.
+La caravane a aussi engagé deux autres porteurs. Ils ne le disent pas, mais je pense que les précédents ont été tués lors d'une sorte de raid.
+Je devrai apprendre à me défendre, ou laisser d'autres le faire pour moi. Malgré tout, c'est mieux qu'être fermier.
+]], "_t")
+t("Kyless' Journal: Second Entry", "Journal de Kyless : Deuxième Récit", "_t")
+t([[#{italic}#This is a page from what you assume is Kyless' journal.#{normal}#
+
+Berethh found something in the woods...a dead man and a few dead trolls.
+At first we thought they killed each other but there weren't any wounds we could see. It was something awful though; you could see it in their faces.
+Berethh just wanted to leave. He didn't like the way it felt. But I just couldn't pass up a free opportunity like that.
+They had some money on them and some other things which we divided up. The man also had a book, which I took.
+I've been studying it. It seems like some kind of magic, but nothing like any of the magic I've heard in stories.
+It's more like a language. A way of thinking or calling out with your mind. I'm learning it now.
+I hear what sound like whispers in my head. And I've found I can whisper back.
+My mind can reach out. Control things. Control people. But there's more. Something is out there. I have to reach out.
+Once I've mastered this I may be able to use it to advance in the caravan. I'm tired of just being a porter.
+]], [[#{italic}#Ceci est une page de ce que vous supposez être le journal de Kyless.#{normal}#
+
+Berethh a trouvé quelque chose dans les bois... un homme mort et quelques trolls morts.
+Au début, nous avons pensé qu'ils s'étaient entretués, mais il n'y avait aucune blessure visible. C'était pourtant quelque chose d'affreux ; on pouvait le voir sur leurs visages.
+Berethh voulait juste partir. Il n'aimait pas la sensation que ça lui donnait. Mais moi, je ne pouvais pas laisser passer une occasion gratuite comme celle-là.
+Ils avaient de l'argent sur eux ainsi que quelques autres objets, que nous avons partagés. L'homme avait aussi un livre, que j'ai pris.
+Je l'ai étudié. Cela ressemble à une sorte de magie, mais rien de comparable à celle dont j'ai entendu parler dans les histoires.
+C'est plutôt comme une langue. Une façon de penser ou d'appeler avec son esprit. Je suis en train de l'apprendre.
+J'entends ce qui ressemble à des chuchotements dans ma tête. Et j'ai découvert que je pouvais chuchoter en retour.
+Mon esprit peut s'étendre. Contrôler des choses. Contrôler des gens. Mais il y a plus. Quelque chose se trouve là-dehors. Je dois l'atteindre.
+Une fois que j'aurai maîtrisé cela, je pourrai peut-être m'en servir pour progresser dans la caravane. Je suis fatigué d'être simple porteur.
+]], "_t")
+t("Kyless' Journal: Third Entry", "Journal de Kyless : Troisième Récit", "_t")
+t([[#{italic}#This is a page from what you assume is Kyless' journal.#{normal}#
+
+I've come so far in the last year. The other merchants listen to me now. They think I have a real gift for trade.
+The weak-minded peasants we trade with are so easy to control though. They practically give me their money.
+But the real money and power rests with the bandits. Those two that ambushed me got what they deserved. So did the rest of their camp.
+The fear on their faces when I struck was priceless. They must have had more gold than the caravan makes in a year!
+I got some help carrying it off to a nearby cave. A few more encounters like that and I'll be rich.
+Until then, I'll stay with the caravan. The only prolem is Jak. He doesn't trust me.
+I guess I threaten his authority. Not sure what I'll have to do about that...
+]], [[#{italic}#Ceci est une page de ce que vous supposez être le journal de Kyless.#{normal}#
+
+J'ai fait tant de progrès au cours de la dernière année. Les autres marchands m'écoutent maintenant. Ils pensent que j'ai un vrai don pour le commerce.
+Les paysans à l'esprit faible avec qui nous commerçons sont pourtant si faciles à contrôler. Ils me donnent pratiquement leur argent.
+Mais le véritable argent, et le véritable pouvoir, appartiennent aux bandits. Ces deux-là qui m'ont tendu une embuscade ont eu ce qu'ils méritaient. Tout comme le reste de leur camp.
+La peur sur leurs visages quand j'ai frappé n'avait pas de prix. Ils devaient avoir plus d'or que ce que la caravane gagne en une année entière !
+J'ai eu de l'aide pour le transporter jusqu'à une grotte proche. Encore quelques rencontres comme celle-là et je serai riche.
+D'ici là, je resterai avec la caravane. Le seul problème, c'est Jak. Il ne me fait pas confiance.
+Je suppose que je menace son autorité. Je ne sais pas encore ce que je devrai faire à ce sujet...
+]], "_t")
+t("Kyless' Journal: Fourth Entry", "Journal de Kyless : Quatrième Récit", "_t")
+t([[#{italic}#This is a page from what you assume is Kyless' journal.#{normal}#
+
+Berethh! He must have followed me back to the cave. How could he know I was behind the attacks?
+And now he's betrayed me. We were friends once! It seems he's made some new friends in these parts.
+I thought I could retreat back into the cave. Take them in the darkness like I always do.
+But they didn't follow. He must have known I was too strong.
+The entrance has been sealed now. I can't seem to break it. Nothing I've tried works.
+It's as though the seal were alive, growing stronger with every attack. Berethh must have planned this carefully.
+I'm sure I can overcome his wards though. I just need some time to grow my power.
+]], [[#{italic}#Ceci est une page de ce que vous supposez être le journal de Kyless.#{normal}#
+
+Berethh ! Il a dû me suivre jusqu'à la grotte. Comment a-t-il pu savoir que j'étais derrière les attaques ?
+Et maintenant, il m'a trahi. Nous étions amis, autrefois ! Il semble s'être fait de nouveaux amis dans cette région.
+Je pensais pouvoir me replier dans la grotte. Les prendre dans l'obscurité, comme je le fais toujours.
+Mais ils ne m'ont pas suivi. Il a dû comprendre que j'étais trop fort.
+L'entrée est désormais scellée. Je n'arrive pas à la briser. Rien de ce que j'ai essayé ne fonctionne.
+C'est comme si le sceau était vivant, se renforçant à chaque attaque. Berethh a dû planifier cela avec soin.
+Je suis sûr que je peux surmonter ses protections. J'ai juste besoin de temps pour accroître mon pouvoir.
+]], "_t")
+t("The Vault", "La Chambre Forte", "_t")
+t([[You find yourself at the entrance to a small room.
+It's one of the vaults that Kyless used to store the valuable things he recovered on his excursions.
+For a cut you had helped him carry stuff down here. You made some pretty good money off him.
+Funny how it seemed like such a fortune then. The loot of petty bandits.
+You should have turned your back on him. Things got pretty bad toward the end.
+You knew he was greedy and ambitious but you didn't realize how cold-hearted he was.
+You never thought he would go after the caravan. How could you have known?
+You've tried to forget that day for a long time. You've tried to forget what he did to those people.
+And those things of his almost killed you too. But maybe you were cursed long before that day ever happened.
+]], [[Vous vous retrouvez à l'entrée d'une petite pièce.
+C'est l'une des chambres fortes que Kyless utilisait pour entreposer les objets de valeur récupérés lors de ses expéditions.
+Contre une part du butin, vous l'aviez aidé à transporter des choses ici. Vous en aviez tiré pas mal d'argent.
+C'est étrange comme cela semblait une telle fortune à l'époque. Le butin de bandits mineurs.
+Vous auriez dû lui tourner le dos. Les choses ont pris une bien mauvaise tournure vers la fin.
+Vous saviez qu'il était cupide et ambitieux, mais vous n'aviez pas réalisé à quel point il avait le cœur froid.
+Vous n'auriez jamais pensé qu'il s'en prendrait à la caravane. Comment auriez-vous pu le savoir ?
+Vous avez longtemps essayé d'oublier ce jour-là. Vous avez essayé d'oublier ce qu'il a fait à ces gens.
+Et ces créatures à lui ont failli vous tuer aussi. Mais peut-être étiez-vous déjà maudit bien avant que ce jour n'arrive.
+]], "_t")
+t([[A figure squats in the darkness with his face turned your way. At first you're not sure if Kyless recognizes you.
+His face seems twisted by hunger and madness. But soon it softens and he begins to look more like the Kyless of old.
+He speaks your name in recognition but doesn't move. Slowly, almost imperceptibly, the air in the room begins to change.
+A charge seems to fill the space around you. Small gusts of wind pick up and scatter dust across the floor.
+You feel as if the room itself is coming to bear upon you. Kyless smiles and then attacks.
+]], [[Une silhouette est accroupie dans l'obscurité, le visage tourné vers vous. Au premier abord, vous n'êtes pas sûr que Kyless vous reconnaisse.
+Son visage semble déformé par la faim et la folie. Mais bientôt il s'adoucit, et il commence à ressembler davantage au Kyless d'autrefois.
+Il prononce votre nom en signe de reconnaissance, mais ne bouge pas. Lentement, presque imperceptiblement, l'air de la pièce commence à changer.
+Une tension semble emplir l'espace autour de vous. De petites rafales de vent se lèvent et dispersent la poussière sur le sol.
+Vous avez l'impression que la pièce elle-même pèse sur vous. Kyless sourit, puis attaque.
+]], "_t")
+t("Keepsake", "Souvenir", "_t")
+t([[Berethh lies dead. Kyless has been destroyed. The merchant caravan wiped out. Nothing of your past remains.
+You thought you might find answers in this place but you have been left with only one certainty. You are cursed.
+As you try to push these thoughts out of your mind, you find yourself turning the iron acorn in your hand.
+The cold iron hardens your resolve. Whether the curse consumes you or not, you will press on.
+As the iron cuts your flesh, you slowly become aware of a sound coming from the direction of the meadow.
+Dogs barking. Following that come the voices of men. These must be Berethh's companions. Arriving too late.
+You rise and prepare to kill again.
+]], [[Berethh gît, mort. Kyless a été détruit. La caravane marchande, anéantie. Rien de votre passé ne subsiste.
+Vous pensiez pouvoir trouver des réponses en ce lieu, mais il ne vous reste qu'une seule certitude. Vous êtes maudit.
+Alors que vous tentez de chasser ces pensées de votre esprit, vous vous surprenez à faire tourner le gland de fer dans votre main.
+Le fer froid raffermit votre résolution. Que la malédiction vous consume ou non, vous continuerez d'avancer.
+Tandis que le fer entaille votre chair, vous prenez lentement conscience d'un bruit venant de la direction de la prairie.
+Des chiens qui aboient. Suivent alors des voix d'hommes. Ce doivent être les compagnons de Berethh. Arrivant trop tard.
+Vous vous levez et vous préparez à tuer de nouveau.
+]], "_t")
+t([[Berethh lies dead. Kyless has been destroyed. The merchant caravan wiped out. Nothing of your past remains.
+You thought you might find answers in this place but you have been left with only one certainty. You are cursed.
+As you try to push these thoughts out of your mind, you find yourself turning the iron acorn in your hand.
+The acorn now serves as a focus for your anger. Though the curse may consume you, there are many who deserve your wrath. And they will feel it.
+As the iron cuts your flesh, you slowly become aware of a sound coming from the direction of the meadow.
+Dogs barking. Following that come the voices of men. These must be Berethh's companions. Arriving too late.
+You rise and prepare to kill again.
+]], [[Berethh gît, mort. Kyless a été détruit. La caravane marchande, anéantie. Rien de votre passé ne subsiste.
+Vous pensiez pouvoir trouver des réponses en ce lieu, mais il ne vous reste qu'une seule certitude. Vous êtes maudit.
+Alors que vous tentez de chasser ces pensées de votre esprit, vous vous surprenez à faire tourner le gland de fer dans votre main.
+Le gland sert désormais de point de focalisation pour votre colère. Bien que la malédiction puisse vous consumer, nombreux sont ceux qui méritent votre courroux. Et ils le sentiront.
+Tandis que le fer entaille votre chair, vous prenez lentement conscience d'un bruit venant de la direction de la prairie.
+Des chiens qui aboient. Suivent alors des voix d'hommes. Ce doivent être les compagnons de Berethh. Arrivant trop tard.
+Vous vous levez et vous préparez à tuer de nouveau.
+]], "_t")
+
+
+------------------------------------------------
+section "mod-tome/data/lore/kor-pul.lua"
+
+t("journal page (kor'pul)", "page de journal (kor'pul)", "_t")
+t([[Damn that Zemekkys! Damn his insane experiments!! Why in the blackest night did I ever agree to take part in them?!
+
+Oh yeah, because I was broke. Bah...
+
+I think I might have considered things differently had I known I'd be transported without my clothes though! Imagine my embarrassment turning up in a foreign land, with my... my unmentionables on display... Thankfully I managed to borrow a robe from a friendly farmer, and did some work for him to earn gold enough for a bit of food, a journal, and a rusty old sword. When I heard there were ruins filled with undead nearby I knew my calling had come! So here I am, mighty Sun Paladin Telthar, to prove my strength in these foreign lands of the west!
+
+But all I've found so far is rats. I hate rats...]], [[Maudit soit ce Zemekkys ! Maudites soient ses expériences insensées ! Pourquoi, par la nuit la plus noire, ai-je accepté d'y participer ?!
+
+Ah oui, parce que j'étais fauché. Bah...
+
+Je pense que j'aurais peut-être réfléchi différemment si j'avais su que je serais transporté sans mes vêtements ! Imaginez mon embarras, arrivant dans une terre étrangère, avec mes... mes parties intimes à l'air... Heureusement, j'ai réussi à emprunter une robe à un fermier amical, et j'ai fait quelques travaux pour lui afin de gagner assez d'or pour un peu de nourriture, un journal, et une vieille épée rouillée. Quand j'ai appris qu'il y avait des ruines infestées de morts-vivants à proximité, j'ai su que mon heure était venue ! Me voici donc, le puissant Paladin solaire Telthar, prêt à prouver ma force dans ces terres étrangères de l'ouest !
+
+Mais tout ce que j'ai trouvé jusqu'à présent, ce sont des rats. Je déteste les rats...]], "_t")
+t([[Aha, I have found the accursed undead that plague this nefarious dungeon! The skeletal fool was thankfully no match for me! I suppose it helped that he had no arms...
+
+I've found myself an old shield that in spite of a few dents seems serviceable enough. Some of these rats are BIG, and giving them a strong bash with the shield helps to stop their poisonous bites before I get my sword to their necks. I also found a few gems - I may have to hunt round for more. Not out of any personal greed of course, but my noble quest requires that I gather resources to defeat the great evils in this land and back home!
+
+Diamonds are my favourite, so sparkly.]], [[Ah ah, j'ai trouvé les maudits morts-vivants qui infestent ce donjon néfaste ! L'imbécile squelettique n'a heureusement pas fait le poids face à moi ! Je suppose que le fait qu'il n'ait pas de bras a aidé...
+
+J'ai trouvé un vieux bouclier qui, malgré quelques bosses, semble encore utilisable. Certains de ces rats sont ÉNORMES, et leur assener un bon coup de bouclier permet d'arrêter leurs morsures venimeuses avant que je ne plante mon épée dans leur cou. J'ai aussi trouvé quelques gemmes - je devrai peut-être en chercher davantage. Non pas par une quelconque cupidité personnelle, bien sûr, mais parce que ma noble quête exige que je rassemble des ressources pour vaincre les grands maux de cette terre, et de mon pays natal !
+
+Les diamants sont mes préférés, tellement étincelants.]], "_t")
+t([[This place is infested! I've found a lot of skeletons now, and unfortunately most of them have borne a full set of limbs. However, my holy quest cannot be denied! Plus I got a really great sword off one of the blighters, I can chop anything up easily now!
+
+The skeletal mages have been a night-born nuisance, but I've found a new weapon to use against them - a phase door rune! As soon as I catch sight of one of the robed wretches I activate my rune and foom, I'm away!
+
+It's not fleeing, it's just tactical repositioning...
+]], [[Cet endroit est infesté ! J'ai trouvé de nombreux squelettes maintenant, et malheureusement, la plupart d'entre eux étaient pourvus de tous leurs membres. Cependant, ma sainte quête ne saurait être niée ! De plus, j'ai récupéré une très belle épée sur l'un de ces vermines, je peux désormais tout découper avec facilité !
+
+Les mages squelettiques se sont révélés être une nuisance nocturne, mais j'ai trouvé une nouvelle arme à utiliser contre eux : une rune de porte de phase ! Dès que j'aperçois l'un de ces misérables en robe, j'active ma rune et fouf, je disparais !
+
+Ce n'est pas fuir, c'est simplement un repositionnement tactique...
+]], "_t")
+t([[Kor'Pul, Kor'Pul... When the farmer told me what this place was called it reminded me of something, and I think it's coming back to me now. My mother used to tell me a story about our ancestors, how they fled by ship to escape the grasp of an evil sorcerer who dominated the lands. The sorcerer was a vile necromancer who took advantage of the destruction from the Spellblaze and the Cataclysm to create huge armies of undead. The people fought against him time and time again, but though he would be defeated he would still come back, sometimes after hundreds of years. And that sorcerer's name was.... Kor'Pul.
+
+Probably just a coincidence.]], [[Kor'Pul... Kor'Pul... Quand le fermier m'a dit comment cet endroit s'appelait, cela m'a rappelé quelque chose, et je crois que cela me revient maintenant. Ma mère avait l'habitude de me raconter une histoire sur nos ancêtres, comment ils avaient fui par bateau pour échapper à l'emprise d'un sorcier maléfique qui dominait ces terres. Le sorcier était un vil nécromancien qui avait profité de la destruction causée par la Brûlure Magique et le Cataclysme pour créer d'immenses armées de morts-vivants. Le peuple le combattit maintes et maintes fois, mais bien qu'il fût vaincu, il revenait toujours, parfois des centaines d'années plus tard. Et le nom de ce sorcier était... Kor'Pul.
+
+Sans doute une simple coïncidence.]], "_t")
+t([[It's quiet down here. And dark... very dark. I suppose I should have brought a lantern. Our motto is to bring light into dark places, but I guess I should have thought about that in practical terms. I've cleared out pretty much all of this area, and there's not much left to explore beyond this last room.
+
+This adventuring stuff is quite lonely, I must say. I guess keeping this journal helps a bit. I miss home a lot now. I miss... I miss Falia. Maybe I should have said something to her about how I feel... but I guess running away on an adventure seemed easier. Pah, how brave of me...
+
+I'm not cut out for this paladin work. Here I am, alone in a horrible dark dungeon in an unknown land, without a single sound to keep me company beyond the scratchings of my own quill. Hmm, except for--]], [[C'est calme, ici-bas. Et sombre... très sombre. J'aurais sans doute dû apporter une lanterne. Notre devise est d'apporter la lumière dans les lieux obscurs, mais j'imagine que j'aurais dû y penser en termes pratiques. J'ai nettoyé presque toute cette zone, et il ne reste plus grand-chose à explorer au-delà de cette dernière salle.
+
+Cette histoire d'aventure est plutôt solitaire, je dois l'avouer. Je suppose que tenir ce journal m'aide un peu. Le pays me manque beaucoup en ce moment. Elle me manque... Falia me manque. J'aurais peut-être dû lui dire quelque chose sur ce que je ressens... mais je suppose que fuir dans une aventure semblait plus simple. Pff, comme j'ai été courageux...
+
+Je ne suis pas fait pour ce travail de paladin. Me voici, seul dans un horrible donjon obscur, dans une terre inconnue, sans le moindre son pour me tenir compagnie hormis le grattement de ma propre plume. Hmm, à part--]], "_t")
+
+
+------------------------------------------------
+section "mod-tome/data/lore/fearscape.lua"
+
+t("fearscape", "plan de la peur", "newLore category")
+t("a fearsome sight", "une vision terrifiante", "_t")
+t([[You stand in a field of fire, the flames dancing back and forth like blaze-spawned corn waving in the wind. It licks your feet, your skin, your face, and writhes around in tiny shapes which tear across your flesh and crawl down your throat. It burns and blazes through your body, and crazed thoughts fill your mind. This is Goedalath they tell you, the Fearscape, and you have no rightful place here.
+
+In the distance you see looming, demonic shapes of absolute darkness, towering above the blazing land like wardens of doom. The sky is black, but above your head hangs a round world that you recognise as Eyal. Across the burning plains gather armies of fiendish figures, and glowing eyes turn up with hateful glowers to your home world. Suddenly both you and it and seem small and frail. As the flames fill your body with pain your only thought is of escape.]], [[Vous vous tenez dans un champ de feu, les flammes dansant d'avant en arrière comme des épis de maïs nés du brasier ondulant au vent. Le feu lèche vos pieds, votre peau, votre visage, et se tord en minuscules formes qui déchirent votre chair et rampent dans votre gorge. Il brûle et embrase tout votre corps, et des pensées démentes envahissent votre esprit. C'est Goedalath, vous dit-on, le Plan de la peur, et vous n'y avez aucune place légitime.
+
+Au loin, vous apercevez des silhouettes démoniaques, imposantes, faites de ténèbres absolues, se dressant au-dessus des terres embrasées comme des gardiens de la fatalité. Le ciel est noir, mais au-dessus de votre tête pend un monde rond que vous reconnaissez comme étant Eyal. À travers les plaines brûlantes se rassemblent des armées de silhouettes démoniaques, et des yeux luisants se tournent avec une haine ardente vers votre monde natal. Soudain, vous-même et lui semblez tout deux petits et fragiles. Tandis que les flammes emplissent votre corps de douleur, votre seule pensée est de fuir.]], "_t")
+t("sacrificial altar", "autel sacrificiel", "_t")
+t([[You see a female human lying unconscious on a black altar, twisted sigils scored into her naked flesh.
+Around her are several figures in dark robes.
+
+As they notice you one calls out 'Intruder! Protect the seed of Kryl-Feijan!']], [[Vous voyez une femme humaine, inconsciente, allongée sur un autel noir, des sceaux tordus gravés dans sa chair nue.
+Autour d'elle se tiennent plusieurs silhouettes vêtues de robes sombres.
+
+En vous remarquant, l'une d'elles s'écrie : « Intrus ! Protégez la graine de Kryl-Feijan ! »]], "_t")
+
+------------------------------------------------
+section "mod-tome/data/lore/fun.lua"
+
+t("misc", "divers", "newLore category")
+t("trollish poem", "poème trollesque", "_t")
+t([[#{bold}#"Me Likes to Club"
+
+#{italic}#Club club club,
+Grab some grub!
+When hunger hits,
+Me likes to club!
+
+Little halfling,
+Furry feet,
+Smash his brains,
+Tasty meat!
+
+Skinny elf,
+Eyes so blue,
+Crush his bones,
+Make elf stew!
+
+Hairy dwarf,
+Smells like dirt,
+Cook him long,
+Or stomach hurt!
+
+Stupid human,
+Has no fear,
+Looks surprised,
+When me eats his ear!
+
+Club club club,
+Grab some grub!
+When hunger hits,
+Me likes to club!#{normal}#]], [[#{bold}#"Moi Aime Taper"
+
+#{italic}#Tape tape tape,
+Prends de la bouffe !
+Quand la faim arrive,
+Moi aime taper !
+
+Petit Halfelin,
+Pied poilu,
+Écrase son crâne,
+Viande bien goûtue !
+
+Elfe maigrichon,
+Yeux si bleus,
+Broie ses os,
+Fais ragoût savoureux !
+
+Nain tout velu,
+Sent la crasse,
+Cuis-le longtemps,
+Sinon ça casse !
+
+Humain stupide,
+N'a pas peur,
+A l'air surpris,
+Quand moi mange son cœur !
+
+Tape tape tape,
+Prends de la bouffe !
+Quand la faim arrive,
+Moi aime taper !#{normal}#]], "_t")
+t("necromancer poem", "poème du nécromancien", "_t")
+t([[#{bold}#"The Necromancer's Canticle"
+
+#{italic}#Saved from coffin, casket, urn
+Darkness falls, but life returns!
+Flesh may fall and bone may burn
+But soul remains, for which we yearn
+
+Those we return to life's esteem
+We see their hearts, their eyes do gleam
+They rave! They kill! They gnash! They scream!
+So full of joy! Their greatest dream!
+
+Returning those that we amend
+They hurry home, a distant friend
+But do they cheer? Do they commend?
+They yell! Does rotting flesh offend?
+
+We bring life to lifeless bone
+But do they smile? Do they condone?
+They sit upon their golden thrones
+They shun us, spurn us, make unknown
+
+Fools! Sit high in golden tower
+From your lofty perch you glower
+Time will come when you will cower
+We rule death, we wield the power
+#{normal}#]], [[#{bold}#"Le Cantique du Nécromancien"
+
+#{italic}#Sauvés du cercueil, de la bière, de l'urne,
+Les ténèbres tombent, mais la vie retourne !
+La chair peut choir, les os peuvent brûler,
+Mais l'âme demeure, que nous chérissons sans cesser.
+
+Ceux que nous rendons à l'estime de la vie,
+Nous voyons leurs cœurs, leurs yeux qui reluisent,
+Ils délirent ! Ils tuent ! Ils grincent ! Ils hurlent !
+Tant de joie ! Leur plus grand rêve se déroule !
+
+Ramenant ceux que nous réparons,
+Ils se hâtent vers un ami lointain,
+Mais applaudissent-ils ? Nous félicitent-ils donc ?
+Ils crient ! La chair pourrissante les offense-t-elle enfin ?
+
+Nous donnons vie à l'os sans vie,
+Mais sourient-ils ? Approuvent-ils ?
+Ils trônent sur leurs sièges dorés,
+Nous fuient, nous rejettent, nous font ignorés.
+
+Idiots ! Assis haut dans leur tour dorée,
+Du haut de leur perchoir vous nous toisez,
+Le temps viendra où vous vous recroquevillerez,
+Nous régnons sur la mort, le pouvoir, nous le maîtrisons.
+#{normal}#]], "_t")
+t("how to be a necromancer, part 1", "comment devenir nécromancien, partie 1", "_t")
+t([[#{bold}#THE GLORIOUS ART#{normal}#
+
+Have you cast away the feeble pretensions of your society? Does your soul thirst for the taste of real power? Do you wish to have the strength to deny that most prevalent force, death itself? The glorious art of necromancy shall fulfil your wishes in ways you couldn't possibly imagine.
+
+#{italic}#1. Your First Steps#{normal}#
+
+Be aware, necromancy isn't all weaving mighty spells of undeath, wearing flowing black robes and crushing entire nations beneath the feet of your mighty undead horde; you'll have to put in some elbow grease as well. Your first few bodies will have to be stolen away personally as few people will aid a necromancer willingly, and those that do are rarely competent. The cemeteries of small towns and villages are good sites for your first acquisitions, but if time demands it don't be afraid to "make" some specimens of your own with the aid of a sharp knife or heavy bludgeon. Once you have your first minions out performing your bidding you needn't worry about resources any longer; opportunities to practice your art will, quite literally, pile up.
+
+Also important is the upkeep of the bodies themselves. True, this is not strictly necessary as sufficient enchantment can bestow mobility upon even the most ruined and incomplete remains, but making sure that the joints and cruses of your prospective minions move freely and with ease much reduces the will required to grant them reanimation. It also makes for a sturdy and reliable base in case you desire to undertake larger, more audacious projects (see 46. Bone Giants & You).
+
+Still not sure what to do? Then suffer and perish. Necromancy does not abide the inept.]], [[#{bold}#L'ART GLORIEUX#{normal}#
+
+Avez-vous rejeté les prétentions ridicules de votre société ? Votre âme a-t-elle soif de goûter au vrai pouvoir ? Désirez-vous posséder la force de défier cette force la plus universelle qui soit, la mort elle-même ? L'art glorieux de la nécromancie comblera vos vœux d'une manière que vous ne pourriez même pas imaginer.
+
+#{italic}#1. Vos Premiers Pas#{normal}#
+
+Sachez-le, la nécromancie ne se résume pas à tisser de puissants sorts de non-mort, à porter d'amples robes noires et à écraser des nations entières sous les pieds de votre puissante horde de morts-vivants ; il vous faudra aussi vous salir un peu les mains. Vos tout premiers corps devront être dérobés en personne, car peu de gens aideront volontiers un nécromancien, et ceux qui le font sont rarement compétents. Les cimetières des petites villes et villages sont de bons endroits pour vos premières acquisitions, mais si le temps l'exige, n'hésitez pas à « fabriquer » vous-même quelques spécimens à l'aide d'un couteau aiguisé ou d'une lourde massue. Une fois que vos premiers larbins exécutent vos ordres, vous n'aurez plus à vous soucier de ressources ; les occasions de pratiquer votre art s'accumuleront, littéralement.
+
+L'entretien des corps eux-mêmes est également important. Certes, cela n'est pas strictement nécessaire, car un enchantement suffisant peut conférer de la mobilité même aux restes les plus délabrés et incomplets, mais s'assurer que les articulations et jointures de vos futurs larbins bougent librement et sans effort réduit considérablement la volonté nécessaire pour leur accorder la réanimation. Cela constitue aussi une base solide et fiable si vous souhaitez entreprendre des projets plus vastes et plus audacieux (voir page 46, Les Géants d'Ossements et Vous).
+
+Toujours pas sûr de ce qu'il faut faire ? Alors souffrez et périssez. La nécromancie ne tolère pas les incapables.]], "_t")
+t("how to be a necromancer, part 2", "comment devenir nécromancien, partie 2", "_t")
+t([[#{italic}#2. Domination Of The Deceased#{normal}#
+
+A contentious issue arises when it comes time to breathe life into your gathered specimens - do you raise them as lifeless drones, or do you bind the souls of the deceased within their vessels once more? There is much disagreement on this between the various movements of necromancers. The Beinagrind method of necromancy extols the torturous imprisonment of the soul as fundamental; the anguish generated by the captive spirit makes for a much more effective undead thrall, they claim. The recently founded Tren? method however disagrees, claiming that allowing souls freedom not only results in more obedient slaves less prone to rising up and slaughtering their masters, but also causes your work to become marginally more acceptable to the unwashed masses. Sure, they'll still thrash you, drag you through town and burn you at the stake if they get the chance, but they'll feel ambivalent about it, by thunder!
+
+Remember, when utilising a runic circle to bend your new minions to your will, make sure beforehand that every rune in the circle is enchanted properly and in no danger of fizzling out. If the unthinkable happens and one of your thralls is freed from your control, offer them goods or equipment in exchange for your life. Few undead will kill their creators after receiving such an act of generosity.]], [[#{italic}#2. Domination des Défunts#{normal}#
+
+Une question controversée se pose au moment d'insuffler la vie dans les spécimens rassemblés : les élever comme de simples pantins sans âme, ou lier de nouveau les âmes des défunts à leur enveloppe ? Un vif désaccord règne à ce sujet entre les divers courants de nécromanciens. La méthode Beinagrind vante l'emprisonnement torturant de l'âme comme un principe fondamental ; l'angoisse générée par l'esprit captif produit, selon eux, un esclave mort-vivant bien plus efficace. La méthode Tren?, récemment fondée, s'y oppose cependant, affirmant que laisser les âmes libres produit non seulement des esclaves plus obéissants, moins enclins à se révolter et à massacrer leurs maîtres, mais rend aussi votre œuvre légèrement plus acceptable aux yeux des masses ignorantes. Certes, elles vous rosseront quand même, vous traîneront à travers la ville et vous brûleront au bûcher si l'occasion se présente, mais elles ressentiront une certaine ambivalence à ce sujet, ma foi !
+
+Souvenez-vous : lorsque vous utilisez un cercle runique pour soumettre vos nouveaux larbins à votre volonté, assurez-vous au préalable que chaque rune du cercle est correctement enchantée et ne risque pas de s'éteindre. Si l'impensable se produit et que l'un de vos esclaves échappe à votre contrôle, offrez-lui des biens ou de l'équipement en échange de votre vie. Peu de morts-vivants tuent leur créateur après avoir reçu un tel acte de générosité.]], "_t")
+t("how to be a necromancer, part 3", "comment devenir nécromancien, partie 3", "_t")
+t([[#{italic}#3. Unwanted Attention#{normal}#
+
+Sadly, it is not only the peasantry and our "virtuous" archmage cousins that disapprove of our work. Though not entirely understood, necromancy is known to create "ripples" of a sort across the many dimensions, ripples that attract extra-planar attention. As a necromancer's power grows, so do said ripples, until eventually said necromancer finds all manner of demonic force and entity beating down their door, both mentally and physically.
+
+Once again, opinions differ on this demonic interference. Necromancy is such a beautiful, divergent art, is it not? The Tren? method sees the necromancer's corruption by outside forces as a negative thing, and practitioners of said method often take measures to divert supernatural attention from themselves, creating talismans to act as spiritual "conductors" or living close to the communities that despise them, the life essences of the masses masking the necromancer's dark emanations. On the other hand, the Beinagrind method welcomes the cursed whisperings that come from the demonic realms, believing it to be the completion of their psyches. Only once their spirits have been "corrupted" (a term Beinagrind practitioners scoff at) do people realize their true ambitions, they claim. Why these "true ambitions" always seem to be the utter and complete destruction of all life in this world and the summoning of unthinkable atrocities from the outer dimensions is unexplored.
+
+You may have noticed that no instruction has been given on how to deal with the attention of common folk. That is because a true necromancer requires none. They are vermin, fit only to be crushed.]], [[#{italic}#3. Attention Indésirable#{normal}#
+
+Malheureusement, ce ne sont pas seulement les paysans et nos cousins archimages « vertueux » qui désapprouvent notre œuvre. Bien que non entièrement comprise, la nécromancie est connue pour créer une sorte d' « ondes » à travers les multiples dimensions, des ondes qui attirent l'attention extra-planaire. À mesure que le pouvoir d'un nécromancien croît, lesdites ondes croissent également, jusqu'à ce qu'il finisse par voir toute sorte de force et d'entité démoniaques frapper à sa porte, tant mentalement que physiquement.
+
+Là encore, les opinions divergent sur cette interférence démoniaque. La nécromancie est un art si beau et si divergent, n'est-ce pas ? La méthode Tren? considère la corruption du nécromancien par des forces extérieures comme une chose négative, et ses praticiens prennent souvent des mesures pour détourner d'eux l'attention surnaturelle, créant des talismans servant de « conducteurs » spirituels, ou vivant à proximité des communautés qui les méprisent, les essences vitales des masses masquant leurs sombres émanations. La méthode Beinagrind, à l'inverse, accueille avec joie les murmures maudits venus des royaumes démoniaques, y voyant l'achèvement de leur psyché. Ce n'est qu'une fois leur esprit « corrompu » (un terme que les pratiquants de Beinagrind raillent) que les gens réalisent, selon eux, leurs véritables ambitions. Pourquoi ces « véritables ambitions » semblent toujours consister en la destruction totale et absolue de toute vie en ce monde, et l'invocation d'atrocités inconcevables venues des dimensions extérieures, cela reste inexploré.
+
+Vous aurez peut-être remarqué qu'aucune instruction n'a été donnée sur la manière de gérer l'attention du commun des mortels. C'est parce qu'un véritable nécromancien n'en a nul besoin. Ce sont de la vermine, tout juste bonne à être écrasée.]], "_t")
+t("how to be a necromancer, part 4", "comment devenir nécromancien, partie 4", "_t")
+t([[#{italic}#4. Necromancers Of Maj'Eyal#{normal}#
+
+The greatest enemy of the necromancer is other necromancers. Well, apart from the Ziguranth, the Allied Kingdoms, the Shaloren, the Thaloren, the Iron Throne, common townsfolk, undead hunters, adventurers, rogue undead and Linaniil. But apart from them, the greatest enemy of the necromancer is other necromancers. Below is listed the location of many notable necromancers, areas possessing above-average undead activity, and other regions considered unfitting for our designs. Budding practitioners of our art are encouraged to perform their work away from these areas, lest they be recognized as threats or nuisances and are subsequently eradicated.
+
+#{italic}#The Ruins Of Kor'Pul#{normal}#: While this necromancer of old may have perished, and his shade has long since lost any trace of sanity, his lair remains a nexus of dark energies, and his minions remain legion.
+
+#{italic}#Blighted Ruins#{normal}#: An ambitious amateur has made his lair within these ruins, thought to be chasing dreams of raising an unstoppable army of the dead. His methods are known to be crude and prone to failure, and I fully expect to hear of him perishing at the hands of his own works within the year.
+
+#{italic}#Dreadfell#{normal}#: Undead have been massing at this abandoned tower in unprecedented numbers. Obviously, a powerful figure has recently made it his home. Regardless, no clue has been given to the identity of this tower's supposed master.
+
+#{italic}#Derth#{normal}#: While there is no formal necromancer presence in this sleepy countryside village, no practitioner of our art has been able to work within its vicinity. Rumours on why this is so are wild and varied, ranging from stories of almost all of its inhabitants being undead minions wearing cloaks of deception, to it being the secret base of the founder of the Tren? method of necromancy. Whatever reason there is, beware.
+
+#{italic}#Zigur#{normal}#: The enemy of our enemy is not our friend in this case. What passes for "normal" magic is enough to send the cult residing here into a frothing, psychotic frenzy - the presence of a necromancer would be enough to instigate a second Age of Pyre!
+
+No further aid awaits you, for we do not tolerate the dependent. All that remains is for you to prove yourself worthy of practising this glorious art...]], [[#{italic}#4. Nécromanciens de Maj'Eyal#{normal}#
+
+Le pire ennemi du nécromancien, ce sont les autres nécromanciens. Enfin, à part les Zigurantes, les Royaumes Alliés, les Shaloréens, les Thaloréens, le Trône de Fer, les gens du commun, les chasseurs de morts-vivants, les aventuriers, les morts-vivants renégats et Linaniil. Mais en dehors d'eux, le pire ennemi du nécromancien, ce sont les autres nécromanciens. Voici ci-dessous la liste des emplacements de nombreux nécromanciens notables, de zones à activité de morts-vivants supérieure à la moyenne, et d'autres régions jugées inadaptées à nos desseins. Les praticiens en herbe de notre art sont encouragés à mener leur œuvre loin de ces zones, sous peine d'être reconnus comme une menace ou une nuisance, et donc éradiqués.
+
+#{italic}#Les Ruines de Kor'Pul#{normal}#: Bien que ce nécromancien d'antan ait pu périr, et que son ombre ait depuis longtemps perdu toute trace de raison, son antre demeure un point nodal d'énergies sombres, et ses larbins restent légion.
+
+#{italic}#Ruines Empestées#{normal}#: Un amateur ambitieux a établi son antre dans ces ruines, poursuivant, croit-on, le rêve de lever une armée de morts imparable. Ses méthodes sont connues pour être grossières et sujettes à l'échec, et je m'attends pleinement à apprendre qu'il aura péri des mains de ses propres créations avant la fin de l'année.
+
+#{italic}#Tombeffroie#{normal}#: Les morts-vivants se sont amassés en nombre sans précédent dans cette tour abandonnée. De toute évidence, une figure puissante en a récemment fait sa demeure. Néanmoins, aucun indice n'a été donné quant à l'identité du présumé maître de cette tour.
+
+#{italic}#Derth#{normal}#: Bien qu'il n'y ait aucune présence formelle de nécromancien dans ce paisible village de campagne, aucun praticien de notre art n'a réussi à œuvrer dans ses environs. Les rumeurs sur les raisons de cet état de fait sont diverses et extravagantes, allant d'histoires selon lesquelles presque tous ses habitants seraient des larbins morts-vivants portant des capes de supercherie, jusqu'à l'idée qu'il s'agirait de la base secrète du fondateur de la méthode Tren? de nécromancie. Quelle qu'en soit la raison, méfiez-vous.
+
+#{italic}#Zigur#{normal}#: L'ennemi de notre ennemi n'est pas notre ami, dans ce cas précis. Ce qui passe pour de la magie « normale » suffit à plonger le culte qui y réside dans une frénésie psychotique et écumante - la seule présence d'un nécromancien suffirait à provoquer une seconde Ère du Bûcher !
+
+Aucune aide supplémentaire ne vous attend, car nous ne tolérons pas les dépendants. Il ne vous reste plus qu'à prouver que vous êtes digne de pratiquer cet art glorieux...]], "_t")
+t("of halfling feet", "des pieds de Halfelins", "_t")
+t([[Some men have said that the feet of halflings can nay be harmed, not by fire, blade nor magic. And they do say that this is a truly astounding thing. And some men consider the foot of a halfling to be an item of great luck and protection, and many have one hung above their door or mantle. Though these days 'tis frowned upon to go hunt for one, so 'tis considered a prized heirloom to be passed from father to son.
+
+But women do look upon men and declare them fools. "For how," say they, "Can the foot of a halfling be a lucky thing, when with their large uncomely feet they are not able to wear shoes and footwear of elegant crafts and beauteous materials? And especially 'tis a great misfortune unto them, as with their short stature they could really do with a decent pair of heels..."
+
+And lo, 'tis little mystery why halflings do look upon humans and say "The Big Folk really are very dumb."]], [[D'aucuns disent que les pieds des Halfelins ne peuvent être blessés, ni par le feu, ni par la lame, ni par la magie. Et ils affirment que c'est là chose véritablement stupéfiante. Certains hommes considèrent le pied d'un Halfelin comme un objet de grande chance et de protection, et nombreux sont ceux qui en suspendent un au-dessus de leur porte ou de leur cheminée. Bien qu'il soit aujourd'hui mal vu d'en chasser un, c'est considéré comme un précieux héritage à transmettre de père en fils.
+
+Mais les femmes regardent les hommes et les jugent bien sots. « Comment », disent-elles, « le pied d'un Halfelin pourrait-il être un objet porte-bonheur, alors qu'avec leurs grands pieds disgracieux, ils ne peuvent porter de chaussures ni de souliers d'artisanat élégant et de matériaux raffinés ? Et c'est là un grand malheur pour eux surtout, car avec leur petite taille, ils auraient bien besoin d'une bonne paire de talons... »
+
+Et voilà pourquoi il n'est guère mystérieux que les Halfelins regardent les humains et disent : « Le Grand Peuple est vraiment très bête. »]], "_t")
+t("Rogues do it from behind", "Les brigands le font par-derrière", "_t")
+t([[An archer from the northern lands
+Claimed of his great renown
+With peerless skill and countless trials
+His name known town to town
+
+He spoke of facing vampire lords
+Who promised years of pain
+The archer gave a stern retort
+An arrow through the brain
+
+A fighter from the southern lands
+Claimed armies fled his might
+With dragons slain 'most every day
+And demons crushed by night
+
+He spoke of ancient sprawling ruins
+Home to a ghastly shade
+Its years of madness, hate and rage
+Were ended on his blade
+
+An archmage from the western lands
+Claimed kingdoms feared his name
+With countless legends, songs and myths
+Attesting to his fame
+
+He spoke of fire, storm and hail
+To match the fiercest wyrm
+To see one man hold so much power
+Can make an empire squirm
+
+A rogue who came from unknown lands
+Not known for anything
+A leap, a flash, a concealed blade
+Three heroes felt its sting
+
+The archer dropped, his bow unplucked
+The fighter died as well
+The archmage found its poison
+Far too potent to dispel
+
+The rogue is unknown to this day
+Though rumours persist still
+Rogues aren't known by name or deed
+But by the names they kill]], [[Un archer venu des terres du nord
+Vantait partout sa grande renommée
+Par un talent sans égal ni tort
+Son nom de ville en ville était semé
+
+Il racontait affronter des seigneurs vampires
+Qui promettaient des années de tourment
+L'archer répondit d'un ton sévère
+D'une flèche en plein cerveau, promptement
+
+Un guerrier venu des terres du sud
+Vantait que des armées fuyaient sa force
+Tuant des dragons chaque jour sans étude
+Écrasant les démons la nuit sans remords
+
+Il parlait d'antiques ruines étendues
+Demeure d'une ombre effroyable et lasse
+Ses années de folie, de haine tenue
+S'achevèrent sous le fil de sa lame
+
+Un archimage venu des terres d'ouest
+Vantait que les royaumes craignaient son nom
+Par d'innombrables légendes et gestes
+Attestant sa gloire et sa renommée sans fond
+
+Il parlait de feu, d'orage et de grêle
+Pour rivaliser le plus féroce draconien
+Voir un seul homme détenir un tel pouvoir
+Peut faire trembler un empire entier, c'est certain
+
+Un brigand venu de terres inconnues
+Sans réputation, sans faits d'armes
+Un bond, un éclair, une lame tenue
+Trois héros sentirent son arme
+
+L'archer tomba, son arc jamais tendu
+Le guerrier mourut lui aussi bientôt
+L'archimage trouva le poison répandu
+Bien trop puissant pour être dissipé, hélas trop tôt
+
+Le brigand reste inconnu à ce jour
+Bien que les rumeurs persistent encor'
+Les brigands ne sont connus ni par nom ni par jour
+Mais par les noms qu'ils envoient à la mort]], "_t")
+t("Dust to Dust", "De la Poussière à la Poussière", "_t")
+t([[#{italic}#An undead hunter's guide, by Aslabor Borys#{normal}#
+
+So, apparently I'm a legend now. Hah, knock a vampire's head off with a greatmaul and suddenly you're up there with Toknor and Mirvenia apparently. More and more often these days I get novice adventurers coming up to me, asking me for advice when it comes to battling the undead. My first instinct was to tell them to get back home and become bakers or gardeners or something. If they need crib notes for combat they obviously aren't cut out for it.
+
+But then I was thinking, these are good kids. Heck, I'd buy every man and woman in the world who's bumped off a ghoul a free drink if I could. If they want help when it comes to putting down necromancer slime and their chilling creations, I would be more than happy to oblige. Not much of a writer, but let's see. First...
+
+#{bold}#1. Ghouls#{normal}#
+
+Every once in a while, people come to me and say "Are all necromancers truly evil?" "Surely necromancy could be used for good!" "Isn't it wrong to discriminate against others simply because of the magicks they practice?" To these people, the first thing I usually say - shortly after giving them a black eye - is to take a look at a ghoul. Take a good, long look. Take in the diseased, putrescent flesh. Take in the oozing, exposed organs. Take in its features, slowly rotting to mulch. It used to be a person. It used to have a family, people who loved it. Now it's a walking corpse, its only desire being death and the mad, all-encompassing consumption of living flesh. Are all necromancers truly evil? A thousand times, yes.
+
+Even this most basic of undead minions can strike terror into the unprepared. The multitude of diseases that a normal ghoul carries are contagious in a manner many adventurers do not truly appreciate until they see the sores and necrosis visibly spreading up their arm from where a ghoul bit them. Such maladies must be dealt with promptly: if bitten by a ghoul, immediately plunge the afflicted area in scalding hot water, then wrap it quickly in clean cloth lined with mugwort and quartz powder. The wound must remain dressed for three weeks, with new dressings applied every four days, and make sure to burn the old ones! Failing the above, a wild infusion also works splendidly.
+
+    * * *
+
+
+#{bold}#2. Skeletons#{normal}#
+
+What guide to the undead would be complete without mentioning the humble skeleton? Despite these clattering and chittering bones of the deceased often looking so fragile that a stiff breeze could break them apart, in many ways they are more dangerous than their ghoul cousins.
+
+With no masses of rotted and ruined flesh to reanimate, necromancers can commit themselves fully to bestowing some level of fighting skill on a reanimated skeleton, and since a fighter's weapons will often last as long as his bones will, skeletons are usually armed and sometimes even armoured. The potential skill of a skeleton doesn't stop at melee weapons either - fallen archers take up their bows once again, and although difficult by comparison, some necromancers can even grant dead mages their magic powers once again.
+
+Some adventurers find themselves baffled when it comes to fighting skeletons. How do you destroy a foe who, by all rights, should be destroyed already? To these adventurers, I say take heart. The more broken and incomplete a body is, the more effort it takes to keep it reanimated. As most necromancers see skeletons as the lowest of low peons, you can expect a few good blows to easily dissipate the minimal effort their masters put into creating them.
+
+    * * *
+
+
+#{bold}#3. Wights#{normal}#
+
+Wights are an odd duck amongst the undead, often not created by necromancers specifically, but instead rising of their own volition when the conditions are right. Wights are by no means individual souls, but often part of a gestalt; when a particular land has seen enough bloodshed - battlefields, forest, crypts and graveyards - wights can be seen to rise en masse, a near-physical representation of the battles and turmoil the land has faced. Sadly, it is for this reason that necromancers often facilitate the creation of wights regardless, for no other study or profession causes so much blood or death.
+
+Those who have had encounters with wights often describe them as indistinct skeletal figures, wrapped in flowing cloaks that become faded and incorporeal at their edges, while strange lights dance where their eyes should remain. Survivors tell of a peculiar sense of exhaustion when in close proximity to them, as though merely being close to these figments of death causes one's life force to sputter and fade. Regardless of this and their ghostly appearance however, it has been recorded that steel and strength of arms is yet enough to destroy them, or at least to erase them for the time being. It's just a shame that such battles are likely to simply create more of them in the long run...
+
+    * * *
+
+
+#{bold}#4. Vampires#{normal}#
+
+Vampires are so far removed from other varieties of undead it seems almost unreal. What grants them their longevity? How do they retain such great intelligence? Beyond their sallow complexion and drawn features, why do they not decay and decompose as their ghoulish siblings do? The study of vampiric nature is one long list of unanswered questions, each new study adding yet more to the ever-growing pile.
+
+As said before, a vampire's greatest strength is its resemblance to a living man, both in mind and body. Thanks to this, vampires are known for residing comparatively close to normal towns and villages far more than other undead. Some have even been known to keep their lairs within these communities themselves! Despite their resemblance however, there are many telltale signs of vampirism: Unnaturally pale skin, long and distinctive fangs, an aversion to sunlight, and much more besides. In an effort to avoid close inspection, some vampires are known to masquerade as men of wealth, often cloistering themselves in remote locations to discourage prying eyes.
+
+But perhaps the most astonishing thing regarding vampires is their propensity for alliance and familial relationships. No other undead being even approaches matching the incomprehensible tangle of clans, broods, families and bloodkin that vampires create for themselves. It is for this reason that vampires often end up becoming rulers of lesser undead themselves, commanding them as a normal necromancer would. So, in turn, treat them as you would a necromancer - with cold steel.
+
+    * * *
+
+
+#{bold}#5. Spirits#{normal}#
+
+During my travels, I have noticed that some communities in the wild no longer bury their deceased as is the norm in larger settlements. Some folk burn the corpses of their fallen, committing their ashes to the earth instead. When asked why they perform this peculiar practice, I always receive the same answer: Necromancers. Fearful of their dead rising up to slay them at the whims of delusional, murderous filth, they believe that with the burning of the dead, their spirits are forever beyond the reach of a necromancer's bony fingers.
+
+Alas, this is not true. While fire may burn away a man's physical being, no flame can touch his spirit. Unfortunately, necromancers can. Bereft of both body and freedom, many souls are driven mad in the employ of necromancers, ceaselessly drifting through windswept crypts, harrying any unfortunate wanderers they encounter with a multitude of curses and hexes. Worst of all are those spirits who embrace their newfound purpose, causing them to grow in power at a frightening rate. No other being in Maj'Eyal is so obviously abhorrent to existence itself as these "dreads"; it is almost as though creation itself wants these beings gone from her world. It is my hope that you, and many others, oblige her wish.
+
+    * * *
+
+
+#{bold}#6. Bone Giants#{normal}#
+
+One of the most horrific, vomit-inducing expressions of the necromancer's so-called "art" is the bone giant. Not content with merely profaning the bodies of singular souls, some ambitious necromancers work to bind the bodies of countless skeletons together, creating hideous engines of destruction that can stand many times higher than the height of a normal man.
+
+It is a deadly mistake to liken these abominations to the golems alchemists and archmages employ. Wilful and fey as they are, normal mages often only craft golems for utility and their own protection, while necromancers create bone giants for the sole purpose of dealing death, and the only limit to their destructive capability is the necromancer's twisted imagination. Ever fought a snow giant? Imagine one with six arms and fingers like blades, wrought of sharpened ribs. Imagine one with countless skulls lining every inch of its wretched body, all screaming for your blood to be spilt as it thrashes spinal columns like whips from its disfigured hands! After facing one of these grotesque amalgamations, you'll be begging to go back to the Daikara to pick on simple, frost-rimed sub-men.
+
+    * * *
+
+
+#{bold}#7. Liches#{normal}#
+
+Hate made flesh. Evil made pure. Death incarnate. The culmination of a necromancer's work. Whatever you know liches as, I can tell you that they do not match the countless myths and legends that surround their terrible figures. They surpass them.
+
+Once a powerful necromancer finally crosses the border between life and death, the abyssal power that they could only initially grasp in dribs and drabs becomes theirs to control totally. It is often said that unexpected quakes, crops failing, and the leaves simultaneously falling from the trees heralds the birth of a lich. Lords of the undead, liches can annihilate ghouls and skeletons, banish dreads with a glance, and reduce bone giants to powder within moments.
+
+As to how to actually destroy one? Well, tell you what. If you manage to defeat one of these abominations, be a dear and write a guide for me, for I have absolutely, positively, no idea.
+
+    * * *]], [[#{italic}#Un guide du chasseur de morts-vivants, par Aslabor Borys#{normal}#
+
+Alors, apparemment, je suis une légende maintenant. Ha, arrachez la tête d'un vampire avec une masse d'armes et soudain vous voilà, semble-t-il, au même rang que Toknor et Mirvenia. De plus en plus souvent ces derniers temps, des aventuriers novices viennent me trouver pour me demander conseil sur la manière de combattre les morts-vivants. Mon premier réflexe fut de leur dire de rentrer chez eux et de devenir boulangers, jardiniers, ou que sais-je. S'ils ont besoin d'un mode d'emploi pour le combat, c'est qu'ils ne sont clairement pas faits pour ça.
+
+Mais en y réfléchissant, ce sont de bons gamins. Diable, j'offrirais volontiers un verre à chaque homme et chaque femme de ce monde qui a déjà envoyé une goule ad patres, si je le pouvais. S'ils veulent de l'aide pour abattre la vermine nécromancienne et ses créations glaçantes, je serais plus qu'heureux de leur en donner. Je ne suis pas un grand écrivain, mais voyons voir. D'abord...
+
+#{bold}#1. Les Goules#{normal}#
+
+De temps à autre, des gens viennent me voir et me disent : « Tous les nécromanciens sont-ils vraiment maléfiques ? », « La nécromancie pourrait sûrement servir le bien ! », « N'est-il pas mal de discriminer les autres simplement à cause des magies qu'ils pratiquent ? » À ces gens, la première chose que je dis en général - juste après leur avoir mis un œil au beurre noir - c'est d'aller regarder une goule. Regardez-la bien, longuement. Observez cette chair malade et putrescente. Observez ces organes suintants, à nu. Observez ses traits, lentement réduits en compost. Cela fut autrefois une personne. Elle avait autrefois une famille, des gens qui l'aimaient. À présent, ce n'est plus qu'un cadavre ambulant, dont le seul désir est la mort et la consommation démente et insatiable de chair vivante. Tous les nécromanciens sont-ils vraiment maléfiques ? Mille fois oui.
+
+Même ce plus élémentaire des larbins morts-vivants peut semer la terreur chez qui n'y est pas préparé. La multitude de maladies que porte une goule ordinaire est contagieuse d'une manière que beaucoup d'aventuriers n'apprécient vraiment que lorsqu'ils voient les plaies et la nécrose remonter visiblement le long de leur bras, à l'endroit où une goule les a mordus. De tels maux doivent être traités promptement : si vous êtes mordu par une goule, plongez immédiatement la zone atteinte dans de l'eau bouillante, puis enveloppez-la rapidement d'un linge propre garni d'armoise et de poudre de quartz. La plaie doit rester bandée pendant trois semaines, avec de nouveaux pansements appliqués tous les quatre jours - et veillez à brûler les anciens ! Si cela échoue, une infusion sauvage fonctionne également à merveille.
+
+    * * *
+
+
+#{bold}#2. Les Squelettes#{normal}#
+
+Quel guide sur les morts-vivants serait complet sans mentionner l'humble squelette ? Bien que ces os cliquetants et grinçants des défunts paraissent souvent si fragiles qu'un bon coup de vent pourrait les briser, ils sont à bien des égards plus dangereux que leurs cousines les goules.
+
+N'ayant pas de masses de chair pourrie et délabrée à réanimer, les nécromanciens peuvent se consacrer entièrement à conférer un certain niveau de compétence martiale à un squelette réanimé, et comme les armes d'un combattant durent souvent aussi longtemps que ses os, les squelettes sont généralement armés, et parfois même blindés. Le potentiel martial d'un squelette ne s'arrête pas non plus aux armes de mêlée - des archers déchus reprennent leurs arcs, et bien que ce soit plus difficile en comparaison, certains nécromanciens parviennent même à restituer leurs pouvoirs magiques à des mages morts.
+
+Certains aventuriers se retrouvent perplexes face aux squelettes. Comment détruire un ennemi qui, en toute logique, devrait déjà être détruit ? À ces aventuriers, je dis : prenez courage. Plus un corps est brisé et incomplet, plus il faut d'efforts pour le maintenir réanimé. Comme la plupart des nécromanciens voient les squelettes comme les plus vils de leurs pantins, vous pouvez vous attendre à ce que quelques bons coups dissipent aisément le peu d'effort que leurs maîtres ont mis à les créer.
+
+    * * *
+
+
+#{bold}#3. Les Spectres#{normal}#
+
+Les spectres sont un cas à part parmi les morts-vivants, souvent non créés spécifiquement par les nécromanciens, mais s'élevant plutôt de leur propre gré lorsque les conditions s'y prêtent. Les spectres ne sont en aucun cas des âmes individuelles, mais font souvent partie d'un tout ; lorsqu'une terre a connu suffisamment de sang versé - champs de bataille, forêts, cryptes et cimetières - on peut voir des spectres s'élever en masse, une représentation quasi physique des batailles et des tourments qu'a connus cette terre. Malheureusement, c'est pour cette raison que les nécromanciens facilitent souvent la création de spectres, car nulle autre étude ni profession ne cause autant de sang ou de mort.
+
+Ceux qui ont fait la rencontre de spectres les décrivent souvent comme des silhouettes squelettiques indistinctes, enveloppées de capes flottantes qui deviennent fanées et immatérielles sur leurs bords, tandis que d'étranges lumières dansent à l'endroit où devraient se trouver leurs yeux. Les survivants racontent une étrange sensation d'épuisement en leur proximité, comme si le simple fait d'être proche de ces incarnations de la mort faisait vaciller et s'éteindre leur force vitale. Malgré cela et leur apparence fantomatique, il est néanmoins établi que l'acier et la force des armes suffisent encore à les détruire, ou du moins à les effacer pour un temps. C'est bien dommage que de tels combats aient tendance, à long terme, à simplement en engendrer davantage...
+
+    * * *
+
+
+#{bold}#4. Les Vampires#{normal}#
+
+Les vampires sont si éloignés des autres variétés de morts-vivants que cela en paraît presque irréel. Qu'est-ce qui leur confère leur longévité ? Comment conservent-ils une intelligence aussi vive ? Au-delà de leur teint blafard et de leurs traits tirés, pourquoi ne se décomposent-ils pas comme leurs cousines les goules ? L'étude de la nature vampirique est une longue liste de questions sans réponse, chaque nouvelle étude en ajoutant davantage à la pile toujours croissante.
+
+Comme dit précédemment, la plus grande force d'un vampire réside dans sa ressemblance avec un homme vivant, tant d'esprit que de corps. Grâce à cela, les vampires sont connus pour résider bien plus près des villes et villages ordinaires que les autres morts-vivants. On a même connu certains d'entre eux établissant leur antre au sein même de ces communautés ! Malgré cette ressemblance, il existe cependant de nombreux signes révélateurs du vampirisme : une peau anormalement pâle, de longs crocs caractéristiques, une aversion pour la lumière du soleil, et bien plus encore. Dans un effort pour éviter un examen trop poussé, certains vampires sont connus pour se faire passer pour des hommes fortunés, se cloîtrant souvent dans des lieux reculés pour décourager les regards indiscrets.
+
+Mais la chose la plus étonnante concernant les vampires est peut-être leur propension à former alliances et liens familiaux. Aucun autre être mort-vivant ne s'approche même de l'enchevêtrement incompréhensible de clans, de couvées, de familles et de liens de sang que les vampires créent pour eux-mêmes. C'est pour cette raison que les vampires finissent souvent par devenir eux-mêmes les souverains de morts-vivants inférieurs, les commandant comme le ferait un nécromancien ordinaire. Traitez-les donc, à votre tour, comme vous traiteriez un nécromancien - avec de l'acier froid.
+
+    * * *
+
+
+#{bold}#5. Les Esprits#{normal}#
+
+Au cours de mes voyages, j'ai remarqué que certaines communautés isolées n'enterrent plus leurs défunts comme c'est la norme dans les plus grands établissements. Certains font brûler les corps de leurs disparus, confiant plutôt leurs cendres à la terre. Lorsqu'on leur demande pourquoi ils pratiquent cette coutume singulière, je reçois toujours la même réponse : les nécromanciens. Craignant que leurs morts ne se relèvent pour les tuer sur un caprice d'une infâme engeance délirante et meurtrière, ils croient qu'en brûlant leurs morts, leur esprit demeurera à jamais hors de portée des doigts osseux d'un nécromancien.
+
+Hélas, cela n'est pas vrai. Si le feu peut brûler l'être physique d'un homme, aucune flamme ne peut toucher son esprit. Les nécromanciens, malheureusement, le peuvent. Privées à la fois de corps et de liberté, de nombreuses âmes sont rendues folles au service des nécromanciens, dérivant sans fin à travers des cryptes balayées par le vent, harcelant tout malheureux vagabond qu'elles croisent d'une multitude de malédictions et de sortilèges. Les pires d'entre eux sont ces esprits qui embrassent ce nouveau dessein, ce qui les fait croître en puissance à un rythme effrayant. Nul autre être en Maj'Eyal n'est aussi manifestement abhorré par l'existence même que ces « effrois » ; c'est presque comme si la création elle-même voulait que ces êtres disparaissent de son monde. J'espère que vous, et bien d'autres, exaucerez ce vœu.
+
+    * * *
+
+
+#{bold}#6. Les Géants d'Ossements#{normal}#
+
+L'une des expressions les plus horrifiantes et écœurantes du soi-disant « art » nécromantique est le géant d'ossements. Non contents de simplement profaner les corps d'âmes singulières, certains nécromanciens ambitieux s'emploient à lier ensemble les corps d'innombrables squelettes, créant d'hideux engins de destruction qui peuvent s'élever à plusieurs fois la hauteur d'un homme ordinaire.
+
+C'est une erreur fatale que de comparer ces abominations aux golems employés par les alchimistes et les archimages. Aussi capricieux et étranges qu'ils soient, les mages ordinaires ne fabriquent généralement des golems que par utilité et pour leur propre protection, tandis que les nécromanciens créent des géants d'ossements dans le seul but de semer la mort, et la seule limite à leur capacité destructrice est l'imagination tordue du nécromancien. Avez-vous déjà affronté un géant des neiges ? Imaginez-en un doté de six bras et de doigts semblables à des lames, forgés de côtes aiguisées. Imaginez-en un couvert d'innombrables crânes tapissant chaque parcelle de son corps misérable, tous hurlant pour que votre sang soit versé, tandis qu'il fait claquer des colonnes vertébrales comme des fouets depuis ses mains difformes ! Après avoir affronté l'un de ces grotesques amalgames, vous supplierez qu'on vous renvoie au Daikara pour vous frotter à de simples sous-hommes couverts de givre.
+
+    * * *
+
+
+#{bold}#7. Les Liches#{normal}#
+
+La haine faite chair. Le mal rendu pur. La mort incarnée. L'apogée de l'œuvre d'un nécromancien. Quoi que vous sachiez des liches, je peux vous dire qu'elles n'égalent pas les innombrables mythes et légendes qui entourent leurs terribles figures. Elles les dépassent.
+
+Une fois qu'un puissant nécromancien franchit enfin la frontière entre la vie et la mort, le pouvoir abyssal qu'il ne pouvait initialement saisir que par bribes devient sien, entièrement maîtrisé. On dit souvent que des tremblements de terre inattendus, des récoltes ravagées, et la chute simultanée des feuilles des arbres annoncent la naissance d'une liche. Seigneurs des morts-vivants, les liches peuvent anéantir goules et squelettes, bannir des effrois d'un simple regard, et réduire des géants d'ossements en poudre en un instant.
+
+Quant à savoir comment en détruire réellement une ? Eh bien, je vais vous dire. Si vous parvenez à vaincre l'une de ces abominations, soyez un chou et écrivez-moi un guide, car je n'en ai absolument, positivement, aucune idée.
+
+    * * *]], "_t")
+
+------------------------------------------------
+section "mod-tome/data/lore/high-peak.lua"
+
+t("high peak", "pic supérieur", "newLore category")
+t("closing the void farportal", "fermeture du portail lointain du vide", "_t")
+t("The void farportal is closed, preventing untold horrors from assaulting Eyal.", "Le portail lointain du vide est fermé, empêchant d'innombrables horreurs d'assaillir Eyal.", "_t")
+t("a blood-soaked resonating diamond", "un diamant résonnant trempé de sang", "_t")
+t([[#{italic}#On touching the still-wet diamond, you find yourself experiencing memories that are not your own, memories that slowly seep into your mind with increasing detail.  You cannot tell if the initial haze covering them is a side-effect of the absorption process, or if it's from being dazed and waking from unconsciousness in these memories...#{normal}#
+
+#FIREBRICK#Pain#LAST#.  Everywhere, but where is worst...
+
+Abdomen.  Broken ribs?  Breathe in--  #FIREBRICK#yes they're broken#LAST#.  Shallow breaths.  What happ--  right.  Damned orcs.  Didn't expect them on this continent, much less in a Sher'Tul ruin.  Didn't even expect a Sher'Tul ruin...  Carrying Ziguranth weapons, preventing healing magic from working.  So now we've got #{italic}#two#{normal}# bands of past-their-prime savages working together to burn down civilization.  Lovely.
+
+[...]
+
+Elandar, leaning over me, can't hug me because of my ribcage.  Says I should be dead.  That he found what he thinks is the fabled Blood of Life, and poured it down my throat and into my wounds.  That I'm healing, but...  if he was wrong, we can't go back to them.  Back to #{italic}#her#{normal}# - not after last time.  I can't let them take me from Elandar, not after all he's done for me, no matter what they might find if they analyze what's left in that bottle.
+
+The pain is fading - little by little, ribs mending minute by minute, I can breathe slightly deeper before #FIREBRICK#hitting#LAST# that sudden wall of #FIREBRICK#agony#LAST#.  It feels...  healthy.  Powerful, even.  Whatever my love may have found, his gift is definitely capable of nourishing living creatures...  but there are other feelings too.  Feelings of being trapped.  Lost.  Alone.  Homesick for a home I'm already lying in.
+
+[...]
+
+I have my theories, unsettling as they are, as to what's coming over me - what I suspect to have invisibly replaced my subconscious already, what I constantly feel my conscious thoughts drifting towards if I'm not focusing, why that ability to hold conscious attention on anything else seems to be slipping more every minute.  Committing suicide or sending myself to an Angolwen asylum (if they were that merciful) are not options - egotistical as this sounds, I know the happiness I bring to Elandar's tragic life is the only thing that keeps him going.  I believe I can use this bond and the #FIREBRICK#painfully unnatural#LAST# urges that come with it...  productively, without breaking my love's heart or leaving a worse world behind.  I will be happy, Elandar will be happy, and #FIREBRICK#he#LAST# will be happy.]], [[#{italic}#En touchant le diamant encore humide, vous vous retrouvez à revivre des souvenirs qui ne sont pas les vôtres, des souvenirs qui s'infiltrent lentement dans votre esprit avec un détail croissant. Vous ne pouvez dire si le voile initial qui les recouvre est un effet secondaire du processus d'absorption, ou s'il provient de l'état hébété et du réveil depuis l'inconscience que ces souvenirs décrivent...#{normal}#
+
+#FIREBRICK#Douleur#LAST#. Partout, mais surtout là où c'est le pire...
+
+Abdomen. Des côtes brisées ? Inspire-- #FIREBRICK#oui, elles sont brisées#LAST#. Respirations courtes. Que s'est-- ah oui. Maudits orcs. Je ne m'attendais pas à en trouver sur ce continent, encore moins dans une ruine Sher'Tul. Je ne m'attendais même pas à trouver une ruine Sher'Tul... Ils portent des armes des Zigurantes, empêchant la magie de soin de fonctionner. Nous voilà donc avec #{italic}#deux#{normal}# bandes de sauvages sur le déclin qui œuvrent ensemble pour réduire la civilisation en cendres. Charmant.
+
+[...]
+
+Elandar, penché au-dessus de moi, ne peut pas me serrer dans ses bras à cause de ma cage thoracique. Il dit que je devrais être morte. Qu'il a trouvé ce qu'il croit être le légendaire Sang de Vie, et l'a versé dans ma gorge et dans mes plaies. Que je guéris, mais... s'il s'est trompé, nous ne pourrons pas retourner vers eux. Retourner vers #{italic}#elle#{normal}# - pas après la dernière fois. Je ne peux pas les laisser m'arracher à Elandar, pas après tout ce qu'il a fait pour moi, quoi qu'ils puissent découvrir en analysant ce qui reste dans cette fiole.
+
+La douleur s'estompe - petit à petit, mes côtes se réparent minute après minute, je peux respirer un peu plus profondément avant de #FIREBRICK#heurter#LAST# ce mur soudain d' #FIREBRICK#agonie#LAST#. Cela me semble... sain. Puissant, même. Quoi que mon amour ait pu trouver, son présent est assurément capable de nourrir les créatures vivantes... mais d'autres sentiments surgissent aussi. Le sentiment d'être prise au piège. Perdue. Seule. Le mal du pays pour un foyer dans lequel je suis pourtant déjà allongée.
+
+[...]
+
+J'ai mes théories, aussi troublantes soient-elles, sur ce qui s'empare de moi - ce que je soupçonne avoir déjà invisiblement remplacé mon subconscient, vers quoi je sens constamment mes pensées conscientes dériver lorsque je ne me concentre pas, pourquoi cette capacité à maintenir mon attention consciente sur autre chose semble m'échapper un peu plus à chaque minute. Me suicider ou me faire interner dans un asile d'Angolwen (s'ils étaient assez miséricordieux pour cela) ne sont pas des options - aussi égoïste que cela puisse paraître, je sais que le bonheur que j'apporte à la vie tragique d'Elandar est la seule chose qui le fait tenir. Je crois pouvoir utiliser ce lien, et les pulsions #FIREBRICK#douloureusement contre nature#LAST# qui l'accompagnent... de façon productive, sans briser le cœur de mon amour ni laisser un monde pire derrière moi. Je serai heureuse, Elandar sera heureux, et #FIREBRICK#lui#LAST# sera heureux.]], "_t")
+t("Elandar's journal (1)", "journal d'Elandar (1)", "_t")
+t([[I am increasingly certain that what I gave my love was not the Blood of Life.
+
+Her demeanor has...  changed, but not in the way one would expect.  If I had given her the essence of some god the Sher'Tul wounded and exsanguinated for a trophy, or a blight-ridden demon, or something else that would affect her mental state, I would expect her to start acting oddly - with more cruelty, more arrogance, less #{italic}#humanity.#{normal}#  Instead...  she acts like she knows the world is about to end and can't tell anyone.  She mutters about needing to use the contents of that ruin, one that we still can't even tell Angolwen #{italic}#exists#{normal}#, to bring about a new order of magocracy like the one Tannen wants "before it's too late."  Something is gnawing at her, and she dreads that I may find out what, but otherwise...  she's almost #{italic}#too#{normal}# rational.
+
+She is terrified of losing me, losing this world, losing #{italic}#herself#{normal}# - but to what, I have no idea.  Ultimately, it does not matter what is running through her mind; I will study the texts in this ruin for summoning rituals, farportal schematics, or something else that would fulfill her plan for her.  She will get to see this "Gerlyk" once, for herself - and then his magic will be absorbed and it will be over.  Whatever this creature is, it can't give orders when it's dead.]], [[Je suis de plus en plus certain que ce que j'ai donné à mon amour n'était pas le Sang de Vie.
+
+Son comportement a... changé, mais pas de la façon à laquelle on s'attendrait. Si je lui avais donné l'essence de quelque dieu que les Sher'Tul auraient blessé et vidé de son sang comme trophée, ou d'un démon rongé par le fléau, ou toute autre chose susceptible d'affecter son état mental, je m'attendrais à ce qu'elle commence à agir étrangement - avec plus de cruauté, plus d'arrogance, moins d' #{italic}#humanité.#{normal}# Au lieu de cela... elle agit comme si elle savait que le monde touchait à sa fin et ne pouvait le dire à personne. Elle marmonne qu'il faudrait utiliser le contenu de cette ruine, dont nous ne pouvons même pas encore dire à Angolwen qu'elle #{italic}#existe#{normal}#, pour instaurer un nouvel ordre magocratique semblable à celui que veut Tannen, « avant qu'il ne soit trop tard ». Quelque chose la ronge, et elle redoute que je découvre quoi, mais autrement... elle est presque #{italic}#trop#{normal}# rationnelle.
+
+Elle est terrifiée à l'idée de me perdre, de perdre ce monde, de se perdre #{italic}#elle-même#{normal}# - mais pour quoi, je n'en ai aucune idée. En fin de compte, peu importe ce qui traverse son esprit ; j'étudierai les textes de cette ruine à la recherche de rituels d'invocation, de plans de portails lointains, ou de tout autre chose qui pourrait réaliser son plan à sa place. Elle pourra voir ce « Gerlyk » une fois, de ses propres yeux - puis sa magie sera absorbée, et tout sera terminé. Quelle que soit cette créature, elle ne pourra donner d'ordres une fois morte.]], "_t")
+t("Argoniel's blood-runed athame", "athamé rune de sang d'Argoniel", "_t")
+t([[#{italic}#On touching the blood-dripping knife, memories flood your mind - this time, with incredible intensity.  You drop the knife immediately, thankful you only touched the plain handle, and not the rune-lit blade or the red pool under it.  Moments later, your mind starts parsing and interpreting what it just absorbed:#{normal}#
+
+pain.  pain loneliness and cold, so much cold and it keeps growing.  in my dreams i can't move a muscle thanks to this #{italic}##FIREBRICK#[untranslatably foul profanity]#LAST##{normal}# cage.  he never had his chance.  could've made the world in his image.  could've made a peaceful world, one of meadows and soft rolling hills, if the other gods hadn't fought with him over it.  might've made humans - in any case he watched over us, protected us from those #{italic}##FIREBRICK#[untranslatably ancient profanity]#LAST##{normal}# squid until they drove him into the void
+
+he suffers on a distant world, his power leeched out bit by bit for reasons never told to him by evildoers he's never seen.  this is not right.  he must be free.  i must be free.  he must come to eyal so our vision for it can finally be realized
+
+it will be
+
+#{italic}#so#{normal}#
+
+
+
+#{italic}##FIREBRICK#b e a u t i f u l#LAST##{normal}#
+
+]], [[#{italic}#En touchant le couteau dégoulinant de sang, des souvenirs envahissent votre esprit - cette fois, avec une intensité incroyable. Vous lâchez immédiatement le couteau, soulagé de n'avoir touché que le simple manche, et non la lame illuminée de runes ou la flaque rouge en dessous. Quelques instants plus tard, votre esprit commence à démêler et interpréter ce qu'il vient d'absorber :#{normal}#
+
+douleur. douleur solitude et froid, tant de froid et ça continue de grandir. dans mes rêves je ne peux bouger un seul muscle à cause de cette cage #{italic}##FIREBRICK#[juron immonde intraduisible]#LAST##{normal}#. il n'a jamais eu sa chance. aurait pu façonner le monde à son image. aurait pu créer un monde paisible, fait de prairies et de douces collines onduleuses, si les autres dieux ne s'étaient pas battus contre lui pour cela. aurait peut-être créé les humains - de toute façon il veillait sur nous, nous protégeait de ces #{italic}##FIREBRICK#[juron ancien intraduisible]#LAST##{normal}# calmars jusqu'à ce qu'ils le repoussent dans le vide
+
+il souffre sur un monde lointain, son pouvoir siphonné petit à petit pour des raisons jamais révélées par des malfaiteurs qu'il n'a jamais vus. ce n'est pas juste. il doit être libre. je dois être libre. il doit venir à eyal pour que notre vision pour ce monde puisse enfin se réaliser
+
+ce sera
+
+#{italic}#si#{normal}#
+
+
+
+#{italic}##FIREBRICK#m a g n i f i q u e#LAST##{normal}#
+
+]], "_t")
+t("Elandar's journal (2)", "journal d'Elandar (2)", "_t")
+t([[I awoke early this morning to see the love of my life altering the unique farportal we've been building together.  Our plans are all on track so far, the Staff of Absorption has been integrated into the portal so it'll drain Gerlyk the moment it summons him, the orcs are too busy suspecting each other to bother investigating us...  and then I discover that she's sabotaged it.  This portal will #{italic}#em#{normal}#power Gerlyk when it summons him - and he surely must be insane from the loneliness of tumbling in the void of space all this time.  In any case, even a sane god would be devastating to life as we know it.
+    
+...I can't bring myself to stop her.
+
+Argoniel, my love, you have brought me so much joy and given me much to live for.  I have sworn to hold your hand and walk beside you, no matter where you choose to go.  If that means joining you down the road to a second Spellblaze...  so be it.  
+
+Forgive me, Eyal.]], [[Je me suis réveillé tôt ce matin pour voir l'amour de ma vie modifier l'unique portail lointain que nous construisons ensemble. Nos plans se déroulent tous comme prévu jusqu'ici : le Bâton d'Absorption a été intégré au portail afin qu'il draine Gerlyk dès l'instant où il l'invoquera, les orcs sont trop occupés à se soupçonner mutuellement pour se soucier de nous enquêter... et puis je découvre qu'elle l'a saboté. Ce portail va #{italic}#renforcer#{normal}# Gerlyk lorsqu'il l'invoquera - et il doit sûrement être devenu fou, à force de solitude, à culbuter dans le vide de l'espace pendant tout ce temps. Quoi qu'il en soit, même un dieu sain d'esprit serait dévastateur pour la vie telle que nous la connaissons.
+
+...Je ne parviens pas à me résoudre à l'arrêter.
+
+Argoniel, mon amour, tu m'as apporté tant de joie et donné tant de raisons de vivre. J'ai juré de tenir ta main et de marcher à tes côtés, où que tu choisisses d'aller. Si cela signifie te suivre sur le chemin d'une seconde Brûlure Magique... alors qu'il en soit ainsi.
+
+Pardonne-moi, Eyal.]], "_t")
+
+
+
+
