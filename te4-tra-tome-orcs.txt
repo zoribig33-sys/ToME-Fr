@@ -7997,4 +7997,193 @@ Pour les orcs, pour l'héritage de Garkul !
 ]], "_t")
 
 
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-cosmetic_race_orc.lua"
+
+t("New Cosmetic Race Option: #LIGHT_GREEN#Orc Headgear", "Nouvelle Option Cosmétique de Race : #LIGHT_GREEN#Coiffe d'Orc", "_t")
+t([[You have played an orc tinker up to level 10.
+
+You may now create orc characters proudly sporting goggles or monocles.
+This has no effect on gameplay at all but it is fun!
+]], [[Vous avez joué un orc bricoleur jusqu'au niveau 10.
+
+Vous pouvez désormais créer des personnages orcs arborant fièrement des lunettes de protection ou des monocles.
+Cela n'a strictement aucun effet sur le jeu, mais c'est amusant !
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-mage_technomancer.lua"
+
+t("New Class Evolution: #LIGHT_GREEN#Technomancer (Archmage)", "Nouvelle Évolution de Classe : #LIGHT_GREEN#Technomancien (Archimage)", "_t")
+t([[#{bold}##GOLD#EUREKA!#LAST##{normal}#
+
+As an archmage you are trained into the intricacies of the arcane forces, but as a tinker you know how to build and create. And suddently it hit you!
+#{italic}#You now understand how to combine magic and technology!#{normal}#
+
+You have unlocked the #LIGHT_GREEN#Technomancer class evolution#WHITE# for Archmages.
+
+Features:#YELLOW#
+- Occult Technomancy: Use a rapidly spinning steamsaw to rip appart reality itself and project arcane and temporal onslaughts
+- Galvanic Technomancy: Create galvanic rods that link up to create deadly fields of fire and lightning to burn down your foes
+- Terrene Technomancy: Craft and control swarms of micro spiderbots to damage and debilitate your foes with water and earth forces
+- Arcane Dynamo: Casting spells generates steam and steam increases spellpower
+- Access to physics and chemistry: All Technomancers know the basics of crafting tinkers
+#WHITE#
+
+Class evolutions are selected as prodigies and grant new ways to build and expand your class and are only visible to the concerned class.
+]], [[#{bold}##GOLD#EUREKA !#LAST##{normal}#
+
+En tant qu'archimage, vous êtes formé aux subtilités des forces arcaniques, mais en tant que Bricoleur, vous savez aussi construire et créer. Et soudain, l'évidence vous frappe !
+#{italic}#Vous comprenez maintenant comment combiner la magie et la technologie !#{normal}#
+
+Vous avez débloqué l'évolution de classe #LIGHT_GREEN#Technomancien#WHITE# pour les Archimages.
+
+Caractéristiques :#YELLOW#
+* Technomancie Occulte : Utilisez une scie à vapeur tournant rapidement pour déchirer la réalité elle-même et projeter des assauts arcaniques et temporels
+* Technomancie Galvanique : Créez des tiges galvaniques qui se relient entre elles pour former de mortels champs de feu et de foudre afin de consumer vos ennemis
+* Technomancie Terrène : Fabriquez et contrôlez des essaims de micro robots-araignées pour endommager et affaiblir vos ennemis avec les forces de l'eau et de la terre
+* Dynamo Arcanique : Lancer des sorts génère de la vapeur, et la vapeur augmente la Puissance des sorts
+* Accès à la physique et à la chimie : Tous les Technomanciens connaissent les bases de la fabrication de babioles
+#WHITE#
+
+Les évolutions de classe sont sélectionnées comme des prodiges et accordent de nouvelles façons de construire et d'étendre votre classe ; elles ne sont visibles que pour la classe concernée.
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-orcs_campaign_all_classes.lua"
+
+t("New birth option: #LIGHT_GREEN#All classes", "Nouvelle option de création : #LIGHT_GREEN#Toutes les classes", "_t")
+t([[You have freed the Prides from the Internment Camp for the third time.
+
+You can now create new characters in the orc campaign with any classes you have unlocked #LIGHT_GREEN#in the classical Age of Ascendancy#WHITE#.
+]], [[Vous avez libéré les Fiertés du Camp d'Internement pour la troisième fois.
+
+Vous pouvez désormais créer de nouveaux personnages dans la campagne orc avec n'importe quelle classe que vous avez débloquée #LIGHT_GREEN#dans l'Ère de l'Ascendance classique#WHITE#.
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-orcs_campaign_mage.lua"
+
+t("New birth option: #LIGHT_GREEN#Mages", "Nouvelle option de création : #LIGHT_GREEN#Mages", "_t")
+t([[You have freed the Prides from the Internment Camp.
+
+You can now create new characters in the orc campaign with any mage classes you have unlocked #LIGHT_GREEN#in the classical Age of Ascendancy#WHITE#.
+]], [[Vous avez libéré les Fiertés du Camp d'Internement.
+
+Vous pouvez désormais créer de nouveaux personnages dans la campagne orc avec n'importe quelle classe de mage que vous avez débloquée #LIGHT_GREEN#dans l'Ère de l'Ascendance classique#WHITE#.
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-orcs_campaign_rogue.lua"
+
+t("New birth option: #LIGHT_GREEN#Rogues", "Nouvelle option de création : #LIGHT_GREEN#Brigands", "_t")
+t([[You have freed the Prides from the Internment Camp.
+
+You can now create new characters in the orc campaign with any rogue classes you have unlocked #LIGHT_GREEN#in the classical Age of Ascendancy#WHITE#.
+]], [[Vous avez libéré les Fiertés du Camp d'Internement.
+
+Vous pouvez désormais créer de nouveaux personnages dans la campagne orc avec n'importe quelle classe de brigand que vous avez débloquée #LIGHT_GREEN#dans l'Ère de l'Ascendance classique#WHITE#.
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-orcs_tinker_eyal.lua"
+
+t("New Age of Ascendancy birth option: #LIGHT_GREEN#Tinkers", "Nouvelle option de création pour l'Ère de l'Ascendance : #LIGHT_GREEN#Bricoleurs", "_t")
+t([[You have defeated Outpost Leader John with two different tinker classes.
+You can now create new characters with any tinker classes you have unlocked #LIGHT_GREEN#in the classical Age of Ascendancy, Infinite Dungeon and Arena campaigns#WHITE#.
+Also tinker escorts may start to appear in Maj'Eyal now.
+
+Playing characters this way is not lore-canon, but fun!]], [[Vous avez vaincu John, Chef de l'Avant-poste, avec deux classes de bricoleurs différentes.
+
+Vous pouvez désormais créer de nouveaux personnages avec n'importe quelle classe de Bricoleur que vous avez débloquée dans les campagnes #LIGHT_GREEN#Ère de l'Ascendance classique#WHITE#, #LIGHT_GREEN#Donjon Infini#WHITE# et #LIGHT_GREEN#Arène#WHITE#.
+
+De plus, des aventuriers bricoleurs à escorter pourront désormais apparaître en Maj'Eyal.
+
+Faire intervenir des bricoleurs dans les événements de l'Ère de l'Ascendance n'est pas canonique, mais c'est amusant !]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-race_whitehooves.lua"
+
+t("New Race: #LIGHT_GREEN#Whitehoof", "Nouvelle Race : #LIGHT_GREEN#Sabot blanc", "_t")
+t([[A clan of minotaurs turned to necromancy when faced with imminent destruction. Ever since they have kept to themselves.
+But the discovery of a strange artifact in a crashed airship changed their fate. One of them tried to assert control over the clan, a few resist and hope to free their comrades.
+
+You have helped free the Whitehoof Clan from the reign of Nektosh can now create a new character with the #LIGHT_GREEN#Whitehoof race#WHITE#.
+
+Race features:#YELLOW#
+- Poison immunity
+- Bleeding immunity
+- Silence resistance
+- No need to breathe
+- Special whitehoof talents: Dead Hide, Lifeless Rush, Essence Drain#WHITE#
+]], [[Confronté à une destruction imminente, un clan de minotaures se tourna vers la nécromancie. Depuis lors, ils se sont tenus à l'écart, gardant jalousement leurs sombres secrets.
+Mais la découverte d'un étrange artefact dans un dirigeable accidenté a changé leur destin. L'un d'eux, séduit par le pouvoir de l'artefact, tenta d'usurper le pouvoir et de prendre le contrôle du clan, tandis que d'autres résistent, déterminés à libérer leurs compagnons de l'emprise de ce nouveau chef.
+
+Vous avez aidé à libérer le Clan Sabot blanc du règne de Nektosh, et pouvez désormais créer un nouveau personnage de race #LIGHT_GREEN#Sabot blanc#WHITE#.
+
+Caractéristiques de race :#YELLOW#
+* Immunité au poison (100%)
+* Immunité au saignement (100%)
+* Résistance au silence (50%)
+* Aucun besoin de respirer
+* Talents spéciaux de Sabot blanc : Cuir Mort, Charge sans Vie, Drain d'Essence#WHITE#
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-race_yeti.lua"
+
+t("New Race: #LIGHT_GREEN#Yeti", "Nouvelle Race : #LIGHT_GREEN#Yéti", "_t")
+t([[Yetis are native creatures to the cold mountains of the Clork peninsula, highly evolved bipedal animals they still lack true sentience.
+Their white fur covers an extremely strong body, but their minds are weak.
+Techno-psionics of the Kruk Pride have managed to devise a system to hijack a yeti's body, transferring their own mind into them to increase the Pride's fighting power.
+
+You have helped capture multiple Yetis for such purpose and can now create a new character with the #LIGHT_GREEN#Yeti race#WHITE#.
+
+Race features:#YELLOW#
+- Algid Rage, call upon the harsh climate of their birthplace to freeze their foes
+- Mindwave, the controlling orc retains a small part of his psionic powers, giving them a powerful mind-tool
+- Strong body#WHITE#
+]], [[Les Yétis sont des créatures natives des montagnes glaciales de la péninsule de Clork ; des animaux bipèdes hautement évolués, mais qui ne possèdent pas encore de véritable conscience.
+Leur fourrure blanche recouvre un corps extrêmement puissant, mais leur esprit reste faible.
+Les technopsioniques de la Fierté Kruk ont mis au point un système permettant de détourner le corps d'un yéti, en y transférant leur propre esprit afin d'accroître la puissance de combat de la Fierté.
+
+Vous avez aidé à capturer plusieurs Yétis à cette fin, et pouvez désormais créer un nouveau personnage de race #LIGHT_GREEN#Yéti#WHITE#.
+
+Caractéristiques de race :#YELLOW#
+* Rage Glaciale : invoque le climat rigoureux de leur terre natale pour geler leurs ennemis
+* Onde Mentale : l'orc contrôleur conserve une petite part de ses pouvoirs psioniques, lui offrant un puissant outil mental
+* Un corps robuste#WHITE#
+]], "_t")
+
+------------------------------------------------
+section "tome-orcs/overload/data/texts/unlock-tinker_annihilator.lua"
+
+t("New Class: #LIGHT_GREEN#Annihilator (Tinker)", "Nouvelle Classe : #LIGHT_GREEN#Annihilateur (Bricoleur)", "_t")
+t([[After researching the remains of many foes you found new ways to bring the literal heat of battle to your foes!
+You can now create new characters with the #LIGHT_GREEN#Annihilator class#WHITE#.
+
+Annihilators are Tinkers that can create and use heavy weapons (flamethrowers, shockstaves, boltguns) and apply their tinkering knowledge to create advanced war contraptions.
+Class features:#YELLOW#
+- Unleash the power of your heavy weapons
+- Construct automated turrets for war or even medical purposes
+- Build an mecharachnid bot to help you in combat that can act independently or be directly piloted
+- Make your foes suffer in many new ways: fire rockets and grenades at them, equip an exoskeleton, ... #WHITE#
+
+All Tinker classes use Steam for their powers.
+]], [[Après avoir étudié minutieusement les dépouilles de nombreux ennemis, vous avez découvert de nouveaux moyens d'apporter la chaleur, au sens littéral, de la bataille à vos adversaires !
+
+Vous pouvez désormais créer de nouveaux personnages avec la classe #LIGHT_GREEN#Annihilateur#WHITE#.
+
+Les Annihilateurs sont des Bricoleurs capables de créer et d'utiliser des armes lourdes (lance-flammes, bâtons de choc, fusils à fléchettes), et d'appliquer leur savoir-faire pour concevoir des engins de guerre avancés.
+
+Caractéristiques de classe :#YELLOW#
+* Déchaînez la puissance de vos armes lourdes
+* Construisez des tourelles automatisées, à des fins de guerre ou même médicales
+* Fabriquez un robot mécarachnide pour vous assister au combat, capable d'agir de manière autonome ou d'être piloté directement
+* Faites souffrir vos ennemis de bien des nouvelles façons : tirez-leur dessus des roquettes et des grenades, équipez un exosquelette...#WHITE#
+
+Toutes les classes de Bricoleurs utilisent la Vapeur pour leurs pouvoirs.
+]], "_t")
+
+
 
