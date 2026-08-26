@@ -1206,7 +1206,26 @@ Mais ce qu'il restait de notre peuple à l'est était un tableau brisé. La majo
 
 Nous avons toujours une présence secrète à l'ouest, dans nos terres légitimes à travers lesquelles nous avons versé des rivières de notre propre sang. Nous renforçons notre force militaire à un rythme accéléré, et quand le moment viendra, nous balaierons Maj'Eyal avec une vengeance qui ne pourra être contenue. Les autres races souffriront comme elles nous ont fait souffrir, et tout ce qu'elles ont construit sera réduit en ruines.]], "_t")
 t("The Legend of Garkul", "La Légende de Garkul", "_t")
-t([[#{bold}#Chapitre Un : Un Jeune Guerrier#{normal}#
+t([[#{bold}#Chapter One: A Young Warrior#{normal}#
+
+#{italic}#"Without hardship you cannot have strength. Only through pain do we truly learn. Our race has lived through war and fire and pestilence, and each one has made us stronger. Each trial we overcome brings us to greater strength."
+- Sayings of Garkul the Devourer#{normal}#
+
+Garkul was the greatest orc to ever live, and the tale of his life is the tale of the greatest age for our race. He united our tribes, drove back the enemy races, conquered west and east, and died with ten thousand bodies at his feet.
+
+He was born in a troubled time, when we lived a life of hiding, capable of only sneak attacks on the other races from our dark caves. He was from a small brood of no notable blood, but at a young age proved himself on the streets as a fierce and intelligent warrior. Note that there could be no one like Garkul in the other races. They coddle their nobility and weaken them, whilst those that endure true hardship are doomed to live a life of servitude. We orcs are all born equal, and every one of us is given the opportunity to fight and show our prowess above others. Only the strong live to rule, and only the smart stay in power.
+
+Garkul formed his own street gang, as those who saw his strength quickly devoted themselves to him. Soon he became powerful enough to take over his whole tribe. But one day he was spotted for a greater fate. Verikor the spellmaker was visiting each tribe, gathering volunteers for his experiments in magic. When he came to Garkul's tribe the young orc laughed at him, and said that all the spells of Eyal could not match the muscles in his left arm. Verikor was impressed by this adolescent display of pride, and moreover saw something else in the youth, and invited Garkul to test his brawn against the strongest of the new breed of mages. Garkul accepted, and the two travelled to Verikor's halls.
+
+Here Garkul was surprised, for the caverns beneath the halls hid thousands of orcs training in the ways of magic. They were highly organised, split into schools of ability and rising ranks, with masters teaching them well in the use of the Art for combat. Verikor explained how he had spent his life studying the effects of the Spellblaze, and experimenting on kidnapped mages from the other races, and this was the culmination of that lifelong research. With young orcs from all the tribes he could build an army of mages that could help their whole race fight back against their enemies. Garkul was clearly stirred by the possibilities this could bring.
+
+Then came the time of the trial, for Garkul had bet that with his left arm alone he could fend off the greatest of wizards. So Verikor brought out his three most advanced students, one trained in fire, one trained in ice, and one trained in blood, and the challenge was to see who could knock the other out first. Garkul accepted with a grin, putting his right arm behind his back as he faced the three mages.
+
+The pyromancer began by shooting a wreath of flames at the fighter, but Garkul dodged with immense speed, and before the mage could cast another spell Garkul was upon him, and swept a vicious uppercut into the caster's jaw, breaking it and instantly knocking him out. Then the cryomancer let loose a hail of ice, but Garkul grabbed the swooning fire mage by his robe and used him as a shield as he ran through the icy storm, till he came to the second caster, tossed aside the inert body, and hooked the ice mage soundly on the temple. With two mages down in just a few seconds he then turned on the corruptor, who backed off in fright. Garkul advanced with a laugh, but as he came near the blood mage cast a hex, and the warrior felt his arm suddenly shrivel up, unusable. With a curse he headbutted the final caster, who fell instantly to the ground, and the hex was broken.
+
+Garkul turned to the amazed Verikor and bowed. "You have bested me - I had to use my head for the last one." But Verikor was in awe of the fighter's skills - his incredible speed, his amazing strength, and his quick-wittedness in battle were all far beyond anything he had seen before. The two talked a while, and Garkul brought forth many ideas for how the army of mages could work together with the warriors and the wilders of the tribes to produce an unequalled force. His eyes were open now to the potential for magic, and his brain wrought together new tactics and strategies for how it could be used in battle.
+
+Verikor kept Garkul as his guest for many months, and though Garkul had no inkling for the Art he learnt many things about how to resist and avoid the effects of magic. Verikor never ceased to be impressed by the young orc's talents, and it became clear to him that here was one who was destined to lead their race to great things.]], [[#{bold}#Chapitre Un : Un Jeune Guerrier#{normal}#
 
 #{italic}#"Sans épreuves, tu ne peux avoir de force. Ce n'est qu'à travers la douleur que nous apprenons vraiment. Notre race a vécu à travers la guerre, le feu et la peste, et chacune d'elles nous a rendus plus forts. Chaque épreuve que nous surmontons nous apporte une plus grande force."
 
@@ -1227,7 +1246,34 @@ Le pyromancien commença par tirer une couronne de flammes sur le combattant, ma
 Garkul se tourna vers Verikor stupéfait et s'inclina. "Vous m'avez surpassé - j'ai dû utiliser ma tête pour le dernier." Mais Verikor était en admiration devant les compétences du combattant - sa vitesse incroyable, sa force étonnante, et sa vivacité d'esprit au combat étaient toutes bien au-delà de tout ce qu'il avait vu auparavant. Les deux discutèrent un moment, et Garkul proposa de nombreuses idées sur la façon dont l'armée de mages pourrait travailler ensemble avec les guerriers et les naturalistes des tribus pour produire une force inégalée. Ses yeux étaient désormais ouverts au potentiel de la magie, et son cerveau élaborait de nouvelles tactiques et stratégies sur la façon dont elle pourrait être utilisée au combat.
 
 Verikor garda Garkul comme invité pendant de nombreux mois, et bien que Garkul n'ait eu aucun penchant pour l'Art, il apprit beaucoup de choses sur la façon de résister et d'éviter les effets de la magie. Verikor ne cessa jamais d'être impressionné par les talents du jeune orc, et il devint clair pour lui qu'il était celui qui était destiné à mener leur race vers de grandes choses.]], "_t")
-t([[#{bold}#Chapitre Deux : Ascension du Dévoreur#{normal}#
+t([[#{bold}#Chapter Two: Rise of the Devourer#{normal}#
+
+#{italic}#"There are no such things as obstacles, no such things as impossibilities. When a problem presents itself you use your head and your fists, and you remove the problem. If you cannot punch you kick, and if you cannot kick you bite, and you do not unclench your jaws until the thing that was a problem is a problem no more."
+- Sayings of Garkul the Devourer#{normal}#
+
+The next spring Verikor brought Garkul to the tribal council, when each of the leaders of the tribes met. Wargon the elder headed the meeting, as they heard reports from the happenings in each tribe.
+
+Garkul listened patiently until one of the western tribes briefed about an attack on their base by the halflings, and he stirred as he heard about how their warriors had fallen to the Eldoral slingers and mages, but Verikor bade him be still. There were mutterings from some of the other tribal leaders, but Garkul was shocked that none called for an avenging strike.
+
+Wargon stayed silent and contemplative, but when the mutterings died down he raised his voice. "These are terrible events, but little can be done. To attack back would be to draw attention to ourselves, to invite further destruction. We must remain silent, perhaps-"
+
+"Fangless dog!" shouted Garkul, standing up suddenly, no longer able to control himself. "You have no teeth! We should fight back, we should teach them a lesson for daring to assault our tribes!"
+
+Wargon seethed with rage at the insult, and gestured for several guards to chop down the young warrior. Garkul tensed as he saw them reach for their weapons, ready to fight back against the whole room if needs be, but Verikor swiftly stood up to intervene. "Elder, forgive the boy; he is young and keen for battle. It is my fault for bringing him here, I accept full responsibility."
+
+Wargon's eyes turned to slits as he looked at the spellmaker. "You would take this boy's stead?" Verikor gravely nodded, and a thin smile crossed the elder's lips. Long had he suspected the mage of building up secret forces, and now he saw a chance to remove a potential rival. He motioned to the nearest guard, who advanced on the unresisting mage and slit his throat.
+
+Garkul remained motionless, staring hard at the elder. Wargon's slitted eyes rested on him for a moment, but the stare made him uneasy. Turning to one of the guards he said, "I do not like the look in this one's eyes. Put out his right eye, and then let him go." Garkul did not flinch as the guard took the knife to his face, and his left eye remained fixed on Wargon as the right was cut open and blood poured down his face.
+
+He returned to his tribe and had the wound tended, but would accept no patch on it, and the name of Garkul One-Eye was laid on him. People asked, "How do you now intend to stand for leadership of our tribe when you have but half vision?" But Garkul responded, "I see more than all others, and I will lead this tribe and more besides."
+
+He awaited his vengeance till he deemed the time right, and at the next tribal council he arrived with twenty of his followers. When he was refused entry he batted away the guards with a single swipe of his fist. He marched towards Wargon whilst his warriors surrounded the tribal leaders. "So, fangless wolf," he growled. "Will you fight me now?"
+
+Wargon clenched his teeth, and not wanting to appear weak he reached for his daggers and sprung at the challenger. But Garkul grabbed both of his arms, and in a swift movement tore them from their sockets. Then he seized the screaming elder by the head, digging his nails into his flesh, and pulled the face close to his own. He opened his jaw over Wargon's right eye and bit down sharply, shearing the orb from its socket, before tossing back his head and swallowing the eyeball. Then he turned to the other eye and did the same, black blood running down his chin as he chewed through the squelching flesh.
+
+He dropped the twitching body on the ground, bent over it and pummelled his fist down on the wounded head, cracking Wargon's skull apart and smashing out all his teeth. He turned then to the other leaders and cried, "See?! For each eye one takes from me, I take two! Follow me, and I will kill two halflings for every one they take of us. There will be no more snivelling and sneaking - we will rise up and bring a blaze of wrath across the lands!" Confronted by Garkul's strength and surrounded by his warriors, the tribal leaders without hesitation all agreed to follow him.
+
+So ended the name Garkul One-Eye, for a new name was born: Garkul the Devourer. The teeth of Wargon he collected and made into a necklace, and he added more teeth to it as he dealt with dissent amongst the tribes, until all followed him without question.]], [[#{bold}#Chapitre Deux : Ascension du Dévoreur#{normal}#
 
 #{italic}#"Il n'existe pas d'obstacles, pas d'impossibilités. Lorsqu'un problème se présente, vous utilisez votre tête et vos poings, et vous éliminez le problème. Si vous ne pouvez pas donner de coup de poing, vous donnez un coup de pied, et si vous ne pouvez pas donner de coup de pied, vous mordez, et vous ne desserrez pas les mâchoires tant que la chose qui était un problème n'est plus un problème."
 
@@ -1256,7 +1302,24 @@ Wargon serra les dents, et ne voulant pas paraître faible, il attrapa ses poign
 Il laissa tomber le corps tremblant au sol, se pencha au-dessus et martela la tête blessée de son poing, brisant le crâne de Wargon et fracassant toutes ses dents. Il se tourna alors vers les autres chefs et cria : "Voyez-vous ?! Pour chaque œil qu'on me prend, j'en prends deux ! Suivez-moi, et je tuerai deux halfelins pour chacun qu'ils nous prennent. Il n'y aura plus de pleurnicheries ni de fuites - nous nous lèverons et apporterons un brasier de colère à travers les terres !" Confrontés à la force de Garkul et entourés par ses guerriers, les chefs tribaux sans hésitation acceptèrent tous de le suivre.
 
 Ainsi prit fin le nom de Garkul le Borgne, car un nouveau nom était né : Garkul le Dévoreur. Il collecta les dents de Wargon et en fit un collier, et il y ajouta d'autres dents au fur et à mesure qu'il traitait la dissidence parmi les tribus, jusqu'à ce que tous le suivent sans poser de questions.]], "_t")
-t([[#{bold}#Chapitre Trois : Le Porteur du Bûcher#{normal}#
+t([[#{bold}#Chapter Three: Bringer of Pyre#{normal}#
+
+#{italic}#"Fire is a symbol all races understand. To burn is to destroy utterly. When I conquer I leave behind fire - every house, every field, every corpse, burnt to a cinder. This is a sign of our dominance, and the word of it spreads amongst our enemies. To them I become a living, unquenchable flame, and the sight of my army fills them with the dread of incineration."
+- Sayings of Garkul the Devourer#{normal}#
+
+Garkul united the tribes swiftly and effectively. He reorganised them, joining together the warriors and the wyrmics into their own bands, encouraging competition between them. Seeing the strength of the mages he split them in two, one for the elements, and one for corruption and death, and he encouraged them to compete against each other further. He said that only orcs could compete against other orcs, for the other races could never compare. Only through competition with ourselves could we achieve our true strengths.
+
+He organised protective groups around the orcish territories, so that any attacks from the other races were quickly put down. But the halflings saw our increased organisation, and began to enlarge their scouting groups and bolster their patrols. Garkul saw that this could not continue any longer, and that the time was ripe to bring his plans to full fruition. He began to plan an attack on Barton, the largest Eldoral city in the region.
+
+The attack was made in the dead of night. Under the shadow of darkness his army marched towards the city walls, and they were not spotted until they were nearly upon it. When the guards let up a cry of warning they tried to close the city gates, but the orcish mages let loose a barrage of spells that tore the defences apart. The Barton army finally rallied and began to flood out of the city gates to meet their attackers, but Garkul ordered that balls of fire be shot into their midst, splitting the troops apart, so that his fighters could easily slice through the few that came through the gates, whilst the archers shot down those held back by the flames. The pyromancers continued to send conflagrations of flame over the city walls, and as the halflings inside tried to escape their burning homes a new chaos erupted. For Garkul had sent necromancers into the city in advance through the sewers, and hidden by arcane illusion they now began to raise the fallen halflings as their undead minions. People screamed as they saw their deceased loved ones suddenly rise as ghasts and wights to attack them. And no leadership could be found amongst the defenders, as Garkul had sent through stealthed assassins to strike them down at the moment of attack. As all resistance crumbled the great leader then let loose his berserkers and wilders into the city, and they tore through the streets butchering every last opponent. Within a few hours not a single halfling remained alive, and not a single cobblestone in the city was left unstained by their crimson blood. And Garkul's victory was truly transcendent, for not a single orc had been hurt in all the battles.
+
+When his troops asked what should be done next he stayed quiet for a moment, looking at a hill to the south of the city. Then he said, "Chop down wood from the forest nearby and bring it to the top of that hill. Then gather all the bodies from the city - every part of every man, woman and child - and construct atop the hill a mighty pyre." And his army did so, and did it quickly, for the word of Garkul now stood above all else in their minds. When the pyre was finished it was over 80 feet high, and crammed with the bodies of thousands of their victims. As dawn began to glow red on the eastern horizon they lit the pyre, and the flames rose up to make a mighty furnace, incinerating the fallen corpses.
+
+The pyre could be seen for miles around, and the other races sent out scouts to find out what it was. Garkul instructed his troops not to stop them, and the reports came back to the leaders of the other races of a butchery beyond all concept. Some could barely believe the words of their scouts, but the next night the same happened again to another Eldoral city, and the night after several towns in the region were burnt to a cinder. Garkul's army was sweeping forth in a blaze of wrath, and suddenly the peaceful world of the other races was falling apart.
+
+These early victories came easy, but as they advanced they met more resistance, as the races had more forewarning of their attacks. But Garkul was always master of any situation, and his strategy and tactics overcame all defences. And after each victory was always the great pyre, and our armies would chant songs of victory as the flames reached into the cold night sky. The battles would become known as the Pyre Wars, and the flames of conquest would spread across all of Maj'Eyal.
+
+Within three months the Eldoral kingdom was broken, and refugees flooded south to the halfling kingdom of Nargol, desperate to escape the deadly pyres. Garkul then consolidated his forces, building new bases in the conquered lands, before advancing out against the other races. None would escape the wrath of the people that had suffered so long from the attacks of the other races. Centuries of oppression had hardened us, and now the flames of vengeance that rose in our hearts could not be quenched.]], [[#{bold}#Chapitre Trois : Le Porteur du Bûcher#{normal}#
 
 #{italic}#"Le feu est un symbole que toutes les races comprennent. Brûler, c'est détruire totalement. Lorsque je conquiers, je laisse derrière moi le feu - chaque maison, chaque champ, chaque cadavre, réduit en cendres. C'est un signe de notre domination, et la nouvelle se répand parmi nos ennemis. Pour eux, je deviens une flamme vivante et inextinguible, et la vue de mon armée les remplit de la terreur de l'incinération."
 
@@ -1275,7 +1338,22 @@ Le bûcher pouvait être vu à des kilomètres à la ronde, et les autres races 
 Ces premières victoires furent faciles, mais à mesure qu'ils avançaient, ils rencontrèrent plus de résistance, car les races avaient plus d'avertissements de leurs attaques. Mais Garkul était toujours maître de toute situation, et sa stratégie et ses tactiques surmontèrent toutes les défenses. Et après chaque victoire, il y avait toujours le grand bûcher, et nos armées chantaient des chants de victoire alors que les flammes atteignaient le ciel nocturne froid. Les batailles furent connues sous le nom de Guerres du Bûcher, et les flammes de la conquête se propagèrent à travers tout Maj'Eyal.
 
 En trois mois, le royaume Eldoral fut brisé, et les réfugiés affluèrent vers le sud vers le royaume halfelin de Nargol, désespérés d'échapper aux bûchers mortels. Garkul consolida alors ses forces, construisant de nouvelles bases dans les terres conquises, avant d'avancer contre les autres races. Aucun n'échapperait à la colère du peuple qui avait tant souffert des attaques des autres races. Des siècles d'oppression nous avaient endurcis, et maintenant les flammes de la vengeance qui s'élevaient dans nos cœurs ne pouvaient être éteintes.]], "_t")
-t([[#{bold}#Chapitre Quatre : Conquérant de l'Ouest et de l'Est#{normal}#
+t([[#{bold}#Chapter Four: Conqueror of West and East#{normal}#
+
+#{italic}#"Our strength must come through our pride, and our pride must rise from our strength. Many are our powers and abilities, and we are unified in our pride of them. Be proud in our great race and revel in the glories we can achieve together."
+- Sayings of Garkul the Devourer#{normal}#
+
+For many years the great conquest could not be held back. Garkul marched across the lands, insufferable of any resistance. The Eldoral were broken, and they fled to their halfling cousins the Nargols in the south. The humans were split into many kingdoms, and Garkul began to pick them off one by one, leaving just a few isolated in the west and south. The Thaloren hid in their dark forests, penned in by the mighty orcish armies. The Shaloren tried to fight, and with their great magics they created grave opposition to the orcish troops, but gradually they were beaten back and forced to retreat to their capital in the south-west. The dwarves viciously defended their halls in the east, and Garkul could not penetrate their cities of stone, but he laid plans in place to take them through caves below.
+
+All the centre of Maj'Eyal was under Garkul's dominion - from the northern wastes to the southern lakes; from the Daikara Mountains to the western ocean. Orc patrols covered every valley and every field, and any enemies found were eradicated. Garkul's support was utterly unwavering, as every orc took new pride in their amazing achievements under his leadership.
+
+But victory was not complete, as many centres of power and resistance still remained, and the Nargol were still a grave threat from the south. Garkul was careful not to overreach, not to spread his forces too thin before victory was assured. He knew he must bide his time and build up his forces to their greatest possible strength.
+
+Then beneath the dwarven city of Reknor our scouts discovered an amazing thing - a Sher'Tul farportal. The blood mages studied it, and after some time they succeeded in activating it, and discovered a new land. It was the lost East, sundered from Maj'Eyal after the great cataclysm. Garkul saw here a great opportunity, and he instructed many thousands of young warriors and mages to be sent over to the east. There they formed training grounds where the military could train and practise to master their techniques before returning to join the wars in the west. Garkul named them the Prides, for he said here was were the strength of our race would lie, and here was what we would be most proud of.
+
+But while Garkul was busy establishing the Prides the Nargol king was planning a strategy of defence. He knew that the orcish armies would come for his kingdom soon, and he drew on the powers of his greatest strategists to prepare a force that could not be overcome. He summoned the mightiest alchemists from all the lands and together they laid plans for a creation that could not be beaten: the giant golem Atamathon.
+
+When Garkul next returned from the east he heard from his spies of great operations afoot in the Nargol kingdom, and he knew that he must face down the halflings. He did not know that it would be his last battle.]], [[#{bold}#Chapitre Quatre : Conquérant de l'Ouest et de l'Est#{normal}#
 
 #{italic}#"Notre force doit venir de notre fierté, et notre fierté doit s'élever de notre force. Nombreux sont nos pouvoirs et capacités, et nous sommes unis dans notre fierté envers eux. Soyez fiers de notre grande race et réjouissez-vous des gloires que nous pouvons accomplir ensemble."
 
@@ -1293,7 +1371,13 @@ Mais pendant que Garkul était occupé à établir les Fiertés, le roi Nargol p
 
 Lorsque Garkul revint ensuite de l'est, il apprit de ses espions de grandes opérations en cours dans le royaume de Nargol, et il sut qu'il devait affronter les halfelins. Il ne savait pas que ce serait sa dernière bataille.]], "_t")
 t("Clinician Korbek's experimental notes part one", "Notes expérimentales du clinicien Korbek, partie une", "_t")
-t([[#{bold}#Notes expérimentales du clinicien Korbek, partie une#{normal}#
+t([[#{bold}#Clinician Korbek's experimental notes part one#{normal}#
+
+What a dread and woeful task I have been given - the revival of our race. The swine humans and halflings have destroyed our whole society, and only the brutes of the military remain to rule our people. We are left with just a handful of women left, and without drastic measures we shall soon be extinct.
+
+And those drastic measures come down to me. I am the sole orc left with any advanced medical knowledge, as I evacuated to the East before our settlement was wiped out. I must find a way to prolong the lives of our remaining females and have them breed at far faster rates. I will use all natural and magical means at my disposal.
+
+I have taken this cavern up as a secret base, far away from the main encampment. I must do dark deeds here, and I wish them to remain hidden...]], [[#{bold}#Notes expérimentales du clinicien Korbek, partie une#{normal}#
 
 Quelle tâche redoutable et douloureuse m'a été confiée - la renaissance de notre race. Les porcs d'humains et de halfelins ont détruit toute notre société, et seuls les brutes de l'armée restent pour diriger notre peuple. Il ne nous reste qu'une poignée de femmes, et sans mesures drastiques, nous serons bientôt éteints.
 
@@ -1301,7 +1385,13 @@ Et ces mesures drastiques me reviennent. Je suis le seul orc restant avec des co
 
 J'ai pris cette caverne comme base secrète, loin du campement principal. Je dois y accomplir des actes sombres, et je souhaite qu'ils restent cachés...]], "_t")
 t("Clinician Korbek's experimental notes part two", "Notes expérimentales du clinicien Korbek, partie deux", "_t")
-t([[#{bold}#Notes expérimentales du clinicien Korbek, partie deux#{normal}#
+t([[#{bold}#Clinician Korbek's experimental notes part two#{normal}#
+
+I have begun work on several of the females. They are being kept in a coma for the duration of the experiments - it's far better that way. Initially I have subjected them to very high levels of wild infusion and arcane regeneration fields, whilst also keeping a direct feed into their stomachs high in protein. Corrupted blood is being pumped into their ovaries with a temporal acceleration field surrounding them. The leaders of each Pride have donated their seed for use in the experiments.
+
+Initial results have mostly been immensely successful. Body mass has grown significantly, especially in the abdominal region. One has even begun developing extra ovaries and sexual organs. I have managed to increase their fertility immensely, and the stimulated foetal growth rate means that new orcs take only eight weeks from conception to birth. The young also seem to be progressing in their development at a very advanced pace, with particularly accelerated muscle development.
+
+Some females have died during the procedures. I can only presume these were the weaker subjects, but it is a tragic loss regardless.]], [[#{bold}#Notes expérimentales du clinicien Korbek, partie deux#{normal}#
 
 J'ai commencé le travail sur plusieurs des femelles. Elles sont maintenues dans le coma pour la durée des expériences - c'est bien mieux ainsi. Initialement, je les ai soumises à de très hauts niveaux d'infusion sauvage et de champs de régénération arcanique, tout en maintenant une alimentation directe dans leurs estomacs riche en protéines. Du sang corrompu est pompé dans leurs ovaires avec un champ d'accélération temporelle les entourant. Les chefs de chaque Fierté ont fait don de leur semence pour utilisation dans les expériences.
 
@@ -1309,7 +1399,13 @@ Les résultats initiaux ont été pour la plupart immensément fructueux. La mas
 
 Certaines femelles sont mortes durant les procédures. Je ne peux que présumer qu'il s'agissait des sujets les plus faibles, mais c'est une perte tragique malgré tout.]], "_t")
 t("Clinician Korbek's experimental notes part three", "Notes expérimentales du clinicien Korbek, partie trois", "_t")
-t([[#{bold}#Notes expérimentales du clinicien Korbek, partie trois#{normal}#
+t([[#{bold}#Clinician Korbek's experimental notes part three#{normal}#
+
+My work is continuing with tremendous success. All subjects now have multiple operational wombs, thanks to the corrupted blood infusions coupled with arcane regeneration fields to quickly repair the corrupted tissues. With greater advances in accelerating the foetal growth stage we are now seeing new orcs every few days! I believe this can be pushed even further.
+
+Though the wombs operate at an advanced rate, we are keeping their vital organs suppressed to extend their lifespans. Perhaps they can live for hundreds, if not thousands of years.
+
+Pumping nutrients directly into their stomach is proving a difficulty with the increased activity in the abdominal region. I am currently investigating ways to condense nutrients into the atmosphere so that the subjects can be passively fed through breathing. Initial tests show a slimy build-up on the skin but no other negative side-effects.]], [[#{bold}#Notes expérimentales du clinicien Korbek, partie trois#{normal}#
 
 Mon travail se poursuit avec un succès formidable. Tous les sujets ont maintenant de multiples utérus opérationnels, grâce aux infusions de sang corrompu couplées à des champs de régénération arcanique pour réparer rapidement les tissus corrompus. Avec de plus grandes avancées dans l'accélération du stade de croissance fœtale, nous voyons maintenant de nouveaux orcs tous les quelques jours ! Je crois que cela peut être poussé encore plus loin.
 
@@ -1317,7 +1413,15 @@ Bien que les utérus fonctionnent à un rythme avancé, nous maintenons leurs or
 
 Pomper des nutriments directement dans leur estomac s'avère difficile avec l'activité accrue dans la région abdominale. J'étudie actuellement des moyens de condenser les nutriments dans l'atmosphère afin que les sujets puissent être nourris passivement par la respiration. Les tests initiaux montrent une accumulation visqueuse sur la peau mais aucun autre effet secondaire négatif.]], "_t")
 t("Clinician Korbek's experimental notes part four", "Notes expérimentales du clinicien Korbek, partie quatre", "_t")
-t([[#{bold}#Notes expérimentales du clinicien Korbek, partie quatre#{normal}#
+t([[#{bold}#Clinician Korbek's experimental notes part four#{normal}#
+
+Oh horrors... Oh black bilious terrors! What have I done? What vile and black sin have I done?!
+
+I have so long been concentrating on my objectives that I never stopped to think of the monstrous acts I was performing on these women. But last night I decided to take one out of her coma to see what reactions there might be. What reaction indeed! Her first action was to moan in pain - her swollen lungs have deprived her of any other form of communication. But then she opened her eyes and saw herself, and saw the others around her, and the panic and disgust that filled those eyes reached into my very soul.
+
+She wanted to die. I know she wanted to die, I could see her accusing eyes on me begging to let her die. But I cannot, I cannot... This is too terrible. I should burn this cave to the ground, and erase my horrible actions from existence! But where would that leave our people...
+
+My mind is in torment. I cannot live like this any longer... I cannot live...]], [[#{bold}#Notes expérimentales du clinicien Korbek, partie quatre#{normal}#
 
 Oh, horreurs... Oh, sombres terreurs bilieuses ! Qu'ai-je fait ? Quel péché vil et noir ai-je commis ?!
 
@@ -1327,7 +1431,15 @@ Elle voulait mourir. Je sais qu'elle voulait mourir, je pouvais voir ses yeux ac
 
 Mon esprit est en tourment. Je ne peux plus vivre comme ça... Je ne peux pas vivre...]], "_t")
 t("Captain Gumlarat's report", "Rapport du capitaine Gumlarat", "_t")
-t([[#{bold}#Rapport du capitaine Gumlarat#{normal}#
+t([[#{bold}#Captain Gumlarat's report#{normal}#
+
+I have found clinician Korbek's body in his study. It seems he slit his own throat. This would explain the lack of reports in the last few days.
+
+The reason for suicide is beyond understanding. His research has been immensely successful. Our race can now return to strength! I have read through his notes and based on his findings I will increase the procedures being used to allow for even faster birth rates. The Pride leaders will be pleased.
+
+I see his notes also suggest the mothers may be in pain. I will allow a doping infusion to be administered to alleviate this. We would not wish our women to suffer...
+
+]], [[#{bold}#Rapport du capitaine Gumlarat#{normal}#
 
 J'ai trouvé le corps du clinicien Korbek dans son bureau. Il semble qu'il se soit tranché la gorge. Cela expliquerait l'absence de rapports ces derniers jours.
 
@@ -1335,7 +1447,27 @@ La raison du suicide dépasse l'entendement. Ses recherches ont été immenséme
 
 Je vois que ses notes suggèrent aussi que les mères pourraient souffrir. J'autoriserai l'administration d'une perfusion de dopage pour soulager cela. Nous ne voudrions pas que nos femmes souffrent...]], "_t")
 t("Ukruk's log", "Journal d'Ukruk", "_t")
-t([[Les ruines Sher'Tul correspondent à la description du haut commandement. L'enquête a commencé, mais elle est lente. On dirait qu'elle s'est écrasée au sol il y a longtemps — difficile d'accéder à de nombreuses zones. L'objet cible a été décrit par le commandement comme un bâton. Je ne sais pas pourquoi un bâton est si important. Sûrement l'arme ultime devrait être une épée ou une hache, comme celle maniée par le grand Garkul ?
+t([[Sher'Tul ruin matches description from high command. Investigation begun, but slow. Looks like it crashed into the ground long ago - hard to access many areas. Target item has been described by command as a staff. Do not know why a staff so important. Surely the ultimate weapon should be a sword or axe, like that wielded by the great Garkul?
+
+Have heard many rumours against high command lately - strange rumours, indeed. Perhaps by completing this mission I shall get closer to them so that I might seek the truth...
+
+...
+
+Curses and banes! Some bastard blaze-born THIEF has raided the ruins! And a halfling no less, a curr-damned halfling! I am pyred with rage!
+
+He got in during dusk somehow, crawling through a tunnel too narrow for my workers to reach. He grabbed a staff from the ruins and snuck out past my orcs! The dirty, treacherous sneak has run away, and my career with him! I have sent scouts to track him, but he is proving elusive. But I will not let him escape! This is unforgiveable!
+
+...
+
+We've followed the tracks of the wretch. It seems as if he met up with a dwarf and a human near a town called Derth, and they travelled south-east from there. Following the three of them was much easier than the sneak alone, but we still must take care to remain hidden. Our orders from high command strictly forbid showing ourselves, and we must avoid battle as much as possible. I have a trained team of archers and fighters with me that know how to stay hidden in the woods.
+
+The thief and his cursed allies have entered an old ruined tower called Dreadfell. It an ancient place, known to be filled with undead in its dungeons. If we break in we're bound to cause a stir, and so close to the big human town east of here... I am not sure how to proceed, and have sent a message to command requesting instructions. For now we wait in the woods, keeping an eye on the entrance for any change. If anyone comes out from the tower with that staff they will face my wrath!
+
+...
+
+Word is finally back from command - hold position and wait for the staff to emerge. If it doesn't happen soon then they will send their own agents in time.
+
+In time! Bah! This will be my ruin if it comes to that. If there is any appearance of the staff I must snatch it and get back East as soon as possible...]], [[Les ruines Sher'Tul correspondent à la description du haut commandement. L'enquête a commencé, mais elle est lente. On dirait qu'elle s'est écrasée au sol il y a longtemps — difficile d'accéder à de nombreuses zones. L'objet cible a été décrit par le commandement comme un bâton. Je ne sais pas pourquoi un bâton est si important. Sûrement l'arme ultime devrait être une épée ou une hache, comme celle maniée par le grand Garkul ?
 
 J'ai entendu beaucoup de rumeurs contre le haut commandement ces derniers temps — des rumeurs étranges, en effet. Peut-être qu'en accomplissant cette mission, je me rapprocherai d'eux afin de pouvoir chercher la vérité...
 
