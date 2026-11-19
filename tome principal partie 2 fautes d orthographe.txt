@@ -1,0 +1,554 @@
+# Relecture de la partie 2 : relevé de corrections
+
+Je n'ai pas réécrit le fichier : voici un relevé de remplacements ciblés (ancien → nouveau), dans l'ordre du fichier. Il n'est pas exhaustif ligne par ligne.
+
+## 1. Décisions de cohérence (à appliquer partout)
+
+- **Peuples elfes** : Shaloren / Thaloren / Naloren, invariables. Remplacer Shaloréens, Shalore, Shalorën, Thalores, Nalore, Nalorën. Exemples : « mages de Shaloren » → « mages shaloren », « les Shalorens » → « les Shaloren ». Dans le chapitre Shaloren de Greynot, « Gayaeil » → « Gawaeil ».
+- **Ziguranth** : remplacer « Zigurantes » (elvala, high-peak, iron-throne, spellblaze, tannen, fun), « Ziguriens » (zigur) et « le Ziguranth » (antimagic).
+- **Sbires** : « laquais » (blighted-ruins) et « larbins » (fun) → « sbires ». « Non-Vie » → « non-vie ».
+- **Drake ≠ dragonnet** : dragonnet = hatchling, drake = drake. Voir daikara et southspar.
+- **Peuples communs en minuscules** : halfelin, nain, humain, elfe, orc (« Halfelins », « Orcs », « Humains » → minuscules). Interdits : « demi-hommes », « petit peuple » et « hobbits » pour halfelins.
+- **Majuscules des noms propres** :
+  - Vide
+  - Faeros (« feuros » dans charred-scar)
+  - Sher'Tul (« Sher'tul », « Sher'tuls » dans les quêtes)
+  - Plan de la Peur
+  - Pic Supérieur
+  - Dernier Espoir
+  - Trône de Fer
+  - Bourbier Troll
+  - Lac de Nur
+  - Kor'Pul
+  - Rak'Shor
+- **Chambre forte** (vault) à la place de « caveau » (keepsake) et « coffre » (test.lua).
+- **Dates** : « 2ième », « 68ième »… → « 2e », « 68e », « 1er ». Mois « Séduction », « Estival ». « An » avec majuscule.
+- **Mesures** : convertir en mètres dans les textes de Greynot et d'orc-prides (voir plus bas).
+- **Ligatures** : « oeuvre / coeur / oeil / voeux / soeur » → « œuvre / cœur / œil / vœux / sœur ». Elvala les utilise déjà, pas le reste.
+- **Apostrophes** : remplacer ’ par ' (high-peak, elvala, zigur, rassir, dirges…).
+- **Termes de jeu** :
+  - « drolem » (Tannen) et non « Golem »
+  - « fléau d'armes » (flail) vs « fléau » (blight)
+  - « orbe » masculin
+  - « athamé » masculin
+  - « infusion » plutôt qu'« essence »
+  - « arcanique » plutôt qu'« arcane »
+  - « Furtivité » partout (et non « Dissimulation »)
+  - rogue = « brigand »
+  - Diamant « Résonant »
+  - orbes « de commandement »
+- **Tu / vous** :
+  - Rolf et Weisman se vouvoient. Voir misc.
+  - Les quêtes passent au vous : east-portal, keepsake, lichform, high-peak, start-thaloren.
+
+## 2. Balises, formats et tags cassés
+
+- `#sexe#` → `#sex#` (paradoxology, « personne ne savait pourquoi #sex# est soudainement devenu maléfique »).
+- Espaces après élision devant balise (high-peak) : « d' #FIREBRICK#agonie » → « d'#FIREBRICK#agonie » ; « d' #{italic}#humanité » → « d'#{italic}#humanité ».
+- « #{italic}# (La tache d'encre » (Last Will) : retirer l'espace après la balise.
+- « L'%s » / « l'%s » : élision cassée. À corriger :
+  - cursed-aura : « L'%s gît profané » et « L'%s retourne à la normale » → « %s … »
+  - ring-of-blood : « vous remet l'%s » → « vous remet %s »
+- Subvault : « s'éffondre. » → « s'effondre » ; retirer les points finaux des noms de lieux (« effondrée. », « s'effondre. »).
+- Spacetime Mastery : retirer les `#CRIMSON#…#LAST#` ajoutés autour de Bannissement, Pas Dimensionnel, Échange, Réveil Temporel, Trou de Ver, Saut Temporel (absents de la source).
+- Purging Trap (zigur) : il manque le crochet fermant « ] » après « vous barre le chemin ».
+- Titres sans accent ou avec faute :
+  - « Eveil » → « Éveil » (tutorial-combat-stats, ×3)
+  - « Ere du Bûcher » → « Ère » (charred-scar)
+  - « Eres » → « Âges » (start-thaloren)
+  - « Equilibre / Equilibrium » → « Équilibre » (resources)
+  - « A PLACE UNE… » → « A PLACÉ UNE… » (greater_vault, lesser_vault)
+- Retirer les espaces invisibles (U+200B) dans « cousins ​​des montagnes » et « nuages ​​de ténèbres » (greynot ch. 10).
+- Entrées au format cassé :
+  - « ???, " ???" » (escort-duty) : retirer l'espace initial.
+  - « Maître des Bêtes  #rng# » : retirer le double espace.
+  - « Grondement des  Profondeurs » : retirer le double espace.
+- Guillemet orphelin : « satisfaits... '" » → « satisfaits... »'.
+- `living-weapons` : ordre des mots impossible en français.
+  - « Animé %s » → « %s animé »
+  - « Déplacement %s » → « %s mobile »
+  - « Poltergeist de %s » → « %s du poltergeist »
+  - « Poltergeist %s » → « %s poltergeist »
+- Traduction manquante : « Chant Radiant » → « Chant Radieux » ; « Volatile Poison » (nom) → « Poison Volatile » ; « Redux » à décider.
+
+## 3. Corrections par fichier
+
+### lore/
+
+**ardhungol**
+- « plus je me suis approché… plus l'atmosphère est devenue dense » → « plus je m'approche… plus l'atmosphère devient dense ».
+
+**arena**
+- Catégorie « Arena » → « Arène ».
+
+**blighted-ruins**
+- « laquais » → « sbire » (×2).
+
+**daikara**
+- « pas assez de peau de dragonnets pour couvrir un seul dragon » → « pas assez de peau de dragon pour couvrir un dragon ».
+- « peau de dragonnet » (drakeskin) → « peau de drake ».
+- « ce dragonnet des glaces » → « ce drake des glaces ».
+- « un nid de dragonnet voisin » → « un nid de drakes voisin ».
+- « J'ai appelé le dragonnet » → « J'ai appelé le drake ».
+- « une engeance que Sodelost » → « un engin que Sodelost » (×2).
+- « Piège du Feu de Dragon » : uniformiser avec le talent (« Piège du Feu du Dragon » → « du Feu de Dragon »).
+- « Capitaine d'Expédition » partout (la version « Chef d'Expédition » a disparu, ok).
+
+**derth**
+- « après que vous les ayez arrêtées » → « après que vous les avez arrêtées ».
+- « Ce n'est pas que je ne lui fais pas confiance » → « …que je ne lui fasse pas confiance ».
+- « vous et eux… nous ayez sauvés » → « nous avez sauvés ».
+- « elles sont volontiers à vous » → « elles sont à vous bien volontiers ».
+
+**dreadfell**
+- « 250 de plus seront exécutés. Ces ordres seront exécutés » → « 250 de plus seront abattus ».
+- « tout ce qui M'Appartient » → « tout ce qui est Mien ».
+- « stupides imbéciles » → « pauvres imbéciles ».
+- « le héros idoine » → « le héros qu'il fallait ».
+- « Quiconque manquera de produire des œuvres d'un niveau insuffisant sera anéanti » (contresens) → « Quiconque ne produira pas des œuvres d'un niveau suffisant sera anéanti ».
+- « Un poème griffonnée, écrit de façon enfantine » → « Un poème griffonné, d'une écriture enfantine ».
+- « d'une élégante manière gothique » → « d'une élégante écriture gothique ».
+- Poème (N'ose s'opposer) : « N'ose s'opposer à lui » → « Ne t'avise pas de t'opposer à lui ».
+- Poème enfantin à refaire (rimes -âtre/-age). Proposition :
+  - « Moi aimer Maître, / Lui jamais disparaître, / Lui plus rapide / Que mage timide, / Lui faire carnage, / Pas de bandage / Après son attaquage... / Fromage... passage... sauvage ? Grr, besoin plus cervelle... »
+- Lettre à Borfast :
+  - « Tu seras l'envie de toutes les goules » → « Tu feras l'envie de toutes les goules ».
+  - « N'est-ce pas des plus exaltants ? » → « N'est-ce pas follement excitant ? ».
+- Lettre à Aletta : « les froides forteresses de mon repaire » → « les froids recoins de ma forteresse ».
+
+**elvala**
+- Catégorie « Brûlure magique » → « Brûlure Magique ».
+- Titres des chapitres : alignement des majuscules entre l'intitulé et l'en-tête (« Une Rencontre Fatidique » / « Une rencontre fatidique »).
+- « chevelure pourpre / cheveux pourpres / cheveux roux » → « chevelure écarlate » partout (ch. 1, 2, 3, 7).
+- Ch. 1 :
+  - « son esprit vif comme ses mots » → « sa vivacité d'esprit comme ses mots ».
+  - « inconquérables » → « invincibles ».
+  - « frêles elfes » → « elfes graciles ».
+  - « Quoique, peut-être, si nous chassions l'orc ensemble un jour, verrais-je par moi-même » → « Peut-être, si nous chassons l'orc ensemble un jour, verrai-je par moi-même ».
+  - « Affaiblis d'abord par les Guerres de la Séduction, mais à présent » → « Nous fûmes d'abord affaiblis par les Guerres de la Séduction, mais à présent ».
+  - « Ils apporteront leur aide » (Shatur) → « Ses habitants apporteront leur aide ».
+  - « impliquer qui nous pouvions » → « impliquer tous ceux que nous pouvions ».
+  - « Les Nalore / Thaloréens » → « Naloren / Thaloren ».
+- Ch. 2 :
+  - « nul en dessous d'un membre du conseil n'aurait pu déceler » → « seul un membre du conseil aurait pu déceler ».
+  - « abattant le plus proche des brutes » → « abattant la brute la plus proche ».
+  - « et d'habiles coups d'épée envoyai » → « et, d'habiles coups d'épée à l'appui, j'envoyai ».
+  - « la lançant en lance » → « la projetant comme une lance ».
+  - « L'heure de la danse. » → « C'est l'heure de danser. »
+- Ch. 3 :
+  - « Comme il me plairait de diriger si grande entreprise ! » → « …une si grande entreprise ! ».
+  - « ne ferait que m'envier davantage » → « ne ferait que me rendre jalouse ».
+  - « Depuis, nombre de ceux » → « Après cela, nombre de ceux ».
+- Ch. 4 :
+  - « Ou aurait-ce pu être » → « Ou cela aurait-il pu être ».
+  - « nous était presque échue » → « était presque venue ».
+- Ch. 5 :
+  - « elles avaient répondu… Elles ressemblaient » (orcs) → « ils avaient répondu… Ils ressemblaient ».
+  - « quelque chose n'allait terriblement pas » → « quelque chose allait terriblement mal ».
+  - « mon armée étant désarmée » (defenseless) → « mon armée étant sans défense ».
+  - « rangs après rangs » → « rang après rang ».
+  - « d'être seul survivant » → « d'être le seul survivant ».
+- Ch. 6 :
+  - « le lac Nur » → « le lac de Nur ».
+  - « à l'annulaire de sa main droite » (la source dit middle finger) → « au majeur de sa main droite ».
+  - « nouvelle chef » → « nouvelle cheffe ».
+  - « Si le récit de cet humain est à croire » → « …mérite d'être cru ».
+- Ch. 7 :
+  - « mon attunement arcanique » (mot anglais laissé) → « ma sensibilité arcanique ».
+  - « Zigurantes » → « Ziguranth ».
+- Ch. 8 :
+  - « aussi tranchai-je mon épée à travers le sol » → « aussi traçai-je un sillon dans le sol de mon épée ».
+
+**fearscape**
+- Catégorie « Plan de la peur » → « Plan de la Peur ».
+- « des armées de silhouettes démoniaques » (reprise) → « des armées de formes infernales ».
+- « tout deux » → « tous deux ».
+
+**fun**
+- Poème troll :
+  - « Moi Aime Taper » → « Moi aimer taper ».
+  - « Quand moi mange son cœur » (source : ear) → « Quand moi croque son oreille ».
+  - « Cuis-le longtemps, Sinon ça casse ! » → « Cuis-le bien, Sinon mal au ventre ! ».
+- Poème du nécromancien :
+  - « sans cesser » → « sans cesse ».
+  - « Tant de joie ! Leur plus grand rêve se déroule ! » → « Si pleins de joie ! Leur plus grand rêve ! ».
+  - « nous font ignorés » → « nous ignorent ».
+  - Dernière strophe à corriger : « Idiots ! Assis là-haut dans votre tour dorée, / Du haut de votre perchoir vous nous toisez, / Le temps viendra où vous vous recroquevillerez, / Nous régnons sur la mort, nous détenons le pouvoir. »
+- « Non-Vie » → « non-vie » ; « larbins » → « sbires ».
+- « voir page 46, Les Géants d'Ossements et Vous » → « voir le chapitre 46, Les Géants d'ossements et vous ».
+- « Tren, » et « Tren » : aligner sur la source « Tren? ».
+- « Ce sont de la vermine » → « Ce n'est que de la vermine ».
+- « Zigurantes » → « Ziguranth ».
+- « Voici ci-dessous la liste des » → « Voici la liste des ».
+- Poème des brigands : « sans étude » (vers 3 de la strophe 2) → « sans détour » ; « par un talent sans égal ni tort » à reformuler.
+- Dust to Dust :
+  - « sur un caprice d'une infâme engeance » → « au caprice d'une infâme engeance ».
+  - « forgés de côtes aiguisées » → « taillés dans des côtes aiguisées ».
+  - « essence sauvage » → « infusion sauvage ».
+
+**high-peak**
+- Catégorie « Pic supérieur » → « Pic Supérieur ».
+- « portail lointain du vide » → « portail lointain du Vide » (×2).
+- « armes des Zigurantes » → « armes des Ziguranth ».
+- Balises : voir section 2.
+- « jusqu'à ce qu'ils le repoussent dans le vide » → « …dans le Vide ».
+- « se soucier de nous enquêter » → « se soucier d'enquêter sur nous ».
+- Athamé : « athamé rune de sang » → « athamé runique de sang ».
+
+**infinite-dungeon**
+- Ch. 1 : « tout Portail lointain » → « tout portail lointain ».
+- Ch. 2 :
+  - « croassant d'une joie orgueilleuse » (mouette) → « criant d'une joie orgueilleuse ».
+  - « et titubant à travers le sable avant de s'écrouler » → « et, titubant sur le sable, s'écroula, épuisé ».
+  - « oubliant toute son épuisement » → « oubliant son épuisement ».
+- Ch. 5 : « ne se laisserait pas égarer » → « ne se laissa pas distancer ».
+
+**iron-throne**
+- Catégorie « Trône de fer » → « Trône de Fer ».
+- « Zigurantes » → « Ziguranth ».
+- Édit :
+  - « UN DÉCRET À TOUS… » → « UN ÉDIT À TOUS… ».
+  - « Comment un échec aussi décisif et total ait pu se produire » → « Comment nous avons pu échouer de façon aussi totale à arrêter cette menace ».
+  - « à ceux, hors du Trône, en qui cette information peut être confiée » → « à ceux, hors du Trône, à qui cette information peut être confiée ».
+- « zigurantes ont attaqué » → « ziguranth ont attaqué ».
+- « dernieres paroles » → « dernières paroles ».
+
+**keepsake**
+- « Journal de Kyless : Premier / Deuxième / Troisième / Quatrième Récit » → « …Entrée ».
+- « Grâce à Berethh, Kyless, et à vous » → « Grâce à Berethh, à Kyless et à vous ».
+- « (si l'on peut appeler cela ainsi) » → « (si l'on peut dire) ».
+
+**kor-pul**
+- Catégorie « Kor'pul » → « Kor'Pul ».
+- « Paladin solaire Telthar » → « Paladin Solaire Telthar ».
+- « l'un de ces vermines » → « l'un de ces gredins ».
+
+**last-hope**
+- Catégorie « Dernier espoir » → « Dernier Espoir ».
+- « J'ai à peine 2 000 hommes » → « J'ai un peu moins de 2 000 hommes ».
+- « bande d'orcs isolée » → « bande d'orcs renégate ».
+- « Vive le Roi Toknor le Brave ! » : aligner la statue de Last Hope (« le Courageux » → « le Brave »).
+- Dates : « Morte le 2ième Estival, an 113 » → « 2e Estival, An 113 » ; « Née le 5 Flamme » → « 5e Flamme ».
+- Sparsud :
+  - « bourse en peau de dragonnet » → « bourse en peau de drake ».
+  - « Pourris dans mon nouveau don... » → « Pourris dans mon nouveau donj... ».
+  - « servages » → « domaines de serfs ».
+  - « 1er Séduction, an 714 » → « 1er Séduction, An 714 ».
+- « la notoire manque de fiabilité » → « le notoire manque de fiabilité ».
+- Tombes :
+  - « Repose en paix, mon enfant. » → « Repose en paix, notre enfant »
+  - « Lord Gracion Bestelle » → « Seigneur Gracion Bestelle »
+  - « Qui vit par le Temps » → « Qui manie le Temps »
+  - « d’esprit / d’âme » → apostrophes droites.
+
+**maze**
+- « l'Âge du Crépuscule » → « l'Ère du Crépuscule ».
+
+**misc**
+- Catégorie « Temple de la création » → « Temple de la Création ».
+- Traités :
+  - « Nalorën / Shalorën / Thalorën » → « Naloren / Shaloren / Thaloren ».
+  - « la terre l'esprit et le corps » → « la terre, l'esprit et le corps ».
+  - « les humains et les hobbits » → « les humains et les halfelins ».
+  - « Une nouvelle voie s'ouvrira : la Voie du Dévoreur » → « Un nouveau traité sera bientôt rédigé : le Traité du Dévoreur ».
+- Note de Slasul :
+  - « armes de combat irréprochables » → « irréprochable au combat ».
+  - « une grandeur encore plus grande » → « une grandeur bien plus élevée encore ».
+- Lettres de Rolf et Weisman :
+  - Lettre à Rolf (1) : réinsérer le saut de paragraphe avant « Et en effet y aurait-il de la gloire… ».
+  - « Cher Rolf destructeur des fourmis » → « Cher Rolf le Pourfendeur de Fourmis ».
+  - « Tire les leçons de mon expérience » → « Tirez les leçons de mon expérience ».
+  - « l'engin se poser » → « la créature se poser ».
+  - Lettre à Weisman (3) : vouvoyer.
+    - « Rassure-toi, mon frère. Elle t'a peut-être pris un œil » → « Rassurez-vous, mon frère. Elle vous a peut-être pris un œil ».
+    - « Pensées à toi » → « Pensées pour vous ».
+    - « ta prochaine lettre » → « votre prochaine lettre ».
+    - « N'oublie pas » → « N'oubliez pas ».
+    - « beaux caractères.Rolf » → retour à la ligne.
+    - « C'est peut-être pour cela que je ne… Non, je ne peux pas me laisser emporter par lui. » → « C'est peut-être pour cela qu'il ne… Non. Je n'y penserai pas. »
+  - Testament : « Utilme testament de Rolf les deux-haches » → « Dernières volontés et testament de Rolf Deux-Haches ».
+  - « Je lègue mes biens à celui qui parviendra à me tuer... » → « Je lègue mes biens à quiconque tuera... ».
+- Analyse de Smythen :
+  - « Et nous sommes les plus petits » → « Ce sont manifestement nous, les halfelins ».
+  - « le grand Sher'Tul » → « les grands Sher'Tul ».
+  - « trouve probablement son origine en nous » → « …en cela ».
+  - « difformes et difformes » → « difformes et tordues ».
+  - « des dieux moindres que les nôtres » → « que le nôtre ».
+  - « à nous, les plus jeunes » → « à nous, les halfelins ».
+  - Réinsérer le saut de paragraphe avant « Cependant, la question des Sher'Tul demeure ».
+- « Légende des Soeurs de Lunes » → « Légende des Sœurs-Lunes ».
+- « Shalore » (ruines elfiques) → « Shaloren » ; « Je ne peux me le permettre » → « Je ne peux le permettre » ; « même la sombre sur sa route » → « même la Sombre sur sa route ».
+- Catégorie « Vallée de la lune » → « Vallée de la Lune ».
+- Greynot, mesures :
+  - Shaloren : « 6'2" » → « 1,88 m »
+  - Thaloren : « 6'4" » → « 1,93 m »
+  - Naloren : « 5'10" » → « 1,78 m »
+  - Ogres : « 8"4 » → « 2,54 m »
+  - Trolls : « huit pieds » → « 2,40 m »
+  - Géants : « dix pieds » → « 3 m »
+  - Dragons : « cinq / vingt / quarante pieds » → « 1,50 / 6 / 12 m »
+  - Orcs : « 1m85 » → « 1,85 m »
+  - Sher'Tul : « 1m62 » → « 1,62 m »
+- Greynot, autres corrections :
+  - Humains : « les chasseurs de mages » → « les Traque-sorts ».
+  - « fabricants d'essences » → « fabricants d'infusions ».
+  - Halfelins : « siège d'Orcs » → « siège d'orcs ».
+  - Nains : « de généreuses pots-de-vin » → « de généreux pots-de-vin » ; « Leurs femelles » → « Leurs femmes ».
+  - Shaloren : « par l'intermédiaire de halflings » → « d'halfelins ».
+  - Thaloren : « mages de Shaloren » → « mages shaloren ».
+  - Ogres : supprimer la phrase tronquée « Les parents... » avant « Ils accomplissent généralement cette tâche de concert ». « Soucieux de la sécurité et du confort d'Elvala » → « En raison de la sécurité et du confort qu'offre Elvala ». « avec les Orcs » → « avec les orcs ».
+  - Sher'Tul : « portails lointain » → « portails lointains » (×4).
+- Gifts of Nature :
+  - « À l'Ère de l'Allure » → « À l'Ère de la Séduction ».
+  - « du démoniste » → « du sorcier ».
+  - « Cet abode » → « Cette demeure ».
+  - « Le sang fut rasé » → « Le sang coula ».
+- Running man : « Ni soleil ni lunes ne te sauveront en vain » → « …ne te sauveront ».
+- Dreamscape : « Déjà Vu » → « déjà-vu » ; « copies miroirs » → « copies-miroirs ».
+- Phénix : « s'ils sont récalcitrants » → « si elles sont récalcitrantes ».
+- Nature vs Magie : « arcanes » → « arcaniques » (×2).
+- Highfin :
+  - « en a aveuglé trop » → « en a trop aveuglé ».
+  - « une crainte écrasante » → « un émerveillement écrasant ».
+- Point Zéro : « Bienvenue au Ponto Zero » → « Bienvenue au Point Zéro ».
+- Spydrë : « Je la maudis mieux en ayant bravé ses entrailles » → « Je la maudis mieux encore en survivant plus longtemps ».
+- Boss :
+  - « Mon maître d'imbécile » → « Mon imbécile de maître ».
+  - « 53 Allure, Année 603 » → « 53 Séduction, An 603 ».
+
+**noxious-caldera**
+- « caldera » → « caldeira ».
+- « une rangée de nains se tenait là riant » → « …se tenait là, riant ».
+- « si l'on peut appeler cela ainsi » → « si l'on peut dire ».
+
+**old-forest**
+- « plusieurs centaines de pieds » → « plus de cent mètres ».
+- « les arbres prêtent une attention plus étroite à moi » → « les arbres me prêtent une attention plus soutenue ».
+
+**orc-prides**
+- « cette prostituée en armure » → « cette catin de fer-blanc ».
+- Légende de Garkul :
+  - « Chapitre 5 : La chute du Plus Puissant » → « Chapitre Cinq : La Chute des Puissants ».
+  - « les demi-hommes » → « les halfelins » (×4) ; « le petit peuple » → « les halfelins ».
+  - « dix pieds » (warg) → « trois mètres » ; « 80 pieds » (bûcher) → « 24 mètres ».
+  - « À ces mots, les demi-hommes furent consternés » → « À cette vue… ».
+- Notes de Korbek :
+  - « seuls les brutes » → « seules les brutes ».
+  - « essences de sang corrompu » → « infusions de sang corrompu ».
+  - « une essence » → « une infusion dopante ».
+- « harnacher le pouvoir » → « exploiter le pouvoir ».
+
+**rhaloren**
+- « Shalorens » → « Shaloren ».
+- À vérifier : « L'Inquisitrice » (lettres, féminin cohérent) contre « Inquisiteur » (quête start-shaloren et vault renegade-undead).
+
+**sandworm**
+- « voie wyrmique » → « voie draconique ».
+- « Avales-moi » → « Avale-moi ».
+
+**shertul**
+- Catégorie « Sher'tul » → « Sher'Tul ».
+- « Tueuses de Dieux » → « Tueurs de Dieux » si Godslayers désigne les porteurs partout ailleurs (à trancher).
+
+**slazish**
+- « Chevaucheur de vagues » → « Chevaucheur de Vagues ».
+- « pour une honte » → « pour une plaisanterie ».
+
+**spellblaze**
+- Catégorie « Brûlure magique » → « Brûlure Magique ».
+- « Zigurantes » → « Ziguranth ».
+
+**spellhunt**
+- Catégorie « Ère du crépuscule » → « Ère du Crépuscule ».
+- « essences » → « infusions » (×2).
+- « avec le reste des restes » → « avec le reste de la dépouille ».
+
+**sunwall**
+- « l'Injusticé » → « le Lésé ».
+- « Humains / Elfe » → « humains / elfe ».
+
+**tannen**
+- « mon Golem » → « mon drolem » (×6 environ).
+- « Zigurantes » → « Ziguranth » (×2).
+- « programmes de sélection de Draconien » → « programmes d'élevage sélectif de drakes ».
+- « la Nécromancie » → « la nécromancie ».
+- « ramasser un fléau » → « ramasser un fléau d'armes ».
+- « squelettes de géants » → « géants d'ossements ».
+- « Nota personnelle (2) » → « Note personnelle (2) ».
+- « une autre esprit curieux » → « un autre esprit curieux ».
+
+**trollmire**
+- Catégorie « Bourbier troll » → « Bourbier Troll ».
+
+**zigur**
+- « Règles des Ziguriens » → « Règles des Ziguranth ».
+- Le Grand Mal :
+  - « toute vie sur Terre » → « toute vie sur ces terres ».
+  - « inexplicable » → « indescriptible ».
+  - « Les terribles mages et nécromanciens » → « Les terribles sorciers et nécromanciens ».
+  - « humains aux petits êtres » → « humains aux halfelins ».
+  - « Les fléaux n'étaient que les prémices de la Brûlure Magique » → « …les échos de la Brûlure Magique » ; « ces prémices s'amplifièrent » → « ces échos entrèrent en résonance ».
+- Mon salut :
+  - « croissant de lune de Véranil » → « croissant de lune de l'Estival ».
+  - « une petite femme vêtue d'une armure sombre / La petite femme me rendait visite » → « une halfeline / La halfeline ».
+  - « ne apportant » → « n'apportant ».
+  - « faites en sorte que les autres le regrettent aussi » → « …s'en repentent aussi ».
+- Purging Trap :
+  - « de #{italic}#traditionnellement glorieuse#{normal}# méthodes » → « des méthodes moins #{italic}#traditionnellement glorieuses#{normal}# ».
+  - « La bienséance ne devrait pas vous empêcher de vous enfuir alors que vous pourriez, en réalité, lui tendre un piège » (contresens) → « La bienséance n'est pas une raison de laisser un nécromancien s'enfuir vivant alors que vous auriez pu piéger sa voie de retraite ».
+
+### Cartes, vaults et quêtes
+
+- gates-of-morning / last-hope (carte) : « Statue du Roi Toknor le Courageux » → « le Brave ».
+- test.lua : « du coffre de test » → « de la chambre forte de test ».
+- subvault : « Il est complètement effondré » → « Elle est entièrement effondrée ».
+- anti-antimagic :
+  - « avez joint leurs forces » → « avez joint vos forces aux siennes ».
+  - « Talents Générique des Malédictions » → « …des Sortilèges ».
+- antimagic : « le Ziguranth » → « les Ziguranth ».
+- brotherhood :
+  - « elixir de muscles » → « élixir de muscles ».
+  - « elixir de peau de pierre » → « élixir de peau de pierre ».
+  - « elixir de foundations » → « élixir des fondations ».
+- charred-scar : « énorme feuros » → « énorme faeros ».
+- deep-bellow : « Vous êtes un survivant » (source : You are great) → « Vous êtes quelqu'un de remarquable ».
+- dreadfell : « aucun de ceux qui y ont été ne sont jamais revenu » → « aucun de ceux qui l'ont atteinte n'est jamais revenu ».
+- east-portal : « Tannen t'a piégé ! … qui t'a transporté … Trouve … prends » → « Tannen vous a piégé ! … qui vous a transporté … Trouvez … prenez ».
+- escort-duty : « échoué a protéger » → « échoué à protéger ».
+- high-peak :
+  - « Paladine Solaire Déchu » → « Déchue »
+  - « portail du Néant » → « portail du Vide » (×4)
+  - « le Mur du Soleil » → « le Mur Solaire »
+  - « disparaitre » → « disparaître »
+  - « Le plan de ton patron » → « Le plan de votre patron »
+  - « de La Fierté Grushnak » → « de la Fierté Grushnak »
+  - « L'Ère de l'ascendance » → « L'Ère de l'Ascendance »
+  - « les seules personnes encore en sécurité » (unsafe) → à trancher (« encore en danger » / « seules à échapper à la Voie »)
+- infinite-dungeon : « Allez au fond des choses… dans un bain de gloire » → « Allez au plus profond… dans un éclat de gloire ».
+- keepsake :
+  - « de ta main » → « de votre main »
+  - « Cherche… tue-le » → « Cherchez… tuez-le »
+  - « chasse envers Kyless » → « chasse à Kyless »
+  - « caveau » → « chambre forte »
+  - « secon caveau » → « seconde chambre forte »
+  - « bruits d'échauffement » → « bruits de bousculade »
+- lichform :
+  - « Magie et Volonté supérieure à 50 » (source : Willpower over 25) → « Magie supérieure à 50, Volonté supérieure à 25 »
+  - « s'ouvrent à toi ! Vous serez » → « s'ouvrent à vous ! »
+  - « Vous êtes maintenant une liche ! » → « Vous avez accédé à l'état de liche ! »
+- lightning-overload : « vous êtes accueillis » → « accueilli » ; « le groupe de Ziguranth » → « les Ziguranth ».
+- love-melinda : « d'une étrange série de fléaux » → « par une étrange vague de fléau ».
+- mage-apprentice : « artifact » → « artefact ».
+- master-jeweler : « bijoutier » → « joaillier » (×2).
+- orb-command : « une orbe » → « un orbe » ; « affaiblie » → « affaibli » ; « orbes de commande » → « commandement ».
+- orc-pride : « Les nombreux fiefs des Fiertés Orcs » → « Les nombreuses Fiertés des Orcs » ; « Rak'shor » → « Rak'Shor ».
+- paradoxology : `#sexe#` → `#sex#`.
+- ring-of-blood : « anneau de sang » → « Cercle de Sang ».
+- start-allied : « A la recherche » → « À la recherche ».
+- start-archmage : « vortex » → « trous de ver ».
+- start-dwarf : « Conseil de fer » → « Conseil de Fer ».
+- start-point-zero : « le point zéro » → « le Point Zéro ».
+- start-sunwall : « portail Naga » → « portail naga ».
+- start-thaloren :
+  - « La Folie des Eres » → « La Folie des Âges »
+  - « Tu dois explorer » → « Vous devez explorer »
+  - « Coeur de la Angoisse » → « Cœur de l'Angoisse »
+- start-yeek : « tunnels Ritch » → « tunnels des ritchs ».
+- strange-new-world : « parti de de l'Elfe » → « parti de l'Elfe » ; « La Fierté Kruk » → « la Fierté Kruk ».
+- trollmire-treasure : « Trésor cachés » → « Trésor caché » ; « Etes vous sûr ? » → « Êtes-vous sûr ? ».
+- tutorial : « villagois » → « villageois ».
+- void-gerlyk :
+  - « piégées » → « piégé » (Gerlyk)
+  - « hurler » → « crier »
+  - « Sher'tuls » → « Sher'Tul »
+  - « Tueur de Dieu » → « Tueur de Dieux »
+- west-portal : « une Athamé Rune de Sang » → « un Athamé… ».
+- resources : « vous êtes prenez des dégâts » → « vous prenez des dégâts » ; « score Paradox » → « score de Paradoxe ».
+
+### Talents
+
+- **Accords de « proportionnel »** (sujet féminin ou pluriel mixte) :
+  - Dirge, Réquiem d'Acolyte : « La régénération est proportionnel » → « proportionnelle »
+  - Dirge Nihilist : « La réduction de dégâts est proportionnels » → « proportionnelle »
+  - Eclipse : « La pénétration de résistance est proportionnels » → « proportionnelle »
+  - Energy Decomposition : « La réduction maximale… proportionnel » → « proportionnelle »
+  - Shadow Simulacrum : « La durée et la vie sont proportionnels » → « proportionnelles »
+  - Mind Blast : « la durée est proportionnels » → « proportionnelle »
+  - Wormhole / Warp Mines / Spatial Tether : « La chance… est proportionnel » → « proportionnelle »
+  - Braid Lifelines / Cease to Exist : « La quantité… / La pénalité… est proportionnel » → « proportionnelle »
+  - Swap : « Les chances… sont proportionnels » → « proportionnelles »
+  - Time Shield : « L'absorption maximale… proportionnel » → « proportionnelle »
+  - Poison Storm, Epidemic, Pacification Hex, Shadow Veil, Shadow Grasp, Backstab, Blinding Powder : même accord.
+  - Hymn Incantor / Hymn Nocturnalist : « Les valeurs sont proportionnels » → « proportionnelles ».
+- **Assommement** (décision partie 1) : « assomement » → « assommement » (Dirge Intoner, Hymn of Perseverance, Hymn Acolyte, Temporal Hounds « assommenent », Dragonsfire Trap « assomant »).
+- « invisibile » → « invisible » (Hymn of Detection, Heightened Senses).
+- « confusionnant » → « rendant confus » (Mind Blast, Temporal Fugue Old).
+
+**celestial**
+- « Chants Funèbre » → « Réquiems » (catégorie/type).
+- Chants :
+  - « Chant Illuminate » (même nom que Chant of Light) → « Chant d'Illumination ».
+  - « Chant Radiant » → « Chant Radieux ».
+  - « Chant of Light : augmenté » → « augmentée » (portée).
+  - « Vous invoquez la gloire du Soleil » (Resistance) → « Vous chantez la gloire du Soleil ».
+  - « effet cross-palier et jusqu'a » → « effets inter-paliers et jusqu'à ».
+- Circles : « Surge Céleste » → « Onde Céleste » ; « +0.5 positif et négatif » → « +0,5 positif et négatif ».
+- Combat : « Effluence Gravitique » → « Éclat Gravitique ».
+- Crusader : « verrons leur résistance » → « verront leur résistance ».
+- Dark-sun : « d'une valeur situé » → « située » ; « La force du bouclier est proportionnel » → « proportionnelle ».
+- Dirge : « Réquiem Intonneur » → « Réquiem Intonateur ».
+- Guardian : « Absorbtion Restant » → « Absorption restante ».
+- Light : « tous le monde » → « tout le monde » ; « votre stats de Magie » → « votre statistique de Magie ».
+- Radiance : « aveuglés par la lumière » (Judgement) → « affaiblies par la lumière ».
+- Sunlight : « dégâts d'ombre bonus » → « dégâts d'obscurité bonus ».
+
+**chronomancy**
+- Types :
+  - « Temporal Hounds » → « Chiens de Chasse Temporels »
+  - « cronomantiques » → « chronomantiques »
+  - Spellbinding « Enchantement » → « Liage de Sorts »
+- Blade/Bow Threading : « Tissage de Lame » → « Déphasage de Lame ».
+- Flux : « Anomalies Induite » → « Anomalie Induite » ; « n'est pas rechargement » → « n'est pas en rechargement ».
+- Induced-phenomena : « Ère » (Epoch) → « Époque ».
+- Other : « Dégâts Barbouillés / floutés » → « Dégâts Étalés / étalés » ; « 50% de votre tourbillon » → « 50% de votre nombre de Fils ».
+- Temporal-combat : « Pli du Destin » → « Plier le Destin ».
+
+**corruptions**
+- Blight : « Fléau Insidieuse » → « Fléau Insidieux ».
+- Corruptions : « vous s'opposent » → « s'opposent à vous » ; « éveil du combat » → « combat ravageur ».
+- Plague : « dégâts de maladie » (Cyst Burst) → « dégâts de fléau ».
+- Reaving-combat : Carrier ajoute « rayon de 2 cases » et « aléatoire » absents de la source → « répandre les maladies de votre cible ».
+- Rot :
+  - « Maladie Pestilentielle » → « Fléau Pestilentiel »
+  - « mare de maladie » → « mare de fléau »
+  - « affinité à la fléau » → « affinité au fléau »
+- Scourge : « Frappe de Corruption » (Virulent Strike) → « Frappe Virulente » ; « Corrompt la cible » → « Corrompez la cible ».
+- Vile-life : « Soins Inversé » → « Soins Inversés ».
+- Vim : « fléau pure » → « fléau pur ».
+
+**cunning**
+- Artifice / Ambush : « Outils du Voleur » → « Outils du Brigand » ; « 3 voleurs » → « 3 brigands ».
+- Called-shots : « proportinnel » → « proportionnel ».
+- Dirty : « éstropiation / éstropiant » → « estropiement / estropiant ».
+- Poisons : « Level 1 … Level 5 » → « Niveau 1 … Niveau 5 ».
+- Stealth : « Dissimulation / dissimulé » → « Furtivité / furtif ».
+- Survival : « Désamorcer UN piège » → « Désamorcer un piège » ; « compétence nécessaires » → « nécessaire ».
+- Traps :
+  - « Piège à Rasoir du Printemps » → « Piège Ressort-Rasoir » (nom et nom de piège)
+  - « Piège du Feu du Dragon » → « Piège du Feu de Dragon »
+  - « fosse effondré » → « effondrée »
+  - « Préparer quel piège ? » → « Préparer quels pièges ? »
+  - « il y a déjà un piège ici. » → « Il y a déjà un piège ici. »
+  - « %s repousse %s » → « %s repousse %s ! »
+  - Bladestorm : « L'effet attaque tous les ennemis » → « La construction attaque tous les ennemis ».
+
+**cursed**
+- Cursed-aura : « sentinele » → « sentinelle » ; « L'%s » : voir section 2.
+
+## 4. Limites
+
+- Le fichier fourni s'arrête en plein milieu de `cursed-aura.lua`. Rien n'a été relu après.
+- Je n'ai pas vérifié les formats d'arguments (`{2,1}`) : plusieurs « %s de %s » inversent l'ordre en français. Voir le modèle « Hymn of Moonlight » qui utilise `{2,1}`.
+- Les poèmes (Dreadfell, Garkul, nécromancien, brigands) ont été relevés pour les erreurs de sens, pas pour la rime.
+
+Je peux produire les blocs corrigés prêts à coller par section si vous me dites par où commencer (lore/, quests/ ou talents/).
