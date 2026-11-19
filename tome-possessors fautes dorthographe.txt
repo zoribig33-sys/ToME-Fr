@@ -1,0 +1,54 @@
+Voici ce que j’ai relevé dans tome-possessors.
+
+Accents et majuscules
+« Etourdissement » → « Étourdissement » (+Etourdissement, -Etourdissement).
+
+Fautes d’orthographe et coquilles
+« rang égale ou supérieure » → « rang égal ».
+« de ce Rang » (Possession) → « de ce rang ».
+« loose » n’est pas dans le français, mais l’anglais l’a (« they will loose it »). Rien à faire côté FR.
+« %d fois pour le faire » → « il vous reste %d fois pour le faire » : correct, mais « il vous reste %d occasion(s) » serait plus naturel.
+« Kryl-Feijan » (succès) contre « Kryl’Feijan » dans l’anglais : unifier.
+Accords et grammaire
+Sadique : « Vous vous nourrissez de la douleur de tous les ennemis à portée de vue » est correct. Mais « tous ceux que vous voyez dans un rayon de %d et dont il reste 80 % de vie ou moins » est bancal. Mieux : « tous les ennemis que vous voyez dans un rayon de %d dont la vie est inférieure ou égale à 80 % ».
+« Tant que vous possédez au moins un cumul de Sadique, vous pouvez utiliser Irradiation d’Agonie sur tous ceux… » : l’anglais dit « radiate agony », donc « vous pouvez irradier l’agonie vers… ».
+« Les serviteurs psioniques ne peuvent en aucun cas être soignés » : le talent s’appelle « Laquais » ailleurs. Unifier en « laquais ».
+« Laquais » / « serviteur » / « Minion » : à harmoniser.
+« Vous ne pouvez voler que le corps de créatures du rang suivant : X ou inférieure » : « inférieur » (rang, masculin).
+« Cet effet ne peut se produire qu’une fois par tour » : correct.
+« la plupart des effets qui empêchent la guérison n’empêchent pas… » : l’anglais dit « may things », donc « bien des effets… ». Le sens est légèrement différent.
+« réduisant ses dégâts de 60 %% » (timed_effects, tformat) : le %% est correct dans un tformat.
+« a été tué par les répercussions de la possession. » : point final inhabituel dans un texte de mort (« was killed by… »). À retirer.
+« Les paupières de votre corps possédé frémissent » : correct.
+« Puiss P » / « Sauv P » : abréviations acceptables, mais « Puiss P » devrait être « Puiss. P. » avec points, ou rester cohérent avec les autres modules.
+« **
+#00FF80#For/Dex/Con#FFFFFF#: ** » : les deux lignes Str/Dex/Con et Mag/Wil/Cun perdent l’alignement des autres (« : » sans espace avant). Aligner sur « Précision#FFFFFF# : ».
+Copier-coller de texte erroné
+
+Les descriptions de Fouet Mental, Effacement Psychique, Hurlement Spectral, Doigt de la Mort (talents à deux étoiles d’âme), ainsi que celles de Écrasement Psychique, Bouclier de Force, Esprit Déchaîné et Esprit Sismique (talents à arme à deux mains), contiennent toutes la phrase :
+
+« Si vous n’êtes pas équipé d’une arme à une main et d’une étoile d’âme, mais que vous les avez dans votre équipement secondaire… »
+
+C’est la phrase des Psioniques de Bataille, copiée à tort :
+
+pour les talents à deux étoiles d’âme : « Si vous n’êtes pas équipé de deux étoiles d’âme, mais que vous les avez dans votre équipement secondaire… » ;
+pour les talents à deux mains : « Si vous n’êtes pas équipé d’une arme à deux mains, mais que vous l’avez dans votre équipement secondaire… ».
+
+Les quatre autres talents de Psionic Disruption ont la bonne phrase. Plus loin, la même phrase dit « les pouvoirs psioniques sauvages sont incompatibles avec la nature focalisée des lames psi », absente de l’anglais pour les talents à deux mains : à retirer là aussi.
+
+Contresens possibles
+« Écrasement Psychique » : l’anglais dit « ripped a psychic imprint off the target ». Le français « arrache une empreinte » est correct.
+« Détruire un Corps » : l’anglais « Discard a body » décrit un rejet, pas une destruction. Mais le menu dit déjà « Destroy ».
+« Laquais Psionique » : « (Psionic Minion) » est traduit par « (Laquais Psionique) » : correct.
+« Contrôle Total : au niveau 3, vous gagnez les résistances et résistances fixes du corps » : correct.
+« Pas encore. » : correct (guillemets français bien placés).
+Typographie
+Les guillemets droits "..." dans les textes longs (Shasshhiy’Kaish, Aeryn) : restent des " ASCII, comme dans le reste du fichier. À convertir en « » si tu les veux typographiques.
+[cough] non traduit dans la réplique de Shasshhiy’Kaish : « [toux] » est présent, c’est bon.
+Espaces insécables : le fichier n’en contient pas avant ?, !, :, ;. Ton script nnbsp.py s’applique tel quel.
+Incohérences terminologiques
+Laquais / serviteur (voir plus haut).
+Menace psionique / Psioniques de bataille : types de talent écrits en minuscules, c’est le style du jeu.
+Étoile d’âme : correct partout.
+Assumer une forme et Posséder un corps : cohérents.
+voleur de corps (talent type) contre Possesseurs… voleurs de corps : cohérent.

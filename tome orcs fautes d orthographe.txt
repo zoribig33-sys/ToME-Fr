@@ -1,0 +1,87 @@
+Voici ce que j’ai relevé en relisant le fichier tome-orcs. Les corrections purement orthographiques d’abord, puis le reste.
+
+Accents sur majuscules oubliés
+« TETE » → « TÊTE » (entity on slot, présent dans plusieurs fichiers de babioles).
+« Observateurs d’Etoiles » → « Observateurs d’Étoiles » (titre de quête sunwall-observatory).
+« Ca approche... » → « Ça approche... » (lost-city/npcs).
+« A chaque tour » → « À chaque tour » (Sabots-Blancs, Drain d’Essence, etc.).
+Fautes d’orthographe et coquilles
+œ : « oeufs, oeuf, coeur, oeil, Oeil, oeuvre, chef-d’oeuvre, Coeur-Brisé, Oeuf » deviennent « œufs, cœur, œil, Œil, œuvre, chef-d’œuvre, Cœur-Brisé, Œuf ». Le fichier mélange déjà les deux graphies.
+« Infflige » → « Inflige » (une dizaine d’occurrences dans les babioles).
+« BREUVAAGE » → « BREUVAGE » (affiche du Dr Ragluk).
+« terriquement » → « terriblement » (Grottes endormies).
+« Chapeu de la forêt de l’est » → « Chapeau ».
+« Baître Bricoleur » → « Maître » (Murderfang’s Surekill).
+« Rithe » → « Ritch » (Infection de Larve).
+« halefelin » → « halfelin » (Poche de temps).
+« léthal » → « létal » (Mort Assurée).
+« Carmesim » → « Carmin » (Weissi 3).
+« necropsychiques » → « nécropsychiques » (2 occurrences, procès-verbaux du Conseil).
+« Héro » → « Héros » (Commandant Trelle).
+« sa seule essences sauvage » → « son unique essence sauvage » (Pocket-time).
+« Reine des Ver des Sables » → « Vers ».
+« plusieurs babiole des apôtres » → « babioles » (Grottes endormies).
+Accords et grammaire
+proportionnel : même problème que dans le fichier précédent. Il faut « proportionnelle » après un nom féminin : « La vitesse… est proportionnel », « La chance… est proportionnel », « La force de la corrosion / de la toxine / de l’effet est proportionnel », « La puissance de furtivité est proportionnel ». Et « proportionnels à l’énergie négative et le niveau » → « et au niveau ».
+« tous / toutes les N tours » : « tour » est masculin. Dans « toutes les 9 tours », « toutes les 3 tours », « toutes les %d tours » et « toutes les 5 tours », il faut « tous ».
+« cette chair ne peux reposer » → « peut » (Sabots-Blancs).
+« Les mort-vivants » → « morts-vivants ».
+« étourdis, ni confus » → « étourdi » (succès « We weren’t kidding! »).
+« tous les Fiertés Orcs » → « toutes les Fiertés orcs » (True Savior).
+« ignoré et épargné » → « ignorée et épargnée » (la Fierté).
+« technologies à vapeurs » → « à vapeur ».
+« obscurité infectieuses » → « infectieuse ».
+« armée d’un souffle » → « armé » et « ancien dragon morte-vivante » → « mort-vivant ».
+« Un grand enveloppe » → « Une grande enveloppe ».
+« Un onguent médicinale » → « médicinal ».
+« Lorsqu’elle est porté » → « portée » (amulette, Gardanion).
+« Combinaison d’Assistance Vitale sélectionné » → « sélectionnée ».
+« Elle a l’air blessé et fatigué » → « blessée et fatiguée » (la bricoleuse).
+« Tissus Arcanique » → « Tissu Arcanique » et « Friandises Arcanique » → « Arcaniques ».
+« sentant de infimes traces » → « **d’**infimes » (Krimbul).
+« nous avons finis par perdre » → « fini » (Grottes endormies).
+« Prestes à revenir sur vos pas » → « Prêt à revenir sur vos pas » (accord avec « vous »).
+« mortelles boulons », « une boulon », « boulons chargées », « plantées » : « boulon » est masculin. Il faut « mortels boulons », « un boulon », « chargés », « plantés », « Boulon Corrosif ».
+« Vous propulsez vers l’avant » → « Vous vous propulsez » (Fracas à Fusée).
+« %s bois le %s » → « boit » (Sang de la Non-Vie).
+« l’Elfe de la ruine… libérée » : le genre est incohérent dans la même phrase.
+« les tiens sont enfin en sécurité » → « les vôtres » (DESTRUCTICUS, le reste du texte vouvoie).
+« Au Secours ! » → « Au secours ! ».
+« Plus rien ne vous atteindra jamais plus » est redondant (supprimer « plus »).
+Erreurs de balisage et de code
+Du Markdown (**gras**, *italique*, ---) s’est glissé dans des textes du jeu, où il ne s’affichera pas : l’Eidolon, la Forêt primordiale (4 textes), la Carrière, les Grottes endormies. Il faut le remplacer par #{bold}#…#{normal}# ou le supprimer.
+#\{normal}# → #{normal}# (Weissi, dernière tablette).
+#LIGHT_GREEN#v#WHITE# dans unlock-orcs_campaign_all_classes : il manque « dans la classique Ère de l’Ascendance ».
+« …lancement..#{normal}# » : point doublé et parenthèse fermante manquante (avertissement du DESTRUCTICUS).
+» parasites en fin de réplique dans les procès-verbaux du Conseil (3 occurrences, ex. « …DE-#{normal}#» »).
+<?=Lore.pocket_time_winner.name?> mal placé dans « …d’une puissance inouïe.<?=…?> Il savait quand se retirer » (il devrait ouvrir la phrase : « Même <?=…?> savait… »).
+@hisher@ pistolets dans Tir en Mouvement : en français, ça affichera « his » ou « her » (→ « ses »).
+« au travers de %s%s » (Overseer) : il manque l’espace du %s %s d’origine.
+« Un journal (1) » et suivants : espace parasite en fin de titre.
+Contresens
+« Ça ne coûte pas cher » (journal du Rétablisseur) → « coûte cher », car l’original est « isn’t cheap ».
+« Vous reculez de trois cases d’un coup » (Chaussures de déplacement rapide) → « Vous vous déplacez ».
+« En avoir à la boutique, bien entendu » (Kaltor) → « Du crédit boutique, bien entendu ».
+« Interdiction d’accéder aux soins pour les brûlures subies quand son chapeau prendra feu » → « quand son chapeau a pris feu ».
+« Canonnier du Grapeshot », « réaffectation sur le Grapeshot » : Grapeshot est un nom propre (Canonnier Grapeshot, « reassigning Grapeshot to cannoneer »).
+« Yéti à essences Astrale » → « Yéti Astral » ou « Yéti infusé d’astral ».
+« Crimson Templar » = « Templier Souillé » : « cramoisi » serait plus fidèle.
+« avoir un oeil mort », pas relevé. En revanche, « le Légendaire Dragon semble être tombé… semble » répète « semble ».
+Incohérences terminologiques (à unifier)
+Fierté / Orgueil : « Orgueils » (succès, Prêtre Sher’Tul, Metash, Yéti) contre « Fiertés » partout ailleurs.
+Géants vaporeux / géants de vapeur : les deux coexistent (Krimbul, Emporium, Kruk…).
+babiole / gadget / bricoleur (« Tinker » → colonne « Bricoleur » dans CreateTinker, alors que le reste dit « babiole »).
+pistolet à vapeur / fusil à vapeur pour steamgun.
+Brûlure Magique / Conflagration Magique (Pocket-time).
+Haute Paladine Solaire / du Soleil / Grande Paladin, et Dominion / Domaine (Port du Domaine).
+Rétablisseurs / Réparateurs (Menders), Cannelure / Rainure (grooves), Poudre grattante / poudre à gratter.
+Lance Roquettes / Lance-Roquettes, Mécarachnide / Mécaraigné, Rétaliateurs / représailleur.
+DESTRUCTICUS : trois titres différents (« Perforateur impoli du ciel », « Le Destructeur des Cieux », « Impoli Pénétrateur du Ciel »).
+Nektosh : « Monocorne » / « Une-Corne ».
+Extrême-Orient / Extrême Orient / Grand Est.
+Bâtonnet de Rappel (Cultes Indicibles) contre Baguette de Rappel (ici).
+Chaussures du Mouvement Rapide (Cultes Indicibles) contre Chaussures de déplacement rapide (ici).
+Peau Morte / Cuir Mort et Ruée Sans Vie / Charge sans Vie (talents Sabots-Blancs et texte de déblocage).
+Élan de Mort / Élan de la Mort.
+Ritchs / Ritches (pluriel).
+Tiges / Bâtonnets galvaniques (les deux apparaissent).
