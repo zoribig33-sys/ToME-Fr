@@ -1,0 +1,595 @@
+# Relevé de corrections, partie 4 (dernier bloc)
+
+Même mode que les parties précédentes : remplacements ciblés, sans réécriture. Les décisions des parties 1 à 3 restent valables. Le fichier couvre `timed_effects/mental|other|physical`, `zones/*`, `mod/ai`, `mod/class`, `mod/dialogs`, `init.lua` et `load.lua`.
+
+## 1. Décisions de cohérence (compléments)
+
+**Rappels appliqués à cette partie**
+- Elfes invariables : « Shalore / Shaloréens / Thaloréens / Naloréens / Thalore / Nalores / Shalorens » → **Shaloren / Thaloren / Naloren**. Concerne `init.lua` (×8), zones (Norgos, Noxious Caldera, Tarelion, Rhaloren, wilderness), npcs et load_tips.
+- « Ziguranth » est invariable : « Zigurantes » (init.lua) → « Ziguranth ».
+- « laquais » n'apparaît plus ici. « essence(s) » (infusion) → **infusion(s)** :
+  - Infusion Saturation (« Essences à Saturation »), `taint` « tache » ;
+  - `town-irkkk` (« essences naturelles »), `town-gates-of-morning` (« Essences Herbaliques de Sarah »), `town-last-hope` (idem) ;
+  - TooltipsData (« essences » ×4) ;
+  - load.lua (« Essences, Runes ») ;
+  - Object.lua ;
+  - init.lua (« essences sauvages », « essence de mouvements », « essences de régénération »).
+  - Garder « Essence » seulement dans les noms propres (« Essence Tourmentée des Cauchemars », « Essence de Vitesse »).
+- Peuples communs en minuscules : « Humains », « Halfelins », « Nains », « Elfes », « Orcs » → minuscules dans init.lua, zones et unlocks. « Fiertés Orcs » → « Fiertés orcs » (`town-gates-of-morning`).
+- « Ère » : « Ere du Bûcher / Crépuscule / Ascendance / Séduction » → **Ère** (init.lua ×10, Golem Graveyard). « l'âge de la brume » → « l'Ère de la Brume » (void).
+- Brûlure Magique : « Brûlure magique » (Aura, init.lua ×6) → **Brûlure Magique**.
+- Chambre forte : « vault » est déjà « chambre forte » (timed effect) ; garder. « Ancienne Chambre du Conclave » OK.
+- Accents sur majuscules : Éclat, Écho(s) du Vide (« Echos du Vide » ×3), « Energie » (×4), « Elfe », « Etourdissement », « Evasion », « Eveil », « A Découvert » → « À Découvert ». « Ère » (Epoch → « Époque » plutôt que « Ère », voir §3).
+- Ligatures œ : coeur → **cœur** (≈20 occurrences : Mark of the Spellblaze, Celia, Sandworm, Heart of the Gloom, Temple of Creation, farportal « clin d'oeil » ×8), oeil/Oeil → **œil/Œil** (Atamathon ×4, « Œil de rubis »), oeuf → œuf, manoeuvre → manœuvre (Défensive).
+- Formes d'élision « l' » devant balise et espaces : « #Target# de » (NPC) à vérifier.
+- Mesures : « 40 feet » traduit par « douze mètres » ✔ (golem-graveyard).
+- Drake/dragonnet : « Dragonnet Blafard » (Pale Drake, dreadfell) → **Drake Blafard** ; « Dragonnet de Feu » (Atamathon) n'est pas dans cette partie.
+- Draconien/dragon : « Draconien de feu / de glace / des sables / de l'orage wyrmic » (arena) : **Wyrmique** est le nom de la classe (cohérent avec `unlock-wilder_wyrmic` « Draconien »). Garder « draconien » mais corriger « draconien de l'orage wyrmic » → « draconien d'orage ».
+- Cursed : « Taches Sanglantes » / « Souillé » (partie 3) ne reviennent pas. « Angoisse » (gloom) est cohérent partout ici.
+- Même traduction pour une même notion (ajouts) :
+  - **stun = assommer** : « Assomé » (×3 dans `mental`, « Assomement » sauf), « assommés » ; « étourdi(s) » pour daze uniquement.
+  - **Puissance Mentale / Puissance Physique / Puissance des Sorts** en majuscules partout (`mental`, `physical`, `other`).
+  - **sauvegarde** (jamais « jet de sauvegarde ») : « jets de sauvegarde » (physical ×4, Birther, `other`) → « sauvegardes ».
+  - **Paralysie Mentale** (Brainlocked) : OK dans `mental`. Mais `physical` : « paralysie cérébrale » absent ici.
+  - **Rechargement** (cooldown) : « en recharge » (`mental` ×2) → « en rechargement » ; « Temps de rechargement » (Actor) → « Rechargement ».
+  - **robustesse d'armure** : OK.
+  - **Cauchemar / Terreur Nocturne** : `mental` utilise « Terreurs Nocturnes » pour « Night Terrors » (tag interne `+Night Terrors`), à aligner avec « Terreur Nocturne ».
+  - **Voile** : « Voile d'Ombre » (Shadow Veil) et « Voile Abyssal » (partie 3) cohérents.
+  - **Hâte / Rapide** : « Rapide » (Quick) vs « Célérité » (partie 3), garder.
+  - **Mouillé** : `physical` dit « Humide » (Wet) → **Mouillé**.
+  - **déséquilibre** : « Déséquilibre » (Off-balance) ✔.
+  - **Frénésie** (Frenzy) ✔.
+  - **Bouclier** : « Bouclier Protecteur Psionique » (Psionic Damage Shield) → « Bouclier de Dégâts Psionique ».
+  - **Sauvegarde Mentale / Physique / des Sorts** : TooltipsData, CharacterSheet : « Jet de sauvegarde » à remplacer.
+  - **Maelström** : `other.lua` « Maelström Psionique » ✔.
+  - **points de combo** : `physical` « points de combo » ✔ (la partie 3 disait « combinaison » dans d'autres fichiers).
+- **Quête / Journal** : « Journal de quête » (MapMenu), « Journal des messages » ✔.
+- **Tueur de Dieux / Tueurs de Dieux** : trancher une graphie (Godslayer) : ici « Tueurs de Dieux » (infinite-dungeon, void, high-peak, unlock-campaign) et « Tueur de Dieux » (`NPC`) → **Tueur de Dieux** au singulier, **Tueurs de Dieux** au pluriel. À valider avec la partie 2.
+- **Tutoiement résiduel** à passer au vous : charred-scar (« Dépêche-toi… Fais en sorte… »), charred-scar (« Tu franchis… tu te retrouves »), `blighted-ruins` (« croire que tu es son esclave »), `slime-tunnels` (« vouv vous »), `eruan` OK, `unlock-yeek` (partie 3), `arena` (« Fais attention, ou ils vous prendront… » mélange), `Zone dreams` (« Qui êtes vous ? » à corriger en « Qui êtes-vous ? »), `Party` (« Tu caresses ton chien »), `Shadow Out of Sight` (« Tu as perdu de vue ton ombre »), `Switch Hands` (« Tu as permuté »), `Hunter`… Voir §3.
+
+**Collisions de noms (à trancher)**
+- « Embuscade » : Ambush! (dreadfell-ambush) et talents.
+- « Coup de pied en Hache » / « Axe Kick » : OK.
+- « Bouclier Forgé » (Forge Shield) OK ; « Bouclier de Forge » (partie 3) à retirer.
+- « Peur » : Fear (talent tutoriel) et effet « fear ».
+- « Frénésie Sanglante » vs « Bain de Sang » : OK.
+- « Rapide Comme l'Éclair » OK.
+- « Cible Prioritaire du Gardien » vs « Focus du Gardien » : même effet, deux noms ; garder un seul.
+- « Phase » / « Déphasage » : « +En phase » (partie 3), ici « Déphasage » ✔.
+- « Pression Mentale », « Esprit Lié » (Mind Link) vs « Lien Mental » (titre) → **Lien Mental** partout.
+
+## 2. Balises, formats et variables cassés (prioritaire)
+
+- `timed_effects/other.lua`, Frenzy (Unstoppable) : doubles `%%` OK ; **Concussion** : OK.
+- `other.lua`, « Elemental Surge: Lightning » : « Elemental Surge : Foudre » non traduit → « Surcharge Élémentaire : Foudre ».
+- `other.lua`, `t("Spell and mind speed increased by 30%", …)` : un `%` seul dans un `"_t"` est correct, mais ici la clé est en `"_t"` alors que d'autres lignes du fichier utilisent `%%` : vérifier les types (`_t` vs `tformat`) pour les lignes « +10% … » des **Zone-wide effect** (≈14 lignes, `_t`) : OK si `_t`. Ne pas passer en `tformat` sans doubler.
+- `physical.lua` : « Résistances Globale : 20% » (`_t`) OK mais accord → « Résistance globale ».
+- `other.lua`, Curse of Corpses : lignes `%+d%%` OK ; « Mort Vivant » : « Living Death » → **Mort-Vivante** ou « Mort-Vie ».
+- `physical.lua`, Garrote : « %s a garroté #Target# ! » → la source est mal placée : « %s est garroté #Target# ! » → « #Source# a garroté #Target# ! ».
+- `physical.lua`, « Lien de Pierre » : `-SLien de Pierre` (faute) → `-Lien de Pierre` ; « -SFurtivité Silencieuse » → `-Furtivité Silencieuse`.
+- `physical.lua`, « Gelé » : « Humide et Pieds Gelés » : aligner sur **Mouillé**.
+- `mental.lua`, Mind Link : « par %d%% » → « de %d%% » (augmente … de).
+- `mental.lua`, Unseen Force : « Une force invisible commence à tourbillonner autour d'elle. %s ! » → « autour de %s ! » (log).
+- `mental.lua`, Unseen Force : « les faisant repoussant de %d cases » → « les repoussant de %d cases ».
+- `mental.lua`, Hidden Resources : « #Target#'s focuses. » → « #Target# se concentre. » (« focuses » avait donné « se concentre » ✔) ; « perd de sson focus » → « perd un peu de sa concentration ».
+- `mental.lua`, « #Target# a été interpellé » : accord avec log « %s est secouée … n'est plus interpellé » : choisir un genre.
+- `mental.lua`, `#F53CBE##Target# est assommés par la folie !` → « assommé ».
+- `mental.lua`, `#Target#'s is vulnerable` : clé anglaise fautive, traduction OK.
+- `Actor.lua` : `"%s %s: "` avec `{2,1}` OK ; `"%s's %s"` OK ; `"%s de %s"` (`logSeen`) **sans** `{2,1}` : « %s's %s is disrupted » → « Le %s de %s » : à reordonner (`talent '%s%s'`).
+- `Actor.lua`, `"#Target#'s"` → « #Target# de » : forme cassée, à supprimer ou remplacer par « de #Target# ».
+- `Actor.lua` : « %s a été %s dépensé. %s » (`"%s has %s to spend. %s"`) → « %s a %s à dépenser. %s ».
+- `Actor.lua` : « Votre est épuisé ! » (`ActorInscriptions` : « Your %s is depleted! ») : variable `%s` manquante → « Votre %s est épuisé ! ».
+- `Actor.lua` : « amélioré la %s de +%d » (EscortRewards) : « la » dépend du nom (« maîtrise », « Volonté »…) → « %s amélioré de +%d » ou « Amélioration de %s de +%d ».
+- `Game.lua` : « Vous avez essayé d'utilisé » → « utiliser » ; « Vous avez échouer » → « échoué ».
+- `Game.lua`, Level Generation : « Consigner le problème, Rester » OK.
+- `Object.lua` : `%d%% puissance` : `tformat` OK ; « Péné d'Armure » / « Péné d'armure » / « pén » : unifier « Pén. d'armure ».
+- `UberTalent.lua` : OK.
+- `LevelupDialog.lua` : « Niveau supérieur » (titre) vs « Niveau Supplémentaire » (CharacterSheet « [L]evelup ») → **Niveau supérieur**.
+- Balise `#CIMSON#` (source) : à laisser (faute de la source).
+- Backslashes : `\"` dans `[[ ]]` n'apparaît pas ici ; `"Champs probabilistes inversés et réversés"` est correct (guillemets droits échappés dans une chaîne `"…"`).
+- `GameOptions.lua` : « Active ou désactive le mouvement '"tréssautant'. » → apostrophe + guillemet parasites → « 'sautillant' » ; « tréssautant » (×3) → « sautillant ».
+- `GameOptions.lua`, « ombre de secondes » → « Nombre de secondes ».
+- `Zone town-gates-of-morning` (`Zemekkys Home`) etc. : OK.
+- Fichier `mod/ai/*` : messages de debug traduits en français (`IA tactique`, `ACTION REUSSI`) : ce sont des logs de développement ; **à ne pas traduire** (ou à commenter) car ils servent au diagnostic. Au minimum corriger : « s'enfuire(mouvement) » → « fuir (mouvement) », « Fuie » → « Fuite », « vielle » → « vieille », « battre : » → « meilleure : » (best), « REUSSI/ECHOUE » → « RÉUSSI/ÉCHOUÉ ».
+
+## 3. Corrections par fichier
+
+**timed_effects/mental.lua**
+- « Ténèbres Engourdissantes » : « Numbing Darkness » (darkness, mental) ; si la partie 3 a « Obscurité … », unifier **Obscurité Engourdissante**.
+- « peut a nouveau parler » → « peut à nouveau parler ». « Muet » (Silenced) : « silence » sous-type traduit « dégâts de silence » → « silence » (erreur : le sous-type n'est pas un type de dégâts).
+- Sous-types : « dégâts d'acide » (partie 3), ici **« poison » → « dégâts de poison »** (physical, mental `poison`) → « poison ». Même chose « dégâts d'acide » → « acide ».
+- « Interpellé / interpelleur » : « Beckoned » ; proposition « Attiré » (le talent s'appelle « Attirer ») → **Attiré / attireur** pour cohérence avec talent Beckon.
+- « Pris(e) » : « #F53CBE##Target# est traquée » (féminin) vs « traqué » : unifier.
+- « Esprit Altéré » (Sundered Mind) vs talent **Briser l'Esprit** : « Esprit Brisé ».
+- « Rêve Brisé » ✔ ; « Les rêves de #Target# ont été brisé » → « brisés ».
+- « Terrifié / Terreur » ✔ ; « tous ses rechargement » → « rechargements ».
+- « Hanté » : « causant chaque effet mental néfaste à infliger … » reformuler.
+- « Paranoïa / Paranoïaque » ✔.
+- « Désemparé / désarroi » ✔.
+- « Maligned → Méprisé » : contresens possible ; proposition « Calomnié » ou « Diffamé » (malign = dire du mal), ou « Maudit » ; garder un seul sens et corriger « influence méprisable » → « influence maléfique ».
+- « Lobotomisé (confus) » ✔ ; « #Target# les fonctions mentales supérieures sont altérées » → « Les fonctions mentales supérieures de #Target# sont altérées. »
+- « Colère Ciblée » ✔ ; « s'est focalisé » → « s'est concentré ».
+- « Sort Rétroactif » : « failue » (source) ; « victime de %d%% d'échec des sorts » → « a %d%% de chances d'échec de sort ».
+- « est entouré de forces anti-magique » → « anti-magiques ».
+- « Proie Marquée » : « Marked Prey » ✔ ; « Hunting: » → « Chasse : » ✔.
+- « Bouclier Cinétique à Pointes » (Spiked) ✔ ; « dégâts physique%s ou acides » → « dégâts physiques%s ou acides » ; « foudre %s » : espace avant `%s` en trop (« %d/%d des dégâts de foudre %s ou de fléau » → « foudre%s »).
+- « Archerie Télékinétique » : « télékinésique » → « télékinétique ».
+- « Echos du Vide » ×3 → « Échos du Vide » ; « sauvegarde mentale » ✔.
+- « Maelström Psionique » : placé dans other.lua.
+- « Foudre Capturée » : « Attrape-foudre » (Lightning Catcher, objet) à laisser.
+- « Marque du Vampire » : « est libéré de leur malédiction » → « sa malédiction ».
+- « Heart Started / Coeur Démarré » → **Cœur Relancé** (le cœur est remis en marche) ; « votre coeur » → « cœur ».
+- « Illusions de Frénésie » etc. : néant.
+- « Orcish Fury → Furie Orc » → **Furie Orque** (accord) ; « Triomphe Orc » → « Triomphe Orque ».
+- « Inspiré par une récente mort qui augmente toute ses résistances de » → « Inspiré par un meurtre récent : toutes les résistances augmentent de ».
+- « Chance des Halfelins » : « Halflings's Luck » ✔ (race, majuscule en titre) ; « sauvegardes » ✔.
+- « Précision Parfaite » vs « Contrôle Parfait » ✔.
+- « Frénésie » : « le crit physique » → « les chances de critique physique » ; « jusqu'à ce que sa vie atteigne -%d%% » → « -%d%% de vie ».
+- « Bain de Sang » ✔.
+- « Gardé » (Guarded) → « Protégé » ; « Garde contre » → « Parade contre » ; « Rejette jusqu'à %d dégâts des prochaine(s) %0.1f attaque(s) » → « Dévie jusqu'à %d dégâts lors des %0.1f prochaine(s) attaque(s) ».
+- « Déchainé / Déchainement » → « Déchaîné / Déchaînement » (accent circonflexe) ; « dommages ignorés » → « dégâts ignorés » ; « #RED#(%d déchainement s'en va#LAST#) » → « (%d dégâts ignorés) ».
+- « +1 durée » → « +1 tour ».
+- « Frantic Summoning » ✔ ; « Wild Summon » : « %d%% chance » → « chances ».
+- « Résonance » : « Bouclier de Résonance » (tag) vs « Champ de Résonance » → **Champ de Résonance**.
+- « Bouclier psionique de %s » ✔.
+
+**timed_effects/other.lua**
+- « Surcharge Elémentaire » → « Élémentaire » (×6) ; « Aide » (Warding) : renvoie à partie 3.
+- « Aide : +0.5 positif and negatife » → « Protection : +0,5 positif et négatif ».
+- « Protégé par le Soleil » ✔ ; « #Target# tourne autour d'eux » → « #Target# pivote et un bouclier de lumière l'entoure » (pluriel erroné).
+- « Coup Absorbant » ✔ ; « Breloque : Perforation » etc. : espace avant « : » en français : « Breloque : » avec une espace insécable, mais deux espaces dans la source (« Charm:  Piercing »), garder une seule.
+- « est augmententés » → « augmentés » (faute double).
+- « Immatériel »/« Invisible » : néant.
+- « Vous avez pris racine… votre résistance sont améliorées » → « votre résistance est améliorée » (pluriel) ; « un arbre à la con » (log) : **vulgarité absente de la source ?** La source dit « a badass tree » : proposition « un arbre costaud » (le registre grossier n'est pas voulu ici).
+- « Essences à Saturation » → « Saturation d'Infusions » ; « Runes à Saturation » → « Saturation de Runes » ; « Tainted / corrompu » → « Souillé » ; « Plus vous utilisez de taches » → « de souillures ».
+- « Prison Temporelle » : « +Hors du Temps » ✔.
+- « Bouclier Temporel » ✔.
+- « Golem hors de vue » ✔ ; « #LIGHT_RED#Tu as perdu de vue ton ombre trop longtemps, elle se dissipe ! » → « Vous avez perdu de vue votre ombre trop longtemps, elle se dissipe ! ».
+- « Déstabilisation du Continuum » : « devient plus résistante à celles-ci. (+%d). » → « (+%d) » sans point initial.
+- « Dégâts Barbouillés » : « Smearing » → « Étalement des Dégâts » (barbouillé est trop familier) ; « a été répandu dans l'espace et le temps » ✔ ; « Dénaturation du Réel » (Reality Smearing) → « Étalement de la Réalité ».
+- « Voir les Fils » ✔ ; « vision des fils s'évanouit » ✔.
+- « Clone de Paradoxe Imminent » : « A expiration » → « À l'expiration » ; « ne vous laisserez pas être renvoyer » → « ne serez pas renvoyé ».
+- « Voile d'Ombre » : « +Assail » (tag) traduit « +Voile d'Ombre » ✔.
+- « Apesanteur » ✔.
+- « Malédiction de Cadavres/Folie/Voiles/Cauchemars/Malchance » : « Malédiction des Cadavres », etc. (article) ; « Puissance 1+ : %sPouvoir sur la Mort » ✔ ; « Mort Vivant » → « Mort-Vivant » ; « le Vomis de Ghoul » → « la Régurgitation de Goule » (cohérent avec partie 3 « Vomissure/Régurgitation » ; choisir) ; « Ghoul » → « Goule » ; « Une aura de mort t'entoure » → « vous entoure » ; « Sanité » → « Santé mentale » (sanity) ; « d'obscurités » → « d'obscurité » ; « Rongé par le Doute » ; « Tourment » ✔.
+- « Probabilités Instables » : « Unstable Probabilites » (faute source) ; « est récemment passé » → « passée » (la cible : féminin) → « La cible a récemment traversé un mur… ».
+- « Forme Maudite » : « Tous les dégâts que la cible infligé » → « inflige ».
+- « Chasse : » ✔ ; « Réduction des dégâts subis contre : » ✔.
+- « Disparu » (Faded) ✔ ; « #Target# disparait » → « disparaît ».
+- « Frénésie Victorieuse » : « Victory Rush » → « Ruée de Victoire » ; « Le frisson de la victoire rend cette créature invulnérable » ✔.
+- « Solipsisme / Clarté » ✔.
+- « Monde Onirique » ✔ ; « Moi Idéal » (Dream Self) → « Moi Rêvé » ; « perte potentiellement mortelle » etc. ✔ ; « a subi un %s de soi-même » ✔ ; « Vous êtes ramené du monde onirique » → « du Monde Onirique ».
+- « Histoire Révisionniste » ✔.
+- Zone-wide effects : « Résidus d'éther » → « Éther » ; « Froideur funèbre » ; « Brouillard huileux » ; « Décharge électrostatique » ; « Silence inquiétant » ; « Colère incontrôlée » ; « Sol visqueux » : majuscules de titre à unifier (début de nom seulement).
+- « résistance à l'arcane » → « résistance arcanique » ; « d'arcane » (mental) → « arcaniques ».
+- « du jet de sauvegarde » (×4) → « de la sauvegarde ».
+- « -10% au la sauvegarde physique » → « -10% de sauvegarde physique ».
+- « Dans une Chambre Forte » ✔ ; « ouverte » ; faute source « openend ».
+- « Cautérisation » : « brûle pour %0.2f dégâts » ✔ ; « Votre corps est cautérisé » → « se cautérise ».
+- « Protégé par l'Eidolon » ✔.
+- « Cape de Supercherie » ✔.
+- « Suffocation » : « s'etouffe » (sous-type) → « s'étouffe » ; « +SUFFOCATING » ✔.
+- « Disruption Anti-magique » ✔.
+- « Mains Agiles » : « Tu as permuté un objet sans utiliser de temps » → « Vous avez échangé un objet sans dépenser de tour » ; « swaped » (source).
+- « À Travers la Foule » ✔ ; « augmente les jets de sauvegarde physiques, des sorts, et mentaux de %d » ✔ ; « %d %% » avec espace → « %d%% ».
+- « Rechargement » (Reloading) : OK ; « a fait le plein de munitions » ✔.
+- « Réglage Spatio-Temporel » ✔.
+- « Arrêt du Temps » ✔ ; « Sursis Temporel » ✔ ; « Vous êtes revenus de votre sursis » → « revenu ».
+- « Fugue Temporelle » ✔.
+- « Volonté Draconique » : « La cible est immunisée aux effets néfastes.. » : double point.
+- « Stase des Éons » : « Aeons » → « Éons » ✔.
+- « Inarrêtable » : « ne peut pas être soigné » ✔.
+- « Pénalité pour Toucher » : « Hit Penalty » → « Pénalité de Toucher ».
+- « Destin Tordu » ✔ ; « Anomalie Actuellement Tordue » ✔.
+- « Mort dans un Rêve » ✔.
+- Auras : « Aura Naturelle » : « +2 de régénération de vie » (source) mais la traduction dit « +1 » → **contresens de valeur** : remettre **+2**.
+- « Aura de Sorcier » : « puissance furtive » → « puissance de furtivité ».
+- « Zone Sous-Marine » ✔ ; « Zone Effrayante » (Fearscape Zone) → « Zone du Plan de la Peur » ; « Aura de la Brûlure magique » → « Aura de la Brûlure Magique » ; « renvoie les sorts de téléportation » ✔ ; « -10% de résistance aux feu, d'arcane, et de fléau » → « au feu, aux dégâts arcaniques et au fléau ».
+- « Parfum Enivrant » ✔ ; « Étendue Ébranlée » ✔ ; « Tous les projectiles est ralentis » : « Any projectiles is slowed » (source).
+- « ???  » : `t("???", " ???", "_t")` : **espace initiale** (cf. partie 2 : « ???, " ???" ») → retirer l'espace.
+- « Couteaux de Lancer » ✔.
+- « Stratégies de Scélérat » : « Scoundrel » (classe) → « Crapule » (partie 3 : « Crapule ») → « Stratégies de Crapule ».
+- « Maladresse » ✔ ; « Toucher Mortel » ✔ (partie 3 : « Toucher Mortel »).
+- « Fusée Éclairante » ✔ ; « sa capacité de dissimulation et d'invisibilité » → « puissance de furtivité et d'invisibilité » (cohérent avec Flare partie 3).
+- « Cloué au Sol » : « Tir précis ou Tir » → « Tir Précis ou Tirer ».
+- Cheat : « Tous les dégâts sont réduits de -90%% » → « de 90%% » (double négation).
+- « Mode Demi-Dieu » : « perception extrasensorielle » ✔.
+- « Terrain Glissant » ✔ ; « Sol Gelé » : « Marches de Gelée » (Frost Treads) : nom d'objet → « Pas de Givre » ; « Gelée » est faux (gelée = jelly).
+- « Rappel » ✔ ; « Vous êtes expulsés » → « expulsé ».
+- « Fortifiés par les ombres » (Empowered by the shadows) : « Gagnez %d%% dégâts et %d%% à toutes les résistances » → « %d%% de dégâts et %d%% de résistances ».
+- « Intimidé » ✔ ; « Nutrition » (Feeding) → « Repas » ; « Dévoré Par » → « Dévoré par ».
+- « Faim de Liche » ✔ ; « Régénération en Forme de Liche » ✔ ; « Liche » (sous-type) ✔.
+- « Tout Détecter » ✔ ; « Sieste » (Dozing) → « Somnolence ».
+- « Protégé par une Image Miroir » ✔ ; « aveuglées ou étourdies » ✔.
+- « Condamné Marqué » (Marked for Death) → « Marqué pour la Mort » (partie 3 : « Condamné Marqué » aussi : cohérent, mais le sens est peu naturel).
+- « Extinction des Feux » ✔ ; « Saturation Pestilentielle » ✔.
+- « Autocritique » (Self-Judgement) ✔ ; « mort bien méritée par exsanguination » ✔ (hématologie).
+- « Saignement » ✔.
+
+**timed_effects/physical.lua**
+- « Rongé » (Scoured) : « Rongés par un acide naturel » : accord → « Rongée ».
+- « Rythme Effréné » ✔ ; « S'adapter au rythme du combat pour améliorer leurs stats » → « La cible s'adapte… ses statistiques ».
+- « Commotion » ✔ ; « résultant en un échec » ✔.
+- « Une profonde entaille » ✔ ; « Une blessure profonde » ✔.
+- « Poison Spydrique » ✔ (Rod of Spydric Poison : « Bâtonnet » : « Rod » = « Bâton » → **Bâton de Poison Spydrique**, cohérent avec « Bâtonnet de Rappel » ?).
+- « Poison Pétrifiant » ✔ ; « Dans %d tour(s), ou lorsque le poison aura fait son effet (%d%% chance) » → « chances ».
+- « Choc Brûlant » : « Pendant que l'on subis » → « subit » ; « Choc de Flammes » (partie 3 : Flameshock) → **Choc de Flammes** (ici « Choc Brûlant », « flamme ardente »).
+- « La cible est assommée, réduisant les dégâts… met 3 talents » ✔.
+- « Désarmement » (nom d'effet) vs « Désarmé » : OK.
+- « constricté » : « La cible est constricté » → « constrictée » (cf. partie 3).
+- « Etourdissement » → « Étourdissement » (×2 + tag) ; « Etourdi ».
+- « Évasion » ✔ ; « gagne %d points défense » → « %d de défense ».
+- « Lenteur » ✔.
+- « Peau Épineuse » ✔ ; « robustesse d'armure » ✔.
+- « Pieds Gelés » ✔ ; « Bloc de Glace » ✔.
+- « Colère de la Forêt » : Wrath of the Woods ✔ ; « Courroux des Bien-Nés » ✔ (cohérent partie 3).
+- « Nature Serpentine » ✔ ; « Suppression de la Douleur » ✔.
+- « Harmonisation Primale » : titre OK ; « (+Harmonisation) ».
+- « Purge du Fléau » : « confère une immunité contre la maladies » → « les maladies ».
+- « Héroïsme » : « votre barre de vie » → « vos points de vie ».
+- « Briseur d'Armure » : « L'armure et les jets de sauvegarde » → « sauvegardes ».
+- « Cloué au Sol » ✔ ; « Saisie Osseuse » ✔.
+- « Coups Puissants » ✔.
+- « Estropier » (nom d'effet en infinitif) → **Estropié** ; « Cripple » + effet « Horrible Estropié » (partie 3).
+- « Creuser » (Burrow) : « a en plus %d Pén. et » → « %d de pénétration d'armure et ».
+- « Déficience Visuelle » ✔ ; « Vision trouble » ✔.
+- « Détermination » ✔ ; « s'adapte aux dégâts » ✔ ; « #Target# n'est plus adapté » ✔.
+- « Vitesse Folle » : « Wild Speed » ✔.
+- « Chasseur » (Hunter) ✔ ; « pour la prochaine proie » ✔.
+- « Accélérer le Rythme » (Step Up) ✔ ; en partie 3 : « Accélérer le Rythme » ✔.
+- « Vitesse Fulgurante » : « Transformez-vous en un véritable éclair » (impératif) alors que le texte décrit l'effet : « Se transforme en foudre pure ».
+- « Flammes de Dragon » ✔ ; « Du sang de dragon » ✔ ; « cracher du feu » : cohérence avec « souffler » (partie 3) → **souffler du feu**.
+- « Focus Martiale Supérieure » → « Concentration Martiale Supérieure » (partie 3).
+- « Prise » (Grappling) : « Engaged in a grapple » ; ici « Prise » vs « Saisie » (talent Clinch, partie 3 : « Saisie ») → **Saisie** (état « Saisi » ✔). « Vous êtes pris dans une prise » (tautologie) → « Vous maintenez une saisie ».
+- « Étreinte Broyante » ✔ ; « Étreinte Strangulatrice » ✔ : « strangulée » → « étranglée » ; « La cible est immobilisée, incapable de bouger… » ✔ (grappled) ; **« Immobilisée »** dans un texte de saisie : OK.
+- « Mutilé » (Maimed) ✔ ; « Mutiler » (Maim, effet) ✔.
+- « Faiblesse Exposée » ✔ ; « se concentre plus sur la percée » → « ne se concentre plus ».
+- « Manoeuvre Défensive » → « Manœuvre ».
+- « Mise en Place » : « a été configurationné » → « a été préparé(e) » (néologisme inventé).
+- « Récupération » : « La cible bénéficie d'une augmentation de régénération de %d. » ✔.
+- « Esquive Réflexe » ✔.
+- « Défenses Affaiblies » ✔.
+- « Eaux de Vie » ✔ ; « Harmonie Élémentaire » ✔ ; « Redirection du Nexus de Guérison » → « Nexus de Soin » (partie 3) ; « vol la guérison » → « vole ».
+- « Immobilisé » (Immobilized by telekinetic forces) ✔ ; « +Paralysé » (tag) → « +Immobilisé ».
+- « Implosion (lente) » ✔.
+- « Liberté d'Action » ✔ ; « l''étourdissement » (double apostrophe) → « l'étourdissement ».
+- « Montée d'Adrénaline » ✔ ; « Les dégâts de combat » ✔.
+- « Bonus Surprise » (Blindside Bonus) → « Bonus d'Angle Mort » (partie 3 : « Angle Mort »).
+- « Déséquilibre » ✔ ; « Gravement déséquilibré. Les dégâts globaux sont réduits de 15%. » : un `%` seul dans `_t`, OK.
+- « Pris au Dépourvu » ✔ ; « bonus de 10% à leur chance de coup critique physique et à leur puissance de coup critique physique » ✔.
+- « Mouvement Lent » ✔.
+- « Affaibli » ✔ ; « #Target#'s is no longer weakened » OK.
+- « Réduction de la Résistance au Feu » ✔ ; **majuscules incohérentes** : « Froid » (titre) vs « feu », « nature » : unifier la casse.
+- « Blessure Maudite » ✔.
+- « La cible a été révélée, ce qui réduit sa capacité de camouflage » → « sa puissance de furtivité ».
+- « Disruption des Sorts » ✔ ; « disrupté » (×2) → « perturbée / perturbé » (« disrupté » est un anglicisme) ; « a été disrupté » → « a été perturbée ».
+- « Résonance » ✔ : « +%d%% %s dégâts » → « +%d%% de dégâts %s ».
+- « Vigne Épineuse » ✔ ; « Couverture de Feuilles » ✔ ; « %d%% chance d'absorber » → « chances ».
+- « Parade » ✔ ; « Parer les attaques au corps à corps de%s » : espace manquante devant `%s` (« et à distance » commence par « et ») → « de%s » avec `" et à distance"` (déjà sans espace initiale : « et à distance » en `_t` sans espace) → **ajouter l'espace** : `" et à distance"`.
+- « Blocage » (Blocking) → **Bloquer** / « Blocage » : état actif ; garder « Blocage ». Mais l'état de talent « Bloquer » (partie 3) : OK pour le nom du talent.
+- « Contre-Attaque » ✔ (tag « +Contre ») ; « Contre Attaque » (Counter Attacking) → « Contre-attaque en cours ».
+- « Blocage de la Paume Ouverte » ✔.
+- « Lutte Défensive » : « Grappling Defensively » ✔ ; « l'assommer » ✔ (mais « assomer » dans le texte) → « l'assommer ».
+- « Dévastation » (Ravage) ✔ ; « et perd un effet physique par tour » ✔ ; « and is losing one physical effect turn » : sens ≠ ; la source est ambiguë.
+- « Infirme » (Disable) : **contresens** : « Disable » = « Handicapé/Entravé » → « Entravé ».
+- « Angoisse » (Anguish) ✔ (≠ gloom : « angoisse » aussi) : collision → « Anguish » → « Tourment » ?
+- « Rapide Comme l'Éclair » ✔.
+- « Rouleau Compresseur » ✔ ; « Réinitialise le rechargement de Charge si la cible marquée est tué » → « tuée ».
+- « Épine Dorsale du Monde » ✔.
+- « Sang Fongique » ✔ ; « don Sang Fongique » → « prodige » (cohérent partie 3 : « prodige »).
+- « Nature Corrosive » : « Dégâts acide augmenté » → « Dégâts d'acide augmentés de %d%% ».
+- « Acide Naturel » : « -Nature Acid » (tag) → « -Acide Naturel » ; « Les dégâts de nature de #Target# ne sont plus aussi puissants » (×2, le premier doit dire « plus puissants »).
+- « Corrodé » ✔.
+- « Mousse Glissante » ✔ ; « Mastodonte » ✔ ; « Renouvellement Naturel » ✔ ; « Rage Berserk » ✔ ; « Fureur Implacable » : « Augmente de %d la régénération d'endurance, et de %d la vitesse… » (formule décalée : un seul `%d` pour les deux vitesses) → « Augmente la régénération d'endurance de %d et la vitesse de déplacement et d'attaque de %d%% ».
+- « Vitesse Régulée » (Directed Speed) → « Vitesse Dirigée ».
+- « Assommement Prolongé » ✔ ; « est encore plus assommé » → « assommé plus longtemps ».
+- « Guerrier Éternel » ✔ ; « résistance fermement » ✔.
+- « Position Tactique » ✔ ; « +%d%% chance » → « chances ».
+- « Roulade Défensive » ✔.
+- « Rechargement des Réactions Conditionnées » : « Trained Reactions » : partie 3 : « Réflexes Entraînés » → **Réflexes Entraînés** (ici « Réactions Conditionnées »).
+- « Agilité Remarquable » ✔.
+- « Anti-Gravité » ✔.
+- « Sangsues Parasites » ✔ : « Après une période de digestion » (feeding) ✔.
+- « Garrot » : « Il est réduit au silence … ce l'empêchant » → « ce qui l'empêche ».
+- « Poison Mortel » ✔ ; « %d%% chance d'échec » → « chances ».
+- « Fil Barbelé » ✔ ; « barbelés » (razorwire) : « fil de rasoir » est littéral ; OK.
+- « Coups Bas » ✔.
+- « Obscurité Apaisante » ✔.
+- « Danse des Ombres » ✔.
+- « Sédaté » → « Sédaté » est un anglicisme → « Sédatif »/« Endormi sous sédatif » ; le tag « -Sédaté ».
+- « Breuvage du Brigand » ✔.
+- « Piège à Ours » ✔.
+- « Liane de Pierre » : « Une vrille de pierre » (cohérence) → « liane ».
+- « Résilience des Nains » ✔ (corrigé « Résilience »).
+- « Lien de Pierre » ✔ ; « Épuisement » ✔.
+- « Défense Mobile » ✔ ; « Saut de Goule » ✔ (cohérent partie 3).
+- « Feinte » ✔ ; « Choc de Mana » ✔ : « déclenchent une brûleur de mana » → « brûlure ».
+- « Dans le Mille » ✔ ; « Essence du Tir » (Trueshot) → même remarque partie 3.
+- « Fuite » ✔ ; « Focalisation sur la défense » ✔.
+- « Sentinelle » ✔.
+- « Mouvement Rapide » ✔.
+- « Terrain Gluant » (Sticky Pitch) : **contresens** : « pitch » = poix → « Poix Collante ».
+- « Armure Percée » ✔.
+- « Poison Drainant » ✔.
+- « Mutiler » ✔.
+- « Sniper » (nom d'effet, verbe) → « Tir de Précision » (cohérent partie 3).
+- « Dissimulation » ✔ ; « Fumée d'Ombre » ✔ ; « Frappe d'Ombre » ✔.
+- « Résonance Chromatique » ✔ ; « Résistance Chromatique » ✔.
+- « Tir Rapide » (Swift Shot) : collision (§1).
+- « Tordu » (Crooked) → « Courbe/Déformé » (néant dans la source : Crooked = « devient de plus en plus primitif » ; garder).
+- « Furtif » ✔ ; « Furtivité Silencieuse » ✔.
+- « Don des Bois » ✔.
+- « Immatériel » ✔.
+- « Brutalisé » ✔.
+
+**mod/class/Actor.lua**
+- « s'est noyé » ✔ ; « combat temporairement la paralysie » ✔.
+- « L'ordre de build %s ; augmente %s par 1. » (log debug) : à retraduire proprement : « Ordre de montée %s : %s +1. ».
+- « critter → bestiole » ✔ ; « boss → patron » → **boss** (cohérent ailleurs « boss », « Boss Élite » ; « patron » est un contresens de registre) ; « elite → élite » ✔ ; « hostile → hostil » → « hostile » ; « amical » ✔ ; « female/male → femme/homme » → « féminin/masculin » (genre d'un acteur).
+- « huge → énorme », « gargantuan » ✔ ; « small/tiny » ✔ ; « big → gros » → **grand** (partie 3 : « catégorie de taille 'grand' ») ; « medium → moyen » ✔.
+- « Level: unknown » ✔.
+- « INVULNERABLE ! » : « INVULNÉRABLE ».
+- « Mana: » ✔ ; « Négative : » vs « Positif : » → « Négatif : » ; « Vim: » → « Vitae : » ✔ ; « Vim Value » → « Valeur de Vitae » ✔.
+- « Predator » : « Prédateur : +%d acc, +%d pen » ✔.
+- « Robustesse/Armure » ✔ ; « Puiss P » : abréviations OK ; « Sauv P » ✔.
+- « Crit Mult : » ✔ ; « Représailles de mêlée » ✔.
+- « Main nue » ✔ ; « Munition » → « Munitions ».
+- Effets : « Effets de statut temporaires » ✔.
+- Messages : « #LIGHT_GREEN#%d soins » ✔ ; « Votre bouclier temporel s'effondre » ✔ ; « se divise en deux » ✔.
+- « libère les dégâts stockés en rétribution » ✔.
+- « #DARK_GREEN##Source# partage les dégâts avec %s vaseux ! » → « vases ».
+- « #F53CBE#Vous vous batez contre la douleur ! » → « battez » (faute) et « contre » → « Vous luttez contre la douleur ».
+- « %s fades for a moment » ✔.
+- « RESSUSCITE ! » → « RESSUSCITÉ ! ».
+- Level-up : « atteind » → « atteint » (×2) ; « Bienvenu au niveau » → « Bienvenue » ; « points de classe de talents » → « points de talent de classe » ; « générique » → « génériques » ; « Appuyer sur p » → « Appuyez sur p » ; « Séléctionnez » → « Sélectionnez » ; « des prodiges qui ne peuvent être désappris » → « désappris » ; le texte « ils ne peuvent être désappris » : ok.
+- « Vous portez trop de choses » ✔ ; « ENCOMBRE » → « ENCOMBRÉ ».
+- « Vous ne pouvez pas changer d'équipement en dormant » : point final manquant.
+- « désarmé » (unarmed) → **à mains nues** ; « %s change %s d'arme pour : %s. » ✔.
+- « %s déforme l'espace temps pour équiper » ✔ (espace-temps avec tiret).
+- Chronomancie : « #LIGHT_RED#Vous perdez le contrôle et déclenchez une anomalie ! » ✔ ; « L'espace-temps semble plus stable » ✔.
+- « %s est trop effrayé pour utiliser %s. » ✔ ; « est reduit au silence » → « réduit » ; « Le sort s'estompe » (fizzles) → « échoue » (cohérent partie 3 : « Le sort échoue... ») ; « dors » → « dort » ; « ca » → « ça ».
+- « Vous %s %s pour activer %s. » ✔ ; « avez trop investi » ✔.
+- « Vous avez échouer à utiliser… » → « échoué » ; « a cause » → « à cause ».
+- « %s est confus et à échoué » → « a échoué ».
+- « %s de %s a été déchiré par des #ORCHID#forces anti-magiques# » : le sujet est inversé (`%s's %s`) ; ajouter `{2,1}` ou refondre : « Le %s de %s a été perturbé par… » (« déchiré » est un contresens : « disrupted » = perturbé/interrompu).
+- « déchiré par des forces anti-magie » (Actor, 1ère occurrence) → « perturbé ».
+- « %s talent '%s%s' est déchiré par un parasite mentale » → « Le talent '%s%s' de %s est perturbé par le parasite mental ».
+- « Niveau de talent effectif » ✔ ; « Mode d'utilisation » ✔ ; « Coût de Rétroaction » ✔ ; « Coût soutenu en %s » ✔ ; « Produits » → « Génère » ; « Remplis » → « Restaure » ; « Vole » (Drains) → « Draine ».
+- « Portée : melée/personnelle » → « mêlée/personnelle » (accent).
+- « Fixé » (Fixed) → « Fixe » ; « Tours Complet » → « Tour complet » ; « Vitesse de Mouvement » (Travel Speed) → « Vitesse de déplacement du projectile ».
+- « Ne brise pas la Furtivité » ✔ ; « Désactivera » ✔.
+- « %d%% de base » ✔ ; « instantané » ✔.
+- Utilisation automatique : « Êtes-vous sûr ? » ✔.
+- « %s résiste à la dissipation de %s » ✔.
+- « %s commence à suffoquer à mort » ✔.
+- Sauvegardes : « Sauvegarde physique/mentale/des sorts » ✔.
+- « #ORANGE#%s ignore %s '%s' ! » ✔ ; « #LIGHT_UMBER#%s resiste » → « résiste ».
+- « mais trébuche ! » ✔ ; « à la %s ! » : article fixe « la » avec `%s` variable (direction) → « vers %s ».
+- « #Source# dévie le projectile de #Target# %s » ✔.
+- « %s reflète le sortilège » ✔ ; « Votre est épuisé » (voir §2).
+- « Vous ne pouvez pas abandonner %s (objet de quetes) » → « quêtes ».
+- « Tout objet abandonné dans le monde sera perdu » → « sur la carte du monde ».
+- « Vous détruisez %s. » ✔.
+- « Vous avez dû abandonner… » ✔.
+- « %s - %sEncombrement » ✔.
+- « Vous gagnez %0.2f d'or grâce à la transmogrification » ✔.
+- « Lorsque vous fermerez la fenêtre d'inventaire, tous les objets du coffre seront transmogrifiés » ✔.
+- « bricole » / « bricolle » / « gadget » (Swap tinkers) → **babiole** partout (Actor ×6 : « bricole », « bricolle », « Cette bricolle », « une bricolle », UseItemDialog « Detacher la babiole », GameOptions « Echange de gadgets »).
+- « dèjà » → « déjà » ; « Vous attachez %s à votre %s » ✔.
+
+**mod/class/EscortRewards.lua**
+- « le guerrier perdu », « le devin blessé » ; « %s, la devine blessée » (She looks…) : genre variable (`%s, the injured seer`) ; accord « blessé/blessée » selon.
+- « alchimist » → « alchimiste » ; « profanateur perdu » ✔ (Defiler) ; « portail temporel » ✔.
+- « [Improve %s by +%d] » → « [Améliorer %s de +%d] » (vs « Améliore ») : unifier.
+- « amélioré la %s de +%d » (voir §2).
+- « sauvegarde %s » : « mentale/sort/physique » : « sauvegarde sort » → « sauvegarde des sorts ».
+- « Oh, mais c'est vous... êtes vous ?! MOI ?! » : « êtes-vous » ; indentation de tabulations incorrecte (source) : OK.
+- « Sélectionnez le membre du groupe » ✔.
+
+**mod/class/Game.lua**
+- « Bienvenu dans » → « Bienvenue ».
+- « Niveau : %d », « (Niveau : %d) » OK ; « Explore le niveau %s de %s » ✔.
+- « Vous ne pouvez pas changer de niveau avant d'avoir récupérer votre propre corps » → « récupéré ».
+- « Continuer d'essayer » ✔ ; « Deboguer » → « Déboguer ».
+- « plantés » (informal) → « échoué ».
+- « Aller au dernier niveau » (Stroll) → « Se balader » ; « ailleur » → « ailleurs » ; « peser dans votre poitrine » → « battre ».
+- « Vous traversez la zone sans aucune hésitation » ✔.
+- « Pliage / Dépliage » ✔.
+- « Kill (%d)! » → « Mort(s) (%d) ! » ; « Tue (%d) ! » ✔ ; « Imperium courrier » → « Courrier de l'Imperium » ✔.
+- « Vous ne pouvez pas auto-explorer avec des ennemis en vue (%s direction %s%s) ! » ✔.
+- « Vous ne pouvez pas aller dans la nature » : « wilds » → « la carte du monde ».
+- « 'Mode d'acceptation automatique des cibles' » ✔.
+- « Tooltip %s » → « Infobulle %s » ✔.
+- « Succès de Tales of Maj'Eyal » ✔ ; « Lore » → « Chroniques » (partout ailleurs « Chronique ») : « Afficher les éléments de lore connus » → « Afficher les chroniques connues » ; « Lore de Tales of Maj'Eyal » (×3) → « Chroniques de… ».
+- « Mode de déplacement » ✔ ; « Passif » ✔.
+- « TRICHE DÉPLACEMENT D'ACTEUR » ✔.
+- GameState.lua : « Ambush! » ✔ ; adjectifs d'objets (« scintillant », « blindé », « feuilleté ») : accords selon le genre → à vérifier ; « le défie du miroir » → « défi » ; « Un double maléfique » ✔ ; « Vue diminué » → « diminuée » (×3) ; « Match miroir » ✔ ; « Course contre la montre » ✔ ; « tours restant » → « restants » ; « %d / %d engeance de démon tués » → « engeances » ; « Exterminez cet ennemis » → « ennemi » ; « Vous revendiquez la tête de %s, donnant une pause à tous les ennemis » → « suscitant l'hésitation de tous les ennemis » ; « un artefact aléatoire » ✔ ; « Ennemis restant » → « restants » ; « en moins de %d tours » ✔ ; « Points de Statistiques » ✔ ; « Les Récompenses » ✔ ; « Chasseur de rêve » ✔.
+- « #AQUAMARINE#La plupart des boutiques devraient avoir renouvelé leur stock maintenant » ✔.
+
+**mod/class/Object.lua**
+- « Entrainement » → « Entraînement » (×3) ; « Entrainement aux boucliers » ✔.
+- « Vous ne pouvez pas utiliser d'objets pour le moment ! » ✔ ; « frénésie meutrière » → « meurtrière » ; « en rechagement » → « rechargement ».
+- « ne peut plus être utilisé » : point final manquant.
+- Stats : « %d%% puissance » ✔ ; « Chance de crit (max 25%) » : `%` seul : dans `_t` OK.
+- « Mastery: » → « Maîtrise : » ✔ ; « Attaque utilisé » → « utilisée » ; « Coup Dévastateur » (Crushing Blows) ✔.
+- « Quand cette arme crit » → « critique ».
+- « Vol de vie » ✔ ; « Péné de bouclier protecteur » → « Pén. des boucliers de dégâts » ; « Péné d'armure » ✔ (unifier).
+- « Dégâts (rayon 2) sur une touche » → « sur un critique » (crit).
+- « Fait partie d'un ensemble » ✔ ; « Équipé » ✔.
+- « Type d'attaque Mastery » : OK.
+- « Crit mult » : « Crit. mult. » ✔.
+- « Immunité à la Lacération » (Cut) → « Immunité aux Entailles » (cohérent partie 3 : « Entailles ») ; « Immunité au Gel/Etourd » → « Étourd. ».
+- « Immunité à la Mort » → « Mort subite » (TooltipsData : « mort subite » ✔).
+- « Régen de vie » ✔.
+- « sur un coup critique magique » ✔ ; « Puissance des Sorts sur un critique magique (cumulable jusqu'a 3 fois) » → « jusqu'à ».
+- « Vitesse d'incantation » ✔ ; « Modif de soins » ✔.
+- « Déviation des projectiles » ✔ ; « Chance d'éviter tout dégâts » → « tous les dégâts ».
+- « Résonnance de dégâts » → « Résonance » ; « Catégorie de taille » ✔.
+- « Max d'invocation des naturalistes » → « Maximum d'invocations de naturaliste ».
+- « Le porteur est considéré comme un mort-vivant » ✔ ; « est endormi » ✔.
+- « Combat en aveugle » ✔ ; « Rêveur lucide » ✔ ; « Évitez les pièges à pression » → « Évite » (titre).
+- « Il est immunisé contre la téléportation » ✔.
+- « Quand manié/porté » ✔ ; « Multiplicateur à Casse-Tête » : « Skullcracker » → « Brise-Crâne » (partie 3).
+- « Babiole » : voir ci-dessus ; « Attache sur » ✔.
+- « Dégâts de bombe +%d%% » ✔ ; « Portée du lancer de bombe » ✔ ; « Récupération du mana %d » ✔.
+- « chance d'étourdir » ✔ ; « chance d'assommer » ✔.
+- « Type de dégât latent » ✔.
+- « Talent au toucher(sort) » : « (mental) » ✔.
+- « Peut être utilisé en %s » : « It can be used to %s » : « Peut être utilisé pour %s » ✔ (une version dit « en », à corriger).
+- « Alimenté par une force arcanique » ✔ ; « Forgé par un  maître » (double espace).
+- « Encombrement : %0.2f » ✔.
+- « Appuyez sur <Ctrl> pour comparer » ✔.
+
+**mod/class/Party.lua, Player.lua, Store.lua, Trap.lua, etc.**
+- Party : « Impossible de contrôler cette créature » ✔ ; « Le contrôle du presonnage » → « personnage » ; « Tu caresses ton chien ! Il remue joyeusement la queue d'un côté à l'autre, en rythme ! » → « Vous caressez votre chien ! … » ; « Non, il faut se dépêcher ! » ✔ ; « très proche » ✔ ; « Le portail est %s, %s » (`tformat`) ✔ ; « Renvoyé » (« est renvoyé ») ✔ ; « Définit la distance maximale » ✔.
+- Player : « Level change (%s)! » ✔ ; « ATTENTION TROP DE VIE PERDU ! » → « ATTENTION : VIE PERDUE EN TROP GRANDE QUANTITÉ ! » ; « Game Turn » ✔ ; « dégâts reçus » ✔ ; « Utilisation automatique… ignoré : rechargement en cours » ✔ ; « perte de souffle » ✔ ; « talent empêché » ✔ ; « Il y a un objet ici » ✔ ; « Vous ne pouvez pas ramassez » → « ramasser » ; « Poser un objet » ✔ ; « vous ne pouvez pas utiliser d(objets » (faute) → « d'objets » ; « Vous utiliser %s sur le piédestal » → « utilisez » ; « distant "clonk" au loin » (redondant) → « un « clonk » lointain » ; `#Cible#` (balise localisée) : **`#Cible#` ne fonctionne pas** : la balise est `#Target#` → corriger `(#Cible# %s%s)` en `(#Target# %s%s)`.
+- Store : « Pas assez d'or » ✔ ; « Acheter %d %s pour %0.2f or%s ? » ✔.
+- Trap : « démantelé » ✔ ; « You %s » : « #CADET_BLUE#You %s un piège » → « Vous %s un piège » ; « Succès / Échec » ✔ ; « Désamorçage » ✔ ; « Dismantle » ✔ ; « éviter d'une manière ou d'une autre » ✔ ; « Dismantling » ✔.
+- UserChatExtension : « a fait un lien avec un objet » ✔ (« a lié » plus naturel).
+- World : « %s le %s %s niveau %s » ✔ ; « chatoiement » ✔ (cohérent « Chatoyer »).
+- WorldNPC : « Killed by you: » ✔.
+- ActorAI : « repousse » ✔ ; « INCOMPATIBILITÉ DE CACHE » (debug, ne pas traduire).
+- ActorInscriptions : « Vous avez déjà beaucoup trop de ce type d'inscription » ✔ ; « Vous êtes maintenant inscrit avec %s » ✔.
+- ActorObjectUse : « Active : %s » ✔ ; « Active un objet » (infinitif → « Activer un objet ») ✔.
+- Archery : « Il vous faut un lanceur de projectiles (%s) ! » ✔ ; « Maintenez <ctrl> » ✔ ; « Vous ne POUVIEZ PAS TIRER sur votre %s » ✔ ; « (%d parée#LAST#) » : « parée » → « paré » (dégâts) ✔ ; « La flèche de siège » ✔ ; « Vous devez porter une arme à distance » → « manier ».
+- Combat : « %s a trop peur pour attaquer » ✔ ; « est trop terrifiée » ✔ ; « dévie astucieusement l'attaque avec %s bouclier ! » (`%s` = pronom possessif en anglais) : en français « son/sa » dépend du sujet → « avec son bouclier » (forme figée acceptable) ; « durcit instinctivement %s peau » → « sa peau » ✔.
+- PartyDeath : « tabassé » → « battu » ; « (encore une fois) » ✔ ; « Quelle honte ! » ✔ ; « fetish » → « fétichiste » ✔ ; « avec %s » etc.
+- PartyLore : « Chronique trouvé » → « trouvée » ; « tout le lore collectées » → « toutes les chroniques collectées ».
+- PartyIngredients ✔.
+- PlayerExplore : « Cours... » → « Course… » ; « à l'objet (creusable) » ✔ ; « Le chemin est bloqué » (majuscule) ✔.
+- PlayerQuestPopup : « 'Quête '%s' a échouée ! » → « a échoué ! » ; « Quête '%s' est finie ! » ✔.
+- TooltipsData : « guérire » → « guérir » ; « entierement » → « entièrement » ; « Affacté » → « affecté » ; « Vous êtes en train de suffoquez » → « suffoquer » ; « ne s'affiche que lorsque vous êtes en train de suffoquez » ; « Puissance Magique » (Paradoxe) → « Puissance des Sorts » ; « Boucliers de Protection » → « Boucliers de Dégâts » ; « jets de sauvegarde » (×N) → « sauvegardes » ; « Jet de sauvegarde physique/contre les sorts/mental » → « Sauvegarde Physique/des Sorts/Mentale » ; « gagnez 50% de votre Volonté + 1 en Vitae » ✔ ; « peut vous sauver de la mort » ✔ ; « Chance de Critique » ✔ ; « Dommage » ; « 'Bloc' »: « Valeur de Blocage au Bouclier » ✔ ; « 50%% » dans un `_t` : `%%` à remplacer par `%` (Shield Block Value `_t` contient « 50%% ») → « 50% » ; « Augmente la Puissance Physique » ✔ ; « Chance de résistance aux effets » ✔ ; « Chance d'immunité contre l'assomement » → « l'assommement » ; « assomé » → « assommé ».
+- **Unnatural Body Regeneration** : le bloc « ancien texte traduit » est en fin de section : à fusionner proprement (« Corps Anormal » ✔ partie 3).
+- WorldAchievements ✔.
+- uiset/Classic, ClassicPlayerDisplay, Minimalist : « Tuile personnalisé » → « personnalisée » ; « Stats inutilisée » → « inutilisées » (×N) ; « Catégories inutilisée » ; « Talents générique inutilisé » → « génériques inutilisés » ; « Fiche de personnage » ✔ ; « #{bold}##GOLD#F#LAST##{normal}#iche » : raccourci « C » conservé dans le code → **ne pas changer la lettre-raccourci** : « #GOLD#C#LAST#haracter Sheet » → « #GOLD#F#LAST#iche » désynchronise l'indice ; à signaler ; « Corps.An : » ✔ ; « Munition » ✔ ; « Score(TOP) » ✔.
+- Minimalist : « Infos du Joueur » ✔ ; « Clic gauche : glisser-déposer » ✔ ; « Interface verrouillée, souris activée sur la carte » ✔ ; « Journal de Discussion en Ligne » ✔ ; « Clic milieu : réinitialiser » ✔ ; « Cliquer ouvrira » ✔ ; « Réinitialiser l'IU » → « l'interface » ; « Vue » ; « toute l'histoire connues » → « connue ».
+- ArenaFinish ✔.
+
+**mod/dialogs**
+- Birther : « Nom：» (deux-points pleine chasse chinoise) → « Nom : » (×5 : « Campagne：», « Difficulté：», « Mort permanente：») ; « Tuile personnalisé » ✔ ; « Plan de Jeu » ; « Charger modèle pré-existant » → « Charger un personnage prédéfini » ; « Écraser un personnage ? » ✔ ; « Combo anti-magie Magie » → « Combinaison anti-magie / magie » ; « Tutoriel » ; « Customiser » → « Personnaliser » ; « Coffre de Personnages » (Characters Vault) vs « chambre forte » → **Chambre forte** (cohérent) ; « Vraiment supprimer un ancien personnage » → « le modèle » ; « avatar » (tile) : « avatar » vs « tuile » : choisir.
+- Les textes **Exploration Mode** et **Custom tiles** : « Plus tard » ✔ ; « Donnez ! » ✔ ; « je ne vais certainement pas me plaindre » ✔ ; « Les donateurs gagnent également accès au mode exploration incluant les vies infinis » → « infinies ».
+- CharacterSheet : « Niveau Supplémentaire » (voir §2) ; « Statue Mental/Physique/Magique » → « Statut… » (×3) ; « #GOLD#Tous les Status » → « Statuts » ; « Assomant/Gel » → « Assommement/Gel » ; « Pétrification » ✔ ; « Immobilisation » ✔ ; « Feuille de personage sauvegardé » → « personnage sauvegardée » ; « Vies perdus » → « perdues » ; « Vit. » abréviations ; « Chances crit » ; « Archerie » ✔ ; « Mult crit » ; « Péné résistances » ; « Dégâts mélée en + » → « mêlée » ; « Inventaire » ✔ ; « Sauvegardes » ✔ ; « Robustesse d'armure » ✔ ; « Bonus de crit ignoré » ✔ ; « Résistances fixe » → « fixes » ; « Effets des résistances » ✔ ; « Prodiges » ✔ ; « Talents d'Objet » ✔.
+- DeathDialog : « Du bord de la mort, vous semblez être tiré vers un autre plan » ✔ ; « Ressusciter en trichant » ✔ ; « durant votre partie » ✔ ; « exporter » ✔.
+- Donation : « Demeure » ✔ ; « Merci beaucoup » ✔.
+- GameOptions : voir §2 ; « Jouabilité » ✔ ; « Mode graphique » ✔ ; « Moderne » ✔ ; « Style de l'HUD » ✔ ; « Séléctionez la police » → « Sélectionnez » ; « Séléctionnez la taille » → « Sélectionnez » ; « Cotés » → « Côtés » ; « Cannaux de discutions » (×3) → « Canaux de discussion » ; « Filtres des cannaux » ; « Affichage tactique » ✔ ; « Combiné et Petit/Grand » ✔ ; « Texte flottant » ✔ ; « Retour d'information visuel » ✔ ; « Style d'interface » ✔ ; « Pierre » ✔ ; « Lignes du journal » ✔ ; « Temps d'effacement » ✔ ; « Utilise la barre de raccourcis avec icônes ou la version textuelle » ✔ ; « Distance de défilement » ✔ ; « Avertissement de Santé Perdu » → « de vie perdue » ; « Netteté visuelle » ✔ ; « Activer les mouvements avec WASD » ✔ ; « Temps d'effacement du journal » ✔ ; « Utiliser la souris pour se déplacer » ✔ ; « Ciblage rapide au corps à corps » ✔ ; « Auto-validation des cibles » ✔ ; « Attribution automatique de points de talent à la naissance » ✔ ; « Se reposer avant d'auto-explorer » ✔ ; « Echange de gadgets » → « Échange de babioles » ; « Liste des joueurs ignorés » ✔ ; « Ouvrir les liens dans un navigateur externe » ✔ ; « Rich Presence de Discord » ✔ ; « Transférer les feuilles de personnages » ✔ ; « Désactiver toute connectivité » ✔ ; « Sauvegarde en arrière-plan » ✔ ; « Sauvegarde de zone par niveau » ✔ ; « Censure au démarrage » ✔ ; « Montrer les capuchons de cape » ✔.
+- GraphicMode : « Vieux RPG » ✔ ; « Jeu de tuiles » ✔ ; « jeus » → « jeux » ; « Taille » ✔.
+- LevelupDialog : « Niveau supérieur : %s, Niveau %s » ✔ ; « Acceptez vous ces changements ? » → « Acceptez-vous » ; « Ce talent » ✔ ; « Maîtrise » ✔ ; « Prérequis non remplis ! » ✔ ; « Niveau trop bas » ✔ ; « Chaque niveau vous gagnez 3 nouveaux points » ✔ ; « de 60 (par rapport à votre niveau) » ✔ ; « En main secondaire » ✔ ; « Les points de talent génériques » ✔ ; « À chaque niveau, vous en gagnez un de moins » (cohérent avec « Each five levels you gain one less ») ✔.
+- LorePopup : « Chronique trouvé » → « trouvée ».
+- MapMenu : « Change level » → « Changer de niveau » ✔ ; « Bouger vers » → « Se déplacer vers » ; « Linker la créature dans le chat » → « Lier la créature dans le chat » ✔ ; « Lua inspect » : OK ; « Niveau supérieur ! » ✔.
+- PartyOrder : « Séléctionner la cible » → « Sélectionner » ; « Où est le portail ? » ✔ ; « Attendre quelques tours » ✔ ; « Caresser le chien » ✔.
+- PartySendItem : « %s cannot transfer… » ✔ ; « [ENDORMI] » ✔.
+- QuestPopup : « Quête #CIMSON#échouée ! » (balise source faute) ; « Quête #AQUAMARINE#mise à jour ! » ✔.
+- SentientWeapon : « Points restant » → « restants » ; « Pour séléctionner » → « sélectionner » ; « Crit de sort » ✔ ; « Stats » ✔.
+- ShowChatLog, ShowEquipInven : « verouillé/dévérouillé » → « verrouillé/déverrouillé » ; « Armes 1/Armes 2 » ✔.
+- ShowIngredients ✔.
+- ShowStore : « Magasin » ✔ ; « (payez jusqu'à %0.2f d'or) » (mal tourné : « pays up to ») → « (rachète jusqu'à %0.2f d'or, votre or : %0.2f) ».
+- SwiftHandsUse ✔.
+- TrapsSelect : « Palier » ✔ ; « Séléctionnez » → « Sélectionnez » ; « déclanchement » → « déclenchement » ; « normale » → « normal » ; « Vous avez besoin de plus de talent » → « compétence ».
+- UberTalent ✔.
+- UseItemDialog : « Étiqueter » ✔ ; « Detacher » → « Détacher » ; « Lâcher » ✔ ; « Transferer » → « Transférer ».
+- UseTalents : « Talents Utilisé » → « Talents utilisés » ; « Statut » ✔ ; « Clic de souris » ✔ ; « Soutenir » ✔ ; « Auto-utiliser » ✔ ; « Confirmation de la désactivation du talent » (pour « Disable talent confirmation ») ✔ ; « Pouvoirs d'objet » ✔ ; « Talents en rechargement » ✔.
+- WandererSeed : « Graine » ✔ ; « graine du vagabond » (minuscule) ; « Bienvenue, voyageur ! » ✔.
+- debug/*: **dialogues de debug traduits** ; à relire uniquement pour orthographe : « Agmentez » → « Augmentez » ; « Céation » (« Créeation ») → « Création » ; « Ajouté » ; « Mannequin d'Entraînement » ✔ ; « Débogage » ; « Débloquer » ✔ ; « Acteur de travail » ✔.
+- shimmer/* : « Chatoyance » ✔ (cohérent).
+- talents/Chronomancy* : « Amélioration » (Empower) vs « Potentialiser » (titre) → « Renforcer » ; « Accélération » ✔ ; « Prolongation » ✔ ; « Matrice » ✔ ; « Contingence » ✔ ; « Combat Arcanique » ✔ ; « Sorts aléatoire » → « aléatoires ».
+
+**mod/init.lua (longue description)**
+- « Bienvenu » → « Bienvenue » ; « a été maîtrisé » → « maîtrisés » (les derniers effets) ; « Ere » → « Ère » ; « Ere du Bûcher » ; « ont règné » → « régné » ; « Cela fait quarante ans que le Roi est mort » : **contresens chiffré** (la source dit « fourteen years ago ») → « quatorze ans » ; « Les royaumes Elfiques » → « elfiques » ; « Elfes Shaloréens… Thaloréens » → invariables ; « Halfelins/Humains » → minuscules ; « prudente » ✔ ; « Bien que les peuples de Maj'Eyal sachent » ✔ ; « déclenchée » → « déclenché » (les événements) ; « A ce titre » → « À ce titre » ; « age d'or » → « âge d'or ».
+- load_tips : « Zigurantes » → « Ziguranth » ; « Un chasseur immobile est un chasseur mort » : « fighter » → « combattant » (contresens : l'auteur parle de combattant) ; « À l'Ere du Bûcher » ; « mage » ; « Peau Epaisse » ✔ (partie 3 : « Peau Épaisse ») ; « essences » → « infusions » ; « runes de bouclier protecteurs » → « de bouclier » ; « Les nains sont naturellement un peuple curieux… le Trône de fer » → « Trône de Fer » ; « Garkul » ✔ ; « Les Moissoneurs » ✔ ; « brigands astucieux » ✔ ; « Une essence de mouvements » ✔ ; « l'ancienne race des Yeeks » → « yeeks » ; « L'empire Nargol » ✔ ; « halfelin » ✔ ; « Certains disent… pied d'un halfelin » ✔ ; « Ere du Crépuscule » ; « Purge Arcanique » ✔ (cohérent avec « Spellhunt » ; partie 2 : « Chasse aux Sorts » ?) → **à aligner** : `unlock-mage` dit « Purge Arcanique », `unlock-race_ogre` aussi, `intro-ogre` aussi. Garder partout « Purge Arcanique » ; « Cataclysme » ✔ ; « Les plus grands sorciers » ✔ ; « Bastions » ✔ ; « Archimages » ✔ ; « 120 ans » ✔ ; « dragons et anciens dragons » : « drakes and wyrms » → « drakes et vers dragons » (cohérent partie 1 : « drake ») ; « La brûlure magique » → majuscules.
+- load.lua : « La plupart des amres » → « armes » ; « porté » → « portées » ; « Focus psionique » → « Focalisation psionique » ; « Gemmes en poche » (Socketed) → « Gemmes serties » ; « Set d'armes 2 » vs « Ensemble d'armes 2 » → unifier ; « Mains Agiles » ✔ ; « puissance » ✔ ; « Chance » ✔ ; « Constitution » OK ; « Essences » → « Infusions ».
+
+**zones/**
+- abashed-expanse : « Étoile du Vide » ✔ ; « Étendue Ébranlée » ✔ ; « Perturbation Spatiale » ✔ ; « Une brèche dans le tissu de l'espace » ✔.
+- ancient-elven-ruins : « Grand Seigneur des Momies » ✔ ; « Shaloren » (« mage Shaloren » → « shaloren » minuscule ou « Shaloren » invariable avec majuscule : OK) ; « bandelettes de momie noircies et reptiliennes » ✔ ; « Tu dois trouver quelque chose pour maîtriser ses pouvoirs » → « Vous devez » ; « Un accessoire assorti serait la cerise sur le gâteau » ✔ (vs « crowning glory » joue sur « couronne »).
+- ardhungol : « te regarde » → « vous regarde » ; « se posent brusquement sur toi » → « sur vous » ; « Ungolë » ✔ ; « Bâtonnet de Poison Spydrique » vs « Rod » : unifier (« Bâton ») ; « baguette ruisselante de poison » : « wand » vs « rod » : **« baguette » ≠ « bâton »** : choisir ; « xhaiak l'arachnomancien » ✔ ; « shiaak la lame venimeuse » : casse « Xhaiak l'Arachnomancien » (nom propre) ; « et dévoré en compagnie d'un Paladin Solaire » ✔ ; « page de journal personnel » ✔ ; « Morceau de papier » (majuscule) → « morceau ».
+- arena : « Draconien multicolore » ✔ ; « maître frondeurs » → « maître frondeur » ; « Mini-Boss » → « Mini-boss » ; « Début du round de Bboss » → « Boss » ; « Vague terminé » → « terminée » ; « Round Finale » → « final » ; « Bonus de complétion » ✔ ; « moissoneur » ✔ ; « Moissoneur » ; « voyou » (rogue) → « brigand » ; « tricheur » (trickster) ✔ ; « lame ténébreuse » ✔ ; « noble frondeur » / « noble gladiateur » (« high ») ✔ ; « gladiateur formidable » ; « Fais attention » → « Faites attention » ; « Des guerriers venus de loin… contre toi » → « vous » ; « peut être engagés » ; « Des frondeurs expérimentés peuvent être engagés » ✔ ; « croisé stellaire » ✔ ; « Le combat final » ✔ ; « Rej le maître de l'arène » ✔ ; « Dame Fryjia la grêle » (« la Grêle ») ; « Valfren le déchaîné » ✔ ; « Cornac » ✔ ; « Une magicienne hors pair » ✔ ; « (Arena for dummies) » ✔ ; bottes en cuir « de désengagement », « de précipitation » ✔ ; « arc long en orme de flèches perçantes » ✔ ; « fronde en cuir brute d'éclat » → « brute » (accord : « fronde brute ») ; « Cercle de téléportation ».
+- arena-unlock : « Un humain Lame Arcanique » ✔ ; « Brigand Cornac » ✔ ; « Derth (Sud-Est) » ✔.
+- blighted-ruins : « croire que tu es son esclave » → « vous » ; « Géant Osseux à moitié achevé » ✔ ; « Nécromant » ✔ ; « Ruines Délabrées » (Blighted Ruins) → « Ruines Flétries » (cohérent « Cicatrice Flétrie » partie 3 / intro-ghoul « Cicatrice Flétrie ») ; « cercle maléfique » ✔.
+- briagh-lair : « Briagh, Grand Ver des Sables » ✔ ; « Diamant Résonnant » → « Résonant » (décision partie 2 : « Diamant Résonant »).
+- charred-scar : « Portail Lointain » ✔ ; « Tu franchis le portail tourbillonnant » → « Vous franchissez » ; « Grand Paladin Solaire » ✔ ; « Garde d'Élite Feuros » : « Faeros » (décision partie 2 : **Faeros**, invariable ; ici « Feuros ») → « Faeros » ; « Plaie Craquelée » ✔ ; « Dépêche-toi / Fais en sorte » → « Dépêchez-vous / Faites en sorte » ; « te regarde » → « vous regarde ».
+- conclave-vault : « Ancienne Chambre du Conclave » ✔ ; « support pour essences » → « infusions » ; « Bâtosse d'Astelrid » : « Clubstaff » : « Bâtosse » (argotique, absent dans la source) → « Bâton-massue d'Astelrid » ; « Journal d'Astelrid, la guérisseuse » ✔ ; « Note de l'enquêteur Churrack » ✔ ; « Augmente de 15% l'apport des statistiques principales aux essences et aux runes » → « infusions » ; « sentinelle ogre » → « sentinelle ogresse » (genre : « This greatsword-wielding ogre looks at you » neutre) ; « te regarde » → « vous regarde ».
+- crypt-kryl-feijan : « Acolyte de la secte de Kryl-Feijan » ✔ ; « étoile d'âme tourmenté » → « tourmentée » ; « Essence Tourmentée des Cauchemars » ✔ ; « Sombre Crypte » ✔ ; « Les cultistes s'apprêtent à sacrifier une femme. Stoppez-les ! » ✔.
+- daikara : « Faille Temporelle » ✔ ; « Varsha le Tourmentée » → « le Tourmenté » (Varsha est mâle ? « Varsha the Writhing ») → accord ; « Rantha le Ver » ✔ ; « Notes de l'expédition de Daikara » ✔ ; « Massok, le Tueur de Dragons » ✔ ; « coeur du volcan » → « cœur » ; « Rune de la Faille » ✔.
+- deep-bellow : « Le Conseil de Fer (ville principale de l'empire Nain) » → « Empire nain » ; « Grondement des Profondeurs » ✔ ; « insecte limaceux » ✔ ; « rampeur » ✔ ; « Rapport d'excavation » ✔ ; « Testament de Rolf » ✔ ; « Une bête dans le Grondement des Profondeurs » ✔ ; « À mesure que… » ; « L'Abomination » ✔ ; « deux têtes te fixent… toi, l'intrus » → « vous fixent… vous » ; « te regarde » (ailleurs) → vous.
+- demon-plane : « Plan de la Peur » ✔ ; « Portail Démoniaque » ✔ ; « Aller et Revenir » ✔ (Back and there again : « Aller-retour ») ; « (Attention : pillez Draebor en premier) » ✔ ; « Draebor, le Diablotin » ✔ ; « Un monstre vraiment insupportable » ✔ ; « Bottes de Mouvement » : « Shifting Boots » ✔ ; « coeur » ; « en un clin d'oeil » → « œil ».
+- dreadfell : « Tombeffroie » ✔ (décision partie 2 ? « Dreadfell » → « Tombeffroie » : OK) ; mais wilderness : « Tombeffroid » ✗ → « Tombeffroie » ; « Drake Blafard » ; « l'Âme Tordue » ✔ ; « Filio Tendrevol » ✔ ; « serviteurs pathétique » → « pathétiques » ; « Ton regard est attiré » → « Votre regard » ; « Une peau épaisse pend mollement » ✔ ; « sa sombre Maître / son sombre Maître » : « et offert à sa sombre Maîtresse » (Aletta) : « et offert à sa sombre Maîtresse » → « et offerte » ; « paper scrap » : « bouts de papier » ✔ ; « poème griffonnée » → « griffonné » ; « manière gothique » → « écriture gothique » ; « d'écriture » ; « Les rumeurs se multiplient : le mal est de retour » ✔.
+- dreadfell-ambush : « Embuscade ! » ✔ ; « Ukruk le Féroce » ✔.
+- dreams : « Qui êtes vous ? » → « Qui êtes-vous ? » ; « Que voulez vous ? » → « voulez-vous » ; « Où allez vous ? » → « allez-vous » ; « Avez vous » → « Avez-vous » ; « pour continuer a vivre » → « à » ; « GRrrrrrllllll ! » ✔ ; « femme perdue » ✔ ; « horreur bouffie » ✔ ; « Rêve de vulnérabilité/perte » ✔ ; « souris fragile » ✔ ; « sombrez soudain dans un profond sommeil » ✔ ; « Les émanations toxiques vous envahissent » ✔ ; « Vous avez envie de... manger » ✔ ; « Vous avez oublié votre femme ! Retrouvez-la ! » ✔ ; « suddenty » (source).
+- dreamscape-talent ✔.
+- eidolon-plane : « L'Eidolon » ✔ ; « Eidolon Plane » → « Le plan de l'Eidolon Plane » : **mélange** → « Plan de l'Eidolon » ; « ne semble pas exister physiquement de la même manière » ✔ ; « Vous ne pouvez pas sembler laisser quoi que ce soit » → « Vous ne pouvez rien laisser ici » ; « renvoyé dans le plan matériel » ✔.
+- eruan : « Portail lointain : Plaie Craquelée » ✔ ; « Un volcan en éruption synonyme de mort » ✔ ; « Paladin Solaire Guren » ✔ ; « coeur d'un volcan » → « cœur ».
+- flooded-cave : « Ukllmswwik le Sage » ✔ ; « Grotte Inondée » ✔.
+- gladium : « Forteresse Gladium » ✔ ; « mur en verre » ✔.
+- golem-graveyard : « Cimetière de Golems » ✔ ; « l'ère du Bûcher » → « l'Ère du Bûcher » ; « douze mètres » ✔ ; « Son corps est de marbre… son unique oeil » → « œil » ; « il vous domine du haut de ses douze mètres » ✔ ; « Un imbécile » ✔ ; « SYSTÈMES DE CESSATION DE VIE » ✔ ; « GLOIRE AUX HALFELIN ! » → « HALFELINS » ; « vous serez exterminés » (singulier → « vous serez exterminé » ?) ; « Oeil de rubis » ✔ (voir ci-dessus) ; « Atamathon » ✔.
+- gorbat-pride : « Gorbat, Draconien Suprême de la Fierté » ✔ ; « note brouillonée » → « brouillonne » (faute) ; « énorme rocher instable » : « huge loose rock » ✔ ; « Ce passage semble scellé » ✔ ; « Vous entendez quelque chose qui s'effrite et vous ouvre la voie » ✔ ; « Fierté de Gorbat » ✔ ; « et donnés à manger aux petits » ✔ (hatchlings) ; « perchoir » ✔.
+- grushnak-pride : « Instructeur de Combat » ✔ ; « Grushnak, Maître de guerre de la Fierté » ✔ ; « La Légende de Garkul » ✔ ; « entrée d'une fosse vaseuse » ✔ ; « mannequin d'entraînement » ✔.
+- halfling-ruins : « Sujet Z » ✔ ; « Halfelin ?! MEURS !!!!! » ✔ ; « Yeek de la Voie » ✔ ; « Sacrifice pour la Voie ! » ✔ ; « Bâtonnet de Rappel » ✔ ; « Complexe halfelin en ruines » ✔ ; « Robe en fourrure de Yeek » → « yeek » ; « journal de recherche du mage halfelin Hompalan » ✔ ; « commande pour le directeur Hompalan » ✔ ; « Une note de recherche très effacée » ✔.
+- heart-gloom : « Coeur de l'Angoisse » → « Cœur » ; « La Chose qui Dépérit » ✔ ; « Celui qui Rêve » ✔ ; « mélancolique/somnolant/endormi » ✔ ; « corrompus en un tas de vers grouillants » ✔.
+- high-peak : « Portail Lointain : l'Extrême-Orient » ✔ ; « Trône de Fer » ✔ ; « Portail : Le Sanctuaire » ✔ ; « Pic Supérieur » ✔ ; « Aeryn, Paladine Solaire Déchu » → « Déchue » ; « Aeryn, Haute Paladine Solaire » ✔ ; « Bâton d'Absorption Éveillé » ✔ ; « athamé ensanglanté » ✔ ; « Tueurs de Dieux » ✔ ; « Perle de Vie et de Mort » ✔ ; « Orbe des Multiples Voies » ✔ ; « il n'a aucune trace de viellisement » → « vieillissement » ; « a été crée » → « créé » ; « Absorbez l'essence » (impératif) ✔ ; « Sher'Tul vivant ! » ✔.
+- illusory-castle, infinite-dungeon : « herbe_d'automne », « herbe_neigeuse », « sous_l'eau » : **identifiants avec underscore** : ce sont des sous-types (type `entity subtype` : clés techniques ; cf. `dark_grass → herbe sombre` ailleurs) → traduire sans underscore ; « fissure dans l'espace temps » → « espace-temps » ; « Potion de Prouesse Martiale » ✔ ; « Extrait de Bile de Ver Anti-magique » ✔ ; « Anti-magie » ✔ ; « Combat au Bâton » ✔ ; « Maîtrise des Étoiles d'Âme » ✔ ; « Talents Formation au Combat » → « Entraînement au Combat » (partie 3 : « Entraînement au Combat ») ; « Donjon Infini » ✔ ; « zone soigneusement excavée » ✔ ; « poli » (hewn) → « taillé » ; « sylvestre » ✔ ; « arrid » (source) ; « vaseux » (slimey) → « visqueux » ; « unhewn → rugueuse » ✔ ; « molten → en fusion » ✔ ; « Terrain empiétant » ✔.
+- keepsake-meadow : « Pré Paisible » ✔ ; « ragoût de troll » ✔ ; « Meurt ! » → « Meurs ! » ; « Aux armes ! » ✔ ; « caravanier » ✔ ; « chien de guerre » (minuscule) ✔ ; « griffe de l'ombre » ✔ ; « traqueur de l'ombre » ✔ ; « Gland de Fer » ✔ ; « Gland en Fer Froid » ✔ ; « Livre de Kyless » ✔ ; « et donnés en pâture » ✔ ; « Une ombre dessinée sur le sol » ✔ ; « Guerrier/Archer Compagnon » ✔ ; « vous ne pouvez pas vous résoudre à jeter %s » ✔.
+- lake-nur : « Lac de Nur » ✔ ; « clé-gemme » ✔ ; « Vous descendez dans les ruines submergées » ✔.
+- last-hope-graveyard : « Cimetière de Dernier Espoir » ✔ ; « Le Coeur de Celia qui Bat Encore » → « cœur » ; « Célia » (accent) vs « Celia » ✔ ; « Ouvrez le cercueil » (impératif dans titre) → « Ouvrir le cercueil » ; « mort-vivant » ✔ ; « Tandis que vous descendez les escaliers » ✔ ; « mille » ; « tout ce que… guilt » ✔.
+- mark-spellblaze : « Marque de la Brûlure Magique » ✔ ; « Coeur » → « Cœur » ; « Coeur corrompu » ✔ ; « Reine des Ver des Sables » → « Vers » ; « suffisement » → « suffisamment » ; « Vie Infecte » ✔ ; « Grand Corrupteur » ✔ ; « Grand Corrupteur » (Zigur) ✔.
+- maze : « Le Labyrinthe » ✔ ; « Horreur Cornue » ✔ ; « brigant » → « brigand » ; « Le parfait dispositif pour tuer » ✔ ; « Avez-vous entendu parler de la patrouille » ✔ ; « crevasse » ✔ ; « Sautez » → « Sauter » ; « Minotaure du Labyrinthe » ✔.
+- murgol-lair : « Murgol, le Seigneur Yaech » ✔ ; « Dame Nashva la Maîtresse des Cours d'Eau » ✔ ; « naga gardien des marées » ✔ ; « naga invocatrice des marées » ✔ ; « Tanière de Murgol » ✔ ; « ramenés à Vargh » ✔.
+- norgos-lair : « Norgos, le Gelé » ✔ ; « Thaloréens » → « Thaloren » ; « Norgos, le Gardien » ✔ ; « et s'est transformée en stalactites » → « transformé » (ours) ; « Repaire de Norgos » ✔.
+- noxious-caldera : « Veresprit » ✔ ; « Thalore » → « Thaloren » ; « Chaudron Nocif » ✔ ; « Chaudron de Dogroth » ✔ ; « Autel des rêves » ✔ ; « Fumées » ✔.
+- old-forest : « Vieille Forêt » ✔ ; « Cuir Fragmenté » (Shardskin) ✔ ; « Racine Courroucée » ✔ ; « Racine Cassante » ✔ ; « mignon petit lapin » ✔ ; « l'humanité comme un fléau à éradiquer » ✔.
+- orc-breeding-pit : « Fosse d'élevage orcs » → « orcs » (nom invariable, mais « Fosse d'Élevage Orc ») unifier ; « Maternité orcs » → « Maternité orque » ; « Grand-Mère Orc » → « Orque » ; « mère orc » → « orque » ; « la grand-mère orc » ; « note brouillonée ».
+- paradox-plane : « Plan du Paradoxe » ✔ ; « Ère » (Epoch) → **Époque** ; « Courbe d'Epoch » → « Courbe d'Époque » ; « Gardiens » ✔ ; « Brûlure magique » ✔.
+- rak-shor-pride : « Rak'shor » ✔ (« Rak'Shor » partie 2 : **Rak'Shor**) → majuscule ; « Titan Pourrissant » ✔ ; « Légion Glaciale » ✔ ; « Robuste Sentinelle » ✔ ; « Arch Zéphyr » → « Archi-Zéphyr » ; « Spectre du Vide » ✔ ; « Rak'shor Pride » ✔.
+- reknor : « Édit du Trône de Fer » ✔ ; « Golbug le Destructeur » ✔ ; « Ils est dit » → « Il est dit » ; « La dernière fois que vous l'avez vue cette caverne » ✔ ; « Harno, Héraut de Dernier Espoir » ✔ ; « un messa... ARG ! » ✔ ; « Athamé Runes de Sang » → « aux Runes de Sang » ; « Diamant Résonnant » → « Résonant » ; « Aller et Revenir » ✔ ; « Parchemin Scellé de Dernier Espoir » ✔ ; « dernieres » → « dernières » ; « Historique des Bénéfices » ✔.
+- reknor-escape : « Brotoq le Moissonneur » ✔ ; « Norgan et vous êtes les seuls survivants de l'Expédition de Reknor » ✔ ; « Coupe-Crâne Contrefaite » ✔ ; « Evasion de Reknor » → « Évasion ».
+- rhaloren-camp : « Inquisiteur Rhaloren » (femme : « her ») : **genre** : « Inquisitrice » (cf. partie 2 : à trancher) ; « Camp Rhaloren » ✔.
+- ring-of-blood : « Réclameur de Sang » ✔ ; « Cercle de Sang » ✔ ; « Complexe des Esclavagistes » ✔ ; « fosse de lave » ✔ ; « esclave asservi » ✔ ; « combattant esclave » ✔.
+- ritch-tunnels : « ritch » ✔ ; « cracheur de flammes ritch » (cf. « Crache-Feu » partie 3) → « Ritch Crache-Feu » ; « Grande Mère de la Ruche Ritch » ✔ ; « Tunnels des Ritches » ✔ ; « qui a incubé ses oeufs » → « œufs » ; « terrain des richtes » (wilderness) → « ritches ».
+- ruined-dungeon : « Donjon en Ruines » ✔ ; « grandes choses » ; « Vous errerez sans fin » ✔ ; « Orbe Étrange » ✔ ; « L'orbe est glacée » ✔ ; « Vous la touchez ? » ✔ ; « Gardien » ✔ ; « Un cri strident retentit ! » ✔.
+- ruins-kor-pul : « L'Ombre » ✔ ; « Le possédé » → « Le Possédé » ; « Fureur de Kor » ✔.
+- sandworm-lair : « Reine des vers des sables » ✔ ; « Ver des sables corrompu » ✔ ; « Chant des Sables » ✔ ; « Bile de Ver » ✔ ; « Œil de rubis perdu » ✔ ; « Vous disposez de %d points de catégorie à dépenser » ✔ ; « Rus » (Cun) : « (For %s, Dex %s, Mag %s, Vol %s, Rus %s, Con %s) » ✔.
+- scintillating-caves : « Cristal de la Brûlure Magique » ✔ ; « Simulacre de la Brûlure Magique » ✔ ; « Grottes Scintillantes » ✔.
+- shadow-crypt : « Cultiste Rak'Shor » ✔ ; « Crypte Sombre » ✔ ; « À mesure que votre ombre disparait » → « disparaît » ; « Le #Source# vous fixe » ✔.
+- shertul-fortress : « Orbe de Contrôle Sher'Tul » ✔ ; « Portail Lointain Exploratoire » ✔ ; « Sher'tul » → « Sher'Tul » (×4) ; « Voulez vous voyager » → « Voulez-vous » ; « Bibliothèque des Mystères Perdus » ✔ ; « Miroir de Réflexion » ✔ ; « Bête Étrange » ✔ ; « Ombre de la Forteresse » ✔ ; « Citrouille, la petite chatte » ✔ ; « Une chatte orange » ✔ ; « Votre %s est trié comme par magie par le service de stockage » → « salle de stockage ».
+- shertul-fortress-caldizar : « Forteresse Sher'Tul Inconnue » ✔ ; « Unknown the Sher'Tul Fortress » → « La Forteresse Sher'Tul Inconnue » ✔.
+- slazish-fen : « Marais de Slazish » ✔ ; « naga » ✔ ; « Dame Zoisla la Porteuse de Marées » ✔ ; « conque étrange » ✔ ; « Robes de Déviation » ✔ ; « portail de corail » ✔.
+- slime-tunnels/sludgenest : « Étrange Piédestal » (slime-tunnels « Étrange » ; sludgenest « Étrange ») ✔ ; « vouv vous » → « vous vous » ; « le Jamais Mort » ✔ ; « Souhaitez-vous utiliser l'orbe sur le piédestal  ? » (espace double + espace avant « ? ») ✔ ; « Tunnels Visqueux » ✔ ; « Nid de Vaseux » → « Nid de Vase » ; « substances visqueuses… plus résistantes » ✔ ; « Vasomancien Corrompu » ✔.
+- south-beach : « Plage du Sud » ✔ ; « Regarde par là ! » → « Regardez » ; « bikini de plage » ✔ ; « Profitez d'une belle journée » ✔.
+- stellar-system-shandral : « Estival (Lune d'Eyal) » et « Frimas » : **Summertide / Wintertide** : « Estival » (décision partie 2 : mois « Estival ») : à valider : pour les lunes, « Marée d'Été / d'Hiver » ; « Ponx (Planète gazeuse) » ✔ ; « Ponx (Gaz Planet) » (source).
+- tannen-tower : « Portail vers Dernier Espoir » ✔ ; « pour fuir » ✔ ; « Emprunter le portail » ✔ ; « créature artificielle » ✔ ; « Résonnant » → « Résonant » ; « Orbe des Multiples Voies » ✔ ; « orbe tourbillonnant » ✔ ; « L'orbe projette des images… Utilisée près d'un portail » ✔ ; « et son métal grinçe » → « grince » ; « Tour de Tannen » ✔ ; « Drolem » ✔ ; « ni entendu parler de lui. » (point final dans une `_t` sans majuscule) ✔.
+- telmur : « L'Ombre de Telos » ✔ ; « Moitié Inférieure » ✔ ; « Ruines de Telmur » ✔ ; « Champs probabilistes inversés et réversés » ✔.
+- tempest-peak : « Urkis, la Grande Tempête » ✔ ; « Pic Tempétueux » ✔ ; « Pic Tempétueux » (wilderness) ✔.
+- temple-of-creation : « Cette naga imposante » ✔ (naga mâle : « his ») : « Ce naga imposant » ; « Perle Surnaturelle » ✔ ; « Héritage des Nalores » → « Naloren » ; « Temple de la création » → « Création » ✔ ; « Tout autour de vous il n'y a que de l'eau à perte de vue. Sauf sur votre gauche » ✔.
+- temporal-reprieve-talent ✔ ; temporal-rift : « Ben Cruthdar, l'Abomination » ✔ ; « se transformant en apparaissant et disparaissant » (« se transformant en  apparaissant ») → « apparaissant et disparaissant de la réalité » ; « Chronolithe Jumeaux » → « Chronolithe Jumeau » ; « Petit Village de Bûcherons » ✔.
+- test ✔ ; thieves-tunnels : « Tunnels inconnus » ✔ ; « Seigneur Assassin » ✔ ; « Marchand Perdu » ✔.
+- town-angolwen : « Linaniil, Archimage Suprême d'Angolwen » ✔ ; « robe de soie plutôt osé » → « osée » ; « Virez ce vaurien ! » (Remove @himher@!) → « Éliminez-le ! » (invention : « vaurien » absent) ; « Capturez @himher@ ! » ✔ ; « Archimage Tarelion » ✔ ; « Shalore » → « Shaloren » ; « Tarelion » ✔ ; « Joyau Étincelant » ✔ ; « Outils de l'Art » ✔ ; « conférence sur l'humilité » ✔.
+- town-derth : « garde de Derth » ✔ ; « Homme Cornac louche » ✔ ; « Hé, toi ! Viens ici ! » → « Hé, vous ! Venez ici ! » (cohérence vous/tu : un truand tutoie normalement, à valider) ; « Demeure de Stire l'Alchimiste » ✔ ; « Forge d'Épées » ✔ ; « Fournitures de Survie » ✔.
+- town-elvala : « tisseur de rune ogre » → « ogre tisseur de runes » ; « Une imposante guarde ogresse » → « garde » ; « Un elfe de grande taille » ✔ ; « shalore » → « shaloren » ; « maître des runes shalore » → « shaloren ».
+- town-gates-of-morning : « Portail Lointain : Dernier Espoir » ✔ ; « Montagnes du Mur Solaire » ✔ ; « Tissus Arcanique » → « Tissu Arcanique » ; « Friandises Arcanique de Sook » → « Arcaniques » ; « Essences Herbaliques » → « Infusions Herbales » ; « Mutilateurs pour Brutes » ✔ ; « Trancheurs d'Orcs » ✔ ; « Affaires Nocturnes » ✔ ; « Maître d'Armes » ✔ ; « Zemekkys Home » → « Demeure de Zemekkys » ✔ ; « Aeryn, Haute Paladine Solaire » ✔ ; « Fiertés Orcs » → « orcs ».
+- town-irkkk : « guerrier psionique yeek » ✔ ; « yeek psionique » ✔ ; « littéralement » ✔ ; « joaillier » ✔ ; « artisan d'armes à deux mains » ✔ ; « vetements » → « vêtements » ; « essences naturelles » → « infusions » ; « Marus l'Alchimiste » ✔ ; « Sculpteur de Bâton » ✔.
+- town-iron-council : « Itinéraire de Sortie de Reknor » ✔ ; « Mystique de l'Empire » ✔ ; « garde nain » ✔ ; « gardien de la terre nain » ✔ ; « Forge de Maces » → « Masses » ; « Délices de Delver » ✔ ; « Conseil de Fer » ✔.
+- town-last-hope : « Dernier Espoir » ✔ ; « garde de dernier espoir » → « Dernier Espoir » ; « un halfelin présentable » ✔ ; « plutôt propre sur lui  . » (double espace et point) ; « Les Notes du roi Toknor le Brave » ✔ ; « Paradis Émoussé de Raber » ✔ ; « Hacheurs d'Arbres » ✔ ; « Porte de Tannen » ✔ ; « Demeure d'Ungrol l'Alchimiste » ✔ ; « le Roi Pâle partie %s » ✔ ; « L'échoppe merveilleuse d'Urthol » ✔.
+- town-lumberjack-village : « Ben Cruthdar, le Maudit » ✔ ; « bûcheron » ✔ ; « Petit village de bûcherons » ✔ ; « Cris » ✔.
+- town-point-zero : « Faille Temporelle vers Maj'Eyal » ✔ ; « Les Losgoroth sont de puissants élémentaires du vide » ✔ ; « losgoroth monstrueux » ✔ ; « Zemekkys, Grand Gardien de la Réalité » ✔ ; « Profanateur Temporel » ✔ ; « Fragment de Temps Cristallisé » ✔ ; « extrémité finale du faisceau temporel » ✔ ; « gardien de la réalité » ✔.
+- town-shatur : « chasseur thalor » → « thaloren » ; « naturaliste thalore » → « thaloren » ; « Poing de la Nature » ✔ ; « Étoile de la Nuit » ✔.
+- town-zigur : « Panneau d'Affichage de Zigur » ✔ ; « Les lois du Ziguranth » ✔ ; « Protecteur Myssil » ✔ ; « Une Ziguranth halfeline » ✔ ; « Le Grand Mal » ✔ ; « Plaques d'Horman » ✔ ; « Cuir Infusé » ✔ ; « Combattant à l'air sinistre » ✔ ; « Magasin de la Nature » ✔ ; « Taillade & Cavalcade » ✔ ; « Trancher et Émincer » ✔.
+- trollmire : « Bourbier Troll » ✔ ; « le ourbier troll » → « bourbier » ; « Prox le Puissant » ✔ ; « Shax le Visqueux » ✔ ; « Bill le Troll de Pierre » ✔ ; « transformé en soupe » ✔ ; « Aluin le Déchu » ✔ ; « amuse-gueule » ✔ ; « un message » ✔ ; « Grand, musclé, puissant, et avec un goût pour les Halfelins » → « halfelins ».
+- tutorial/tutorial-combat-stats : « Nain le guide » (Nain the Guide : nom propre) ; « Ce crétin », « Colosse humanoïde a la peau verte… » (grammaire) → « Ce colosse humanoïde à la peau verte et à l'aspect repoussant vous fixe du regard, serrant ses poings verts couverts de verrues. » ; « Troll de Forum » ✔ ; « Signe » → « Panneau » ; « Rune de l'Éveil : Vacances d'Été » ✔ ; « Provoque l'effacement du cerveau du joueur » ✔ ; « Tu as appris le talent Peur » → « Vous avez appris » ; « Vous avez apprit » → « appris » ; « art ancestral de l'art de pousser des trucs » (répétition) ; « Cherchez vers l'ouest » ✔ ; « Orc régénerant » → « régénérant » ; « Effet Cross-Palier » → « trans-palier » ; « Tutoriel des mécaniques » ✔ ; « Stats de Combat » ✔ ; « Effets Temporaires » ✔ ; « Arachnophobie... » ✔ ; « Une énorme arachnide » → « énorme arachnide » (araignée : le nom « arachnide » est masculin ou féminin : « un arachnide ») ; « tutoriel2 » ✔ ; « Combat de mélée » → « mêlée » (×2).
+- unhallowed-morass : « Marais Impie » ✔ ; « bébé tisserande » → « jeune tisserande » ; « orbe fileuse » ✔ ; « tisseuse d'orbes » ✔ ; « fileuse de destin » ✔ ; « Reine des Tisserandes » ✔ ; « Profanateur Temporel » ✔ ; « Les Gardiens à portée ripostent » ✔.
+- unremarkable-cave : « Caverne Banale » ✔ ; « Une elfe. Elle porte une robe moulante ornée de symboles Solaires et Lunaires » → « solaires et lunaires » ✔.
+- valley-moon : « Ithilthum, Vallée de la Lune » ✔ ; « Daelach Corrompu » ✔ ; « Portail du Plan de la Peur » ✔ ; « Limmir le Joaillier » ✔ ; « Une Anorithil Elfe » → « Anorithil elfe ».
+- valley-moon-caverns : « laissé par laissé par » → doublon ; « Cavernes menant à la vallée cachée » ✔.
+- void : « Vide entre les mondes » ✔ ; « Gerlyk, le Créateur » ✔ ; « Tueurs de Dieux Sher'tul » → « Sher'Tul » ; « vide interstellaire » ✔ ; « l'oeuvre » → « l'œuvre » ; « préféra fuir » ✔ ; « Devenez vous aussi » ✔.
+- vor-armoury/vor-pride : « Armurerie Vor » ✔ ; « Maître de Guerre Gnarg » ✔ ; « ancien dragon multicolore supérieur surpuissant » ✔ ; « Grand Géomancien de la Fierté » ✔ ; « Grimoire du Feu Sauvage » ✔ ; « Grimoire du Froid Absolu » ✔ ; « Archives du Gardien du Savoir Hadak » ✔ ; « Fierté Vor » ✔.
+- wilderness : « Étendue de l’Ouest » : **apostrophe typographique ’** (décision partie 2 : apostrophes droites) → « l'Ouest » ; « Abîme de Fer » ✔ ; « Lac de Brume-Magie » ✔ ; « Tombeffroid » → « Tombeffroie » ; « forêt de thalore » (×2) → « des Thaloren » ; « Capitale des terres Thalore… Shaloren » → « Thaloren » ; « Village princiopale » → « principal » ; « Terrain d'entraînement principal Ziguranth » ✔ ; « Conseil de Fer (Ville) » ✔ ; « Cœur de l'Empire Nain » → « Coeur » et « Empire nain » ; « Cœur de l'Angoisse » ✔ ; « Grottes Scintillantes » ✔ ; « Longue route vers le Pic Tempétueux » ✔ ; « Entrée dans le repair de sable » → « repaire » ; « Passage menant au Repaire de Norgos » ✔ ; « Ruines Halfelin très anciennes » → « halfelines » ; « Tunnel vers le terrain des richtes » → « ritches » ; « Plaie Craquelée » ✔ ; « Volcan de la Plaie Craquelée » ✔ ; « Les déserts arides d'Erúan » ✔ ; « Une porte donnant sur le cimetière de Dernier Espoir » ✔ ; « Vous ne pouvez pas abandonner les yeeks de Rel » ✔ ; « Unremarkable cave » ✔.
+- ai/escort : « Au Secours ! » ✔ ; « en direction de %s ! » ✔.
+- ai/quests : « Proteger Limmir » → « Protégez » ; « Retenez les ! » → « Retenez-les ! ».
+
+## 4. Limites
+
+- Relevé non exhaustif ligne par ligne : les ≈ 4 000 entrées de cette partie ont été parcourues pour les fautes sûres et les incohérences de terminologie ; j'ai laissé de côté les lignes déjà correctes.
+- Les chaînes de **debug** (`mod/ai/*`, `mod/dialogs/debug/*`) sont à votre appréciation : elles sont très techniques et n'ont pas d'intérêt pour un joueur ; j'ai seulement relevé les fautes.
+- Formats d'arguments (`%s`/`%d`, `{2,1}`) : seuls les cas visibles sont signalés. À vérifier en jeu : `Actor.lua` (« %s's %s ») et `Object.lua`.
+- Choix de noms propres de talents/effets (« Étalement », « Entravé », « Poix Collante », etc.) : ce sont des propositions.
+- Points toujours à trancher (hérités des parties précédentes) : Tueur(s) de Dieux, Redux, Inquisitrice/Inquisiteur, Faeros/Feuros, Purge Arcanique (cohérent ici), Estival/Marée d'Été (lunes).
+
+Fin de la relecture des quatre parties. Je peux produire des blocs corrigés prêts à coller si vous m'indiquez un fichier ou une section.
