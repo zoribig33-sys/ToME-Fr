@@ -1,0 +1,43 @@
+2. Fautes repérées
+
+Accords et grammaire
+
+« arcanique » invariable au pluriel : à passer en « arcaniques » (« forces/énergies/machines/objets/pouvoirs/créations arcanique », « dégâts arcanique », « aux propriétés arcanique », etc.). C’est la faute la plus répandue.
+« proportionnel » mal accordé dans plusieurs descriptions de talents :
+« La résistance / La chance / La chance critique / La chance de propagation / La vie soignée / L’augmentation de dégâts / La chance de réduire au silence est proportionnel » → proportionnelle.
+« Les valeurs / Les statistiques / Les chances … sont proportionnels » → proportionnelles.
+« proportionnel à votre Constitution et du niveau » → « et au niveau ».
+« proportionnelle à vos critique de sorts » → « à votre taux de critique des sorts ».
+« Les Cultiste Entropique sont / utilisent » (unlock-demented_cultist_entropy) → « Les Cultistes Entropiques ».
+« ne tiens plus qu’a un fil » (Briseur de Destin) → « ne tient plus qu’à un fil ».
+« tu en a l’air » (godfeaster-malyu-escaped) → « tu en as l’air ».
+« pour la portez » (Armure Monolithique) → « pour la porter ».
+« Horreures Contrôlées » → « Horreurs ».
+« Lisez Les Putins d’Instructions » → « Putains ».
+Talent type « Oublie » → « Oubli ».
+« j’ai découvert la vérité sur Nos origines » (dremwarves, 3) → « nos origines ».
+Majuscules manquantes en début de phrase (Fay Willows) :
+« … dans cet état. les shaloréens étaient un peuple brisé »
+« … de leur propre chef ? les shaloréens étaient-ils… »
+« les shalorens rassemblèrent… »
+« des Shaloréens, j’apprendrais… »
+« le Professeur » (nom d’entité The Teacher) → « Le Professeur ».
+
+Accents sur majuscules
+
+« Egress Occulte » apparaît partout → « Égress Occulte ». C’est la seule majuscule accentuée réellement oubliée que j’aie trouvée. Les autres (« Étrange », « Ère », « Évolution », « Échec »…) sont corrects.
+
+Typographie
+
+Ligature œ : « coeur, oeil, oeuf, oeuvre, soeur, foetus, écoeurantes, manoeuvre » → œ
+
+
+
+Incohérences de traduction
+
+Allure Wars : « Guerres de la Séduction » (unlock_race_krog) contre « Guerres du Charme » (Fay Willows).
+« temps de recharge » et « temps de rechargement » sont mélangés.
+« Puissance des Sorts » et « Puissance Magique » désignent tous deux Spellpower.
+« horreur bouffie » et « Horreur Boursouflée ».
+« fosses à fléaux » (événement) contre « Fosses à Plaie » (zone).
+Shaloren : alternance de shaloréens / shalorens / shalore.
