@@ -1,0 +1,206 @@
+Le fichier fait plusieurs centaines de milliers de caractères, trop pour que je le renvoie réécrit en entier dans un seul message, et je ne peux pas produire de fichier dans cette conversation. Voici donc ce que j'ai relevé, sous forme de remplacements faciles à appliquer (recherche/remplacement). Dis-moi si tu préfères que je te renvoie les sections complètes, réécrites, par blocs successifs.
+
+## 1. Décisions de cohérence (à appliquer partout)
+
+| Terme | Forme retenue |
+|---|---|
+| Spellblaze | **Brûlure Magique** (parfois « Brûlure magique » dans classes/chats) |
+| Spellhunt | **Purge Arcanique**. Spellhunter = **Traque-sorts**, pas « chasseur de sorts ». |
+| Void (portail) | **Vide**. Remplacer « Néant » dans `sorcerer-fight.lua` et `sorcerer-end.lua`. |
+| Ères | **Ère de la Séduction**, **Ère du Bûcher**, **Ère du Crépuscule** (majuscules) |
+| Battleaxe / waraxe | battleaxe = **hache de bataille**, waraxe = **hache de guerre** (aujourd'hui mélangés avec « hache de combat ») |
+| Kar'Krul / Kor'Krul | **Kar'Krul** |
+| Sher'tul / Sher'Tul | **Sher'Tul** |
+| Orb of command | **orbe de commandement** (pas « de commandes ») |
+| Tu / vous | Un même PNJ doit garder le même registre dans une conversation (voir §4). |
+| Verbes de succès | Infinitifs partout : « Devenir… », « Obtenir… », « Tuer… » |
+| « energy » dans la Forteresse | « 45 **d'énergie** » (pas « 45 énergies ») |
+
+## 2. Balises cassées (bugs, à corriger en priorité)
+
+```
+"#DERNIÈRE#"  → "#LAST#"            (last-hope-lost-merchant : « une Toxine Puante#DERNIÈRE# »)
+"#{italique}#" → "#{italic}#"       (shertul-fortress-caldizar)
+"[l'embrasser]]#WHITE#" → "[l'embrasser]#WHITE#"   (last-hope-melinda-father)
+"@playername@，à" → "@playername@, à"   (virgule chinoise, last-hope-elder)
+"%s pièce d'or" → "%s pièces d'or"   (jewelry-store)
+"les 200 pièces d'or" → "les 100 pièces d'or"   (zemekkys : le texte anglais dit 100)
+```
+
+## 3. Succès, classes, races (parties 1–2)
+
+**Achievements**
+```
+Dix à un coup → Dix d'un seul coup
+Est devenu le nouveau maître… en mode 30 round. → Devenir le nouveau maître… en mode 30 rounds.
+A obtenu le rang de … → Obtenir le rang de …
+Ne faites pas attention a l'odeur → … à l'odeur
+transformé en créatures hostiles → transformés en créatures hostiles
+Tuer plus de 1000 créatures → Tuer 1000 créatures
+Tuer 1000 vermine reproductrice → Tuer 1000 vermines reproductrices
+Tuer 1000 humanoïde → Tuer 1000 humanoïdes
+Accapareurs de trésors → Accapareur de trésors
+Headbanged 20 boss à  mort. → Tuer 20 boss à coups de tête.
+t'as perdu la tête ?! → Tu as perdu la tête ?!
+Évitez la mort 50 fois… → Éviter la mort 50 fois grâce à un talent qui sauve la vie.
+Infligez un million… → Infliger un million…
+Courrir → Courir
+êtres conscient → êtres conscients
+A gagner la partie sans jamais enlever son bikini → Gagner la partie sans jamais enlever son bikini
+Du côté du seigneur assassin → Se ranger du côté du seigneur assassin
+camp de Ziguranth → camp des Ziguranth
+alliés de Rhaloren → alliés Rhaloren
+anti-magie ! → Anti-magie !
+Détruit la menace spydrique → Détruire la menace spydrique
+Etre tuer par son futur moi → Être tué par son futur soi
+A la fois tuer… être tuer → À la fois tuer votre futur soi et être tué par lui
+esclaves envoutés → esclaves envoûtés
+et s'est fait prendre → et se faire prendre
+Vous avez détruit le vasomancien → Détruire le vasomancien corrompu
+Débloquez / infligez → Débloquer / infliger
+Supprimmer → Supprimer
+J'ai survécu au Plan de la peur  ! → Survivre au Plan de la Peur !
+Le golem doit tuer un boss alors que… → Faire tuer un boss par le golem alors que son maître est déjà mort.
+```
+
+**Classes**
+```
+ALEATOIRE → ALÉATOIRE
+montez en grade → montez de niveau
+comdamnés → condamnés ; antan → autrefois ; a exploiter → à exploiter
+relachent → relâchent ; tout ceux qui s'oppose → tous ceux qui s'opposent
+à l'abris → à l'abri ; si ils → s'ils ; leur ennemis → leurs ennemis
+Les classes d'affligés ont été dupés → …ont été pervertis
+A travers l'ignorance la cupidité ou la folie → Par ignorance, cupidité ou folie
+du paradis → des cieux ; hardue → ardue
+cour normal → cours normal ; apprenent → apprennent ; spacio-temporel → spatio-temporel
+concidèrent… aquises → considèrent… acquises
+Les mages du paradoxe ne commencent avec rien de plus que la connaissance des plus complexes
+  → Les mages du paradoxe commencent avec la connaissance de toutes les écoles de chronomancie, sauf les plus complexes. (contresens)
+répendent → répandent ; l'essort → l'essor ; faite plus → ne faites plus
+quelques liens que se soit → aucun lien que ce soit
+secrête → secrète ; permettrons → permettront ; noiceur → noirceur ; Marcher… boire → Marchez… buvez
+banni ou activement chassé → bannis ou activement chassés
+entrainé → entraîné ; peux → peut ; reveillez → réveillez ; télekinetiquement → télékinétiquement
+nous controns → nous controns ; vient danser → viens danser ; sorciers fou → sorciers fous
+flêches → flèches ; self-defense → autodéfense ; ont poussés → ont poussé
+Que ce soit pour un combattant des fosses… → Qu'il s'agisse d'un combattant des fosses…
+Il existe autant de Naturalistes différents tout comme il existe plusieurs aspects de la nature
+  → Il existe autant de naturalistes différents que d'aspects de la nature.
+notre vrai force → notre véritable force ; à coté → à côté ; immiter → imiter
+les faits combattre → les font combattre ; adepte de → adeptes de
+```
+
+**Descriptors (difficultés)**
+```
+dégâts fait au joueur → dégâts faits au joueur
+désaventageux / status → désavantageux / statut
+Vies infinis → Vies infinies
+Envoyez la vrai difficulté → Envoyez la vraie difficulté ; la vrai expérience → la véritable expérience
+apparaitre → apparaître ; fait parti intégrante → fait partie intégrante ; si il → s'il
+Mode Dément / Mode folie → mettre « dément » en minuscule comme les autres modes
+```
+
+**Races**
+```
+Les créatures artificielle → artificielles ; communnes → communes
+Moustache Foncés → Moustache Foncée
+Dwarf : sous-terrain → souterrain ; confilts → conflits ; « unis sous l'empire et à leur amour »
+  → « unis par l'Empire et par leur amour de l'argent » ; « physique, et des sorts » → « physique et magique »
+Elf : succèdées → succédé ; passés → passé ; « Maintenant ils restent tranquille » → « Pourtant ils restent discrets »
+Giant : « huit mètres » → « huit pieds (environ 2,40 m) » (contresens : feet) ; sousterrains → souterrains ;
+  ont échoués → ont échoué ; ont portés → ont porté ; octroyés → octroyé
+Halfling : quatres → quatre
+Human : « jusqu'aux évènements, et de grandes personnes ont unifiés »
+  → « jusqu'à ce que des événements et de grands personnages unifient » ; « Courroux » → « le Courroux »
+Undead : rêgne → règne ; « Les goules sont stupides, mais résistantes, créatures morte-vivantes pourrissantes »
+  → « Les goules sont des morts-vivants stupides mais résistants, en putréfaction » ;
+  Bonlons de fer → Boulons de fer ; Vomit → Vomissement ; Les mort-vivants → Les morts-vivants
+Yeek : « notre voie est vrai » → « vraie » ; « ceux qui nous aide » → « aident » ;
+  néammoins → néanmoins ; d'experience → d'expérience ; « îles tropicales de Rel » → « île tropicale de Rel »
+Sexes : « un male » → « un mâle »
+Worlds : « ont été en relative paix » → « est en paix relative depuis plus de cent ans » ;
+  Aventurez vous → aventurez-vous ; au dessus → au-dessus
+Factions : Neute → Neutre ; calendrier : « Temps de l'Objectivité » → « Temps de l'Équilibre » (cohérent avec l'autre)
+```
+
+## 4. Chats
+
+```
+alchemist-derth : en avair → en avoir ; savent se battent → savent se battre ;
+  « Dally » (resté en anglais) → « Tardez, et… »
+alchemist-elvala : Ca n'as → Ça n'a ; tuer des occasionnellement → tuer occasionnellement des monstres ;
+  Pose les ici → Posez-les ici (garder « tu » OU « vous »)
+alchemist-hermit : REDDEMBLE → RESSEMBLE ; MATINNE → MATINÉE ; SONT ACCEPTÉ → EST ACCEPTÉ ;
+  INGREDIENTS → INGRÉDIENTS ; TA DOSE → VOTRE DOSE ; halfling → halfelin ; « CES OREILLES » → « AVEC CES OREILLES »
+alchemist-last-hope : Ça ma l'air bon → Ça m'a l'air bon ; « Pas d'essences » → « Pas de décoctions » ;
+  nain enmaillé → nain en cotte de mailles
+angolwen-leader : quitté d'Angolwen → quitté Angolwen ; Tempétueux → Tempête
+arena : extrème → extrême ; envahie → envahit ; éxpérience → expérience ; Interessant → Intéressant ;
+  Je vous attendrais → Je vous attendrai ; Etes vous → Êtes-vous ; brigant → brigand ;
+  Ryal le Terrible → Ryal le Colossal ; supprimer les points finaux de « Entrez dans l'arène (60 tours). »
+ardhungol-end : entrailles déchiquetés → déchiquetées
+avatar-distant-sun : mélange tu/vous (« RESTERAS-TU », « DEVIENDREZ-VOUS PUISSANTS ») → choisir « vous » ;
+  « Je suis occupée » → « occupé(e) » ; NOW → MAINTENANT
+derth-attack-over : laisserais → laisserai
+gates-of-morning : je els ai → je les ai ; ont rouvé → ont trouvé ; orbes de commandes → de commandement ;
+  « sans jamais nous attaquer » → « en nous attaquant sans cesse » (contresens) ; ta carte → votre carte
+jewelry-store : quelle anneau → quel anneau ; « a échoue… and » → « a échoué… et » ;
+  Coût d'iprégnation → Coût d'imprégnation ; accepter vous → acceptez-vous ; %s créé → %s crée
+last-hope-weapon-store : « for 8 gold pieces » (anglais) → « pour 8 pièces d'or » ; Formez moi → Formez-moi
+last-hope-melinda-father (Melinda parle) : heureux → heureuse ; resté coincé → restée coincée ; guéri → guérie
+magic-store : %d d'or → %d pièces d'or
+orc-breeding-pits : « laissent présager un poison » → « trahissent un poison »
+paradoxology : disparaîssez → disparaissez
+ring-of-blood : Et si je perd → perds ; « le globe / les mains sur le globe » → « l'orbe » ;
+  « la mort sans risque d'automutilation » → reformuler : « Du sang, la mort, sans risque pour moi ? Quel plaisir ! »
+shadow-crypt : Vvoie → Voie ; e le pense → Je le pense ; de le Voie → de la Voie
+shertul-fortress-butler : « 45 / 50 / 10 énergies » → « 45 / 50 / 10 d'énergie »
+shertul-fortress-caldizar : « fait boum » → « résonne » ; PARTIEZ → PARTEZ
+sorcerer-end : TRAVAILLE → TRAVAIL ; vous sacrifiant vous même → vous-même ; NOW → MAINTENANT ;
+  aux jeunes → aux yeeks ; être sentient → être conscient ; Néant → Vide
+tannen : se déroule vos recherches → se déroulent vos recherches
+tutorial-start : Bonjour à tous → Bonjour ; « Save et Exit » → « Sauvegarder et quitter »
+undead-start-kill : Tu sera → Tu seras ; mélange tu/vous → tutoiement ; « Je vous en prie » → « Je t'en prie »
+unremarkable-cave : « enfin je suis enfin » → « enfin je suis » ; obscure → obscur ;
+  Krogar : « Les Fiertés Orcs vous remercie » → « La Fierté orc vous remercie »
+yeek-wayist : « +15 boucliers mentaux » → « +15 de sauvegarde mentale »
+zemekkys : « Je suis venu de Maj'Eyal » → « Je viens de Maj'Eyal »
+zigur-trainer : tu/vous mélangés (« Si tu les vaincs, nous t'enseignerons… ») → vouvoiement
+zoisla : Tu nous as condamnés → Vous nous avez condamnés
+```
+
+## 5. Objets, PNJ, dégâts
+
+```
+elven cultist : « culturiste elfe » → « cultiste elfe »    (erreur amusante)
+spiderkin : « Une énorme peau d'araignée » → « Une énorme arachnide »
+ogre mauler : « bourrin orgre » → « bourrin ogre »
+poison ooze : « vaseux poisoneux » → « vaseux empoisonné »
+emperor wight : « nécrophage empreur » → « empereur » ; archlich : « archie liche » → « archiliche »
+Masses/épées/haches : « Masse massives » → « Masses massives » ; « Épée massive » → « Épées massives » ;
+  « Hache de guerre a une main » → « à une main »
+silk (short_name) : « soir » → « soie »
+pouch of faeros ash : « frêne » → « cendre » (ash = cendre ici, pas le bois)
+vine coated hammer : « enrobé de vin » → « enrobé de vigne »
+glowing staff : « bâton de pèlerin » → « bâton lumineux »
+multi-hued wyrm scale : « multicolor » → « multicolore »
+egos : grande cépacité → grande capacité ; de handicape → de handicap ; d'amnésia → d'amnésie ;
+  « peu acide » (acidic) → « acide » ; « du rafraichissement » (chilling) → « glacial » ;
+  recharegement auto → rechargement automatique ; d'inéspérance → de sérendipité ;
+  « idéaliste » (dreamer) → « rêveur » ; « de l'astronome » (starseer) cohérent, stargazer → « contemplateur d'étoiles » ;
+  « du costaud » (might) → « de puissance » ; « d'asile » (ward) → « de garde » ; « d'onde spitituel » → « d'onde spirituelle »
+damage_types : mentallement → mentalement ; proison → prison ; gavitique → gravitique ;
+  engluanté → englué ; surexité → surexcité ; ground → « moulu » (pas « sol ») ;
+  ralantissant → ralentissant ; brulé → brûlé ; nocife → nocif ; « orc invoquén » → « orc invoqué » ;
+  « chance de réduire l'armure par » → « de » ; « départ » (leaves) → « feuilles » ;
+  assomement / assommement → uniformiser en « assommement »
+```
+
+## 6. Lore
+
+- Mettre les catégories en majuscules : « Ère de la Séduction », « Ère du Bûcher ».
+- « Sermon sur la nature de la magie » → « Conférence sur la nature de la magie ».
+- « chasseurs de sorts » (Wind's Whisper) → « Traque-sorts ».
+
+Ce relevé couvre ce que j'ai repéré en lecture ; je n'ai pas pu tout vérifier ligne par ligne. Pour une relecture exhaustive avec le fichier entièrement corrigé, je peux traiter section par section, en commençant par `chats/` ou `objects/`, en te renvoyant chaque bloc prêt à coller.
