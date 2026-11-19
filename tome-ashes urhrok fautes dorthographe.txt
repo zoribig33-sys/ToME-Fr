@@ -1,0 +1,98 @@
+Voici la relecture de `tome-ashes-urhrok`, classée comme pour les fichiers précédents.
+
+## Coquilles et fautes d'orthographe
+- **« Contrôlez ll'obscurité »** → « l'obscurité » (doom covenant).
+- **« rechargementment »** → « rechargement » (Coups Incinérants : « en rechargementment » ; Lame Vorace : « hors rechargementment »).
+- **« ségâts »** → « dégâts » (Bouclier de Sang).
+- **« n'importe quell'engeance »** → « n'importe quelle engeance » (Lier un Démon).
+- **« œ »** : le fichier écrit systématiquement « oe » dans coeur, oeuf(s), herbes-oeufs, suceurs d'oeufs, oeuvre, contrecoeur, manoeuvres, oeil, « coeur de feu », « d'un coeur noirci » et « le coeur du monde ». Tout est à passer en « œ ».
+- **« portail vers eyal »** → « Eyal ».
+- **« a saigner »** → « à saigner » (Coupure Démoniaque) ; **« a ses côtés »** → « à ses côtés » (plan de bataille du démonologue).
+- **« avant son arrivé »** → « arrivée » ; **« pourraient nous être causé »** → « causés ».
+- **« se fendrait et se faneraient »** → « se faneraient » ou « se fendraient », au singulier ou au pluriel mais cohérent. **« soit nous faneront au soleil »** → « nous faner/faneront » : choisis le temps.
+- **« Je pris son essence survivante et fuyais »** → « fuis » (passé simple).
+- **« Cette petit peste insaisissable s'est révélé »** (3 plans de bataille) → « Ce petit… s'est révélé » ou « Cette petite peste… s'est révélée ». Voir aussi la remarque sur le genre plus bas.
+- **« son évasion de, mais »** : « de » en trop.
+- **« Quel engeance utiliser ? »** → « Quelle engeance ». Même problème : « au engeance » → « à l'engeance » ; « à partir de engeances » → « d'engeances ».
+
+## Accords et grammaire
+- **« proportionnel » après un nom féminin ou pluriel** :
+  - « La valeur en vitae d'une créature est proportionnel » → « proportionnelle ».
+  - « Ces valeurs sont proportionnels » → « proportionnelles » (Poussée de Puissance et Destructeur).
+  - « La portée est proportionnel » → « proportionnelle » (Portail Tordu).
+  - « proportionnel à le niveau de talent » → « proportionnelle au niveau de talent » (Glissement du Plan de la Peur).
+  - « La Puissance Physique… sont proportionnels » → « proportionnelles » (Destructeur).
+- **Autres accords** :
+  - « réduisant leur résistances » → « leurs résistances ».
+  - « infligeant des dégâts au fil du temps basé sur » → « basés ».
+  - « une pénétration… et une augmentation… égale » → « égales ».
+  - « l'un des ensorcellement suivants » → « ensorcellements ».
+  - « si il était mort » → « s'il était mort » ; pour une engeance, « si elle était morte ».
+  - « il augmentera plutôt de niveau » : le sujet est l'engeance, donc « elle ».
+  - « vos membres du groupe » → « les membres de votre groupe ».
+- **« avec charge d'Issue Funeste »** → « avec une charge ».
+- **« Vous gagnez une vie égale à X% »** → « un montant de points de vie égal à… » (Assaut Drainant).
+- **« confondant vos ennemis »** (Folie Démoniaque) : « confondre » veut dire prendre l'un pour l'autre. Mets « rendant vos ennemis confus pendant %d tours ».
+- **« Cela ne peut se déclencher qu'une fois toutes les 5 tours »** → « tous les 5 tours » (Sacrifice Ardent).
+- **« En en ressortant »** (Glissement) → « En ressortant ».
+- **« aussi utiles seraient-elles en première ligne »** (Géant de la Forge) → « aussi utiles soient-elles ».
+- **« Rappelez-vous de rendre hommage »** (Diablotin d'eau) → « Souvenez-vous de » ou « N'oubliez pas de ».
+- **« ce que l'on peut accomplir de plus »** (Quasit) → « ce que nous pouvons accomplir de plus ».
+- **« les innombrables années d'expérience que nous en avons »** (plans de bataille) → « que nous avons ».
+- **Temps du récit** (lore 1) : passé simple partout, puis « Nous avons essayé… Nous avons refusé… nous avons conclu… Nous avons goûté… appris » → « essayâmes, refusâmes, conclûmes, goûtâmes, apprîmes ».
+- **« vous vous seriez donné la mort si vous n'aviez pas espéré qu'il existe »** → « qu'il existait » (concordance des temps).
+- **« Pacte de Sang : pendant 2 tours »** alors que l'anglais dit « 1 turns ». Voir la remarque sur les écarts plus bas.
+- **« Pour honorer les Maîtres »** : espace parasite après `#{italic}#`.
+
+## Balisage et marques de genre
+- **Markdown** : « *tous* » et « *everyone's* » dans Histoire de Mal'Rok (3) → `#{italic}#tous#{normal}#`.
+- **`string.a_an` dans le plan de bataille Elfe de la ruine** : « face à un `<?=string.a_an(...)?>` » fonctionne en anglais (« a/an » + nom). En français, tu obtiendras « un a sorcier » ou « un an archimage ». Il faut retirer l'article et la fonction : « face à `<?=_t(player.descriptor.subclass, "birth descriptor name"):lower()?>` ». Vérifie aussi que le « un » ne reste pas devant.
+- **Mélange de `player.name` et de « il/sa »** dans les trois plans de bataille. Le texte français alterne « il », « son », `<?=player.name?>` et `<?=player:he_she()?>`. Si le personnage est une femme, on lit « il » et « sa » à côté de `he_she()`. Choisis une seule méthode, soit les fonctions de genre partout, soit des tournures neutres avec le nom ou « la cible ».
+- **Phrase cassée** (plan Avatar) : « …avant son arrivé. Des dégâts considérables pourraient nous être causé si… » doit se lire « …avant son arrivée. Elle pourrait causer des dégâts considérables si… ».
+- **« les signaux d'énergie magique qu'`<him_her>` affectent »** (plan Elfe) → « qui l'affectent » avec le bon pronom.
+- **« Tout ce que vous avez vu vos camarades faire, attendez-vous à en voir venir avec lui »** est incompréhensible. Essaie : « Attendez-vous à voir chez lui tout ce que vous avez vu faire à vos camarades. »
+- **« de ses propres capacités »** : il manque « ses » dans « plutôt que des propres capacités ».
+- **« Le diablotin ordinaire bondit sur le visage d'un `<sous-race>`** » (Souvenirs perdus 1) : l'anglais dit « the `<sous-race>`'s face », donc le « du » ou « de ce » qui désigne l'homologue. Cela évite de croire qu'il s'agit d'un nouveau sujet.
+- **Casse des balises** : « #Target# partage un peu de douleur avec #Target# » (Lien de Douleur). L'anglais a `#target#` en minuscules, et la casse du placeholder compte. Vérifie aussi « Le bouclier autour de #target# ».
+
+## Contresens et faux amis
+- **« la terre d'Eyal marquée par nos cicatrices »** (Statue du Diablotin de feu) : l'original dit « Eyal-scarred earth from our planet », c'est la terre de **leur** planète, meurtrie par Eyal. → « un peu de la terre de notre planète, meurtrie par Eyal ».
+- **« Tout est mieux pour transpercer le cœur du monde »** (Épine Noire) → « D'autant mieux pour transpercer le cœur du monde ».
+- **« vous avancez jusqu'au bout de la file »** (Souvenirs perdus 1) : « front of the line » = **tête** de la file.
+- **« espionnage, éclairage, et… »** (plaque du dúathedlen) : « scouting » veut dire **reconnaissance**, pas « éclairage ».
+- **« Améliore ou accorde la furtivité »** (Ombre Sinistre) : l'anglais dit « invisibility », et le talent parle déjà d'« invisible ». → « invisibilité ».
+- **« sentient »** (Kryl-Feijan, « un corps sentient et charnel ») : emprunt à l'anglais. → « doué de conscience » ou « sensible ».
+- **« patente de la créature »** (Engeance Démoniaque) : « rank » se traduit « rang » partout ailleurs.
+- **« Chef »** pour Boss dans la liste des rangs, alors que possessors garde « boss ». À unifier.
+- **« assommement »** (Coups Incinérants, Destructeur, Frappe) : mot non standard. « étourdissement » ou « le fait d'assommer ».
+- **« en rendant la lampe… »** : non, rien. Mais **« Dominateur, Brûlant, Empathique »** (Bouclier d'Ensorcellement) : l'anglais nomme les sorts « Domination, Burning, Empathic ». Vérifie dans le jeu les noms exacts de ces ensorcellements.
+- **« fléau »** désigne à la fois blight et bane (Conte de Destruction : « un Fléau de l'Aveuglement »). Risque de confusion avec le fléau (blight) des dégâts.
+- **« sauvegardes physique, mentale, et des sorts »** → « physique, mentale et magique » pour rester cohérent avec les autres fichiers.
+- **« explorez »** pour « run » (Pluie de Feu, Bouclier Osmosique) : le jeu dit plutôt « courez ». Vérifie le libellé réel de l'action.
+- **« Les démons ne sont invoqués que si leur vie dépasse 70%% »**, **« à 70% »** : rien à signaler. Mais **« démons sous l'effet du tourment… sont brûlés »** : OK.
+
+## Incohérences terminologiques
+- **Wretchling** : « misérable » (demon_statues, npcs, « titan misérable ») contre « avorton » (lore, statues, plans de bataille, « Titan avorton »). C'est la plus grosse incohérence. « Avorton » est plus fidèle à l'ambiance, mais choisis et applique partout.
+- **Plan de la Peur** / **Plan de la peur** (majuscule inconstante, surtout dans les talents et événements).
+- **Avatar de la Ruine** / **Avatar de la ruine**, **Elfe de la Ruine** / **Elfe de la ruine**, **Diablotin de feu** / **de Feu**, **Avorton** / **avorton**.
+- **Classe** : Démonologue, Corrupteur (titre de l'unlock) et **« Profanateur »** (« Les Profanateurs utilisent la vitae » ; « catégorie Profanateur » pour Defiler). L'anglais dit « Corruptors use vim », donc « Corrupteurs » à cet endroit. Vérifie si « Profanateur » désigne bien la catégorie Defiler.
+- **Engeance** / **semences démoniaques** (déblocage de la peau rouge).
+- **Charge** / **cumul** pour « stack » (Issue Funeste, Sadique dans possessors, Règne des Ténèbres).
+- **Furtivité** / **Dissimulation** pour stealth (Fusion des Ombres).
+- **Handler** : gardien (intro, quête) contre surveillant (Souvenirs perdus). Choisis-en un.
+- **Thrall** laissé tel quel dans le plan du démonologue, alors que ailleurs « asservi ».
+- **Wards** : « protections » (plans de bataille) contre « sceaux » (Souvenirs perdus 2, « sceaux ignifuges »).
+- **Diablotin de flamme** (Griffe de Diablotin) contre **diablotin de feu**.
+- **Dévoreur d'Âme(s)** : talent au singulier, boss au pluriel. Unifie si tu veux.
+- **Volcan furieux** / **tempête de feu** sont cohérents. À garder.
+- **Style des descriptions** : alternance entre l'impératif (« Frappez », « Lancez ») et la 3e personne (« Frappe », « Envoie », « Saisit », « Retire »). Rien de bloquant, mais un fichier uniforme est plus agréable à lire.
+- **Guillemets** : `"..."` droits dans le lore et les artefacts, « » dans quelques talents. Si tu veux de la typographie française, convertis-les ; sinon laisse.
+- **Tirets** : `—` dans certaines phrases françaises, `-` dans d'autres.
+- **Grand Est / Extrême-Orient** : non concerné ici.
+
+## Écarts avec l'anglais (à vérifier)
+Plusieurs textes français contiennent des phrases qui n'existent pas dans l'anglais fourni : Règne des Ténèbres, Pacte de Sang, Fin Effroyable (« -%d vie », « ne déclenche pas Règne des Ténèbres »), Fusion des Ombres (« caverne », « talents de mouvement »), Frappe Imprudente (« Cette attaque ne peut pas échouer » sur une ligne à part), Bouclier Osmosique, et les didascalies `#LIGHT_GREEN#*…*#WHITE#` du dialogue de Walrog. Cela signifie probablement que le français suit une version plus récente du jeu que ton fichier source, ou l'inverse. Si c'est volontaire, rien à faire. Sinon, vérifie quelle version fait foi, car des chiffres comme « 1 turns » / « 2 tours » seraient alors incohérents avec le code.
+
+Points de moindre importance : « Le Plan de la peur » dans les événements de la statue, « Tatoos » dans l'anglais (faute d'origine, le français est correct), « Des vagues arcaniques » (arcane surges), « une masse amorphe de bulles » (OK), et « sa massive épée » (Mortelame) qui sonne comme un calque. « Sa gigantesque épée » serait plus naturel.
+
+Si tu veux, je te prépare un script Python pour les corrections mécaniques (œ, rechargementment, ségâts, ll', « si il », « proportionnel(s) » quand le nom précédent est féminin, `*tous*`). Les contresens et la partie sur les pronoms des plans de bataille sont à faire à la main.
