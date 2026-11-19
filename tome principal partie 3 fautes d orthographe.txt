@@ -1,0 +1,288 @@
+# Relevé de corrections, partie 3
+
+Même mode que les parties 1 et 2 : remplacements ciblés, sans réécriture. Les décisions de cohérence des parties précédentes restent valables. Le fichier s'arrête à la fin de `timed_effects/magical.lua` : les autres fichiers de `timed_effects` ne sont pas dans ce collage.
+
+## 1. Décisions de cohérence (à appliquer partout)
+
+**Rappels appliqués à cette partie**
+- Elfes invariables : « Shaloréen(s) », « Thaloréens », « Thalore », « Shalorens », « Rhalorens », « Nalores », « le Shalore » → **Shaloren / Thaloren / Naloren / Rhaloren**. Ex. : races.lua, intros, `unlock-race_ogre`, `uber/str` (« Héritage des Naloren »).
+- « forêt de Thalore » (×5 dans les intros) → « forêt des Thaloren ».
+- « laquais » → **sbires**. Fichiers concernés : animus, death, eradication, grave, master-*, dreadmaster, spells.lua (« Laquais Nécrotique »), ghoul (« Laquais Goule »).
+- « essence(s) » (infusion) → **infusion(s)**. Concerne tout `inscriptions.lua` (« Essence : … »), `misc.lua` (type « essences »), `fungus`, `harmony`, `endless-hunt`, `rampage`, `const.lua` (Sang Fongique), `tutorial/objects`, « Essence Solaire » et « Essence Sanguine » des effets. Laisser « Essence de Vitesse », qui est un nom propre.
+- dragonnet = hatchling uniquement :
+  - « draconnet(s) de feu » (summon-advanced) → « dragonnet(s) de feu » ;
+  - « Dragonnet de Feu : Flamme d'Urh'Rok » (mag.lua) → « Dragon de Feu » ;
+  - « corps … d'un dragonnet » (wil.lua) → « drake » ;
+  - « puissant dragonnet de feu » (unlock-summoner) → « dragon de feu ».
+- Drolem en minuscules : « un puissant Drolem », « Les Drolems » (unlock) → « drolem(s) ».
+- Peuples communs en minuscules, interdit « petit peuple » :
+  - races.lua : « Chance du Petit Peuple », « du petit peuple » (×3) → « halfelins » ;
+  - intros : « Humains », « Halfelins », « Nains », « Elfes », « Orcs » → minuscules ;
+  - « nation halfling de Nargol » (unlock-yeek) → « halfelins » ;
+  - « Fiertés Orcs » → « Fiertés orcs » ; « raid orcs » → « raid orc ».
+- Majuscules : « Conseil de fer » → « Conseil de Fer » ; « royaumes alliés » → « Royaumes Alliés » ; « Sher'tul » → « Sher'Tul » (objects.lua).
+- Ères : « Ere du Crépuscule / du Bûcher » → « Ère » ; « l'âge de la brume » → « l'Ère de la Brume » ; « durant Ère de la Séduction » → « durant l'Ère de la Séduction ».
+- « arcane » → arcanique (« énergie profane », « dégâts profanes » → arcanique ; « résistance aux arcanes » → « résistance arcanique »).
+- Furtivité : « nuira à la discrétion » → « nuira à la furtivité ».
+- Brigand (rogue) : « voleur » (stats7.1) → « brigand » ; « roublards » (type acrobatics) → « brigands ».
+- vim = **vitae** partout. « force vitale » (×2 antimagic) et « souillure » (Furie d'Eyal) → « vitae ».
+- Accents sur majuscules, à corriger partout :
+  - Éveil, Éclat, Éclatement, Épuisement, Éblouï, Étoilée, Éther, Âme ;
+  - « Brèche d'Ether » ;
+  - « Avatar d'Ether » (aussi « Avatar Éthéré ») ;
+  - « Sangsue d'Ame » (×N) ;
+  - « Purge de l'Ame » ;
+  - « Equilibre » (unlock-wilder ×4) ;
+  - « Elémentaires » (×4, thaumaturgie).
+- Ligatures œ : coeur → **cœur** (cursed, gloom, fears, deeprock, `unlock-mage_cryomancer`, « Cherche-Coeur »), Oeil → **Œil** (Œil Arcanique ×N, Œil du Tigre, Tir dans l'Œil), oeuf → œuf (Phénix), manoeuvres → manœuvres.
+- Titres de mages/classes : « Paladins Solaire » → « Solaires » (×5), « Archmagi » → « Archimages », « Les Anorithils » → « Anorithil », « Reavers » → « Moissoneurs ».
+- Même traduction pour une même notion :
+  - **stun = assommer, daze = étourdir**. Ex. : Kinetic Surge, Dream Crusher (« est étourdissante »), Waking Nightmare, Telekinetic Smash, `psi-fighting` → assommé / assommement.
+  - **Paralysie Mentale** (brainlock), pas « paralysie cérébrale ».
+  - **trans-palier** (pas « trans-niveaux » tier6 ni « cross-palier » tier7).
+  - **points de combo** (pas « combinaison »).
+  - **Mouillé** (Trempées, Humide, mouillée → un seul terme).
+  - **Voile Abyssal** (Abyssal Shroud est traduit « Lisière » ×5 alors que le texte dit « voile »).
+  - **Sauvegarde Mentale / Puissance Mentale** (majuscules), **Puissance des Sorts** (jamais « puissance magique » ni « puissance de sort »).
+  - **Bloquer** (pas « Blocage » : const.lua ×2, tutorial/talents).
+  - **robustesse d'armure** (pas « solidité »).
+  - **Maelström** pour Maelstrom (distortion), pour éviter la collision avec « Tourbillon » (Whirlwind).
+- Pyrokinésie / télékinésie / électrokinésie : trois graphies (-kinésie, -kinèse, « Pyrocinèse »). Choisir **-kinésie**.
+- Eldritch : « ésotérique » (Pierre ésotérique, Lianes ésotériques) → **occulte** (cohérent avec Bouclier/Coup/Pointes occultes).
+- Drakes : « draconien de glace / des sables », « dragon de l'orage », « dragon venimeux » → **dragon de glace / de sable / d'orage / de venin**. Corriger aussi « dracônique » → « draconique ».
+- Cursed : **Templier Pourpre** (cursed.lua et `unlock-paladin_fallen` disent « Souillé »), **Marqué par le Sang** (wil.lua et unlocks disent « Taches Sanglantes »), **Haine** (« Traîtrise » dans unlock), **Côté Obscur** (« Face Cachée »), **Chants Funèbres** (« Funèbre » ×2 ; sous-type « chant » vs « Réquiem »).
+- Boucliers : « Bouclier de Protection » (Damage Shield, timed) → « Bouclier de Dégâts » ; « Bouclier de Forge » (Forge Armor) → « Bouclier Forgé ».
+- Un seul nom pour : Image Miroir (phantasm : « Image en Miroir »), Haut/Grand Thaumaturge, Empathie des Ombres (npcs : « de l'Ombre »), Maître de la Terreur (spells.lua : « maître hanteur »), « Forme de la Roche Mère » (spells.lua : « Roche Profonde »), Marche Visqueuse, Furie/Colère Ogrique (races.lua : « charge de Colère Ogrique » → « Furie Ogrique »).
+- Slime/ooze : « dégâts de lenteur naturelle » (Rayon de Vase), « dégâts de limon » (×2 horrors), « dégâts de vase » (floor) → **dégâts visqueux** ; « vaseux gonflée » → « vase gonflée » ; « Lames de Vaseux » → « Lames de Vase » ; « vasaards » → « moisissures visqueuses ».
+- focus : anglicisme dans plusieurs descriptions.
+  - « à vous focus sur » → « à vous concentrer sur » ;
+  - « pour focus vos sorts » → « pour canaliser vos sorts » ;
+  - « Votre focus en combat » → « Votre concentration au combat ».
+  - Aussi « foyer psionique » → « focalisation psionique ».
+- Décimales dans les textes libres : « 0.5 », « 0.25 » → « 0,5 », « 0,25 » (sand-drake, solipsism, Manasurge).
+- « vous êtes envoyé… » : tutoiement résiduel à passer au vous (liste en §3).
+
+**Collisions de noms (à trancher)**
+- « Déflagration » : Blast (force-of-will) et Blastwave (wildfire). Proposition : Blastwave → « Vague Explosive ».
+- « Tir Rapide » : Rapid Shot et Swift Shot. Proposition : Swift Shot → « Tir Éclair ».
+- « Puissance Arcanique » : Arcane Power et Arcane Might. Proposition : Arcane Might → « Force Arcanique ».
+- « Élan » : Surge, Momentum, Kinetic Surge.
+- « Embuscade » : Shadow Ambush et Ambuscade.
+- « Équilibre de la Nature » : Nature's Balance et Nature's Equilibrium.
+- « Dominer » : Overpower, à rapprocher de « Domination ».
+- « Brutalité » : Brutality (rampage) et le type thuggery.
+- « fléau » désigne à la fois blight et bane. Proposition : bane → « Plaie » (« Fléau de la Confusion/Aveuglement », « un seul fléau »).
+- Ghast = « spectre » est en collision avec Spectre/Rime Wraith. Proposition : « blême ».
+- « Tremblement » : Quake (avec espace final, sans « de Terre ») et « Tremblement de Terre ».
+
+## 2. Balises, formats et variables cassés (prioritaire)
+
+- `fungus.lua`, Sudden Growth : `#GREEN#(%d#)LAST#` → `(#GREEN#%d#LAST#)`.
+- `psionic/other.lua`, Beyond the Flesh : « 10%% », « 5%% », « 60%% » (×2) sont dans un `"_t"`, donc à écrire avec un seul `%`.
+- `reflexes.lua`, Sentinel : « Le talent %s de %s » inverse les arguments. Reordonner, ou ajouter `{2,1}` comme ailleurs.
+- `self-hatred.lua` et `mobility.lua` : « souffre de %s » / « réagit au %s » avec « une attaque » / « dégâts » donnent « de une attaque », « au une attaque ». Corriger en « subit %s de la part de » et « réagit à %s de », avec « une attaque » / « des dégâts ».
+- `@Target@` (majuscule) à la place de `@target@` en milieu de phrase :
+  - slime.lua : Poisonous Spores ;
+  - npcs.lua : Blinding Spores, Poisonous Spores, Rotting Disease, Poisonous Bite.
+- `eldritch-stone.lua` : « %sentaillées » avec fragments au masculin singulier (« empoisonné », « soufflé », « empalé », « désarmé ») → « empoisonnées », « soufflées », « empalées », « désarmées ».
+- `tutorial/stats-calc/calc10` : `#GOLD#statistiques de comba#WHITE#t` → `#GOLD#statistiques de combat#WHITE#`.
+- `tutorial/stats-scale/scale6` : balises non refermées (`…palier 1 ?`, `…palier 2 ?`) → fermer avec `#WHITE#`.
+- `tutorial/stats-scale/scale4` : « Palier 1 Les scores, ceux de… » → « Les scores de #B4B4B4#palier 1#WHITE#, de un à vingt, sont… » (×5).
+- Backslashes dans des `[[ ]]` : `\"Transparency.rtf\"` (tier12) et `'l'\"Regarder aux alentours\"` (informed1) → retirer les `\` ; la seconde → « la commande « l » (Regarder) ».
+- `timed_effects` : « d`y être téléportée » → « d'y être » ; « #Target# Didier n'est plus figé » → retirer « Didier » ; « #CRIMSON##Source# dégâts #Target#… » → verbe manquant (« #Source# inflige des dégâts à #Target# à travers l'entrelacement ! »).
+- Éléments laissés en anglais :
+  - « #Target# is revigoré. » ;
+  - cosmetic_race_dwarf_female_beard : phrase anglaise répétée avant la traduction ;
+  - « Spellblaze » (warrior_brawler) → « Brûlure Magique » ;
+  - « Reavers » ;
+  - « Rune : Invisibilité … %d turns » → « tours » ;
+  - « Ghouls : Maladie Virulente » → « Goules ».
+- Espaces superflus :
+  - « Tremblement " » ;
+  - « Réserve d'Énergie Positive / Négative " » ;
+  - « votre  #LIGHT_GREEN# » (timed1 ×2) ;
+  - « (Cran Véritable) …  ( » double espace ;
+  - « Anatomie » : lignes indentées avec des espaces dans malleable-body (le fichier source utilise des tabulations).
+- `Hunted` : correct. `Harmony`, Elemental Harmony : couleurs et puces `* #LIGHT_RED#…` absentes de la source (cf. Spacetime Mastery en partie 2). Retirer ou valider.
+- Texte de debug conservé en actif : « Indiscernible Anatomyblabla » (+ « Anatomyblabla Incompréhensible »). À remplacer par un vrai nom ou à commenter. De plus, cette description utilise « te » : « qui te sont infligés » → « vous ».
+- `Thought-Forms` : phrase ajoutée absente de la source (« L'activation de ce talent mettra toutes les autres formes de pensée en rechargement » dans le descriptif générique). À retirer.
+- `Mark Prey` : texte inventé (« vision partagée… quelle que soit la distance ou les obstacles… »). Proposition : « Concentrez votre prédation sur les proies les plus dignes. En entrant pour la première fois dans un niveau, jusqu'à %d ennemis sont marqués comme vos proies. Vous les voyez où qu'ils soient. De plus, tous les dégâts que vous subissez de leur sous-type sont réduits de %d%%. »
+- `Mindhook` : dernière phrase de la source omise (rechargement/portée selon les points de talent).
+
+## 3. Corrections par fichier
+
+**cursed/**
+- gestures : « êtres équipées » → « avoir des étoiles d'âme équipées » ; « (doublé) » → « (doublés) ».
+- gloom, fears, rampage, slaughter : « %d%% chance » → « %d%% de chances » ; « est proportionnel » → « est proportionnelle » (gloom ×2) ; « Ssauvegarde » → « Sauvegarde » ; « PV max » → « points de vie maximaux » ; « sera également étourdis » → « étourdi » ; « les assommants » → « assommant » ; « est ravivée » → « ravivé » ; « résister contre » → « effectuer une sauvegarde contre ».
+- force-of-will : « et provoque un recul » → « et provoquer » (×2) / « provoquant ».
+- dark-sustenance : « sustentance » → « subsistance » ; une phrase de Devour Life n'a pas de sujet (« Est proportionnel »).
+- darkness : « un court sillage … dans le sillage » → « une courte traînée … dans le sillage ».
+- predator/shadows : « Éclair d'ombre » → « Éclair d'Ombre » ; « Se Dissiper » → « Évanouissement » ; « lancent une attaque aveuglante » → « frappent par surprise (Angle Mort) » ; « 5 haine » → « 5 de haine ».
+- strife : « Repel : … et de 20%% si vous êtes équipé d'un bouclier » → « augmentées de 20%% de plus avec un bouclier » ; « malheur » → « malchance ».
+- primal-magic : « Éclairs d'Arcanes » → « Éclairs Arcaniques » ; « dégâts arcanique » → « arcaniques » (×2).
+- punishments : « %d%% dégâts de moins » → « %d%% de dégâts en moins ».
+- shadows : « Puissance Magique » → « Puissance des Sorts ».
+
+**gifts/**
+- antimagic : « Puissances Mentale » → « Puissance Mentale » (×3) ; « peut infliger un coup critique mental » → « peut être un critique mental ».
+- call : « Sauvegarde mentale/Puissance mentale » → majuscules ; « La quantité soignée est proportionnel » → « proportionnelle ».
+- cold-drake/fire-drake : « Rugissement retentissant » → « Rugissement Retentissant » ; « Flamme dévorante » → « Flamme Dévorante » ; « Souffle de feu » → « Souffle de Feu » ; log « crache du feu » → « souffle du feu » (cohérent avec « souffle de la glace »).
+- dwarven-nature : rien de bloquant (« Moitié de pierre/cristalline » OK).
+- earthen-power : « Resilience » → « Résilience » (aussi races.lua) ; « dégâts arcanique » → « arcaniques » ; « La puissance … est proportionnel » → « proportionnelle ».
+- earthen-vines : « sont immobilisé » → « immobilisées » ; « Les chances … proportionnels au niveau du talent et votre Volonté » → « proportionnelles au niveau du talent et à votre Volonté » ; « vignes telluriques » (gifts.lua) → « lianes ».
+- eyals-fury : « créations magiques » → « créatures artificielles ».
+- gifts.lua : « Champignons » (minuscule) ; « avancé » → « avancée » ; « lames psychiques » → « lames psi » ; « jus de moisissure de visqueux » → « jus de moisissure visqueuse ».
+- harmony : « vous soigne pour %d vie » → « de %d points de vie » ; « Nexus de Guérison » (titre) ≠ « Nexus de Soin » (description), aligner ; « 1 essence(s) » → « infusion(s) ».
+- higher-draconic : « les glace gelante » → « glace qui gèle et ralentit » ; « résistant et en harmonie aux dégâts » → « en harmonie avec » ; « des différents draconiens » → « des différents drakes ».
+- malleable-body : « qui te sont infligés » → « vous » ; apostrophe « d’un effet » → « d'un effet ».
+- mindstar-mastery : « une étoiles d'âme » → « d'une étoile d'âme » ; majuscules d'« étoile d'âme » à unifier.
+- moss : « Mousse Paralysante » → « Mousse Agrippante » (le texte parle d'immobilisation) ; « confondre (puissance %d%%) » → « rendre confus ».
+- mucus/slime : « Crachats Visqueux » → « Crachat Visqueux » ; « Spores Vénéneux » → « Spores Vénéneuses » ; « Spores Aveuglants » → « Aveuglantes » ; « libère des spores vénéneux » → « vénéneuses » ; « spores urticants » → « urticantes » ; « goute » → « goutte » ; « perd %0.1f%% dégâts » → « %0.1f%% de dégâts » ; « de la bave » → « de la gelée visqueuse ».
+- oozing-blades : « Natural Acid » OK ; « mucus visqueux crache » → « mucus vaseux crache ».
+- sand-drake : « Quake » → « Séisme/Secousse » sans espace final ; « Chaque niveau de Avaler » → « d'Avaler ».
+- storm-drake : « quelle que soit le rang » → « quel que soit » ; « peuvent être critique » → « critiques » ; « sera étourdissante » → « étourdie » ; « 1%% » final sans point.
+- summon-*** : « Soigne tous les cibles » → « toutes les cibles » ; « les Cracheurs de feu » → « les Crache-Feu » ; « proportionnels à les niveaux » → « aux niveaux » ; « Explose en une balle tranchante » → « boule » ; « dégâts de choc flamme » → « Choc de Flammes » ; « solidité d'armure » → « robustesse d'armure » ; « attirez-la » (Winter's Grasp) → « attire-la » ; « capables de cracher du poison, de l'acide et de la foudre » (Hydra) → « souffler ».
+- venom-drake : « Désarmés » → « désarmés » ; « Vous crachez de l'acide » (Corrosive Breath) → « soufflez » ; « proportionnel à le niveau » → « au niveau ».
+
+**misc/**
+- horrors : « Lisière Abyssale » → « Voile Abyssal » ; « ainsi qu'en tant que dégâts aux ressources » → « ainsi que des dégâts de ressource » ; « Invoque %d éclat du vide » → « éclat(s) » ; « Vague de Visqeux » → « Vague de Visqueux » ; « folie du vide » → « Vide ».
+- inscriptions : « Rune : Dissipation » → « jusqu'à 8 effets magiques soutenus bénéfiques » ; « sustens » → « talents soutenus » ; « Essence : Héroïsme … le Héroïsme » → « Infusion : Héroïsme … l'Héroïsme » ; « Tache » → « Souillure » (Taint) ; « Manasurge … 0.5 » → « 0,5 » ; « Frozen Spear » : « Lance Gelée » → « Lance de Glace ».
+- misc.lua : « tempoporter » → « se connecter temporellement » ; « Tirer une Explosion d'Énergie » → minuscule.
+- npcs : « Cracha de Fléau » → « Crachat de Fléau » ; « fléau pure » → « pur » ; « constrictée » → « enserrée » ; « Martyrdom » : « Désigne une cible comme supplicié… le supplice inflige des dégâts, il s'inflige » → « comme martyr … lorsque le martyr inflige des dégâts, il s'inflige » ; « Dredge Frenzy » : « Dragues » / « Dragas » → un seul terme ; « Cripple » : « est handicapée » → « estropiée » ; « proportionnels à les dégâts » (Sweep) → « aux dégâts » ; « Defensive Throw » : « étourdite » → « étourdie » (×2), le second cas (« stunned ») → « assommée » ; « Ambuscade / Embuscade » : « Embuscade des Ombres » vs « Embuscade ».
+- objects : « Dons sauvage » → « Dons sauvages » ; « énergie profane » → « arcanique » ; « assomements » → « assommements » ; « aux Entailles » → « aux entailles » ; « Rafraichissement Mentale » → « Rafraîchissement Mental » ; « talents de dons sauvage » → « dons sauvages » ; « charmes » vs « Breloques ».
+- races : « durant Ère » → « durant l'Ère » ; « Ni le Maître… » OK ; « le pouvoir de l'Argent » : « toutes les tranche » → « par tranche » ; « Les Yeeks » → « Les yeeks » ; « tueurs psionique yeeks » → « guerriers psioniques yeeks » ; « d'assomement » → « d'assommement » ; « dégâts critique » → « critiques » ; « Les Orcs » → « Les orcs » ; « tous les déclenchements de dégâts procs » OK.
+- tutorial.lua : « Utilise tes pouvoirs mentaux pour embrouiller » → « Utilisez vos pouvoirs mentaux pour rendre confuse ».
+
+**psionic/**
+- absorption : « Enveloppe-vous » (×3) → « Enveloppe » (3e personne cohérente) ; « absorbe %d%% dégât » → « des dégâts » ; « arcane » → « arcanique ».
+- augmented-striking : « penentration » (source) OK.
+- distortion : « Maelstrom » → « Maelström » ; « cette compétence » → « ce talent ».
+- dream-forge : « tous les attaques » → « toutes les attaques » ; « à un contre-attaque » → « une contre-attaque » ; « Bouclier de Forge » → « Bouclier Forgé ».
+- dream-smith : « vous enlever » → « vous retirez » ; « est étourdissante » → « est assommée ».
+- dreaming : « Chaque %d points » → « Chaque tranche de %d points » (aussi nightmare, slumber) ; « Emprisonne tous les cibles » → « toutes les cibles » ; « cette compétence est active » → « ce talent est actif ».
+- finer-energy : « Guerrier Psionique » cohérent avec la classe.
+- focus : « paralysie cérébrale » → « Paralysie Mentale » ; « Pyrokinèse » → « Pyrokinésie » ; thermal-mastery « Pyrocinèse » → idem.
+- mentalism : « anti-magique » → « anti-magie ».
+- nightmare : « proportionnel à le rang » → « au rang » ; Waking Nightmare : « l'étourdissement » → « l'assommement ».
+- psi-fighting : « télécinétiquement » → « télékinétiquement » ; Telekinetic Smash : « vous étourdissez » → « assommez ».
+- psionic.lua : « précise » → « précises » ; « télécinétiques » → « télékinétiques » ; type « slumber » → « torpeur ».
+- trance : « disruptives » → « antimagiques » ; « 0.5 » → « 0,5 » (solipsism).
+- voracity : « tous les cibles » → « toutes les cibles » (×3) ; la phrase « La force de ce talent est proportionnel à mesure que votre Psi ainsi qu'à votre Puissance Mentale » (×3) → « La force de ces effets augmente à mesure que votre Psi diminue, ainsi qu'avec votre Puissance Mentale » ; « chaque ennemis abattu » → « ennemi abattu ».
+
+**spells/**
+- aegis : « Bouclinage » (mot inventé) → « Renforcement des boucliers » ; « voit leurs puissance » → « sa puissance » ; « La recharge est proportionnel » → « proportionnelle ».
+- age-of-dusk : « Pestes Noire » → « Pestes Noires » (×2).
+- air : « Chaine d'Eclaires » → « Chaîne d'Éclairs » ; « d'assomement » → « d'assommement ».
+- conveyance : « puissance magique » (×4) → « Puissance des Sorts » ; « proportionnel » → « proportionnelle ».
+- dreadmaster : « ensorcel » → « ensorceler » ; « laquais » → « sbires ».
+- earth/stone : « Missiles en Terre » → « Projectiles Telluriques » ; « Tarière de Destruction » (timed) → « Foreuse de Destruction ».
+- eldritch-shield : « sera assommé » → « assommée » ; « Eldricth » (source).
+- enhancement : « sur votre vous intérieur » → « votre moi intérieur ».
+- eradication : « Goule(s) ou Squelette(s) » → minuscules.
+- fire-alchemy : « pour %0.2f dégâts de feu. Et lançant » → « , et lançant ».
+- fire/wildfire : « Choc Ardent » / « Choc Enflammé » → « Choc de Flammes » ; « Éclair de Feu » → « Éclat de Feu » ; « Sillage Ardent/Brûlant » → « Feux Dansants » ; « Flammes Purificatrices » → « Feux Purificateurs » ; « les assomants » → « assommant » ; « Enfer » (timed) vs Inferno non traduit : à trancher.
+- frost-alchemy : « La durée sont proportionnels » → « est proportionnelle ».
+- golem/golemancy : « proportionnel au niveau du talent » (×3) → « proportionnelle ».
+- grave : « %d charge » → « charge(s) » ; « avec 3 charge » → « 3 charges ».
+- master-necromancer/flesh : « touts les %d tours » → « tous ».
+- nightfall : « Une seule malédiction peut affecter » → « un seul fléau / une seule plaie » ; type « crépuscule » vs Crépuscule (collision).
+- phantasm : « Image en Miroir » → « Image Miroir » ; « sending triggering » : « déclenchant » correct.
+- rime-wraith : « Hôte Gélatineux » (timed) → « Hôte Gélide ».
+- spectre : « la case ciblé » → « ciblée ».
+- spells.lua : « transmettance » → « transport » ; « bâtonnets magiques » → « bâtons magiques » ; « maître hanteur » → « Maître de la Terreur » ; « Necrotic Minion » → « Sbire Nécrotique ».
+- staff-combat : « Baton » → « Bâton » (×8).
+- thaumaturgy : « faisceau(x) magique » → « faisceaux magiques » (×10) ; « Elémentaires » → « Élémentaires ».
+
+**techniques/**
+- 2h-assault : « le rechargement de deux de vos talents sont réduit » → « sont réduits » ; « (70%% dégâts) » → « 70%% de dégâts ».
+- 2hweapon, strength-of-the-berserker : « instoppable » → « inarrêtable ».
+- archery/mobility/pugilism/weaponshield/warcries/thuggery : « propotionnel(s) » → « proportionnel(s) » (archery ×3, mobility, weaponshield) ; « proportionnels à votre Précision/Dextérité/Force » : accords (« La puissance … est proportionnelle »).
+- assassination : « Votre chance … est proportionnel » → « proportionnelle ».
+- battle-tactics : « Focus Martiale Supérieure » → « Concentration Martiale Supérieure » ; « tout les dégâts » → « tous les dégâts » ; « consumé » → « consommée ».
+- combat-techniques : « @Source@ Charge précipitamment » → « charge » ; « se focus » (×2) ; « Votre focus » (×2).
+- combat-training : « Peau Epaisse » → « Épaisse » ; « tout leurs talents » → « tous » ; « armures de plates massives » → « de plaques massives ».
+- dualweapon/finishing-moves : « assomant », « assomé(e) », « d'assomer » → « assommant », « assommé(e) », « d'assommer » (aussi stats6/7).
+- duelist : « La chance de désarmer est proportionnel à avec votre Précision » → « proportionnelle à votre Précision ».
+- grappling : « Posture de Combat au Corps à Corps » → « Posture de Lutte » ; collision avec « Posture de Combat » (Striking Stance → « Posture de Frappe »).
+- magical-combat : « Les bonus est proportionnel àvotre » → « Le bonus est proportionnel à votre » ; « pour focus » → « pour canaliser ».
+- marksmanship : « Essence du Tir » (Trueshot) → nom à revoir (« Tir Parfait ») ; Flare : « perdent %d défense et de furtivité » → « %d de défense et de puissance de furtivité ».
+- pugilism : « la abat » → « l'abat ».
+- sniper : « irez un coup léthal » → « Tirez un coup létal » ; « léthal » → « létal ».
+- techniques.lua : « infatigable combattant » → « combattant infatigable » ; « brutalité » (thuggery) vs Brutality, à trancher.
+- throwing-knives : « Frappe venimeuse » → « Frappe Venimeuse » ; « en récupération » → « en rechargement ».
+- tireless-combatant : « de plafond à toutes les résistance » → « de plafond de toutes les résistances ».
+- unarmed-training : « Les Lutteurs » → « Les lutteurs ».
+- weaponshield : Shield Slam : « sans bouclier » avec « Coup de Bouclier » → « Grand Coup de Bouclier ».
+
+**uber/**
+- cun : « #DARK_GREEN#Désolation » → « Fléau » ; « Œil du Tigre ».
+- dex : « Roule avec » → « Rouler avec les Coups » ; « A subi l'effet de Recule » → « A été repoussé ».
+- mag : « Paroie d'Éther » → « Paroi d'Éther » (×3, log inclus) ; « nécomancie » → « nécromancie » ; « Mort-Vive Infinie » (aussi lich) → « Non-Vie Sans Fin » ; « Gelée : Malédiction de Vulnérabilité » → « Malédiction du Sans Défense » ; « Terreur : Sommeil » → « Torpeur » ; « Puissance Arcanique » → « Force Arcanique ».
+- str : « Héritage des Nalores » → « Naloren ».
+- wil : « dragonnet » → « drake ».
+
+**undeads/**
+- ghoul : « Bond de Goule » → « Saut de Goule » ; « Régurgitation » vs « Vomissure » : unifier.
+- lich : « Portal de Phase » → « Porte de Phase » ; « Obscurité/Froid Sombrique » → « d'Ombre ».
+
+**texts/ (intros)**
+- arena : « d'impatience, impatiente d'assister » → « d'impatience, avide d'assister ».
+- cornac : « Vous êtes originaire… Vous êtes originaire » → « Vous venez de la petite ville de Derth ».
+- dwarf : « la plupart des membres… a été tués » → « ont été tués » ; « berserker Nain » → « nain ».
+- ghoul/skeleton : « une ghoule » → « une goule » ; « devenu / devenue » : un seul genre ; « essayez de te trouver » → « vous trouver ».
+- halfling : « une force a ne pas » → « à » ; « les Elfes » → minuscules.
+- ogre : « le Shalore » → « les Shaloren » ; « Grottes scintillantes » → « Grottes Scintillantes ».
+- orc : « BLAH BLAH BLAH » repris tel quel de la source.
+- shalore : « c'est votre race est responsable » → « que votre race est responsable ».
+- thalore : « Vous etes arrivé » → « êtes » ; « Elfes Thaloréen » → « elfes thaloren ».
+- tutorial : « Bienvenu » → « Bienvenue » ; « un personne débutant » → « un personnage débutant ».
+- message-last-hope : « raid orcs » → « raid orc ».
+
+**texts/ (tutorials)**
+- done : « rappelez vous » → « rappelez-vous » ; « nombre limité de race » → « de races ».
+- levelup : « ouvir » → « ouvrir » ; « au votre » → « au vôtre ».
+- melee : « Si il » → « S'il » ; « Attaquez les » → « Attaquez-les » ; « visqueux hostiles » → « gelées hostiles » ; « dégâts » → « Dégâts ».
+- move/objects/quests/ranged : « équippés » → « équipés » ; « Selectionnez » → « Sélectionnez » ; « équipez les » → « équipez-les » ; « la faite pas » → « faites » ; « nombre d'utilisation illimitées » → « d'utilisations illimité ».
+- stats6/7/7.1 : « d'assomer » → « d'assommer » ; « Puissance des sort » → « sorts » ; « voleur » → « brigand ».
+- scale7/scale12 : « A votre avis » → « À votre avis » ; « Palier de niveau 5 » → « score de palier 5 ».
+- tier2/informed1 : tutoiement (« Va apprendre… reviens… essaie-le », « tu as fermé… tu peux ») → vous.
+- tier6/7 : « effets trans-niveaux » → « trans-palier » ; « effet cross-palier » → « trans-palier ».
+- tier11 : « J'espère » → « Nous espérons ».
+- timed6 : « statistique de combat combat défensif » → « défensive » (doublon).
+- tactics2 : « viens » → « vient ».
+- talents (tutorial) : « possedez » → « possédez » ; « sélectionant » → « sélectionnant » ; Mur de Bouclier : le texte parle de « valeur de blocage » alors que la source dit « réduit vos dégâts » (contresens) ; « en bas à gauche » → « en bas à droite » ; « Frappe de bouclier / Mur de bouclier / Blocage » → « Coup de Bouclier / Mur de Bouclier / Bloquer ».
+
+**texts/ (unlocks)**
+- afflicted_cursed : « Afflgé » → « Affligé » ; « votre Gloom » → « votre Angoisse ».
+- afflicted_doomed : « Se nourrir de » → « Nourrissez-vous de ».
+- birth_* : « Coffre de Ttransmogrification » → « Transmogrification » ; « équipement/pouvoir de voyage » → « de départ » ; « une autre récompense » → « de nouvelles récompenses ».
+- campaign_* : « BORDELIQUE » → « BORDÉLIQUE » ou « CARNAGE ».
+- chronomancer_paradox_mage / temporal_warden : « Guardien » → « Gardien » ; « YUn Gardien » → « Un Gardien » ; infinitifs mêlés aux impératifs → impératifs.
+- corrupter_corruptor : « .. » en double.
+- divine_anorithil : « soleil / lune » → « Soleil / Lunes » ; « chants du soleil et hymnes de la lune » → majuscules.
+- divine_sun_paladin : « contre le Fierté » → « les Fiertés ».
+- mage : « S'adonner… Manipuler soi-même » → impératifs.
+- mage_geomancer : « toute les cibles » → « toutes ».
+- mage_thaumertgist : « Faisceaux Large » → « Larges » ; « largeurs 3 » → « largeur 3 » ; « faisceaux magique ».
+- paladin_avatar : « t'aider dans ton périple » → « vous aider dans votre périple » ; « dommages » → « dégâts ».
+- paladin_fallen : « Traîtrise » → « Haine » ; « Guardien » → « Gardien ».
+- psionic_mindslayer : « S'engouffrer » → « Engouffrez-vous ».
+- race_ogre : « mit au repos » → « mis au repos » ; « terres Shalore » → « Shaloren ».
+- rogue_poisons : « Tu as passé… tu peux… Brigan » → « Vous avez passé… Brigand ».
+- undead_ghoul : « vomie » → « régurgitation ».
+- warrior_brawler : « Spellblaze » ; « avec un peu plus que leur propre corps » → « avec presque rien de plus que leur propre corps » (contresens) ; « agrippement » → « saisie ».
+- wilder_oozemancer : « Naturalites » → « Naturalistes ».
+- wilder_wyrmic : « aspects caractéristiques de la peau des dragons » (invention) → « de la race draconique elle-même » ; « Attacques » → « Attaques ».
+- unlock-yeek : « Tu as aidé… tu peux » → vous.
+
+**timed_effects/**
+- floor : « Pierre de Verre » → « Pierre Scintillante » ; « Aura Perdue » → « Aura Funeste » ; « Piscine de Gelée Visqueuse » → « Mare de Gelée ».
+- magical : « innondé / Innondation / augmantant » → « inondé / Inondation / augmentant » ; « étheré » (×3) → « éthéré » ; « Wraithform » : « Forme Spectrale » vs « Forme d'Âme en Peine » ; « se tranforme » → « transforme » ; « Prescience » → « Prescience » (sans accent) ; « +En phase » (pour « +Phased ») → « +Déphasé » ; « verouillé » → « verrouillée » ; « entremelé / Entremelement » → « entrelacé / Entrelacement » ; « une poussé de mana » → « poussée » ; « de prism » → « de prisme » ; « physique » (accord) dans « afflictions physique » ; « ampoisonné » → « empoisonné » ; « estropiante » → « estropiant » ; « intengible » → « intangible » ; « régenération » → « régénération » ; « dégâts d'ombre » (Coupure d'Ombre) → « d'obscurité » ; « dégâts de ténèbres / de givre » → « d'obscurité / de crépuscule givré » ; « Lumière Etoilée Fatigante » → « Lumière Étoilée Fatigante » + « Inflige » → « Frappé par » ; « #Target# is revigoré » ; « les rechargement » → « rechargements » ; « est augmenté » → « augmentée » ; « est ralentis » → « ralentie » ; « Votre %s garde » → « Votre garde %s » ; « Hôte Gélatineux » → « Gélide ».
+
+## 4. Limites
+
+- Relevé non exhaustif ligne par ligne : je me suis arrêté aux erreurs sûres et aux incohérences terminologiques.
+- Formats d'arguments non vérifiés un par un (`%s`/`%d` identiques en nombre, `{2,1}`). Seuls les cas visibles sont listés.
+- Choix de noms propres de talents (« Tir Parfait », « Posture de Frappe », « Plaie de… », etc.) : ce sont des propositions, à valider.
+- Points encore à trancher (hérités de la partie 2) : Tueuses/Tueurs de Dieux, Redux (non traduit), Inquisitrice/Inquisiteur.
+
